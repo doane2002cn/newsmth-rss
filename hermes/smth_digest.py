@@ -26,6 +26,7 @@ import subprocess
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -148,7 +149,7 @@ def parse_feed(raw):
         items.append({
             "title": title, "link": link,
             "guid": (it.findtext("guid") or link).strip(),
-            "board": m.group(1) if m else "",
+            "board": urllib.parse.unquote(m.group(1)) if m else "",
             "pub": pub, "ts": dt.timestamp() if dt else 0,
             "desc": body[:300],
         })

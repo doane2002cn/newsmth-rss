@@ -1,5 +1,6 @@
 {
  "boards": {
+  "ADAgent_TG": "团购",
   "AI": "人工智能",
   "ASCIIart": "ASCII艺术",
   "ASD": "自闭症孤独症",
@@ -17,6 +18,7 @@
   "Astronomy": "天文",
   "Athletics": "田径运动",
   "AutoTravel": "自驾游",
+  "AutoWorld": "汽车世界",
   "BBSHelp": "BBS使用帮助",
   "BBSNewbie": "新手上路",
   "BBSView": "BBS发展研究",
@@ -110,6 +112,7 @@
   "FPGATech": "可编程器件技术",
   "Falcom": "Falcom之家",
   "FameHall": "名人堂",
+  "FamilyLife": "家庭生活",
   "Fansub": "字幕公社",
   "FashionShow": "服饰搭配",
   "Fengshui": "风水、相术和姓名学",
@@ -224,6 +227,7 @@
   "Nanjing": "秦淮波绿·南京",
   "NetNovel": "网络小说",
   "Networking": "网络技术",
+  "NewExpress": "水木特快",
   "NewSMTH": "站史记录",
   "NewSoftware": "新软件介绍",
   "NorthEast": "东北老家",
@@ -298,6 +302,7 @@
   "Shanghai": "上海滩",
   "Shanxi": "三晋大地·山西",
   "Shenzhen": "深圳特区",
+  "ShiDa": "每日十大话题",
   "Shuibuzhao": "失眠",
   "Shunyi": "顺义",
   "Sichuan": "天府之国·四川",
@@ -310,6 +315,7 @@
   "Speed": "风驰电掣",
   "SportsGame": "体育游戏",
   "StarCraft": "星际争霸",
+  "Stock": "股市",
   "StoneStory": "红楼梦",
   "Swimming": "碧水情深",
   "TCM": "中医",
@@ -362,5 +368,5 @@
   "Zhejiang": "诗画之江·浙江",
   "ZuFang": "中介租房"
  },
- "generated": "2026-10-15T12:27:21+00:00"
+ "generated": "2026-10-15T12:36:44+00:00"
 }

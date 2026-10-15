@@ -17,6 +17,7 @@ import re
 import sys
 import time
 import urllib.error
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timezone
@@ -266,27 +267,35 @@ def build_board_names() -> dict[str, str]:
     return mapping
 
 
-def ensure_board_names() -> dict[str, str]:
-    """板块名表有缓存就直接用，超过 TTL 才重建。"""
-    try:
-        if BOARDS_FILE.exists():
-            data = json.loads(BOARDS_FILE.read_text(encoding="utf-8"))
-            built = datetime.fromisoformat(data.get("generated", ""))
-            age = (datetime.now(timezone.utc) - built).total_seconds() / 86400
-            if age < BOARD_TTL_DAYS and data.get("boards"):
-                log(f"板块名表：复用缓存（{len(data['boards'])} 个板块，{age:.1f} 天前）")
-                if not BOARDS_PUBLISH.exists():
-                    BOARDS_PUBLISH.write_text(
-                        json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True),
-                        encoding="utf-8",
-                    )
-                return data["boards"]
-    except Exception:  # noqa: BLE001
-        pass
+def ensure_board_names(used: set[str] | None = None) -> dict[str, str]:
+    """维护「板块代码 → 中文名」表。
 
-    log("板块名表：重建中（每周一次，约 11 次请求）")
-    mapping = build_board_names()
-    if mapping:
+    主体来自讨论区页面（每周重建一次），再用各板块 RSS 的 channel 标题
+    补齐讨论区页面没列出的板块（汽车世界、股市、家庭生活等）。
+    """
+    used = used or set()
+    mapping: dict[str, str] = {}
+    age: float | None = None
+    try:
+        data = json.loads(BOARDS_FILE.read_text(encoding="utf-8"))
+        mapping = {urllib.parse.unquote(k): v for k, v in (data.get("boards") or {}).items()}
+        age = (datetime.now(timezone.utc)
+               - datetime.fromisoformat(data["generated"])).total_seconds() / 86400
+    except Exception:  # noqa: BLE001
+        mapping, age = {}, None
+
+    rebuilt = False
+    if not mapping or age is None or age >= BOARD_TTL_DAYS:
+        log("板块名表：重建中（每周一次，约 11 次请求）")
+        mapping = {urllib.parse.unquote(k): v for k, v in build_board_names().items()}
+        rebuilt = True
+        log(f"板块名表：讨论区页面解析到 {len(mapping)} 个板块")
+    else:
+        log(f"板块名表：复用缓存（{len(mapping)} 个板块，{age:.1f} 天前）")
+
+    before = len(mapping)
+    mapping = resolve_missing_boards(mapping, used)
+    if mapping and (rebuilt or len(mapping) != before):
         payload = {
             "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
             "boards": mapping,
@@ -294,7 +303,42 @@ def ensure_board_names() -> dict[str, str]:
         text = json.dumps(payload, ensure_ascii=False, indent=1, sort_keys=True)
         BOARDS_FILE.write_text(text, encoding="utf-8")
         BOARDS_PUBLISH.write_text(text, encoding="utf-8")
-        log(f"板块名表：已更新 {len(mapping)} 个板块")
+        log(f"板块名表：已写回 {len(mapping)} 个板块（补齐 {len(mapping) - before}）")
+    return mapping
+
+
+def boards_in_use(store: dict) -> set[str]:
+    """所有已抓条目涉及到的板块代码。"""
+    used: set[str] = set()
+    for entry in (store.get("sources") or {}).values():
+        for it in entry.get("items", []):
+            m = re.search(r"/article/([^/]+)/", it.get("link", ""))
+            if m:
+                used.add(urllib.parse.unquote(m.group(1)))
+    return used
+
+
+def resolve_missing_boards(mapping: dict[str, str], used: set[str]) -> dict[str, str]:
+    """讨论区页面没列出的板块（汽车世界、股市、家庭生活等），
+    用该板块 RSS 的 channel 标题补全——这是站点自己给出的官方中文名。
+    """
+    missing = sorted(b for b in used if b and b not in mapping)
+    if not missing:
+        return mapping
+    log(f"板块名表：{len(missing)} 个板块不在讨论区页面，改用 RSS 标题补齐")
+    for board in missing:
+        try:
+            code, raw, _ = http_get(f"{BASE}/nForum/rss/board-{urllib.parse.quote(board)}")
+            if code != 200 or not raw:
+                continue
+            root = ET.fromstring(strip_xml_decl(decode_gb(raw)))
+            chan = root.find("channel") if root.find("channel") is not None else root
+            title = (chan.findtext("title") or "").strip()
+            if title:
+                mapping[board] = title
+        except Exception:  # noqa: BLE001
+            continue
+        time.sleep(1.2)
     return mapping
 
 
@@ -430,7 +474,7 @@ def main() -> int:
     DATA.mkdir(parents=True, exist_ok=True)
 
     # 卡片要用到板块中文名；有缓存基本零成本
-    ensure_board_names()
+    ensure_board_names(boards_in_use(store))
 
     results: list[dict] = []
     banned = False
