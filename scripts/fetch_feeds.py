@@ -244,6 +244,21 @@ def merge_items(old: list[dict], new: list[dict]) -> list[dict]:
     return ordered[:STORE_CAP]
 
 
+def snapshot_items(old: list[dict], new: list[dict]) -> list[dict]:
+    """快照型数据源（今日十大、精彩贴图）只保留本次抓到的内容，不做滚动累积。
+
+    仍然沿用旧的时间戳，否则每次抓取都会把它们顶到合并流最前面。
+    """
+    prev_by_guid = {it["guid"]: it for it in old}
+    out = []
+    for it in new:
+        prev = prev_by_guid.get(it["guid"])
+        if prev and prev.get("ts"):
+            it = {**it, "ts": prev["ts"], "pub_date": prev["pub_date"]}
+        out.append(it)
+    return out[:STORE_CAP]
+
+
 def build_rss(source: dict, items: list[dict], self_url: str) -> str:
     now = format_datetime(datetime.now(timezone.utc))
     if source["type"] == "topten":
@@ -368,7 +383,9 @@ def main() -> int:
 
             for attempt in range(1, MAX_FETCHES + 1):
                 try:
-                    code, raw, hdrs = http_get(url, entry.get("last_modified"))
+                    # 快照型数据源必须每次拿全量，否则 304 会让旧条目一直留在快照里
+                    last_mod = None if src.get("snapshot") else entry.get("last_modified")
+                    code, raw, hdrs = http_get(url, last_mod)
                     if code == 304:
                         status = "304 未变化"
                         break
@@ -376,7 +393,10 @@ def main() -> int:
                         new_items = parse_mainpage_pictures(raw or b"")
                     else:
                         new_items = parse_board_rss(raw or b"")
-                    entry["items"] = merge_items(entry.get("items", []), new_items)
+                    if src.get("snapshot"):
+                        entry["items"] = snapshot_items(entry.get("items", []), new_items)
+                    else:
+                        entry["items"] = merge_items(entry.get("items", []), new_items)
                     entry["last_modified"] = hdrs.get("last-modified")
                     status = f"更新 +{len(new_items)}"
                     break

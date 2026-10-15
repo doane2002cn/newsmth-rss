@@ -5,7 +5,7 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 15 Oct 2026 09:46:38 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2026 10:19:13 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -163,6 +163,14 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032299</guid>
       <author>siluhuayu</author>
       <pubDate>Wed, 14 Oct 2026 00:36:38 +0000</pubDate>
+      <description><![CDATA[发自「今日水木 on ADA-AL00」]]></description>
+    </item>
+    <item>
+      <title>饶毅：两校生命科学联合中心关于严明国际学术论文发表纪律的通</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1032297</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032297</guid>
+      <author>siluhuayu</author>
+      <pubDate>Wed, 14 Oct 2026 00:34:36 +0000</pubDate>
       <description><![CDATA[发自「今日水木 on ADA-AL00」]]></description>
     </item>
   </channel>

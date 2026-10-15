@@ -2,7 +2,7 @@
   "_comment": "水木社区 (newsmth.net) RSS 源清单。全部走 nForum 自带的 RSS 输出口，无需登录。",
   "sources": [
     { "key": "newexpress", "name": "水木特快", "type": "board", "board": "NewExpress", "section": "重点" },
-    { "key": "topten", "name": "今日十大热门话题", "type": "topten", "section": "重点" },
+    { "key": "topten", "name": "今日十大热门话题", "type": "topten", "snapshot": true, "section": "重点" },
     { "key": "shida", "name": "近期热帖", "type": "board", "board": "ShiDa", "section": "重点" },
 
     { "key": "age", "name": "大龄男女", "type": "board", "board": "Age", "section": "知性感性" },
@@ -43,6 +43,6 @@
     { "key": "woodenart", "name": "木艺", "type": "board", "board": "WoodenArt", "section": "知性感性" },
     { "key": "workinglife", "name": "职业生活", "type": "board", "board": "WorkingLife", "section": "知性感性" },
 
-    { "key": "pictures", "name": "精彩贴图", "type": "mainpage-pictures", "section": "首页" }
+    { "key": "pictures", "name": "精彩贴图", "type": "mainpage-pictures", "snapshot": true, "section": "首页" }
   ]
 }
