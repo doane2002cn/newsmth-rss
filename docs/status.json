@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15 23:45:59 +0800",
+  "generated": "2026-10-16 05:18:12 +0800",
   "banned": false,
   "sources": [
     {
@@ -17,7 +17,7 @@
     {
       "key": "shida",
       "name": "近期热帖",
-      "count": 33,
+      "count": 51,
       "status": "更新 +20"
     },
     {
@@ -197,8 +197,8 @@
     {
       "key": "qingjiao",
       "name": "青年教师",
-      "count": 22,
-      "status": "304 未变化"
+      "count": 23,
+      "status": "更新 +20"
     },
     {
       "key": "shuibuzhao",
@@ -240,13 +240,13 @@
       "key": "workinglife",
       "name": "职业生活",
       "count": 23,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 7,
+      "status": "更新 +7"
     }
   ]
 }
