@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15 23:36:11 +0800",
+  "generated": "2026-10-15 23:45:59 +0800",
   "banned": false,
   "sources": [
     {
@@ -17,7 +17,7 @@
     {
       "key": "shida",
       "name": "近期热帖",
-      "count": 22,
+      "count": 33,
       "status": "更新 +20"
     },
     {
@@ -54,13 +54,13 @@
       "key": "boy",
       "name": "老男孩",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "bull",
       "name": "四十不惑",
       "count": 47,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "children",
@@ -84,7 +84,7 @@
       "key": "fashionshow",
       "name": "服饰搭配",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "food",
@@ -156,13 +156,13 @@
       "key": "memory",
       "name": "似水流年",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motorbike",
       "name": "摩托天地",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motss",
@@ -198,7 +198,7 @@
       "key": "qingjiao",
       "name": "青年教师",
       "count": 22,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "shuibuzhao",
@@ -240,7 +240,7 @@
       "key": "workinglife",
       "name": "职业生活",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pictures",
