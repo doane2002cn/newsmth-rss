@@ -39,6 +39,8 @@ if sys.platform == "win32":
             pass
 
 BASE = "https://www.newsmth.net"
+# 发布后的站点地址，用于生成绝对的 atom:link（相对 URI 不符合 RFC 4287，部分阅读器会拒收）
+SITE_BASE = "https://doane2002cn.github.io/newsmth-rss"
 UA = (
     "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
@@ -423,7 +425,7 @@ def main() -> int:
     generated = datetime.now(timezone.utc).astimezone().strftime("%Y-%m-%d %H:%M:%S %z")
     for res in results:
         items = stored.get(res["key"], {}).get("items", [])[:FEED_ITEMS]
-        self_url = f"feeds/{res['key']}.xml"
+        self_url = f"{SITE_BASE}/feeds/{res['key']}.xml"
         (FEED_DIR / f"{res['key']}.xml").write_text(
             build_rss(res, items, self_url), encoding="utf-8"
         )
@@ -436,7 +438,7 @@ def main() -> int:
     combo_items = sorted(combo.values(), key=lambda x: x.get("ts", 0), reverse=True)[:COMBO_ITEMS]
     combined_source = {"key": "all", "name": "全部板块合并流", "type": "topten"}
     (DOCS / "all.xml").write_text(
-        build_rss(combined_source, combo_items, "all.xml"), encoding="utf-8"
+        build_rss(combined_source, combo_items, f"{SITE_BASE}/all.xml"), encoding="utf-8"
     )
 
     (DOCS / "index.html").write_text(render_index(results, generated), encoding="utf-8")
