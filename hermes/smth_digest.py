@@ -24,6 +24,7 @@ import os
 import re
 import subprocess
 import sys
+import time
 import urllib.error
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -49,15 +50,20 @@ MAX_PICTURES = 5
 POOL_LIMIT = 16            # 交给 AI 挑选的候选池大小
 MAX_READS = 3
 
+# 12:10 起，若合并流还是上一小时的版本，最多轮询等到 12:25
+WAIT_UNTIL = (12, 25)
+POLL_S = 60
+
 # 纯系统贴/无信息量贴，不参与推荐
 NOISE_RE = re.compile(r"版面积分变更记录|^\[?公告\]?|^\[?敬告\]?|^\[?版规\]?|合集$")
 
 LLM_URL = "https://openrouter.ai/api/v1/chat/completions"
-# 策略: openrouter/free 为首, 固定免费模型兜底, 禁止付费模型
+# 策略: 全部免费模型, 按 2026-10-15 实测稳定性排序, 禁止付费模型。
+# 注意: 推理型模型会把 max_tokens 烧在思考上, 留足额度否则返回空内容。
 LLM_MODELS = (
-    "openrouter/free",
-    "poolside/laguna-s-2.1:free",
-    "nvidia/nemotron-3-super-120b-a12b:free",
+    "nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free",   # 实测最稳, ~66s
+    "nvidia/nemotron-3-ultra-550b-a55b:free",               # 实测可用, ~37s
+    "openrouter/free",                                      # 兜底, 偶发空输出
 )
 LLM_KEYS = ("OPENROUTER_API_KEY", "OPENROUTER_API_KEY_2", "OPENROUTER_API_KEY_3")
 
@@ -133,17 +139,38 @@ def load_sections():
         return {}
 
 
+def wait_for_fresh():
+    """等上游 GitHub Actions 把 RSS 重建到当前小时；超时则照发并标注延迟。"""
+    uh, um = WAIT_UNTIL
+    while True:
+        raw = fetch(FEED_ALL)
+        items, last_build = parse_feed(raw)
+        now = datetime.now(CST)
+        fresh = bool(last_build and last_build.hour == now.hour
+                     and last_build.date() == now.date())
+        deadline = now.replace(hour=uh, minute=um, second=0, microsecond=0)
+        if fresh or now >= deadline:
+            return items, last_build, (not fresh)
+        print(f"[info] 上游还是 {last_build:%H:%M} 的版本，等 {POLL_S}s 重试",
+              file=sys.stderr)
+        time.sleep(POLL_S)
+
+
 # ── 选取 ────────────────────────────────────────────────────────────────────
 def is_noise(it):
     return bool(NOISE_RE.search(it["title"]))
 
 
 def dedupe(items):
+    """按 guid 和归一化标题双重去重（近期热帖与板块流会出现同一帖的两种 guid）。"""
     seen, out = set(), []
     for it in items:
-        if it["guid"] in seen:
+        tk = re.sub(r"^\[[^\]]{1,12}\]\s*", "", it["title"]).strip()
+        if it["guid"] in seen or (tk and f"t:{tk}" in seen):
             continue
         seen.add(it["guid"])
+        if tk:
+            seen.add(f"t:{tk}")
         if not is_noise(it):
             out.append(it)
     return out
@@ -218,7 +245,7 @@ def call_llm(prompt):
     """失败返回 None（调用方走兜底）。openrouter/free 优先，固定免费模型兜底。"""
     body = {"messages": [{"role": "system", "content": SYSTEM},
                          {"role": "user", "content": prompt}],
-            "temperature": 0.3, "max_tokens": 900}
+            "temperature": 0.3, "max_tokens": 1600}
     last_err = None
     for model in LLM_MODELS:
         for key in LLM_KEYS:
@@ -269,7 +296,7 @@ def fallback_reads(pool):
 
 
 # ── 卡片 ────────────────────────────────────────────────────────────────────
-def render_card(sec, reads, summary, last_build, ai_broken, pool):
+def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed):
     by_n = {i + 1: it for i, it in enumerate(pool)}
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
     md = []
@@ -324,6 +351,8 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool):
 
     ts = last_build.strftime("%Y-%m-%d %H:%M") if last_build else "未知"
     md.append(f"**🕐 数据更新时间**：{ts}（北京时间）")
+    if delayed:
+        md.append("⚠️ 数据可能延迟：上游 RSS 尚未重建到当前小时")
 
     return {
         "config": {"wide_screen_mode": True},
@@ -351,7 +380,11 @@ def main():
     load_env()
 
     try:
-        all_items, last_build = parse_feed(fetch(FEED_ALL))
+        if dry:
+            all_items, last_build = parse_feed(fetch(FEED_ALL))
+            delayed = False
+        else:
+            all_items, last_build, delayed = wait_for_fresh()
         top_items, _ = parse_feed(fetch(FEED_TOP))
         new_items, _ = parse_feed(fetch(FEED_NEW))
         shi_items, _ = parse_feed(fetch(FEED_SHI))
@@ -374,10 +407,12 @@ def main():
                    if it["ts"] >= cutoff
                    and sections.get(it["board"], ("", ""))[0] == "知性感性"]
 
+    # 知性感性：先按板块均衡取样（每版最多 2 条防刷屏），再用近期热帖补位，
+    # 最后按标题去重，避免同一帖在两条流里各出现一次。
     sec = {
         "topten": dedupe(top_items),
         "newexpress": dedupe(new_items),
-        "sensibility": diversify(dedupe(shi_items) + diversify(feeling)),
+        "sensibility": dedupe(diversify(feeling, per_board=2) + shi_items)[:MAX_PER_SECTION],
         "pictures": dedupe(pic_items),
     }
     print(f"[info] 合并流 {len(all_items)} / 十大 {len(sec['topten'])} / "
@@ -392,7 +427,7 @@ def main():
     reads = fallback_reads(pool) if ai_broken else (data.get("must_read") or fallback_reads(pool))
     summary = "" if ai_broken else (data.get("summary") or "")
 
-    card = render_card(sec, reads, summary, last_build, ai_broken, pool)
+    card = render_card(sec, reads, summary, last_build, ai_broken, pool, delayed)
     if dry:
         print("─" * 28 + " CARD PREVIEW (dry-run) " + "─" * 28)
         print(card["elements"][0]["content"])

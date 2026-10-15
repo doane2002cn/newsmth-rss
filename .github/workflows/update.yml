@@ -2,8 +2,8 @@ name: 更新水木 RSS
 
 on:
   schedule:
-    # 每小时第 25 分钟运行，避开整点调度高峰
-    - cron: '25 * * * *'
+    # 每小时第 5 分钟运行：避开整点调度高峰，也让 12:10 的每日推荐能拿到当小时数据
+    - cron: '5 * * * *'
   workflow_dispatch:
 
 permissions:
