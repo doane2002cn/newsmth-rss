@@ -114,8 +114,23 @@ def parse_feed(raw):
             dt = parsedate_to_datetime(pub).astimezone(CST)
         except Exception:                                      # noqa: BLE001
             dt = None
-        body = re.sub(r"<[^>]+>", " ", it.findtext("description") or "")
-        body = re.sub(r"\s+", " ", html.unescape(body)).strip()
+        body = re.sub(r"(?i)<br\s*/?>", "\n", it.findtext("description") or "")
+        body = re.sub(r"<[^>]+>", " ", body)
+        body = html.unescape(body).replace("\xa0", " ")
+        kept = []
+        for ln in body.split("\n"):
+            ln = ln.strip()
+            if not ln:
+                continue
+            # 站内头部
+            if re.match(r"^(发信人|信区|标\s*题|发信站|来\s*源)\s*[:：]", ln):
+                continue
+            # 签名与来源，出现即代表正文已结束
+            if ln.startswith("--") or ln.startswith("※") or ln.startswith("发自"):
+                break
+            kept.append(ln)
+        body = re.sub(r"\s+", " ", " ".join(kept)).strip()
+        body = re.sub(r"\[FROM:\s*[^\]]*\]\s*$", "", body).strip()
         m = re.search(r"/article/([^/]+)/", link)
         items.append({
             "title": title, "link": link,
@@ -199,6 +214,16 @@ def clip(s, limit):
     if m and m[-1].end() >= limit * 0.5:
         return head[:m[-1].end()]
     return head.rstrip("，、。 ") + "…"
+
+
+def strip_board_prefix(title):
+    """去掉「[板块名] 标题」里的前缀，让各条标题样式统一。"""
+    return re.sub(r"^\s*\[[^\]]{1,12}\]\s*", "", title or "").strip()
+
+
+# 飞书会把行首的普通空格吃掉，缩进只能靠可见字符表达；
+# 这里用全角空格 + 中点，即使空格被吞掉也能看出这是子行。
+SUB = "　· "
 
 
 # ── AI 摘要 / 推荐理由 ──────────────────────────────────────────────────────
@@ -296,7 +321,7 @@ def fallback_reads(pool):
 
 
 # ── 卡片 ────────────────────────────────────────────────────────────────────
-def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed):
+def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, sections):
     by_n = {i + 1: it for i, it in enumerate(pool)}
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
     md = []
@@ -304,24 +329,25 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed):
     if ai_broken:
         md += ["⚠️ **AI 分析暂不可用，以下为原始摘要**", ""]
 
-    md += ["**📌 今日必读**"]
+    # 今日必读：条目间留空行，避免摘要和下一条标题糊在一起
+    md += ["**📌 今日必读**", ""]
     for i, r in enumerate(reads, 1):
         it = by_n.get(int(r["n"]))
         if not it:
             continue
-        md.append(f"{i}. [{it['title']}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
         why = (r.get("why") or "").strip()
         if why:
-            md.append(f"   推荐理由：{why}")
+            md.append(f"{SUB}推荐理由：{clip(why, 46)}")
+        md.append("")
     if not reads:
-        md.append("（今日无）")
-    md.append("")
+        md += ["（今日无）", ""]
 
+    # 今日十大是榜单，保持紧凑
     top = sec["topten"]
     md.append(f"**🔥 今日十大**（{len(top)} 条）")
     for i, it in enumerate(top, 1):
-        md.append(f"**{i}. [{it['title']}]({it['link']})**" if i <= 3
-                  else f"{i}. [{it['title']}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
     if not top:
         md.append("（今日无）")
     md.append("")
@@ -331,9 +357,21 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed):
         items = sec[key][:MAX_PER_SECTION]
         md.append(f"**{emoji} {title}**（{len(items)} 条）")
         for i, it in enumerate(items, 1):
-            md.append(f"{i}. [{it['title']}]({it['link']})")
-            if it["desc"]:
-                md.append(f"   {clip(it['desc'], 60)}")
+            md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+            bits = []
+            if key == "sensibility":
+                # 跨板块挑选，标出每条来自哪个版
+                bits.append(sections.get(it["board"], ("", ""))[1] or it["board"])
+            # 正文和标题完全一样时不再重复展示
+            desc = it["desc"]
+            if desc and re.sub(r"\s+", "", strip_board_prefix(desc)) == \
+                    re.sub(r"\s+", "", strip_board_prefix(it["title"])):
+                desc = ""
+            if desc:
+                bits.append(clip(desc, 48))
+            bits = [b for b in bits if b]
+            if bits:
+                md.append(SUB + " · ".join(bits))
         if not items:
             md.append("（今日无）")
         md.append("")
@@ -341,7 +379,11 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed):
     pics = sec["pictures"][:MAX_PICTURES]
     md.append(f"**🖼 精彩贴图**（{len(pics)} 张）")
     for i, it in enumerate(pics, 1):
-        md.append(f"{i}. [{it['title']}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+        # 贴图常来自清单外的板块，拿不到中文名时就不显示，避免中英混排
+        board_name = sections.get(it["board"], ("", ""))[1]
+        if board_name:
+            md.append(SUB + board_name)
     if not pics:
         md.append("（今日无）")
     md.append("")
@@ -427,7 +469,8 @@ def main():
     reads = fallback_reads(pool) if ai_broken else (data.get("must_read") or fallback_reads(pool))
     summary = "" if ai_broken else (data.get("summary") or "")
 
-    card = render_card(sec, reads, summary, last_build, ai_broken, pool, delayed)
+    card = render_card(sec, reads, summary, last_build, ai_broken, pool,
+                       delayed, sections)
     if dry:
         print("─" * 28 + " CARD PREVIEW (dry-run) " + "─" * 28)
         print(card["elements"][0]["content"])
