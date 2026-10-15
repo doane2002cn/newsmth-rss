@@ -28,6 +28,8 @@ DOCS = ROOT / "docs"
 FEED_DIR = DOCS / "feeds"
 DATA = ROOT / "data"
 STORE_FILE = DATA / "store.json"
+BOARDS_FILE = DATA / "boards.json"
+BOARDS_PUBLISH = DOCS / "boards.json"
 SOURCES_FILE = ROOT / "sources.json"
 
 # Windows 控制台默认 GBK，日志里的中文会变乱码
@@ -53,6 +55,8 @@ FEED_ITEMS = 50           # 每个源输出多少条
 COMBO_ITEMS = 200         # 合并流输出多少条
 BODY_LIMIT = 1200         # 单条正文截断长度，控制仓库体积
 MAX_FETCHES = 3           # 单个源的最大尝试次数
+BOARD_TTL_DAYS = 7        # 板块名表多久重建一次
+SECTION_IDS = [str(i) for i in range(10)] + ["Estate"]
 
 
 class Banned(Exception):
@@ -234,6 +238,66 @@ def load_store() -> dict:
     return {"sources": {}}
 
 
+def build_board_names() -> dict[str, str]:
+    """抓各讨论区页面，建立「板块代码 → 中文名」映射。
+
+    卡片里要把跨板块条目标出来，而 RSS 本身只给板块代码，所以需要这张表。
+    每个讨论区页面一次请求，一周重建一次。
+    """
+    mapping: dict[str, str] = {}
+    for sec in SECTION_IDS:
+        try:
+            code, raw, _ = http_get(f"{BASE}/nForum/section/{sec}")
+            if code != 200 or not raw:
+                continue
+            page = decode_gb(raw)
+        except Exception as exc:  # noqa: BLE001
+            log(f"  板块名表：section/{sec} 失败（{type(exc).__name__}）")
+            continue
+        for m in re.finditer(
+            r'<a href="/nForum/board/([A-Za-z0-9_.\-]+)"[^>]*>([\s\S]*?)</a>', page
+        ):
+            board = m.group(1)
+            title = re.sub(r"<[^>]+>", "", m.group(2))
+            title = title.replace("[", "").replace("]", "").strip()
+            if title and board not in mapping:
+                mapping[board] = title
+        time.sleep(1.5)
+    return mapping
+
+
+def ensure_board_names() -> dict[str, str]:
+    """板块名表有缓存就直接用，超过 TTL 才重建。"""
+    try:
+        if BOARDS_FILE.exists():
+            data = json.loads(BOARDS_FILE.read_text(encoding="utf-8"))
+            built = datetime.fromisoformat(data.get("generated", ""))
+            age = (datetime.now(timezone.utc) - built).total_seconds() / 86400
+            if age < BOARD_TTL_DAYS and data.get("boards"):
+                log(f"板块名表：复用缓存（{len(data['boards'])} 个板块，{age:.1f} 天前）")
+                if not BOARDS_PUBLISH.exists():
+                    BOARDS_PUBLISH.write_text(
+                        json.dumps(data, ensure_ascii=False, indent=1, sort_keys=True),
+                        encoding="utf-8",
+                    )
+                return data["boards"]
+    except Exception:  # noqa: BLE001
+        pass
+
+    log("板块名表：重建中（每周一次，约 11 次请求）")
+    mapping = build_board_names()
+    if mapping:
+        payload = {
+            "generated": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+            "boards": mapping,
+        }
+        text = json.dumps(payload, ensure_ascii=False, indent=1, sort_keys=True)
+        BOARDS_FILE.write_text(text, encoding="utf-8")
+        BOARDS_PUBLISH.write_text(text, encoding="utf-8")
+        log(f"板块名表：已更新 {len(mapping)} 个板块")
+    return mapping
+
+
 def merge_items(old: list[dict], new: list[dict]) -> list[dict]:
     merged: dict[str, dict] = {it["guid"]: it for it in old}
     for it in new:
@@ -364,6 +428,9 @@ def main() -> int:
     stored = store.setdefault("sources", {})
     FEED_DIR.mkdir(parents=True, exist_ok=True)
     DATA.mkdir(parents=True, exist_ok=True)
+
+    # 卡片要用到板块中文名；有缓存基本零成本
+    ensure_board_names()
 
     results: list[dict] = []
     banned = False

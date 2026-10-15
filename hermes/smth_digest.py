@@ -38,6 +38,7 @@ FEED_NEW = f"{BASE}/feeds/newexpress.xml"
 FEED_SHI = f"{BASE}/feeds/shida.xml"
 FEED_PIC = f"{BASE}/feeds/pictures.xml"
 SOURCES_JSON = "https://raw.githubusercontent.com/doane2002cn/newsmth-rss/main/sources.json"
+BOARDS_JSON = f"{BASE}/boards.json"
 
 ENV_FILE = "/opt/data/.env"
 CARD_API = "/opt/data/workspace/scripts/feishu_card_api.py"
@@ -67,7 +68,19 @@ LLM_MODELS = (
 )
 LLM_KEYS = ("OPENROUTER_API_KEY", "OPENROUTER_API_KEY_2", "OPENROUTER_API_KEY_3")
 
-SYSTEM = ("你是水木社区的资讯编辑，为一位置身于技术、消费与生活话题的读者整理每日推荐。"
+# 读者画像：决定"什么值得推荐"。改这里就能调整偏好，不必动逻辑。
+READER = ("读者是一位爱折腾 AI 工作流、自建服务和硬件的技术人："
+          "日常关注大模型与 Agent、NAS/家庭服务器/自托管、数码硬件与消费电子、"
+          "编程与开发效率、网络与云服务，也关心职场发展、经济投资、健康和生活消费。")
+
+PREFER = ("挑选时按以下优先级判断：\n"
+          "高优先：AI 与大模型、自建服务/家庭实验室、数码硬件、编程与工具、"
+          "职场与职业选择、经济与投资、健康与生活消费，以及有实操细节、数据或明确观点的分享。\n"
+          "低优先或排除：纯情绪发泄与对骂、地域或人身攻击、标题党、只有标题没有正文的打卡贴、"
+          "无观点的纯转贴、重复灌水、明显与读者无关的琐碎八卦。")
+
+SYSTEM = (f"你是水木社区的资讯编辑，服务一位读者：{READER}"
+          "你的任务是从候选帖里挑出他最值得看的几条，并给出具体、不空泛的理由。"
           "只输出 JSON，不要解释、不要代码块围栏。")
 
 
@@ -144,14 +157,31 @@ def parse_feed(raw):
 
 
 def load_sections():
-    """从仓库的 sources.json 取板块 → 讨论区映射，避免在脚本里重复维护清单。"""
+    """板块代码 → (讨论区, 中文名)。
+
+    sources.json 给出我们订阅的 41 个源；boards.json 是站点全量板块名表，
+    用来给跨板块条目（今日十大、精彩贴图）标注来源。
+    """
+    out = {}
     try:
         cfg = json.loads(fetch(SOURCES_JSON).decode("utf-8"))
-        return {s["board"]: (s.get("section") or "", s.get("name") or s["board"])
-                for s in cfg["sources"] if s.get("board")}
+        out = {s["board"]: (s.get("section") or "", s.get("name") or s["board"])
+               for s in cfg["sources"] if s.get("board")}
     except Exception as e:                                     # noqa: BLE001
         print(f"[warn] sources.json 读取失败，跳过讨论区分组: {e}", file=sys.stderr)
-        return {}
+    try:
+        bd = json.loads(fetch(BOARDS_JSON).decode("utf-8")).get("boards") or {}
+        for code, name in bd.items():
+            if code not in out:
+                out[code] = ("", name)
+    except Exception as e:                                     # noqa: BLE001
+        print(f"[warn] boards.json 读取失败，跨板块条目不标来源: {e}", file=sys.stderr)
+    return out
+
+
+def board_label(sections, board):
+    name = sections.get(board, ("", ""))[1]
+    return name or board
 
 
 def wait_for_fresh():
@@ -226,13 +256,34 @@ def strip_board_prefix(title):
 SUB = "　· "
 
 
+def sub_line(it, sections, with_board=True, limit=48):
+    """条目下方的副行：来源板块 + 正文摘要（互相重复时不重复展示）。"""
+    bits = []
+    if with_board:
+        label = board_label(sections, it["board"])
+        if label:
+            bits.append(label)
+    desc = it["desc"]
+    if desc and re.sub(r"\s+", "", strip_board_prefix(desc)) == \
+            re.sub(r"\s+", "", strip_board_prefix(it["title"])):
+        desc = ""
+    if desc:
+        bits.append(clip(desc, limit))
+    return SUB + " · ".join(bits) if bits else ""
+
+
 # ── AI 摘要 / 推荐理由 ──────────────────────────────────────────────────────
-def build_prompt(pool, stamp):
-    lines = [f"今日日期: {stamp}", "", "下面是水木社区今日的候选帖（已剔除公告与系统贴）：", ""]
+def build_prompt(pool, stamp, sections):
+    lines = [
+        f"今日日期: {stamp}", "",
+        READER, "",
+        PREFER, "",
+        "下面是今天从水木社区各板块抓到的候选帖（已剔除公告与系统贴）：", "",
+    ]
     for i, it in enumerate(pool, 1):
-        lines.append(f"[{i}] ({it['board']}) {it['title']}")
+        lines.append(f"[{i}] ({board_label(sections, it['board'])}) {it['title']}")
         if it["desc"]:
-            lines.append(f"    摘要: {it['desc'][:110]}")
+            lines.append(f"    摘要: {it['desc'][:120]}")
     lines += [
         "",
         "请输出 JSON（不要其它文字）：",
@@ -240,7 +291,8 @@ def build_prompt(pool, stamp):
         '禁止\\"值得一读/内容不错\\"这类空话"},共3条],'
         '"summary":"2-3句今日总结，≤120字，点出水木今天最值得注意的话题走向"}',
         "",
-        "要求：must_read 必须来自上面的池子，优先选有信息量、有观点、可讨论的内容；编号不要重复。",
+        "要求：must_read 必须来自上面的池子，按读者偏好从高到低排序，"
+        "尽量覆盖不同方向（技术 / 职场 / 生活 / 经济），编号不要重复；宁可少选也不要凑数。",
     ]
     return "\n".join(lines)
 
@@ -266,13 +318,25 @@ def parse_json(txt):
     return d
 
 
+def free_models():
+    """硬性只允许 OpenRouter 免费档：`:free` 后缀，或 `openrouter/free` 路由。
+
+    写错模型名（比如漏掉 `:free`）会在这里被拦下，避免误用付费模型。
+    """
+    allowed = [m for m in LLM_MODELS if m == "openrouter/free" or m.endswith(":free")]
+    dropped = [m for m in LLM_MODELS if m not in allowed]
+    if dropped:
+        print(f"[warn] 已忽略非免费模型: {dropped}", file=sys.stderr)
+    return allowed
+
+
 def call_llm(prompt):
-    """失败返回 None（调用方走兜底）。openrouter/free 优先，固定免费模型兜底。"""
+    """失败返回 None（调用方走兜底）。只走免费模型，失败的依次往下试。"""
     body = {"messages": [{"role": "system", "content": SYSTEM},
                          {"role": "user", "content": prompt}],
             "temperature": 0.3, "max_tokens": 1600}
     last_err = None
-    for model in LLM_MODELS:
+    for model in free_models():
         for key in LLM_KEYS:
             k = os.environ.get(key)
             if not k:
@@ -343,11 +407,14 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     if not reads:
         md += ["（今日无）", ""]
 
-    # 今日十大是榜单，保持紧凑
+    # 今日十大：标注来源板块 + 正文摘要
     top = sec["topten"]
     md.append(f"**🔥 今日十大**（{len(top)} 条）")
     for i, it in enumerate(top, 1):
         md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+        line = sub_line(it, sections, limit=44)
+        if line:
+            md.append(line)
     if not top:
         md.append("（今日无）")
     md.append("")
@@ -358,20 +425,9 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
         md.append(f"**{emoji} {title}**（{len(items)} 条）")
         for i, it in enumerate(items, 1):
             md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
-            bits = []
-            if key == "sensibility":
-                # 跨板块挑选，标出每条来自哪个版
-                bits.append(sections.get(it["board"], ("", ""))[1] or it["board"])
-            # 正文和标题完全一样时不再重复展示
-            desc = it["desc"]
-            if desc and re.sub(r"\s+", "", strip_board_prefix(desc)) == \
-                    re.sub(r"\s+", "", strip_board_prefix(it["title"])):
-                desc = ""
-            if desc:
-                bits.append(clip(desc, 48))
-            bits = [b for b in bits if b]
-            if bits:
-                md.append(SUB + " · ".join(bits))
+            line = sub_line(it, sections, with_board=(key == "sensibility"))
+            if line:
+                md.append(line)
         if not items:
             md.append("（今日无）")
         md.append("")
@@ -380,10 +436,9 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     md.append(f"**🖼 精彩贴图**（{len(pics)} 张）")
     for i, it in enumerate(pics, 1):
         md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
-        # 贴图常来自清单外的板块，拿不到中文名时就不显示，避免中英混排
-        board_name = sections.get(it["board"], ("", ""))[1]
-        if board_name:
-            md.append(SUB + board_name)
+        # 贴图重在图片本身；desc 里是图片地址，不能当摘要，只在有中文板块名时标来源
+        if sections.get(it["board"], ("", ""))[1]:
+            md.append(SUB + board_label(sections, it["board"]))
     if not pics:
         md.append("（今日无）")
     md.append("")
@@ -461,10 +516,15 @@ def main():
           f"特快 {len(sec['newexpress'])} / 知性 {len(sec['sensibility'])} / "
           f"贴图 {len(sec['pictures'])}", file=sys.stderr)
 
-    # 候选池：今日更新的特快 + 知性感性，按时间倒序
-    pool = dedupe(sec["newexpress"] + sec["sensibility"])[:POOL_LIMIT]
+    # 候选池：跨板块取样，覆盖十大 / 特快 / 知性感性，
+    # 否则最活跃的版会把池子占满，模型没得挑
+    pool = dedupe(
+        sec["topten"][:5]
+        + sec["newexpress"][:6]
+        + diversify(sec["sensibility"], per_board=1)[:5]
+    )[:POOL_LIMIT]
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
-    data = call_llm(build_prompt(pool, stamp)) if pool else None
+    data = call_llm(build_prompt(pool, stamp, sections)) if pool else None
     ai_broken = data is None
     reads = fallback_reads(pool) if ai_broken else (data.get("must_read") or fallback_reads(pool))
     summary = "" if ai_broken else (data.get("summary") or "")
