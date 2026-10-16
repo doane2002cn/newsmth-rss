@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Oct 2026 20:58:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:29:26 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[SecondDigi] [转] iPhone 12 Pro Max 512GB</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188356</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188356</guid>
+      <author>deliver</author>
+      <pubDate>Fri, 16 Oct 2026 22:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>自用，无拆修<br/>电池健康度75%，1960出<br/>系统版本ios18.1]]></description>
+    </item>
     <item>
       <title>[AutoWorld] V800已经有0.0万公里二手车在卖了……</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188355</link>
@@ -399,14 +407,6 @@
       <author>deliver</author>
       <pubDate>Thu, 15 Oct 2026 16:41:01 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>去年7w多买了的512g 2t的m3 mac studio ultra，卖了12w]]></description>
-    </item>
-    <item>
-      <title>[Food] 发现中小学生市内春游秋游，只能带三明治之类的冷餐</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188306</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188306</guid>
-      <author>deliver</author>
-      <pubDate>Thu, 15 Oct 2026 16:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>中餐没有可带的吧？]]></description>
     </item>
   </channel>
 </rss>

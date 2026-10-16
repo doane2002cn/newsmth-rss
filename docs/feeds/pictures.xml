@@ -5,7 +5,7 @@
     <link>https://www.newsmth.net/nForum/mainpage</link>
     <description>精彩贴图（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 16 Oct 2026 20:58:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 23:29:26 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/pictures.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -17,20 +17,20 @@
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767750971.jpg?v=" alt="" /><br/>一起交社保 (转载)]]></description>
     </item>
     <item>
-      <title>[航空航天] 朱雀二号改进型遥四运载火箭试飞圆满完成任务</title>
-      <link>https://www.newsmth.net/nForum/article/Aero/563207</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Aero/563207</guid>
-      <author>航空航天</author>
-      <pubDate>Thu, 15 Oct 2026 21:18:12 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Aero_563207.jpg?v=" alt="" /><br/>朱雀二号改进型遥四运载火箭试飞圆满完成任务]]></description>
-    </item>
-    <item>
       <title>[二手房交流] 【房主直售】西城月坛顶级学区</title>
       <link>https://www.newsmth.net/nForum/article/OurEstate/3521239</link>
       <guid isPermaLink="true">https://www.newsmth.net/nForum/article/OurEstate/3521239</guid>
       <author>二手房交流</author>
       <pubDate>Fri, 16 Oct 2026 20:58:00 +0000</pubDate>
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/OurEstate_3521239.jpg?v=" alt="" /><br/>【房主直售】西城月坛顶级学区]]></description>
+    </item>
+    <item>
+      <title>[微电子技术] 前两天和北京堂哥微信上聊天</title>
+      <link>https://www.newsmth.net/nForum/article/METech/509627</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/METech/509627</guid>
+      <author>微电子技术</author>
+      <pubDate>Fri, 16 Oct 2026 20:58:00 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/METech_509627.jpg?v=" alt="" /><br/>前两天和北京堂哥微信上聊天]]></description>
     </item>
     <item>
       <title>[独具匠心] 继续修车，换个中轴</title>
@@ -41,12 +41,20 @@
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/DIY_11069.jpg?v=" alt="" /><br/>继续修车，换个中轴]]></description>
     </item>
     <item>
-      <title>[微电子技术] 前两天和北京堂哥微信上聊天</title>
-      <link>https://www.newsmth.net/nForum/article/METech/509627</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/METech/509627</guid>
-      <author>微电子技术</author>
-      <pubDate>Fri, 16 Oct 2026 20:58:00 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/METech_509627.jpg?v=" alt="" /><br/>前两天和北京堂哥微信上聊天]]></description>
+      <title>[航空航天] 朱雀二号改进型遥四运载火箭试飞圆满完成任务</title>
+      <link>https://www.newsmth.net/nForum/article/Aero/563207</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Aero/563207</guid>
+      <author>航空航天</author>
+      <pubDate>Thu, 15 Oct 2026 21:18:12 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Aero_563207.jpg?v=" alt="" /><br/>朱雀二号改进型遥四运载火箭试飞圆满完成任务]]></description>
+    </item>
+    <item>
+      <title>[二手数码产品] [转] iPhone 12 Pro Max 512GB</title>
+      <link>https://www.newsmth.net/nForum/article/SecondDigi/2281902</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/SecondDigi/2281902</guid>
+      <author>二手数码产品</author>
+      <pubDate>Fri, 16 Oct 2026 23:29:26 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/SecondDigi_2281902.jpg?v=" alt="" /><br/>[转] iPhone 12 Pro Max 512GB]]></description>
     </item>
   </channel>
 </rss>
