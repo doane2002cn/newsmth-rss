@@ -5,9 +5,31 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Oct 2026 04:13:13 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 10:34:42 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>你在偷拍</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558291</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558291</guid>
+      <author>rwgcz</author>
+      <pubDate>Sat, 17 Oct 2026 09:31:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>是不是太透了</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558290</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558290</guid>
+      <author>rwgcz</author>
+      <pubDate>Sat, 17 Oct 2026 09:30:51 +0000</pubDate>
+    </item>
+    <item>
+      <title>看迷糊了</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558278</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558278</guid>
+      <author>inikang</author>
+      <pubDate>Sat, 17 Oct 2026 05:04:22 +0000</pubDate>
+      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
+    </item>
     <item>
       <title>周末清晨的一杯咖啡</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/558269</link>
@@ -362,29 +384,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557877</guid>
       <author>rwgcz</author>
       <pubDate>Wed, 14 Oct 2026 23:49:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>海市蜃楼</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557859</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557859</guid>
-      <author>DDOO</author>
-      <pubDate>Wed, 14 Oct 2026 17:56:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>丰满的好还是麻秆好？</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557857</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557857</guid>
-      <author>XT5</author>
-      <pubDate>Wed, 14 Oct 2026 16:00:50 +0000</pubDate>
-      <description><![CDATA[以后要多去玩水<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>大腿带劲不</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557856</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557856</guid>
-      <author>XT5</author>
-      <pubDate>Wed, 14 Oct 2026 15:52:06 +0000</pubDate>
-      <description><![CDATA[有没有感觉<br/>- 来自 水木社区APP v3.5.7]]></description>
     </item>
   </channel>
 </rss>
