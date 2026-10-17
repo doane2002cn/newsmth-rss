@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Oct 2026 20:30:39 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 23:02:47 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[Divorce] 有人聊天吗？男女均可</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188395</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188395</guid>
+      <author>deliver</author>
+      <pubDate>Sat, 17 Oct 2026 20:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>本人男，46岁，俩孩子，想离，或者说心里离过好多次了<br/>我尽到了一个男人该尽的责任，除了小女儿还小有点无辜]]></description>
+    </item>
     <item>
       <title>[GaoKao] 985大学按权重排名（按第五轮学科评估得分）</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188394</link>
@@ -399,14 +407,6 @@
       <author>deliver</author>
       <pubDate>Fri, 16 Oct 2026 16:41:01 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>经验说白了就是信息差，AI相当于内置搜索的人工智能，完全能把取代经验<br/>最确定要完蛋的是模拟版图，AI直接python+skill生成，熟练版图工程师一天的活，AI 15分钟就能做完，拴锁寄生这些效应，更能说得一清二楚。<br/>一句话，天变了<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>[FamilyLife] 目前多数年轻人的心态就是减少变量</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188338</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188338</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 16 Oct 2026 16:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>包括考公 单身  等等<br/>总结起来  就是减少变量  因为目前对普通老实人来说 变量通常意味着损失]]></description>
     </item>
   </channel>
 </rss>
