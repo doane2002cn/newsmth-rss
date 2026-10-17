@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 17 Oct 2026 10:34:42 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2026 15:28:38 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[OurEstate] 注意！北京楼市：房价已经涨了4个月了！</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188367</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188367</guid>
+      <author>deliver</author>
+      <pubDate>Sat, 17 Oct 2026 10:41:02 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>最新的连续走势看，全市成交均价已经连续4个月上涨；而小区等权中位数已经连续41个月下跌。蝴蝶指数把北京二手房月度数据放在两个口径下观察：一个是全市成交均价，另一个是把每个有成交的小区等权处理后计算出的“小区等权中位数”。前者更容易受到当月成交结构影响，后者更接近一个典型成交小区的价格水平。<br/>截至2026年9月，全市成交均价为40,066元/㎡，环比上涨1.38%；<br/>从2026年6月到2026年9月，全市均价累计上涨3.70%，小区等权中位数累计下降1.77%。]]></description>
+    </item>
     <item>
       <title>[Stock] 看全网舆论，周一要千股跌停了</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188366</link>
@@ -399,14 +407,6 @@
       <author>deliver</author>
       <pubDate>Thu, 15 Oct 2026 23:41:00 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>就是社保的缴费基数和社会真实工资的制度性脱节<br/>以北京为例，这个是7270，<br/>而北京的最低工资只有2420，<br/>相差实在太大，拿最低工资的人缴完社保真的只能喝西北风了，想交也没有能力交。<br/>社保的缴费基数是由非私营和私营单位就业人员的平均工资加权得出，<br/>很明显高收入群体会拉高平均工资，低收入的工资被平均上去了。<br/>这个地方其实用平均数并不合理，中位数可能会更加贴合实际收入水平。<br/>想要让所有人都加入社保，这个基数必须向低收入群体倾斜，向真实工资靠拢，不然会闹出我和马云平均工资过亿的经典笑话。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>[Stock] 一整夜没睡着</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188317</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188317</guid>
-      <author>deliver</author>
-      <pubDate>Thu, 15 Oct 2026 22:41:00 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>23年月薪快三万，被裁员了，一直找不着工作，好不容易找到个工作，现在月薪几千块<br/>今年一直没离开大A，基本上每个月都在巨亏，26年到现在-70%了<br/>更绝望的是，我都48了，还没摸过姑娘小手，还得了糖尿病，到处都是绝望，感觉快死了]]></description>
     </item>
   </channel>
 </rss>
