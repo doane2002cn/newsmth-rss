@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-18 23:49:06 +0800",
+  "generated": "2026-10-19 04:32:13 +0800",
   "banned": false,
   "sources": [
     {
@@ -24,7 +24,7 @@
       "key": "age",
       "name": "大龄男女",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "baking",
@@ -54,7 +54,7 @@
       "key": "boy",
       "name": "老男孩",
       "count": 27,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "bull",
@@ -78,7 +78,7 @@
       "key": "diy",
       "name": "独具匠心",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "fashionshow",
@@ -90,7 +90,7 @@
       "key": "food",
       "name": "我爱吃，我想吃",
       "count": 32,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "funnytime",
@@ -132,7 +132,7 @@
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 33,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "jade_jewelry",
@@ -156,7 +156,7 @@
       "key": "memory",
       "name": "似水流年",
       "count": 34,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motorbike",
@@ -240,13 +240,13 @@
       "key": "workinglife",
       "name": "职业生活",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 4,
+      "status": "更新 +4"
     }
   ]
 }

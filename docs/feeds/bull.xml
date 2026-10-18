@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Bull</link>
     <description>四十不惑（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Oct 2026 15:49:06 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 20:32:13 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/bull.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>漫天星斗的时候，我在找太阳</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3557209</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3557209</guid>
+      <author>AGust2022</author>
+      <pubDate>Sun, 18 Oct 2026 19:01:41 +0000</pubDate>
+      <description><![CDATA[寂夜惊觉坐看天，天如重幕风如绵]]></description>
+    </item>
     <item>
       <title>华为肩负中国科技自立自强科技弯道超车的伟大使命，打击华为就</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3557198</link>
@@ -399,14 +407,6 @@
       <author>shuang99</author>
       <pubDate>Sun, 18 Oct 2026 01:24:14 +0000</pubDate>
       <description><![CDATA[虽然有点风<br/>但是出门溜达一下晒晒太阳<br/>还是挺好的<br/>一会儿回家晒晒被子<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>人生的价值函数</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3556205</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3556205</guid>
-      <author>TimeAndRiver</author>
-      <pubDate>Sun, 18 Oct 2026 01:20:11 +0000</pubDate>
-      <description><![CDATA[我一直想写一篇震世骇俗的文章。<br/>但实际上，我不确定自己能不能写出来<br/>在这些不确定之中时间一点点过去，而这些伟大的理想一直落在空想当中。<br/>不如写出一篇我所思所想的文章就可以。<br/>我不想要一个关于“震世骇俗”的价值函数来控制我<br/>（待续）]]></description>
     </item>
   </channel>
 </rss>
