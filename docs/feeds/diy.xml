@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Oct 2026 10:55:09 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 15:49:06 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>风扇转速变慢故障维修</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11207</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11207</guid>
+      <author>digital</author>
+      <pubDate>Sun, 18 Oct 2026 13:55:12 +0000</pubDate>
+      <description><![CDATA[刚3年的艾美特落地扇，型号是CS35-R20. 当时一起买了两台，今年发现其中一台调速不起作用。<br/>电子调速共7档，发现每档转速都差不多，风速偏小。于是想拆开看看什么原因。<br/>风扇很好拆，记住拆之前一定要先拔下插头。<br/>电机的塑料外壳有4个卡扣，卡在前面板上，挨个撬一下，外壳就可以取下来了。<br/>电机的轴上能明显看到一些油污，感觉润滑油有所损耗，用手拧一下轴，松手就停下来了，而润滑良好的电机，拧一下停下之后还能转几圈，故决定先加油。<br/>加油需要拆开电机，也挺好拆，依次拧开固定前后外壳的螺丝，前后壳和定子就可以分开了，要想完全分离，还要拧掉后下方摇头摆臂上的一颗螺丝，然后就可以完全脱开外壳和定子，用钳子拔掉轴上面固定风扇的销钉，转子也可以取下来。<br/>这种风扇电机一般都是用的含油轴承，压片固定住一圈棉花类的东西用来保存润滑油，只要往上面点几滴润滑油就行了，轴承孔和转子相应位置也可以点两滴，前后轴承都要加油。<br/>这种润滑油一定要用轻质的，用缝纫机油就行。用黄油是万万不行的。我一开始脑袋短路了，往上边抹了些黄油，结果根本转不动，只好喷点WD40全部清理干净之后重新加了些缝纫机油。<br/>加完油之后，就可以装回去，组装电机的时候要注意，除了前后轴承孔要对准，拧前后外壳固定螺丝的时候，不要一次拧紧，要拧一拧，转一转电机的轴，如果比较顺滑，就继续拧紧，如果拧不动，就要调整一下位置，直到转动很顺畅，最后把螺丝全部紧固，再次检查一下就可以了。<br/>上电试了一下调速功能，加完油之后，速度明显快很多，不同档位的速度也能感觉出来了。<br/>艾美特的品控感觉也不咋样，我拆开线束之后，发现有一条线竟然都快断了！明显是生产线上弄的，细铜丝断得只剩下两三根还连着，就这么运转了三年。<br/>最后一张图，电机后盖上边固定了两个电容一个是1.5微法，红色的线直接连着电机绕组，这个应当是运转电容。<br/>另一个大的是3.5微法，这个应当是启动电容，这种电容都很便宜，坏了也好换。]]></description>
+    </item>
     <item>
       <title>修了一个戴森V8的副厂电池</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11158</link>
