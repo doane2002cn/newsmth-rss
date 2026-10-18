@@ -5,9 +5,33 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 18 Oct 2026 04:19:53 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2026 10:55:09 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>雨后的天台</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558361</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558361</guid>
+      <author>whh726</author>
+      <pubDate>Sun, 18 Oct 2026 10:35:07 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>爬山</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558358</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558358</guid>
+      <author>keke2021</author>
+      <pubDate>Sun, 18 Oct 2026 10:12:59 +0000</pubDate>
+      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
+    </item>
+    <item>
+      <title>等落日</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558355</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558355</guid>
+      <author>whh726</author>
+      <pubDate>Sun, 18 Oct 2026 08:58:34 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>雨过天晴</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/558348</link>
@@ -362,29 +386,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557920</guid>
       <author>silimi</author>
       <pubDate>Thu, 15 Oct 2026 03:07:57 +0000</pubDate>
-    </item>
-    <item>
-      <title>运动装</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557919</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557919</guid>
-      <author>silimi</author>
-      <pubDate>Thu, 15 Oct 2026 03:07:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>[转载]跌得没脾气，看看健身房</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557914</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557914</guid>
-      <author>amajia0</author>
-      <pubDate>Thu, 15 Oct 2026 02:49:30 +0000</pubDate>
-      <description><![CDATA[都没出汗]]></description>
-    </item>
-    <item>
-      <title>金发黑丝美妇</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/557898</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/557898</guid>
-      <author>rwgcz</author>
-      <pubDate>Thu, 15 Oct 2026 01:27:44 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
