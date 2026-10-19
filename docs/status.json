@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-19 20:57:27 +0800",
+  "generated": "2026-10-20 04:33:21 +0800",
   "banned": false,
   "sources": [
     {
@@ -18,7 +18,7 @@
       "key": "shida",
       "name": "近期热帖",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "age",
@@ -30,7 +30,7 @@
       "key": "baking",
       "name": "烘焙坊",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "beauty",
@@ -48,13 +48,13 @@
       "key": "book",
       "name": "书籍",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "boy",
       "name": "老男孩",
       "count": 30,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "bull",
@@ -72,55 +72,55 @@
       "key": "coffee",
       "name": "咖啡时光",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "diy",
       "name": "独具匠心",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "fashionshow",
       "name": "服饰搭配",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "food",
       "name": "我爱吃，我想吃",
       "count": 35,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "funnytime",
       "name": "杂谈趣闻",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "gentle_fashion",
       "name": "绅士·时尚",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "get_pregnant",
       "name": "备孕",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "girl",
       "name": "女孩子",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "healtheworld",
       "name": "拯救地球",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "healthylife",
@@ -131,14 +131,14 @@
     {
       "key": "heart",
       "name": "你今天快乐吗",
-      "count": 35,
+      "count": 36,
       "status": "更新 +20"
     },
     {
       "key": "jade_jewelry",
       "name": "珠光宝气",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "liyidaiwa",
@@ -150,18 +150,18 @@
       "key": "love",
       "name": "谈情说爱",
       "count": 24,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "memory",
       "name": "似水流年",
       "count": 42,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motorbike",
       "name": "摩托天地",
-      "count": 22,
+      "count": 23,
       "status": "更新 +20"
     },
     {
@@ -180,13 +180,13 @@
       "key": "phd",
       "name": "博士生",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pondoflotus",
       "name": "荷塘月色",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pregnancy",
@@ -210,7 +210,7 @@
       "key": "single",
       "name": "光协",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "tooooold",
@@ -228,13 +228,13 @@
       "key": "wine",
       "name": "葡萄酒",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "woodenart",
       "name": "木艺",
       "count": 20,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "workinglife",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 6,
+      "status": "更新 +6"
     }
   ]
 }
