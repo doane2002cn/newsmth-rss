@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Oct 2026 19:10:31 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 23:48:45 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我运动，我快乐！就是美美哒！</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/558659</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558659</guid>
+      <author>lele20260212</author>
+      <pubDate>Tue, 20 Oct 2026 22:55:05 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>桂花香，人更美！</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/558639</link>
@@ -381,14 +389,6 @@
       <author>nextworld8</author>
       <pubDate>Fri, 16 Oct 2026 16:35:37 +0000</pubDate>
       <description><![CDATA[rt<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>吃面了</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/558218</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558218</guid>
-      <author>zyxzy</author>
-      <pubDate>Fri, 16 Oct 2026 14:08:06 +0000</pubDate>
-      <description><![CDATA[发自「今日水木 on CLS-AL00」]]></description>
     </item>
   </channel>
 </rss>
