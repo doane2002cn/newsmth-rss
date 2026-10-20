@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 20 Oct 2026 08:26:34 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 20 Oct 2026 14:17:51 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[Metro] 北京地铁客流不行了</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188483</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188483</guid>
+      <author>deliver</author>
+      <pubDate>Tue, 20 Oct 2026 11:41:03 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>北京地铁公司几条线 现在工作日一天就是800万出头多点一的客运量，<br/>疫情前2019年，经常每天上千万。<br/>京港公司也类似，疫情后客流一年不如一年<br/>这是咋了？]]></description>
+    </item>
     <item>
       <title>[OurEstate] 现在还有人说年轻人买不起房吗</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188482</link>
@@ -399,14 +407,6 @@
       <author>deliver</author>
       <pubDate>Sun, 18 Oct 2026 16:41:01 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>导演拍得真好<br/>黎明真帅]]></description>
-    </item>
-    <item>
-      <title>[ChildEducation] 本想分享下儿童英语教育心得，翻了几十个帖子</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188418</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188418</guid>
-      <author>deliver</author>
-      <pubDate>Sun, 18 Oct 2026 16:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>人外有人，天外有天，潜水积德为上。专心研究好每天的膳食。]]></description>
     </item>
   </channel>
 </rss>
