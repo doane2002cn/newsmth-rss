@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-20 22:17:51 +0800",
+  "generated": "2026-10-21 03:10:31 +0800",
   "banned": false,
   "sources": [
     {
@@ -53,8 +53,8 @@
     {
       "key": "boy",
       "name": "老男孩",
-      "count": 33,
-      "status": "304 未变化"
+      "count": 34,
+      "status": "更新 +20"
     },
     {
       "key": "bull",
@@ -84,13 +84,13 @@
       "key": "fashionshow",
       "name": "服饰搭配",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "food",
       "name": "我爱吃，我想吃",
       "count": 36,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "funnytime",
@@ -126,7 +126,7 @@
       "key": "healthylife",
       "name": "健康生活",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "heart",
@@ -150,19 +150,19 @@
       "key": "love",
       "name": "谈情说爱",
       "count": 26,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "memory",
       "name": "似水流年",
       "count": 43,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motorbike",
       "name": "摩托天地",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motss",
@@ -192,13 +192,13 @@
       "key": "pregnancy",
       "name": "怀孕",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "qingjiao",
       "name": "青年教师",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "shuibuzhao",
@@ -240,13 +240,13 @@
       "key": "workinglife",
       "name": "职业生活",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 6,
+      "status": "更新 +6"
     }
   ]
 }
