@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Bull</link>
     <description>四十不惑（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Oct 2026 17:06:04 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 21:35:20 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/bull.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>烦恼: 不知道去哪儿玩</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3560741</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3560741</guid>
+      <author>antaplus</author>
+      <pubDate>Wed, 21 Oct 2026 17:20:35 +0000</pubDate>
+      <description><![CDATA[大部分我感兴趣的城市都去过了<br/>只剩下西部高原戈壁没去过<br/>国内我想去的城市都去过了<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>你们一般什么时间洗头</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3560700</link>
@@ -397,14 +405,6 @@
       <author>zhaodaliang</author>
       <pubDate>Tue, 20 Oct 2026 12:42:30 +0000</pubDate>
       <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>太猛了</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3559260</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3559260</guid>
-      <author>liangf</author>
-      <pubDate>Tue, 20 Oct 2026 12:37:47 +0000</pubDate>
-      <description><![CDATA[说的是DS，今天开源了自家的推理框架<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
