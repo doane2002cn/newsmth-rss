@@ -5,9 +5,16 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Oct 2026 11:40:42 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 17:06:04 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>据说复旦专硕要自己掏月租三四千租房子。</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1033602</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033602</guid>
+      <author>popcorners</author>
+      <pubDate>Wed, 21 Oct 2026 12:44:26 +0000</pubDate>
+    </item>
     <item>
       <title>那所大学给研究生提供的AI算力比较充足</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1033595</link>
@@ -386,14 +393,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032907</guid>
       <author>babu2015</author>
       <pubDate>Fri, 16 Oct 2026 11:33:31 +0000</pubDate>
-    </item>
-    <item>
-      <title>中美高引用科研人员数量和领域分布 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1032905</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032905</guid>
-      <author>beihainan</author>
-      <pubDate>Fri, 16 Oct 2026 11:12:43 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 NewExpress 讨论区 】<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
