@@ -5,9 +5,32 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Oct 2026 04:32:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 11:40:42 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>那所大学给研究生提供的AI算力比较充足</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1033595</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033595</guid>
+      <author>strongcat</author>
+      <pubDate>Wed, 21 Oct 2026 09:45:00 +0000</pubDate>
+      <description><![CDATA[可以让研究生 训练或微调参数不是很大的模型 或其他AI开发]]></description>
+    </item>
+    <item>
+      <title>NiuSongFan被取消在QingJiao版的发文权限</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1033593</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033593</guid>
+      <author>deliver</author>
+      <pubDate>Wed, 21 Oct 2026 08:45:11 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>由于 NiuSongFan 在 QingJiao 版的 发表不恰当文章 行为，<br/>被暂时取消在本版的发文权力 14 天。<br/>版主:albedo<br/>Wed Oct 21 16:45:11 2026]]></description>
+    </item>
+    <item>
+      <title>特快说某清华AI大厂新秀，爹是合肥经开主任</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1033591</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033591</guid>
+      <author>popcorners</author>
+      <pubDate>Wed, 21 Oct 2026 08:09:13 +0000</pubDate>
+    </item>
     <item>
       <title>AI搞定哥德巴赫猜想了嘛？</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1033543</link>
@@ -371,30 +394,6 @@
       <author>beihainan</author>
       <pubDate>Fri, 16 Oct 2026 11:12:43 +0000</pubDate>
       <description><![CDATA[【 以下文字转载自 NewExpress 讨论区 】<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>AI对文科有冲击吗</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1032893</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032893</guid>
-      <author>donnt</author>
-      <pubDate>Fri, 16 Oct 2026 09:56:46 +0000</pubDate>
-      <description><![CDATA[以前各种翻文献码字，现在喂给AI，分分钟长篇大论，不满意的地方，虽然指挥它修改]]></description>
-    </item>
-    <item>
-      <title>现在高校专业名字太有欺骗性了 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1032891</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032891</guid>
-      <author>wowohinwoher</author>
-      <pubDate>Fri, 16 Oct 2026 09:49:32 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 NewExpress 讨论区 】<br/>高考版有人说个智能交互设计专业，乍一看还以为挨踢，再一看一级学科是机械，仔细一看培养方案其实是搞艺术的<br/>--来自微微水木3.5.14]]></description>
-    </item>
-    <item>
-      <title>米帝加州有个冶金公司也是一个男的持续投毒几年</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1032869</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1032869</guid>
-      <author>letitbe321</author>
-      <pubDate>Fri, 16 Oct 2026 08:01:04 +0000</pubDate>
-      <description><![CDATA[结果判了一天出来了。这是什么狗屁操作]]></description>
     </item>
   </channel>
 </rss>

@@ -5,9 +5,48 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 21 Oct 2026 04:32:13 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2026 11:40:42 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>星巴克不让随便坐了</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347548</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347548</guid>
+      <author>bdhjl</author>
+      <pubDate>Wed, 21 Oct 2026 11:14:38 +0000</pubDate>
+      <description><![CDATA[咋整啊俺们这些没工作的<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>码农被裁，跟AI真没关系，说白了是软件新增需求停滞了，库太多</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347536</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347536</guid>
+      <author>popcorners</author>
+      <pubDate>Wed, 21 Oct 2026 10:16:07 +0000</pubDate>
+      <description><![CDATA[一方面，各种应用已经成熟。<br/>另一方面，框架库也都包装更便捷，直接调用。<br/>没有AI出现，程序员也是35裁员，被替代。]]></description>
+    </item>
+    <item>
+      <title>回望2026，真是码农生死线</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347530</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347530</guid>
+      <author>Crusade</author>
+      <pubDate>Wed, 21 Oct 2026 09:35:13 +0000</pubDate>
+      <description><![CDATA[2026年初，码农突然发现，agent编程突飞猛进，真的达到可用级别了<br/>但是有两问题，一个是token烧的太厉害烧不起，另一个是A/0行了但国模还不大行<br/>现在年末了，这俩问题都解决了。国模编程也行了，并且token价格暴跌。现在小公司闭着眼睛按需烧国模token，都一点不心疼了，你要是烧的太少领导还会批评你工作不饱和。<br/>老板们在2026年底已经看出来了，便宜易用的码农替代品已经出现。就看2027会不会动手了。我猜老板们心中已有b number，再让码农过最后一个好年，过完年就动手。<br/>2027，码农生死线！！！]]></description>
+    </item>
+    <item>
+      <title>特快说某清华AI大厂新秀，爹是合肥经开主任</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347522</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347522</guid>
+      <author>popcorners</author>
+      <pubDate>Wed, 21 Oct 2026 08:10:48 +0000</pubDate>
+    </item>
+    <item>
+      <title>eBay上海要关site？</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347495</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347495</guid>
+      <author>kingkong2013</author>
+      <pubDate>Wed, 21 Oct 2026 06:55:20 +0000</pubDate>
+      <description><![CDATA[听我之前的同事说？这也太夸张了吧？]]></description>
+    </item>
     <item>
       <title>发改委说要扩大内需，电价、油价、气价、水价、地铁，还不消费</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/347477</link>
@@ -361,46 +400,6 @@
       <author>inception10</author>
       <pubDate>Sun, 18 Oct 2026 06:41:11 +0000</pubDate>
       <description><![CDATA[假设一个体制外职工一直按照最高标准社会平均工资三倍缴纳养老保险，连续缴纳40年<br/>那退休时的平均缴费指数就是(1+3)/2=2<br/>基础养老金部分的标准是每缴一年累计发放1%所以连续缴纳40年，实际上是40×2×1%相当于是80%的退休时社会平均工资<br/>个人账户这块，因为一直是按照社会平均工资三倍缴纳，所以实际上工作时每月缴纳的是当时社会平均工资的24%，但这部分的收益率很低，也就相当于储蓄利率，所以退休估计很难拿到20%当时的社会平均工资<br/>这样一算是很难拿到退休当时社会平均工资标准的退休金了<br/>那体制内那些工资远低于此的，也不交社保的人，为什么退休时能轻松拿到超越社会平均工资的养老金呢]]></description>
-    </item>
-    <item>
-      <title>美国的比佛利山庄，是独立行政，相当于跟洛杉矶，物理隔离。</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346777</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346777</guid>
-      <author>popcorners</author>
-      <pubDate>Sun, 18 Oct 2026 06:27:26 +0000</pubDate>
-      <description><![CDATA[穷人压根走不进去。有专门的警员巡查。]]></description>
-    </item>
-    <item>
-      <title>体制内视同缴纳的保险费有人交吗</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346769</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346769</guid>
-      <author>inception10</author>
-      <pubDate>Sun, 18 Oct 2026 05:56:34 +0000</pubDate>
-      <description><![CDATA[社会保险法第13条<br/>第十三条 国有企业、事业单位职工参加基本养老保险前，视同缴费年限期间应当缴纳的基本养老保险费由政府承担。<br/>问题是这个钱有人替他们出了吗]]></description>
-    </item>
-    <item>
-      <title>一部手机就是一个奶嘴，杵到大人小孩嘴里，他们呵呵傻笑安静了</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346765</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346765</guid>
-      <author>iloveanfield</author>
-      <pubDate>Sun, 18 Oct 2026 05:48:13 +0000</pubDate>
-      <description><![CDATA[～～～毫无营养。自娱自乐。兼顾傻笑。]]></description>
-    </item>
-    <item>
-      <title>以前看书吸收营养，现在是短剧小视频自媒体，看完大脑一片空白</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346764</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346764</guid>
-      <author>iloveanfield</author>
-      <pubDate>Sun, 18 Oct 2026 05:43:34 +0000</pubDate>
-      <description><![CDATA[～～～望周知。]]></description>
-    </item>
-    <item>
-      <title>头条里自媒体10条有8条是胡编乱造博流量毫无意义的。</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346763</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346763</guid>
-      <author>iloveanfield</author>
-      <pubDate>Sun, 18 Oct 2026 05:40:21 +0000</pubDate>
-      <description><![CDATA[～～～望周知。]]></description>
     </item>
   </channel>
 </rss>
