@@ -5,9 +5,16 @@
     <link>https://www.newsmth.net/nForum/board/Memory</link>
     <description>似水流年（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Oct 2026 11:40:46 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 17:05:27 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/memory.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>有个人怕你一辈子</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/189792</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/189792</guid>
+      <author>DDOO</author>
+      <pubDate>Thu, 22 Oct 2026 13:24:26 +0000</pubDate>
+    </item>
     <item>
       <title>羽毛</title>
       <link>https://www.newsmth.net/nForum/article/Memory/189780</link>
@@ -394,14 +401,6 @@
       <author>gegeblue</author>
       <pubDate>Wed, 14 Oct 2026 13:43:13 +0000</pubDate>
       <description><![CDATA[第二次捧起秦腔，翻了十几页，还是放弃了。人到中年已经没有心气再细细阅读了，都希望人家能直接告诉我结果。年老了以后会有吗？<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>地老们，有人开始听课领鸡蛋了吗</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/189103</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/189103</guid>
-      <author>sms121</author>
-      <pubDate>Wed, 14 Oct 2026 08:23:50 +0000</pubDate>
-      <description><![CDATA[需要哪些基础知识，得复习一下生物和化学了吧？<br/>- 来自 水木社区APP v3.5.7]]></description>
     </item>
   </channel>
 </rss>
