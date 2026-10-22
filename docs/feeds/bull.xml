@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Bull</link>
     <description>四十不惑（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Oct 2026 17:05:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 21:29:57 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/bull.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>今天犯了一个低级错误</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3561729</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3561729</guid>
+      <author>v1da</author>
+      <pubDate>Thu, 22 Oct 2026 20:42:19 +0000</pubDate>
+      <description><![CDATA[股票 App 里有两个账户，一个美元账户负责美元计价的股票买卖，一个欧元帐户负责欧元计价股票买卖。<br/>下午手机弹出一个 App 消息说委托买入的一个欧元股票成交了，然后消息就消失了。<br/>可是我在 App 里到处找不到买入的股票。纳闷很久，最后结论是要么我眼花了，要么交易系统滞后或出 Bug了。<br/>4个小时后无意看了一下美元账户，发现买入的股票在那里！而且显示我欠券商几万欧元！<br/>原来委托下单的时候用了美元账户，而美元账户没有欧元，变成从券商借欧元买入股票......<br/>完全没意识到用错账户！再次证明人类是不可靠的，犯低级错误只是时间问题。<br/>- 发自DeepSMTH/2.0.1 on iPhone Duo]]></description>
+    </item>
     <item>
       <title>哈哈哈，夜深了，给娃冲奶睡觉。</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3561711</link>
@@ -399,14 +407,6 @@
       <author>Barbarossa</author>
       <pubDate>Wed, 21 Oct 2026 23:49:25 +0000</pubDate>
       <description><![CDATA[各位老六，预计很快成为发达国家<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>恐怖！2053年我国60岁以上老人5.3亿，14岁以下孩子1.2亿</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3560763</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3560763</guid>
-      <author>Barbarossa</author>
-      <pubDate>Wed, 21 Oct 2026 23:40:47 +0000</pubDate>
-      <description><![CDATA[各位老六<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>

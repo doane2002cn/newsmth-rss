@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Oct 2026 17:05:27 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2026 21:29:57 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>假装在健身</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/559005</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559005</guid>
+      <author>san1</author>
+      <pubDate>Thu, 22 Oct 2026 17:38:17 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>小熊和我，谁更可爱？</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/558989</link>
@@ -382,14 +390,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558482</guid>
       <author>UXGA</author>
       <pubDate>Mon, 19 Oct 2026 11:39:27 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>累了连皂片都拍不好</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/558471</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/558471</guid>
-      <author>Langlang0123</author>
-      <pubDate>Mon, 19 Oct 2026 07:59:29 +0000</pubDate>
       <description><![CDATA[--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>

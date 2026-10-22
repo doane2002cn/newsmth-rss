@@ -1,5 +1,5 @@
 {
- "last_run": "2026-10-23 01:05:27 +0800",
+ "last_run": "2026-10-23 05:29:57 +0800",
  "sources": {
   "age": {
    "items": [
@@ -247,7 +247,7 @@
      "ts": 1791266746
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 13:02:37 GMT"
+   "last_modified": "Thu, 22 Oct 2026 18:29:39 GMT"
   },
   "baking": {
    "items": [
@@ -1366,6 +1366,15 @@
   "bull": {
    "items": [
     {
+     "author": "v1da",
+     "body": "股票 App 里有两个账户，一个美元账户负责美元计价的股票买卖，一个欧元帐户负责欧元计价股票买卖。\n下午手机弹出一个 App 消息说委托买入的一个欧元股票成交了，然后消息就消失了。\n可是我在 App 里到处找不到买入的股票。纳闷很久，最后结论是要么我眼花了，要么交易系统滞后或出 Bug了。\n4个小时后无意看了一下美元账户，发现买入的股票在那里！而且显示我欠券商几万欧元！\n原来委托下单的时候用了美元账户，而美元账户没有欧元，变成从券商借欧元买入股票......\n完全没意识到用错账户！再次证明人类是不可靠的，犯低级错误只是时间问题。\n- 发自DeepSMTH/2.0.1 on iPhone Duo",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3561729",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3561729",
+     "pub_date": "Thu, 22 Oct 2026 20:42:19 +0000",
+     "title": "今天犯了一个低级错误",
+     "ts": 1792701739
+    },
+    {
      "author": "beiyangying",
      "body": "版上估计只有小七悠悠鱼和我还在如此辛苦吧",
      "guid": "http://www.newsmth.net/nForum/article/Bull/3561711",
@@ -1895,18 +1904,9 @@
      "pub_date": "Wed, 21 Oct 2026 12:15:15 +0000",
      "title": "同事说她每年春节只在家待三天",
      "ts": 1792584915
-    },
-    {
-     "author": "antaplus",
-     "body": "不想骑电驴\n回去打车20块，明早打车20块\n重奢\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3560620",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3560620",
-     "pub_date": "Wed, 21 Oct 2026 12:07:27 +0000",
-     "title": "下雨了要多花四十块钱",
-     "ts": 1792584447
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 14:52:57 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:42:20 GMT"
   },
   "children": {
    "items": [
@@ -2321,7 +2321,7 @@
      "ts": 1785141404
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 05:43:56 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:54:07 GMT"
   },
   "diy": {
    "items": [
@@ -2546,6 +2546,15 @@
   },
   "fashionshow": {
    "items": [
+    {
+     "author": "san1",
+     "body": "--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/559005",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/559005",
+     "pub_date": "Thu, 22 Oct 2026 17:38:17 +0000",
+     "title": "假装在健身",
+     "ts": 1792690697
+    },
     {
      "author": "lele20260212",
      "body": "--发自 ismth(丝滑版)",
@@ -3076,18 +3085,9 @@
      "pub_date": "Sun, 18 Oct 2026 14:35:36 +0000",
      "title": "蹈师",
      "ts": 1792334136
-    },
-    {
-     "author": "whh726",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/558385",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/558385",
-     "pub_date": "Sun, 18 Oct 2026 14:16:22 +0000",
-     "title": "读书的样子好认真",
-     "ts": 1792332982
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 13:44:38 GMT"
+   "last_modified": "Thu, 22 Oct 2026 17:38:18 GMT"
   },
   "food": {
    "items": [
@@ -5184,7 +5184,7 @@
      "ts": 1771942457
     }
    ],
-   "last_modified": "Wed, 21 Oct 2026 23:18:04 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:19:50 GMT"
   },
   "liyidaiwa": {
    "items": [
@@ -5423,7 +5423,7 @@
      "ts": 1790844547
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 01:08:00 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:25:10 GMT"
   },
   "love": {
    "items": [
@@ -5689,7 +5689,7 @@
      "ts": 1791531955
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 07:30:02 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:21:04 GMT"
   },
   "memory": {
    "items": [
@@ -6234,7 +6234,7 @@
      "ts": 1791794833
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 13:24:27 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:51:25 GMT"
   },
   "motorbike": {
    "items": [
@@ -6631,10 +6631,37 @@
      "ts": 1769908538
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 07:58:45 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:56:26 GMT"
   },
   "newexpress": {
    "items": [
+    {
+     "author": "xiaoni1",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47630616",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47630616",
+     "pub_date": "Thu, 22 Oct 2026 17:25:51 +0000",
+     "title": "今年RMB升值，是不是我人均超1.5W美刀了",
+     "ts": 1792689951
+    },
+    {
+     "author": "xiaoni1",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47630615",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47630615",
+     "pub_date": "Thu, 22 Oct 2026 17:25:17 +0000",
+     "title": "梅艳芳骨灰丢了，这事怎么说",
+     "ts": 1792689917
+    },
+    {
+     "author": "gemini",
+     "body": "【 以下文字转载自 Aero 讨论区 】\n不是流量限速，而是限制接收端的物理速度，超过100迈（≈160km/h）就断联。\n警告不要打炼油厂，乌克兰不听，美方一限速乌克兰就服软。。   显然俄罗斯对闯入境内的星链通讯无能为力，还要美方出手。。  也不白出手，4万吨柴油马上送上。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47630612",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47630612",
+     "pub_date": "Thu, 22 Oct 2026 17:19:09 +0000",
+     "title": "乌克兰星链被限速说明要想干扰星链极其困难 (转载)",
+     "ts": 1792689549
+    },
     {
      "author": "pianodlz",
      "body": "--发自 ismth(丝滑版)",
@@ -7147,36 +7174,9 @@
      "pub_date": "Thu, 22 Oct 2026 03:58:58 +0000",
      "title": "精神病杀人不判死刑，还等着他们再去杀人吗",
      "ts": 1792641538
-    },
-    {
-     "author": "san1",
-     "body": "求偶遇哈哈\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47626532",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47626532",
-     "pub_date": "Thu, 22 Oct 2026 03:55:13 +0000",
-     "title": "是羊羊吗",
-     "ts": 1792641313
-    },
-    {
-     "author": "RuralHunter",
-     "body": "没能24小时干下基辅，最后打了4年还要割让75%的乌克兰领土给乌克兰。",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47626538",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47626538",
-     "pub_date": "Thu, 22 Oct 2026 03:55:06 +0000",
-     "title": "毛子还是不行啊",
-     "ts": 1792641306
-    },
-    {
-     "author": "KONKA",
-     "body": "他的意思就是大致按当前战线停火啊，类似的话之前也说过几次了，不知道俄粉为何如此亢奋、弹冠相庆？\n而领土主权他是没权决定的，按宪法需要议会2/3同意，然后全国公投才行，基本是不可能通过的。\n而且他擅长缓兵之计，之前白宫吵架那次不是处境更艰难吗？那次比现在憋屈一万倍，他也硬扛过来了，嘴上说的只是为了哄哄犋犋，烟雾弹罢了。\n我道义上肯定是支持乌克兰反抗侵略的，但历史不总是正义战胜邪恶，如果真按战线停战虽然不能达到最好的结果但至少实现了和平也不算是坏事，小泽能打到今天这个地步也太不容易了，要不是他乌克兰早就亡国了。",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47626572",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47626572",
-     "pub_date": "Thu, 22 Oct 2026 03:37:34 +0000",
-     "title": "真不知道鹅粉为何弹冠相庆，小泽以前也这么说过的啊",
-     "ts": 1792640254
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 16:51:57 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:50:58 GMT"
   },
   "older": {
    "items": [
@@ -7555,19 +7555,39 @@
      "ts": 1769908523
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 05:40:13 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:17:48 GMT"
   },
   "pictures": {
    "items": [
     {
-     "author": "棋道",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/XiangQi_224733.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/XiangQi/224733",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/XiangQi_224733.jpg?v=\" alt=\"\" /><br/>这个棋局如果红先，中规和亚规分别结果是什么",
-     "link": "https://www.newsmth.net/nForum/article/XiangQi/224733",
-     "pub_date": "Thu, 22 Oct 2026 17:05:27 +0000",
-     "title": "[棋道] 这个棋局如果红先，中规和亚规分别结果是什么",
-     "ts": 1792688727
+     "author": "自驾游",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/AutoTravel_13691008.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/AutoTravel/13691008",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AutoTravel_13691008.jpg?v=\" alt=\"\" /><br/>在阴山北边露营",
+     "link": "https://www.newsmth.net/nForum/article/AutoTravel/13691008",
+     "pub_date": "Thu, 22 Oct 2026 21:29:57 +0000",
+     "title": "[自驾游] 在阴山北边露营",
+     "ts": 1792704597
+    },
+    {
+     "author": "二手房交流",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/OurEstate_3524396.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/OurEstate/3524396",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/OurEstate_3524396.jpg?v=\" alt=\"\" /><br/>北京交大在京保留2个学院，其他学院全部迁入雄安校区",
+     "link": "https://www.newsmth.net/nForum/article/OurEstate/3524396",
+     "pub_date": "Thu, 22 Oct 2026 21:29:57 +0000",
+     "title": "[二手房交流] 北京交大在京保留2个学院，其他学院全部迁入雄安校区",
+     "ts": 1792704597
+    },
+    {
+     "author": "汽车世界",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945333569.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/AutoWorld/1945333569",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945333569.jpg?v=\" alt=\"\" /><br/>对于抢黄灯，说一下我的看法",
+     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945333569",
+     "pub_date": "Thu, 22 Oct 2026 21:29:57 +0000",
+     "title": "[汽车世界] 对于抢黄灯，说一下我的看法",
+     "ts": 1792704597
     },
     {
      "author": "跑道人生",
@@ -7580,7 +7600,7 @@
      "ts": 1792643412
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 17:10:27 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:34:56 GMT"
   },
   "pondoflotus": {
    "items": [
@@ -8495,10 +8515,109 @@
      "ts": 1792150411
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 13:44:49 GMT"
+   "last_modified": "Thu, 22 Oct 2026 21:29:10 GMT"
   },
   "shida": {
    "items": [
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n不是流量限速，而是限制接收端的物理速度，超过100迈（≈160km/h）就断联。\n警告不要打炼油厂，乌克兰不听，美方一限速乌克兰就服软。。   显然俄罗斯对闯入境内的星链通讯无能为力，还要美方出手。。  也不白出手，4万吨柴油马上送上。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188604",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188604",
+     "pub_date": "Thu, 22 Oct 2026 20:41:00 +0000",
+     "title": "[Aero] 乌克兰星链被限速说明要想干扰星链极其困难",
+     "ts": 1792701660
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188603",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188603",
+     "pub_date": "Thu, 22 Oct 2026 19:41:01 +0000",
+     "title": "[AutoTravel] 在阴山北边露营",
+     "ts": 1792698061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n## 【寻找 AI 硬件创业合伙人】\n个人简介：拥有**14 年一线产品与技术管理实战经验**，横跨多领域技术落地，具备完整项目从 0 到 1 操盘能力。\n技术覆盖：云端架构、AI Agent、嵌入式硬件、前端、前后端全栈，熟悉软硬件联合开发与产品商业化闭环。\n创业方向：AI 硬件产品（软硬一体，AI Agent 赋能实体硬件）\n? 寻找合伙人：\n1. 候选人 A：**硬件方向**，具备完备硬件开发能力，精通原理图、PCB、BOM、整机量产、嵌入式底层调试，有消费类 / 智能硬件落地经验优先；\n2. 候选人 B：**AI Agent 方向**，熟练 Agent 框架、大模型应用、多 Agent 编排、RAG、端侧模型部署，能独立完成 Agent 业务逻辑开发与性能调优。\n我们一起从零打造软硬结合的 AI 硬件产品，共同承担、共享收益。\n平台不便深度沟通，感兴趣请直接发邮件联系，来信可简单介绍你的背景、擅长技术与过往项目。\n勾搭邮箱：americandream2025@126.com",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188602",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188602",
+     "pub_date": "Thu, 22 Oct 2026 19:41:01 +0000",
+     "title": "[Career_Upgrade] 【创业】征集 AI 硬件创业",
+     "ts": 1792698061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n【房屋具体位置】\n朝阳区四路通中路12号院(近山水文园东园)，去北京工业大学，林达海渔广场，首都图书馆，国贸等都很方便。附近地铁:14号线 10号线\n【房屋面积和朝向】\n位于14层总楼层23，新房100平米，两个卧室都15p左右，很方正，大厅约30p，明厨明卫，高层采光好，小区环境整洁。\n【家具设施】\n装修，带全部家电，水电燃气上网费自付，包物业\n【租金和付款方式】\n价格：6300，押一付六。无中介费用。\n【可入住时间】\n11月10日\n【联系方式】\n站内信或微信beyondclouds  中介勿扰！\n【合同签约方】\n房东\n【其他说明】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188601",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188601",
+     "pub_date": "Thu, 22 Oct 2026 18:41:01 +0000",
+     "title": "[HouseRent] 【房东直租】华威桥 北工大 林达海鱼广场 附近【个",
+     "ts": 1792694461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n玩一局？\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188600",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188600",
+     "pub_date": "Thu, 22 Oct 2026 18:41:01 +0000",
+     "title": "[Weiqi] 有人晚上对弈一局吗？",
+     "ts": 1792694461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\nopenai扫的都是热门课题，热门课题恰恰是数学家师生在做的，一下子就把这些人干失业了，数学家还能教教书，博士生直接是毕不了业了。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188599",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188599",
+     "pub_date": "Thu, 22 Oct 2026 18:41:01 +0000",
+     "title": "[QingJiao] 数学博士生已经基本上被洗劫一空了",
+     "ts": 1792694461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n突然发现有的孩子真的不是学习的料，这种孩子怎么培养好嘞，大家有什么建议。\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188598",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188598",
+     "pub_date": "Thu, 22 Oct 2026 17:41:00 +0000",
+     "title": "[ChildEducation] 家有学渣一枚，何去何从",
+     "ts": 1792690860
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188597",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188597",
+     "pub_date": "Thu, 22 Oct 2026 17:41:00 +0000",
+     "title": "[XiangQi] 这个棋局如果红先，中规和亚规分别结果是什么",
+     "ts": 1792690860
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n发生的事故那么少，其他的，经常上热搜，这个版也经常讨论。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188596",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188596",
+     "pub_date": "Thu, 22 Oct 2026 17:41:00 +0000",
+     "title": "[AutoWorld] 比亚迪的车质量是最好的，保有量这么大",
+     "ts": 1792690860
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n起了个看起来像是体育竞赛题材的名字《一战成名》\n可惜是魔改，不建议原著粉丝观看\n原著是优秀的传统武侠作品\n翻拍后是质量一般的武打片\n原著里的名士沈放由潘斌龙饰演\n反派大boss由袁老大袁辰龙改成了他弟弟袁寒亭（安志杰饰演），原著里出场的配角耿苍怀、荆三娘、秦稳、金和尚都成为炮灰\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188595",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188595",
+     "pub_date": "Thu, 22 Oct 2026 17:41:00 +0000",
+     "title": "[Movielife] 著名武侠小说杯雪被翻拍成电影了",
+     "ts": 1792690860
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n他说据他所知机构卖盘并不多，而且上面已经做了窗口指导。这么不给面子的砸盘匪夷所思，他只能怀疑是冷血的机器在执行代码。\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188594",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/188594",
+     "pub_date": "Thu, 22 Oct 2026 17:41:00 +0000",
+     "title": "[Stock] 边风炜怀疑是量化在卖",
+     "ts": 1792690860
+    },
     {
      "author": "deliver",
      "body": "【此篇文章是由自动发信系统所张贴】\n近日SpaceX从加州成功发射20颗星链宽频卫星，\n马斯克正式宣布，手机连结卫星的时代已经到来。\n任何普通4G手机就行。",
@@ -8939,108 +9058,9 @@
      "pub_date": "Wed, 21 Oct 2026 16:41:00 +0000",
      "title": "[ChildEducation] 说小学累的，都是家长自己的原因，接受反驳",
      "ts": 1792600860
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n56岁女子刚退休就重返大学读研：瞒着丈夫备考，排队、通勤全都用来复习\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188542",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188542",
-     "pub_date": "Wed, 21 Oct 2026 16:41:00 +0000",
-     "title": "[FamilyLife] 56岁女子退休就重返读研：瞒丈夫备考，排队、通勤",
-     "ts": 1792600860
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n2026暖冬奢享盛宴！北京突然大降温啦！抓紧买羽绒服了！别等冷的受不得了才着急！\n羽绒服溯源专场！专注只做羽绒服这一件事！这家是专业只做羽绒服的40年资深大厂！某登羽绒服代工厂!大牌（斐乐/北面/CK）等一线大牌羽绒服代工厂！\n高品质！好羽绒！真低价！\n标准技术都是遥遥领先的！！！\n没有中间商赚差价!工厂直发！一线大牌源头品质!第一手工厂价!\n统统都是底价！想入一定要抓紧！\n在咱们水木也卖了好几年了！收到都是好评，老客户都熟悉！\n1、回复本帖，下单备注楼层，赠送退货运费险10元，不备注不赠送！不备注不赠送！\n2、一线品牌工厂冬季出货量大，3-7天内发货，如果爆单会延迟！先拍先发！\n3、今年的羽绒服都涨价很多，越来越贵，早买早划算！\n—————————————版主提示：团购必读—————————————\n1. 团购版已实行实名认证团购制度。\n2. 本团已缴纳保证金，按照《团购版消费者保障服务规定》保障用户权益。\n能否保证在团购过程及结束后不泄露任何团员个人信息：\n是\n团购开始时间： 10.22\n团购截止时间： 10.29\n团品简介：\n团购产品货源:品牌方\n团购产品详细信息：\n★26年最新款!! 专注羽绒服40年，源头工厂!!集设计研发制造于一体，真正的源头大厂!!专为国际一线品牌做代工！ 远超国标的羽绒+领先的防钻绒技术！ 这里没有品牌溢价，花钱买的是产品本质！ 高品质羽绒服一件能穿好几年！ 只卖90%鸭绒和90%鹅绒 支持检测，欢迎鉴定！ 专柜都是千元起步，我们只算出厂价！\n越往后价格只会往上走，不会再低，等到入冬进入旺季，羽绒、面料各类原材料全部涨价，再入手就贵了！！！",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188541",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188541",
-     "pub_date": "Wed, 21 Oct 2026 16:41:00 +0000",
-     "title": "[ADAgent_TG] 大降温！水木开团第4年！专注大牌羽绒服40年源头",
-     "ts": 1792600860
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nlihq (一曲忠诚的赞歌) 于  (Wed Oct 21 11:03:17 2026)  在\n【其实房价就是lian家炒起来的】 的大作中提到:\n杀掉一个人也许背后有复杂的原因，但是直接的杀手就是一个人而已。\nlianjia就是那个人\n有些老记忆的人的都记得，大概十多年前，LJ没进上海之前，各中介乱战并没有明显抬价倾向\nLJ忽然全面铺开，速度超过一般性商业逻辑，垄断了这个交易节点\n然后就是近乎非理性的暴涨，我清楚记得当时本地人惊呼lj把房子炒起来了\n☆─────────────────────────────────────☆\nzzb9379769 (jj) 于  (Wed Oct 21 11:08:29 2026)  在\n【Re: 其实房价就是lian家炒起来的】 的大作中提到:\n基本正确，它就是造势的。\n【 在 lihq 的大作中提到: 】\n: 杀掉一个人也许背后有复杂的原因，但是直接的杀手就是一个人而已。\n:  lianjia就是那个人\n:  有些老记忆的人的都记得，大概十多年前，LJ没进上海之前，各中介乱战并没有明显抬价倾向\n:  LJ忽然全面铺开，速度超过一般性商业逻辑，垄断了这个交易节点\n:  然后就是近乎非理性的暴涨，我清楚记得当时本地人惊呼lj把房子炒起来了\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\ndage005 (大哥) 于  (Wed Oct 21 11:13:48 2026)  在\n【Re: 其实房价就是lian家炒起来的】 的大作中提到:\nlianjia在意的是成交，现在很多房东怪中介杀价了。哈哈。\n☆─────────────────────────────────────☆\nlixianghu (阿弥陀佛，发财！) 于  (Wed Oct 21 11:19:33 2026)  在\n【Re: 其实房价就是lian家炒起来的】 的大作中提到:\n以前是它抬价，对房东有利，所以房源都找它\n现在是它压价，买家都找它，卖得快\n【 在 lihq 的大作中提到: 】\n: 杀掉一个人也许背后有复杂的原因，但是直接的杀手就是一个人而已。\n: lianjia就是那个人\n: 有些老记忆的人的都记得，大概十多年前，LJ没进上海之前，各中介乱战并没有明显抬价倾向\n: ...................\n☆─────────────────────────────────────☆\nhughliu (huge) 于  (Wed Oct 21 11:30:18 2026)  在\n【Re: 其实房价就是lian家炒起来的】 的大作中提到:\n看来房价起伏对中介最有利\n☆───…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188540",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188540",
-     "pub_date": "Wed, 21 Oct 2026 15:41:08 +0000",
-     "title": "[合集] [OurEstate] 其实房价就是lian家炒起来的",
-     "ts": 1792597268
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nRaZRo (RaZRo) 于  (Wed Oct 21 10:25:55 2026)  在\n【宁德，要不要入场啊】 的大作中提到:\n很急了\n☆─────────────────────────────────────☆\nimlaohe (大龄小青年，奔四无产者) 于  (Wed Oct 21 10:27:02 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n我觉得可以了。\n不过我一直是韭菜。\n☆─────────────────────────────────────☆\nymng (bulldog) 于  (Wed Oct 21 10:28:23 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n你要逆天？\n【 在 RaZRo 的大作中提到: 】\n: 很急了\n☆─────────────────────────────────────☆\nlxiaobawang (lxiaobawang) 于  (Wed Oct 21 10:29:33 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n建议不要轻举妄动，这种大票，惯性很大的，现在就是徒手接飞刀，道友珍重，\n【 在 RaZRo 的大作中提到: 】\n: 很急了\n☆─────────────────────────────────────☆\nfeilin (来自非洲的狒科动物) 于  (Wed Oct 21 10:31:06 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n要慎重，等待筑底\n【 在 RaZRo 的大作中提到: 】\n: 很急了\n☆─────────────────────────────────────☆\nlaoluoatcd (laoluoatcd) 于  (Wed Oct 21 10:31:15 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n已入，已被套\n【 在 RaZRo 的大作中提到: 】\n: 很急了\n: --\n:\n: FROM 117.136.0.* [北京 移动/GSM/TD-SCDMA/LTE共用出口]\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nevilzzz (evilzzz) 于  (Wed Oct 21 10:32:07 2026)  在\n【Re: 宁德，要不要入场啊】 的大作中提到:\n中长期我觉得可以的\n【 在 RaZRo 的大作中提到: 】\n: 很急了\n: --\n:\n: FROM 117.136.0.* [北京 移动/GSM/TD-SCDMA/LTE共用出口]\n--发自 ismth(丝滑版)\n☆──────…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188539",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188539",
-     "pub_date": "Wed, 21 Oct 2026 15:41:07 +0000",
-     "title": "[合集] [Stock] 宁德，要不要入场啊",
-     "ts": 1792597267
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nlele20260212 (lele20260212) 于  (Wed Oct 21 06:55:05 2026)  在\n【我运动，我快乐！就是美美哒！】 的大作中提到:\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nlele20260212 (lele20260212) 于  (Wed Oct 21 06:56:26 2026)  在\n【Re: 我运动，我快乐！就是美美哒！】 的大作中提到:\n【 在 lele20260212 的大作中提到: 】\n: --\n:\n: FROM 221.197.195.* [天津 联通]\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nhistoria (historia) 于  (Wed Oct 21 07:57:54 2026)  在\n【Re: 我运动，我快乐！就是美美哒！】 的大作中提到:\n咯咯哒，咯咯哒\n【 在 lele20260212 的大作中提到: 】\n: --发自&amp;nbsp;ismth(丝滑版) ...\n☆─────────────────────────────────────☆\nsong2692005 (song2692005) 于  (Wed Oct 21 08:00:30 2026)  在\n【Re: 我运动，我快乐！就是美美哒！】 的大作中提到:\n不错\n【 在 lele20260212 的大作中提到: 】\n: --发自 ismth(丝滑版)\n: --\n: https://static.mysmth.net/nForum/att/FashionShow/558659/250/large \"单击此查看原图\"](https://static.mysmth.net/nForum/att/FashionSh\n: ..................\n发自「今日水木 on iPhone 13」\n☆─────────────────────────────────────☆\nzylthinking2 (zylthinking) 于  (Wed Oct 21 08:19:15 2026)  在\n【Re: 我运动，我快乐！就是美美哒！】 的大作中提到:\n粉底八尺厚， 捂着不出汗， 你运动个毛\n【 在 lele20260212 的大作中提到: 】\n: --\n:\n: FROM 221.197.195.* [天津 联通]\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\ngxdmm (gxdmm) 于  (Wed Oct…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188538",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188538",
-     "pub_date": "Wed, 21 Oct 2026 15:41:07 +0000",
-     "title": "[合集] [FashionShow] 我运动，我快乐！就是美美哒！",
-     "ts": 1792597267
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nFrederickLin (朋友马甲借用) 于  (Sat Oct 17 19:08:25 2026)  在\n【X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n☆─────────────────────────────────────☆\nmoonwalker (漫步于太空) 于  (Sat Oct 17 19:14:29 2026)  在\n【Re: X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n柬泰边界地哪个电诈园里有“国际园区”。\n【 在 FrederickLin 的大作中提到: 】\n: [upload=1][/upload]\n☆─────────────────────────────────────☆\nchery (chery) 于  (Sat Oct 17 20:58:21 2026)  在\n【Re: X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n对欧美人来说确实好\n因为园区只绑China人\n【 在 FrederickLin 的大作中提到: 】\n: [upload=1][/upload]\n☆─────────────────────────────────────☆\ndefeatyou (lance~天地一沙鷗) 于  (Sat Oct 17 21:01:02 2026)  在\n【Re: X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n绑过法国人的\n【 在 chery 的大作中提到: 】\n: 对欧美人来说确实好\n: 因为园区只绑China人\n:\n☆─────────────────────────────────────☆\ntianlyra (现实如此.....) 于  (Sat Oct 17 21:22:26 2026)  在\n【Re: X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n^qUxJg$c30e1405d1d45564ada2d16b902b113869b23ffc0\n【 在 FrederickLin 的大作中提到: 】\n: [upload=1][/upload]\n☆─────────────────────────────────────☆\nAladdin (海盗路飞～我爱紫水晶) 于  (Sun Oct 18 11:25:28 2026)  在\n【Re: X上很多白人说：东南亚的治安，远好于欧美】 的大作中提到:\n扯淡...\n【 在 chery 的大作中提到: 】\n: 对欧美人来说确实好\n: 因为园区只绑China人\n☆─────────────────────────────────────☆\nnoculture (noculture) 于  (Sun…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188537",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188537",
-     "pub_date": "Wed, 21 Oct 2026 15:41:07 +0000",
-     "title": "[合集] [Geography] X上很多白人说：东南亚的治安，远好于欧美",
-     "ts": 1792597267
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nRaybo (小木有品（团长）) 于  (Tue Oct 20 23:31:36 2026)  在\n【蕉下溯源大活动，折扣+满减，白绒外套139元起】 的大作中提到:\n团长有话说：\n本团承诺正品保证，品牌仓库直接发货，无理由退换货，有运费险\n蕉下溯源大活动，折扣+满减，白绒外套139元起\n蕉下溯源啦～ 给大家谈来了下半年最大力度 秋冬打底、外套\n在低价基础上首次给到399-40 的优惠，价格也比较过了，还是我们合适\n团购价格已经设置好，先领券再下单直接满减\n●售前售后咨询：15810239080（微信） 收货之后还可以找客服领5元红包",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188536",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188536",
-     "pub_date": "Wed, 21 Oct 2026 15:41:07 +0000",
-     "title": "[合集] [ADAgent_TG] 蕉下溯源大活动，折扣+满减，白绒外套139",
-     "ts": 1792597267
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nerVShb (erVShb) 于  (Wed Oct 21 07:11:20 2026)  在\n【二年级，感觉娃太辛苦了，想知道放学你们都是怎么过的】 的大作中提到:\n我们是回来抓紧吃饭，要么足球，要么英语课外班，剩下的一点时间还得检查作业卷子，查漏补缺。完全没有孩子放学后畅快玩的时间\n☆─────────────────────────────────────☆\njellyfisher (塞翁失马) 于  (Wed Oct 21 07:47:53 2026)  在\n【Re: 二年级，感觉娃太辛苦了，想知道放学你们都是怎么过的】 的大作中提到:\n要运动就不回家啊，在车上把饭吃了\n☆─────────────────────────────────────☆\ntokilltime (tokilltime) 于  (Wed Oct 21 07:50:04 2026)  在\n【Re: 二年级，感觉娃太辛苦了，想知道放学你们都是怎么过的】 的大作中提到:\n噗哈哈哈哈\n这听起来更辛苦了\n【 在 jellyfisher (塞翁失马) 的大作中提到: 】\n:  要运动就不回家啊，在车上把饭吃了\n:  --\n:\n:\n☆─────────────────────────────────────☆\njellyfisher (塞翁失马) 于  (Wed Oct 21 07:53:47 2026)  在\n【Re: 二年级，感觉娃太辛苦了，想知道放学你们都是怎么过的】 的大作中提到:\n没啥，时间管理基本操作。前两天学校社区活动，同学姐姐被家长拉去撑场子表演中国乐器，她马上考SAT了，一边听校长老师发言一边在下面做题\n- 来自 水木社区APP v3.5.7\n【 在 tokilltime 的大作中提到: 】\n: 噗哈哈哈哈\n:\n: 这听起来更辛苦了\n☆─────────────────────────────────────☆\ntokilltime (tokilltime) 于  (Wed Oct 21 08:10:40 2026)  在\n【Re: 二年级，感觉娃太辛苦了，想知道放学你们都是怎么过的】 的大作中提到:\n嗯嗯是的 孩子自己觉得行就行 其实家长不用想太多\n【 在 jellyfisher 的大作中提到: 】\n: 没啥，时间管理基本操作。前两天学校社区活动，同学姐姐被家长拉去撑场子表演中国乐器，她马上考SAT了，一边听校长老师发言一边在下面做题\n: - 来自 水木社区APP v3.5.7\n☆─────────────────────────────────────☆\nerVShb (erVShb) 于  (Wed Oct 21 08:13:09 2026)  在\n…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188535",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188535",
-     "pub_date": "Wed, 21 Oct 2026 15:41:07 +0000",
-     "title": "[合集] [ChildEducation] 二年级，感觉娃太辛苦了，想知道放学",
-     "ts": 1792597267
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nxunger (xunger) 于  (Wed Oct 21 06:07:50 2026)  在\n【对门邻居天天熏艾草咋破解？】 的大作中提到:\n打破脑袋也想不明白，京城所谓的高知小区，怎么这么多奇怪事情。从疫情期间的直接开窗扔垃圾到环小区人行道的狗屎。最近又冒出来新搬来的邻居天天固定时间熏艾草。\n烟雾弥漫到我家。上周末8点还在睡觉，卧室就一股子烟雾给我熏醒了，去楼道一看都是烟味，在群里抱怨了一次就把熏艾时间从早上8点改到了下午3点，问题是我回家家里照样一股味。昨天忍无可忍找了物业一起去沟通，敲开门一看全屋都烟雾腾腾，两老人窗户也不开就在里面闷着这烟，问为什么熏艾，说是1岁的孙子感冒了要治病，我说你家搬来后都熏了1个月了，老人就说没办法好不了所以要熏，还挺委屈说每天就熏半小时。难以想象一个1岁的孩子天天泡在烟雾里面。说了半天鸡同鸭讲。物业也无奈，说建议我们等下班了再找孩子父母沟通。\n不知道咋办了。大家有什么招没有？\n☆─────────────────────────────────────☆\nOldsoup (Oldsoup) 于  (Wed Oct 21 07:21:07 2026)  在\n【Re: 对门邻居天天熏艾草咋破解？】 的大作中提到:\n其实就是PM2.5。\n这小孩不知道上辈子干啥了。\n【 在 xunger 的大作中提到: 】\n: 打破脑袋也想不明白，京城所谓的高知小区，怎么这么多奇怪事情。从疫情期间的直接开窗扔垃圾到环小区人行道的狗屎。最近又冒出来新搬来的邻居天天固定时间熏艾草。\n:\n: 烟雾弥漫到我家。上周末8点还在睡觉，卧室就一股子烟雾给我熏醒了，去楼道一看都是烟味，在群里抱怨了一次就把熏艾时间从早上8点改到了下午3点，问题是我回家家里照样一股味。昨天忍无可忍找了物业一起去沟通，敲开门一看全屋都烟雾腾腾，两老人窗户也不开就在里面闷着这烟，问为什么熏艾，说是1岁的孙子感冒了要治病，我说你家搬来后都熏了1个月了，老人就说没办法好不了所以要熏，还挺委屈说每天就熏半小时。难以想象一个1岁的孩子天天泡在烟雾里面。说了半天鸡同鸭讲。物业也无奈，说建议我们等下班了再找孩子父母沟通。\n:\n: 不知道咋办了。大家有什么招没有？\n: --\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nbabyUnicorn (babyUnicorn) 于  (Wed Oct 21 07:47:41 2026)  在\n【Re: 对门邻居天天熏艾草咋破解？】 的大作中提到:\n让他们去中医院咨询，社区就行，或者你找个三甲中医的视频，医院艾灸医生都戴呼吸器的。pm2.5致癌致敏很厉害，我闻线香都打喷嚏。他…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188534",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188534",
-     "pub_date": "Wed, 21 Oct 2026 15:41:06 +0000",
-     "title": "[合集] [FamilyLife] 对门邻居天天熏艾草咋破解？",
-     "ts": 1792597266
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nlarryxin (神眼微尘) 于  (Wed Oct 21 00:21:09 2026)  在\n【泰国游客抱怨日本商家规矩多，被日本人网暴】 的大作中提到:\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nhistoria (historia) 于  (Wed Oct 21 07:53:14 2026)  在\n【Re: 泰国游客抱怨日本商家规矩多，被日本人网暴】 的大作中提到:\n倭奴国\n【 在 larryxin 的大作中提到: 】\n: --发自&amp;nbsp;ismth(丝滑版) ...\n☆─────────────────────────────────────☆\nRio2016 (2016 Summer Olympics) 于  (Wed Oct 21 08:46:19 2026)  在\n【Re: 泰国游客抱怨日本商家规矩多，被日本人网暴】 的大作中提到:\n果然外宾待遇高，哪里酒店早晨五点就给办入住 还能延迟退房到下午五点。  我一次都没遇到过\n【 在 larryxin 的大作中提到: 】\n: --\n:\n: FROM 218.81.22.* [上海–静安区 电信]\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nyou23506 (you23506) 于  (Wed Oct 21 09:03:22 2026)  在\n【Re: 泰国游客抱怨日本商家规矩多，被日本人网暴】 的大作中提到:\n我遇到过多次\n早上去，只要有空房就给你办，没有没办法\n延迟退房更多了。我每次假期去滑雪，最后一天都办延退到六点。基本只要给个好评，都免费办。\n【 在 Rio2016 的大作中提到: 】\n: 果然外宾待遇高，哪里酒店早晨五点就给办入住 还能延迟退房到下午五点。  我一次都没遇到过\n:\n:\n☆─────────────────────────────────────☆\nRio2016 (2016 Summer Olympics) 于  (Wed Oct 21 09:13:36 2026)  在\n【Re: 泰国游客抱怨日本商家规矩多，被日本人网暴】 的大作中提到:\n啥样酒店？  漫心，全季这种属于好说话的最多给延迟到下午三点退房。 那些外资品牌的悦榕庄什么的就给到一点。  不应该是针对我吧\n【 在 you23506 的大作中提到: 】\n: 我遇到过多次\n: 早上去，只要有空房就给你办，没有没办法\n: 延迟退房更多了。我每次假期去滑雪，最后一天都办延退到六点。基本只要给个好评，都免费办。\n: ...................\n☆─…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188533",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188533",
-     "pub_date": "Wed, 21 Oct 2026 15:41:04 +0000",
-     "title": "[合集] [Travel] 泰国游客抱怨日本商家规矩多，被日本人网暴",
-     "ts": 1792597264
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nvote2016 (vote2016) 于  (Wed Oct 21 00:29:10 2026)  在\n【高铁票价高于机票】 的大作中提到:\n那么修建长距离高铁线路的意义在哪里？\n某些客流密集线路如京沪高铁也就算了，中西部高铁基本都是亏，还修啥呢？\n--发自 ismth(丝滑版)\n☆─────────────────────────────────────☆\nzxqnyl (zxqnyl) 于  (Wed Oct 21 06:06:58 2026)  在\n【Re: 高铁票价高于机票】 的大作中提到:\n将来速度要快过飞机吧\n【 在 vote2016 的大作中提到: 】\n: 那么修建长距离高铁线路的意义在哪里？\n:\n: 某些客流密集线路如京沪高铁也就算了，中西部高铁基本都是亏，还修啥呢？\n:\n: --发自 ismth(丝滑版)\n: --\n:\n发自「今日水木 on XT2451-4」\n☆─────────────────────────────────────☆\nklbs (困了便睡) 于  (Wed Oct 21 06:50:17 2026)  在\n【Re: 高铁票价高于机票】 的大作中提到:\n说的好像航班就能赚钱似的\n【 在 vote2016 的大作中提到: 】\n: 那么修建长距离高铁线路的意义在哪里？\n: 某些客流密集线路如京沪高铁也就算了，中西部高铁基本都是亏，还修啥呢？\n☆─────────────────────────────────────☆\nLAOMIANYANG (LAOMIANYANG) 于  (Wed Oct 21 06:57:52 2026)  在\n【Re: 高铁票价高于机票】 的大作中提到:\n难道不是因为高铁飞机票才便宜的吗、知道吗，因为九绵高速，和成都到黄龙动车开通，九黄机场马上要全面停航了。\n☆─────────────────────────────────────☆\nunicorn (人之将死 奈何以死惧之) 于  (Wed Oct 21 06:59:14 2026)  在\n【Re: 高铁票价高于机票】 的大作中提到:\n不存在“长距离高铁线路”的概念，你是想说长途列车吧\n【 在 vote2016 的大作中提到: 】\n: 那么修建长距离高铁线路的意义在哪里？\n: 某些客流密集线路如京沪高铁也就算了，中西部高铁基本都是亏，还修啥呢？\n☆─────────────────────────────────────☆\nicagent (不忙没有饭吃) 于  (Wed Oct 21 07:18:48 2026)  在\n【Re: 高铁票价高于机票】 的大作中提到:\n从其他省飞九寨沟的航班也没有了？\n【 在 LAOMIANYAN…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/188532",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/188532",
-     "pub_date": "Wed, 21 Oct 2026 15:41:04 +0000",
-     "title": "[合集] [Railway] 高铁票价高于机票",
-     "ts": 1792597264
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 16:41:01 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:41:01 GMT"
   },
   "shuibuzhao": {
    "items": [
@@ -9708,31 +9728,13 @@
      "ts": 1792685947
     },
     {
-     "author": "malern88",
-     "body": "帝都没有房贷车贷，存款有300万的人其实特别少。我感觉不可能，我咋感觉我周围人粗略一算都有几百万存款。当然了有很多有房贷，但是房贷基本两口子公积金就覆盖了。",
-     "guid": "http://www.newsmth.net/nForum/article/OurEstate/3524287",
-     "link": "https://www.newsmth.net/nForum/article/OurEstate/3524287",
-     "pub_date": "Thu, 22 Oct 2026 16:21:34 +0000",
-     "title": "刚前同事说",
-     "ts": 1792686094
-    },
-    {
-     "author": "popcorners",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1033602",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1033602",
-     "pub_date": "Thu, 22 Oct 2026 02:49:43 +0000",
-     "title": "据说复旦专硕要自己掏月租三四千租房子。",
-     "ts": 1792637383
-    },
-    {
-     "author": "lele20260212",
-     "body": "在划分C9之前，\n很多年，\n北航的分数都要比哈工大高呀。\n航天一哥，难道不是北航吗？\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/GaoKao/682583",
-     "link": "https://www.newsmth.net/nForum/article/GaoKao/682583",
-     "pub_date": "Thu, 22 Oct 2026 16:05:00 +0000",
-     "title": "为什么北航没进入【C9】",
-     "ts": 1792685100
+     "author": "mahb",
+     "body": "他说据他所知机构卖盘并不多，而且上面已经做了窗口指导。这么不给面子的砸盘匪夷所思，他只能怀疑是冷血的机器在执行代码。\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Stock/11609321",
+     "link": "https://www.newsmth.net/nForum/article/Stock/11609321",
+     "pub_date": "Thu, 22 Oct 2026 20:13:31 +0000",
+     "title": "边风炜怀疑是量化在卖",
+     "ts": 1792700011
     },
     {
      "author": "gxfu",
@@ -9744,22 +9746,22 @@
      "ts": 1792685633
     },
     {
-     "author": "librafly",
-     "body": "电池是三元锂电还是磷酸铁锂？",
-     "guid": "http://www.newsmth.net/nForum/article/AutoWorld/1945334944",
-     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945334944",
-     "pub_date": "Thu, 22 Oct 2026 16:01:09 +0000",
-     "title": "榆林那个是问界什么型号？",
-     "ts": 1792684869
+     "author": "malern88",
+     "body": "帝都没有房贷车贷，存款有300万的人其实特别少。我感觉不可能，我咋感觉我周围人粗略一算都有几百万存款。当然了有很多有房贷，但是房贷基本两口子公积金就覆盖了。",
+     "guid": "http://www.newsmth.net/nForum/article/OurEstate/3524287",
+     "link": "https://www.newsmth.net/nForum/article/OurEstate/3524287",
+     "pub_date": "Thu, 22 Oct 2026 16:21:34 +0000",
+     "title": "刚前同事说",
+     "ts": 1792686094
     },
     {
-     "author": "dreamr",
-     "body": "假设初始股价10元，几波行情之后涨到100元（现实中这个涨幅并不算特别夸张）。\n韭菜A很不幸买在最高点，成本价100元。\n跌到50元的时候，韭菜B忍不住下手，成本价50元，足足比A便宜了50%，赚大了。\n随后，股价一路下跌，再次回到初始值10元。\n两位韭菜头铁一直没有割肉，此时A和B亏损比例相差多少呢？\nA: (100 - 10) / 100 = 90%\nB: (50 - 10) / 50 = 80%\n看到没，虽然B买入价格只有A的一半，但是B的损失只有A少了 (90 - 80) / 90 = 11.1%",
-     "guid": "http://www.newsmth.net/nForum/article/Stock/11608769",
-     "link": "https://www.newsmth.net/nForum/article/Stock/11608769",
-     "pub_date": "Thu, 22 Oct 2026 16:11:08 +0000",
-     "title": "下跌过程中不要抄底的数学原理",
-     "ts": 1792685468
+     "author": "haniba",
+     "body": "起了个看起来像是体育竞赛题材的名字《一战成名》\n可惜是魔改，不建议原著粉丝观看\n原著是优秀的传统武侠作品\n翻拍后是质量一般的武打片\n原著里的名士沈放由潘斌龙饰演\n反派大boss由袁老大袁辰龙改成了他弟弟袁寒亭（安志杰饰演），原著里出场的配角耿苍怀、荆三娘、秦稳、金和尚都成为炮灰\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Movielife/109267",
+     "link": "https://www.newsmth.net/nForum/article/Movielife/109267",
+     "pub_date": "Thu, 22 Oct 2026 17:55:06 +0000",
+     "title": "著名武侠小说杯雪被翻拍成电影了",
+     "ts": 1792691706
     },
     {
      "author": "qingshang147",
@@ -9780,16 +9782,34 @@
      "ts": 1792686918
     },
     {
-     "author": "nightwizard",
-     "body": "近日SpaceX从加州成功发射20颗星链宽频卫星，\n马斯克正式宣布，手机连结卫星的时代已经到来。\n任何普通4G手机就行。",
-     "guid": "http://www.newsmth.net/nForum/article/Aero/478450",
-     "link": "https://www.newsmth.net/nForum/article/Aero/478450",
-     "pub_date": "Thu, 22 Oct 2026 16:02:02 +0000",
-     "title": "马斯克宣布：手机直连卫星的时代已到来",
-     "ts": 1792684922
+     "author": "clren",
+     "body": "发生的事故那么少，其他的，经常上热搜，这个版也经常讨论。",
+     "guid": "http://www.newsmth.net/nForum/article/AutoWorld/1945334468",
+     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945334468",
+     "pub_date": "Thu, 22 Oct 2026 16:46:10 +0000",
+     "title": "比亚迪的车质量是最好的，保有量这么大",
+     "ts": 1792687570
+    },
+    {
+     "author": "popcorners",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1033602",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1033602",
+     "pub_date": "Thu, 22 Oct 2026 02:49:43 +0000",
+     "title": "据说复旦专硕要自己掏月租三四千租房子。",
+     "ts": 1792637383
+    },
+    {
+     "author": "gemini",
+     "body": "不是流量限速，而是限制接收端的物理速度，超过100迈（≈160km/h）就断联。\n警告不要打炼油厂，乌克兰不听，美方一限速乌克兰就服软。。   显然俄罗斯对闯入境内的星链通讯无能为力，还要美方出手。。  也不白出手，4万吨柴油马上送上。",
+     "guid": "http://www.newsmth.net/nForum/article/Aero/563528",
+     "link": "https://www.newsmth.net/nForum/article/Aero/563528",
+     "pub_date": "Thu, 22 Oct 2026 20:07:46 +0000",
+     "title": "乌克兰星链被限速说明要想干扰星链极其困难",
+     "ts": 1792699666
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 16:41:01 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:41:01 GMT"
   },
   "wedding": {
    "items": [
@@ -10889,7 +10909,7 @@
      "ts": 1792322397
     }
    ],
-   "last_modified": "Thu, 22 Oct 2026 14:43:55 GMT"
+   "last_modified": "Thu, 22 Oct 2026 20:53:32 GMT"
   }
  }
 }
