@@ -5,9 +5,32 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 22 Oct 2026 21:29:57 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 23 Oct 2026 04:35:59 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>2 年内，会有大批外企关闭在中国的研发部门</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347781</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347781</guid>
+      <author>Xjt</author>
+      <pubDate>Fri, 23 Oct 2026 03:14:14 +0000</pubDate>
+      <description><![CDATA[过去外企在中国开研发部门，是因为中国有大量的：工程师，科学家，性价比高的聪明人，交付能力强而不偷奸耍滑<br/>但是这个所有优势都被一件事抹平了：国内没法用海外大模型来支持研发和交付<br/>openai 的模型也许还行，但 Anthropic 的模型基本没几个外企敢让国内的员工大规模用。结果就是随便把研发模型放在哪个国家，也比放中国性价比高（反正本质都是 Claude Opus 5.5 在做研发）<br/>当然了，如果是面向中国市场的研发，那另说。我说的是那种纯研发部门，国内研发-&gt;全球使用]]></description>
+    </item>
+    <item>
+      <title>各位，你们工作10年20年，有没有心理特别厌烦这个工作时候？</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347747</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347747</guid>
+      <author>iloveanfield</author>
+      <pubDate>Fri, 23 Oct 2026 00:41:02 +0000</pubDate>
+      <description><![CDATA[～～～就是时间长了，特烦。无论工作压力大小，当然压力会更烦人。莫名的烦躁不安。]]></description>
+    </item>
+    <item>
+      <title>普通人如何过好当前后今后的生活？</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/347746</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347746</guid>
+      <author>HFHC</author>
+      <pubDate>Fri, 23 Oct 2026 00:40:05 +0000</pubDate>
+    </item>
     <item>
       <title>三十年后，大家会怎么看这段岁月</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/347725</link>
@@ -374,30 +397,6 @@
       <author>jasminoides</author>
       <pubDate>Mon, 19 Oct 2026 05:30:17 +0000</pubDate>
       <description><![CDATA[北京是不是也跟上？不要各种制度落后太多]]></description>
-    </item>
-    <item>
-      <title>又一个外企打算跑路了</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347001</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347001</guid>
-      <author>shuiumu2</author>
-      <pubDate>Mon, 19 Oct 2026 04:51:05 +0000</pubDate>
-      <description><![CDATA[他家在华接近一万员工 大部分在大连市]]></description>
-    </item>
-    <item>
-      <title>会不会从今以后养老金就不涨了？</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346986</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346986</guid>
-      <author>SSJ100</author>
-      <pubDate>Mon, 19 Oct 2026 04:18:25 +0000</pubDate>
-      <description><![CDATA[会吧？]]></description>
-    </item>
-    <item>
-      <title>好东西是轮不到普通老百姓的</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/346966</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/346966</guid>
-      <author>chibaole</author>
-      <pubDate>Mon, 19 Oct 2026 03:30:24 +0000</pubDate>
-      <description><![CDATA[加上个略稀缺定语吧  更准确。<br/>这是我四十多年来的认识<br/>从冒时候  他定的各种阶层 各种等级  各种大院  就看出来了<br/>坏透了]]></description>
     </item>
   </channel>
 </rss>
