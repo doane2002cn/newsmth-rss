@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-25 04:40:06 +0800",
+  "generated": "2026-10-25 07:07:15 +0800",
   "banned": false,
   "sources": [
     {
@@ -24,7 +24,7 @@
       "key": "age",
       "name": "大龄男女",
       "count": 31,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "baking",
@@ -48,7 +48,7 @@
       "key": "book",
       "name": "书籍",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "boy",
@@ -72,19 +72,19 @@
       "key": "coffee",
       "name": "咖啡时光",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "diy",
       "name": "独具匠心",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "fashionshow",
       "name": "服饰搭配",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "food",
@@ -149,26 +149,26 @@
     {
       "key": "love",
       "name": "谈情说爱",
-      "count": 34,
-      "status": "304 未变化"
+      "count": 35,
+      "status": "更新 +20"
     },
     {
       "key": "memory",
       "name": "似水流年",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motorbike",
       "name": "摩托天地",
       "count": 23,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "motss",
       "name": "自由左岸",
       "count": 20,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "older",
@@ -180,7 +180,7 @@
       "key": "phd",
       "name": "博士生",
       "count": 20,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "pondoflotus",
@@ -240,13 +240,13 @@
       "key": "workinglife",
       "name": "职业生活",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 6,
-      "status": "更新 +6"
+      "count": 8,
+      "status": "更新 +8"
     }
   ]
 }
