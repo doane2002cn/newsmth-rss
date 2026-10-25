@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 04:30:07 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 11:15:01 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[Geography] 欧洲各国退休年龄 不解释看图</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188689</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188689</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 08:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>男女都一样 差不多都65起步<br/>瑞典丹麦最苦逼<br/>干到70才让退<br/>丹麦74<br/>具体看图<br/>东方大国才是真正福利的大国]]></description>
+    </item>
+    <item>
+      <title>[Stock] 今年老钟顺差1.3we，去年1we，占了全球顺差40%</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188688</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188688</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 08:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>目测未来出口基本上没有增长空间了<br/>感觉接下来消费可能是个风口<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>[AutoWorld] 关于APEC会议期间车辆信息报备的通知</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188687</link>
@@ -391,22 +407,6 @@
       <author>deliver</author>
       <pubDate>Fri, 23 Oct 2026 18:41:01 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>openai扫的都是热门课题，热门课题恰恰是数学家师生在做的，一下子就把这些人干失业了，数学家还能教教书，博士生直接是毕不了业了。]]></description>
-    </item>
-    <item>
-      <title>[FashionShow] 穿鞋上床也太不讲究了</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188636</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188636</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 18:41:00 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>该不该狠狠教训她]]></description>
-    </item>
-    <item>
-      <title>[Science] 核光钟路线走通了</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188635</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188635</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>2026年10月，清华大学丁世谦团队与维也纳工业大学托尔斯滕·舒姆领衔的欧洲团队，几乎同期在《自然》发表了核光钟研究成果。两条技术路线，同一个目标：把人类计时的基准，从原子外层的电子，推进到原子核内部。<br/>核光钟“黑”在哪里，得先把原子钟的底牌翻出来。今天卫星导航、电网调度、金融交易用的时间基准，靠的是原子外层电子在能级之间跳一下，用那个频率来数时间。这套办法成熟到了极致，但外层电子太“敏感”：温度抖一点，磁场晃一下，精度就跟着晃。天花板已经摸到了。<br/>核光钟换了一条路。它把“节拍器”塞进原子核里，用钍-229原子核的能级跃迁来计时。原子核被电子云层层裹住，外界想干扰它，得先穿过这些屏障。原理上更稳<br/>美国国家标准技术研究院2026年8月的评估写得很实在：核光钟原型运行可靠，单日漂移对应大约300万年偏差1秒，但还没有超越顶尖传统原子钟的长期精度——后者是400亿年误差不超过1秒。换句话说，路走通了，但它还在“可用仪器”的门口，离全面替代原子钟还有相当长的工程距离。]]></description>
     </item>
   </channel>
 </rss>
