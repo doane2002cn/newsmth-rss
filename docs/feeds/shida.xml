@@ -5,9 +5,41 @@
     <link>https://www.newsmth.net/nForum/board/ShiDa</link>
     <description>近期热帖（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 24 Oct 2026 23:07:15 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 04:30:07 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/shida.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>[AutoWorld] 关于APEC会议期间车辆信息报备的通知</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188687</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188687</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 03:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>明文禁止电车参与高级别会议。]]></description>
+    </item>
+    <item>
+      <title>[Memory] 很多人看了都会沉默的话</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188686</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188686</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 02:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】]]></description>
+    </item>
+    <item>
+      <title>[GaoKao] 最新排序名单</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188685</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188685</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 02:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>北清人师]]></description>
+    </item>
+    <item>
+      <title>[OurEstate] 北上的经济是彻底要嗝了</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188684</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188684</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 01:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>大城市的经济现在很差，北京上海社零烂的很，连全国平均线都达不到。]]></description>
+    </item>
     <item>
       <title>[Travel] 跟不同的人去旅游的幸福感</title>
       <link>https://www.newsmth.net/nForum/article/ShiDa/188683</link>
@@ -375,38 +407,6 @@
       <author>deliver</author>
       <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
       <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>2026年10月，清华大学丁世谦团队与维也纳工业大学托尔斯滕·舒姆领衔的欧洲团队，几乎同期在《自然》发表了核光钟研究成果。两条技术路线，同一个目标：把人类计时的基准，从原子外层的电子，推进到原子核内部。<br/>核光钟“黑”在哪里，得先把原子钟的底牌翻出来。今天卫星导航、电网调度、金融交易用的时间基准，靠的是原子外层电子在能级之间跳一下，用那个频率来数时间。这套办法成熟到了极致，但外层电子太“敏感”：温度抖一点，磁场晃一下，精度就跟着晃。天花板已经摸到了。<br/>核光钟换了一条路。它把“节拍器”塞进原子核里，用钍-229原子核的能级跃迁来计时。原子核被电子云层层裹住，外界想干扰它，得先穿过这些屏障。原理上更稳<br/>美国国家标准技术研究院2026年8月的评估写得很实在：核光钟原型运行可靠，单日漂移对应大约300万年偏差1秒，但还没有超越顶尖传统原子钟的长期精度——后者是400亿年误差不超过1秒。换句话说，路走通了，但它还在“可用仪器”的门口，离全面替代原子钟还有相当长的工程距离。]]></description>
-    </item>
-    <item>
-      <title>[Programming] 4090单显卡跑deepseek和GLM了</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188634</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188634</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>改成5090 + 128GB，是不是能流畅点<br/>github /Indras-Mirror/Xolotl<br/>Xolotl (formerly Strata-DSV4.1): DeepSeek-V4.1-Flash, all 552B, on one gaming PC (RTX 4090 + 90 GB RAM) at ~27 tok/s, plus GLM-5.3-Flash, Qwen3.8-Flash-Next and Qwen3.8-27B. A heavily extended fork of Strata: MoE experts tiered across VRAM, pinned RAM and NVMe; OpenAI + Anthropic API.]]></description>
-    </item>
-    <item>
-      <title>[Stock] 现在机器人有什么用</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188633</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188633</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>实验室的投料，可以吗]]></description>
-    </item>
-    <item>
-      <title>[Movielife] 著名武侠小说杯雪被翻拍成电影了</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188632</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188632</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>起了个看起来像是体育竞赛题材的名字《一战成名》<br/>可惜是魔改，不建议原著粉丝观看<br/>原著是优秀的传统武侠作品<br/>翻拍后是质量一般的武打片<br/>原著里的名士沈放由潘斌龙饰演<br/>反派大boss由袁老大袁辰龙改成了他弟弟袁寒亭（安志杰饰演），原著里出场的配角耿苍怀、荆三娘、秦稳、金和尚都成为炮灰<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>[FamilyLife] 这种情况要不要二胎</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188631</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188631</guid>
-      <author>deliver</author>
-      <pubDate>Fri, 23 Oct 2026 17:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>经济状况和人手都没有任何问题，夫妻，双方老人都希望生二胎，唯一阻力是10岁的女儿不同意，是不是应该放弃二胎呢？女儿各方面都算优秀，备受全家宠爱，但不希望有别人分享对她的爱。另外我们绝对没有重男轻女，最理想的结果是能再生一个女儿。]]></description>
     </item>
   </channel>
 </rss>
