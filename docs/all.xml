@@ -5,16 +5,405 @@
     <link>https://www.newsmth.net/nForum/topten</link>
     <description>全部板块合并流（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 16:02:16 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 20:46:03 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/all.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[高考·大学] 最新排序名单</title>
-      <link>https://www.newsmth.net/nForum/article/GaoKao/683587</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/GaoKao/683587</guid>
-      <author>高考·大学</author>
-      <pubDate>Sun, 25 Oct 2026 16:02:16 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/GaoKao_683587.jpg?v=" alt="" /><br/>最新排序名单]]></description>
+      <title>[汽车世界] 高德分屏导航来了 Duo有面子</title>
+      <link>https://www.newsmth.net/nForum/article/AutoWorld/1945336421</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/AutoWorld/1945336421</guid>
+      <author>汽车世界</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945336421.jpg?v=" alt="" /><br/>高德分屏导航来了 Duo有面子]]></description>
+    </item>
+    <item>
+      <title>[家庭生活] 最荒唐的两次</title>
+      <link>https://www.newsmth.net/nForum/article/FamilyLife/1767760954</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/FamilyLife/1767760954</guid>
+      <author>家庭生活</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767760954.jpg?v=" alt="" /><br/>最荒唐的两次]]></description>
+    </item>
+    <item>
+      <title>[编程技术] 自制小程序：日常上网自动打开几个网站</title>
+      <link>https://www.newsmth.net/nForum/article/Programming/228914</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Programming/228914</guid>
+      <author>编程技术</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Programming_228914.jpg?v=" alt="" /><br/>自制小程序：日常上网自动打开几个网站]]></description>
+    </item>
+    <item>
+      <title>[二手数码产品] 85折转让华为Pura X View 12GB+1TB 零度白 华为阔直屏手机</title>
+      <link>https://www.newsmth.net/nForum/article/SecondDigi/2282081</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/SecondDigi/2282081</guid>
+      <author>二手数码产品</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/SecondDigi_2282081.jpg?v=" alt="" /><br/>85折转让华为Pura X View 12GB+1TB 零度白 华为阔直屏手机]]></description>
+    </item>
+    <item>
+      <title>[鹊桥·征男友女友] 77男 征女</title>
+      <link>https://www.newsmth.net/nForum/article/PieLove/2955766</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/PieLove/2955766</guid>
+      <author>鹊桥·征男友女友</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/PieLove_2955766.jpg?v=" alt="" /><br/>77男 征女]]></description>
+    </item>
+    <item>
+      <title>[股市] 普通人如何过好当前后今后的生活？ (转载)</title>
+      <link>https://www.newsmth.net/nForum/article/Stock/11611656</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Stock/11611656</guid>
+      <author>股市</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Stock_11611656.jpg?v=" alt="" /><br/>普通人如何过好当前后今后的生活？ (转载)]]></description>
+    </item>
+    <item>
+      <title>[幽默全方位] 偶遇女桥青</title>
+      <link>https://www.newsmth.net/nForum/article/MMJoke/1634856552</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/MMJoke/1634856552</guid>
+      <author>幽默全方位</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/MMJoke_1634856552.jpg?v=" alt="" /><br/>偶遇女桥青]]></description>
+    </item>
+    <item>
+      <title>[兼职工作信息] 兼职新媒体运营</title>
+      <link>https://www.newsmth.net/nForum/article/ParttimeJobPost/458824</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/ParttimeJobPost/458824</guid>
+      <author>兼职工作信息</author>
+      <pubDate>Sun, 25 Oct 2026 20:46:03 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/ParttimeJobPost_458824.jpg?v=" alt="" /><br/>兼职新媒体运营]]></description>
+    </item>
+    <item>
+      <title>[AutoWorld] 高德分屏导航来了 Duo有面子</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188722</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188722</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 20:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>首个针对折叠屏适配.<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>[LinuxApp] “windows伟大”这个帖子里说的都是真的吗？</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188721</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188721</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 20:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>“为了保持全球经济正常运转，默默承受了一切”]]></description>
+    </item>
+    <item>
+      <title>高中那几年是不是最黑暗的几年？</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/190167</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190167</guid>
+      <author>coolsailor</author>
+      <pubDate>Sun, 25 Oct 2026 20:32:34 +0000</pubDate>
+      <description><![CDATA[高中群里，有个同学经常怀念高中生活，说是美好的几年。我不敢苟同，毕竟他考上了贵清啊。<br/>我记得那时候，我长期徘徊在全班最后几名。非常痛苦。<br/>记得第一次期中考试，本来我还信心满满，因为小学初中都是班里的数理化英语小王子。成绩出来，傻眼了。语文还考了个单科全班倒数第一。都啥题啊，课上也没教啊。<br/>我就骑着自行车在家附近的路上来回转。转了一下午。<br/>我记得那次考试后，很多同学都变了。玩笑不开了，中午也不去打球了。大家都开始互相打听，买那套题刷比较靠谱。<br/>很久以后，同学聚会时也有同学坦言她当时也是厌学，不想去学校了。虽然她后来在著名高校年纪轻轻就当了教授。<br/>前不久，我和在北京一些同学见面吃饭，他们中有孩子要升高中了，也在席上。完全没有青春的感觉，一提到就要开始的三年高中，满脸愁容，没有任何期待。我只好安慰，到了大学就好了。<br/>这么多年过去了，高中几年，还是渡劫啊。<br/>上个月，我去了趟西雅图，和几个研究生同学聚会。席上也有两个孩子，一个9年纪，一个10年级。两个孩子俊男靓女，青春逼人。他们非常自然的跟我们聊天开玩笑，然后在餐巾纸上画微积分讨论。极其松弛。<br/>看得我恍惚，这不是动漫，偶像剧里的样子吗。]]></description>
+    </item>
+    <item>
+      <title>“windows伟大”这个帖子里说的都是真的吗？</title>
+      <link>https://www.newsmth.net/nForum/article/LinuxApp/976206</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/LinuxApp/976206</guid>
+      <author>leeds</author>
+      <pubDate>Sun, 25 Oct 2026 20:31:11 +0000</pubDate>
+      <description><![CDATA[“为了保持全球经济正常运转，默默承受了一切”]]></description>
+    </item>
+    <item>
+      <title>长沙是个向往之地</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647778</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647778</guid>
+      <author>xiaoni1</author>
+      <pubDate>Sun, 25 Oct 2026 19:59:23 +0000</pubDate>
+    </item>
+    <item>
+      <title>重庆市个梦幻中，神秘的城市</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647777</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647777</guid>
+      <author>xiaoni1</author>
+      <pubDate>Sun, 25 Oct 2026 19:59:06 +0000</pubDate>
+    </item>
+    <item>
+      <title>接班人定了吗？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647774</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647774</guid>
+      <author>bm6</author>
+      <pubDate>Sun, 25 Oct 2026 19:50:35 +0000</pubDate>
+      <description><![CDATA[万斯还是卢比奥？<br/>或者合格赛斯？<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>山地车骑行后感觉不舒服</title>
+      <link>https://www.newsmth.net/nForum/article/Cyclone/1028848</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Cyclone/1028848</guid>
+      <author>linyiye</author>
+      <pubDate>Sun, 25 Oct 2026 19:46:42 +0000</pubDate>
+      <description><![CDATA[骑行了14公里，之前没有骑过山地车，没有穿骑行裤，原装的那种又小又硬的车座，骑行后感觉尾骨和会阴部位压迫感比较重，这个会和骑行姿势或者车座角度有关系吗，换一个车座会好一点吗？]]></description>
+    </item>
+    <item>
+      <title>[SecondMarket] 便宜出blueair 空气净化器</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188720</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188720</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 19:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>一台203，一台410b<br/>有意者站内联系<br/>- 来自 水木社区APP v3.5.7]]></description>
+    </item>
+    <item>
+      <title>[OurEstate] 经济不好都是降本增效害的吧？</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188719</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188719</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 19:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>不敢吃喝，不敢出差，不敢开会，这些行业的收入其实都来自于大企业的成本]]></description>
+    </item>
+    <item>
+      <title>[FamilyLife] 将来10后开始，再没人受苦辛苦了吧。看抖音视屏有</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188718</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188718</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 19:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>滴滴司机，说他条件很不好，<br/>但是2个孩子，考不上大学，拒绝工作。<br/>还天天点外卖，家里做了饭也不吃。<br/>一定点苦也不受。他天天拼了命的干活，<br/>都不知道能坚持多久。<br/>更担心，他要完了，2个孩子怎么办。]]></description>
+    </item>
+    <item>
+      <title>将来10后开始，再没人受苦辛苦了吧。看抖音视屏有感。</title>
+      <link>https://www.newsmth.net/nForum/article/FamilyLife/1767760822</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FamilyLife/1767760822</guid>
+      <author>archer</author>
+      <pubDate>Sun, 25 Oct 2026 19:40:09 +0000</pubDate>
+      <description><![CDATA[滴滴司机，说他条件很不好，<br/>但是2个孩子，考不上大学，拒绝工作。<br/>还天天点外卖，家里做了饭也不吃。<br/>一定点苦也不受。他天天拼了命的干活，<br/>都不知道能坚持多久。<br/>更担心，他要完了，2个孩子怎么办。]]></description>
+    </item>
+    <item>
+      <title>经济不好都是降本增效害的吧？</title>
+      <link>https://www.newsmth.net/nForum/article/OurEstate/3525247</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/OurEstate/3525247</guid>
+      <author>TornadoChen</author>
+      <pubDate>Sun, 25 Oct 2026 19:32:13 +0000</pubDate>
+      <description><![CDATA[不敢吃喝，不敢出差，不敢开会，这些行业的收入其实都来自于大企业的成本]]></description>
+    </item>
+    <item>
+      <title>[Programming] 自制小程序：日常上网自动打开几个网站</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188717</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188717</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 18:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>Lazarus制作]]></description>
+    </item>
+    <item>
+      <title>[GaoKao] 中科大的校长比合肥市长的级别高</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188716</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188716</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 18:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>中部六省的省会只有武汉是副省级<br/>武汉的高校武大和华工的书记校长是副部级<br/>国内至少有4所高校的校长级别高于当地的行政首长<br/>中国科学技术大学<br/>兰州大学<br/>中南大学<br/>西北农林科技大学]]></description>
+    </item>
+    <item>
+      <title>[FamilyLife] 人生幸福感最强的几次</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188715</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188715</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 18:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>最幸福的几次<br/>1. 小学时一个暑假，跟一个同学一起，每人花一块钱，各买了4个游戏币。然后我们两个菜鸟，双人配合，把一款经典闯关游戏，通关了四次。<br/>2. 高二某次期末考试进了前十名（原来40多名）后连续在家打了几天游戏，通关一款经典战略游戏。<br/>3. 大学时通宵刷一部穿越剧。刷完当天就重感冒发烧了一周。<br/>4. 刚跟女友同居，发工资后去吃了一次平时舍不得吃的麻辣小龙虾。吃完满足感拉满，回家又胡搞一晚上。<br/>5. 第一次月薪上4000，之前都是2000多。我俩去取款机，看到那个数字，多巴胺那个顶啊。回家又胡搞一晚上。<br/>6. 实验室要好的同学四人，都带了女朋友。4对情侣一起从西直门坐绿皮火车去司马台长城玩。玩的不错。但是那车太慢。去的时候6小时，我们就玩了6小时扑克。回来时更夸张，7小时，我们就玩天黑请闭眼7小时。<br/>7. 因为工作从北城换到东城，我们从北边郊区搬到东边郊区。结果同样的房租，从单人间变成双人间，单人床变成带席梦思的双人床。那个爽啊。后来还是有几次尝试挤单人床，但回不去了。<br/>8. 第一次去河北某海边城市旅游。去市场买了十几只螃蟹，让民宿老板做了，吃了几小时。晚上又在民宿胡搞一晚上。第二天女友浑身过敏。应该是螃蟹和太阳造成的。<br/>9. 第一次去庐山玩。以为要爬很多山，结果超轻松。然后在民宿胡搞了几天。<br/>10. 第一次去国外玩，在香港转机停留两天。发达世界真是让我们大开眼界。没钱，就在重庆大厦住。豪华大床房连窗户都没有。所以晚上只能胡搞。<br/>11. 还是那次出国旅游，看到了比天朝穷的多的地方，简直大开眼见。住的地方太脏，没法胡搞。就早起看雪山，看日出，喝茶。<br/>12. 去一个沿海小城市跑半程马拉松，她第一次跑进了2小时。回到酒店，就先胡搞一下庆祝。好像号码牌都没摘。<br/>13. 去美国自驾游，到了黄石公园，住不起里面的lodge，只好露营。那里昼夜温差特别大，白天15度以上，晚上接近0度。我们搭好帐篷，趁白天还暖和，赶紧在帐篷里先胡搞一通，然后再去看喷泉。还有一次自驾66号公路，每天都在一个不同的荒凉小镇住汽车旅馆。我记得是最疯的一次，每天都搞。<br/>14. 因为工作，去了欧洲一个城市。公司安排的酒店是个古堡顶层的阁楼，特别奇怪，而且昏暗。因为时差，睡了两天，荷尔蒙异常。结果那次搞怀孕了。<br/>15. 孩子出生后的第一周，我俩每天只睡2-3个小时，而且不连续。但幸福感还是拉满。<br/>16. 孩子第一次完整的弹出《献给爱丽丝》，成就感拉满。<br/>你的呢？<br/>---更新---<br/>感觉楼被带偏了，写几个正经的，我能回忆起来的幸福时光<br/>17. 研究生毕业时，所里邀请所有毕业生父母来所里参加毕业宴会。我妈那次有点刘姥姥进大官园的感觉。她年轻时也想考大学，但放弃了，我明显看出她眼里的满足感。<br/>18. 第一次去美国玩。是老婆被邀请参加一个大会，我作为家属。她订机票把我的…]]></description>
+    </item>
+    <item>
+      <title>买了会员和免费ds写文章差距吗？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647766</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647766</guid>
+      <author>nation007</author>
+      <pubDate>Sun, 25 Oct 2026 18:14:29 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>美限制C919关键系统对华出口</title>
+      <link>https://www.newsmth.net/nForum/article/Aero/563694</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Aero/563694</guid>
+      <author>shuiumu2</author>
+      <pubDate>Sun, 25 Oct 2026 18:13:45 +0000</pubDate>
+      <description><![CDATA[国货当自强！]]></description>
+    </item>
+    <item>
+      <title>[AutoTravel] 原来绕国境线开一圈只要走三条国道就够了</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188714</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188714</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 17:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>沿国境线自驾一整圈，走的是G219、G331、G228三条国道首尾相接的“黄金大外环”，总里程约2.7万公里左右。<br/>G219（国之大道）：从广西东兴到新疆喀纳斯，全长约10065公里，是中国最长国道，穿越广西、云南、西藏、新疆，沿途海拔落差大。<br/>G331（北境之王）：从辽宁丹东到新疆阿勒泰，全长约9300公里，沿中朝、中俄、中蒙边境，穿越东北森林、内蒙古草原和戈壁。<br/>G228（沿海长廊）：从辽宁丹东沿海岸线一路向南到广西东兴，全长约7800公里，途经44座沿海城市。]]></description>
+    </item>
+    <item>
+      <title>[Movielife] 生化危机</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188713</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188713</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 17:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>恐怖氛围营造得不错，我一个惊悚片重度爱好者，有被吓到。结尾男主角异变的场景，让我有点闪回当年看《变蝇人》和《第九区》时生理上的不适感。至于有人吐槽&quot;降智&quot;，我倒觉得没必要太苛刻，恐怖片嘛，能吓到人就已经及格了。何况这还是这么老的一个IP，能在前系列的基础上拍出点新意，已经算得上可以了。]]></description>
+    </item>
+    <item>
+      <title>[Cyclone] 山地车骑行后感觉不舒服</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188712</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188712</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 17:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>骑行了14公里，之前没有骑过山地车，没有穿骑行裤，原装的那种又小又硬的车座，骑行后感觉尾骨和会阴部位压迫感比较重，这个会和骑行姿势或者车座角度有关系吗，换一个车座会好一点吗？]]></description>
+    </item>
+    <item>
+      <title>[ChildEducation] 大家来批判我一下</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188711</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188711</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 17:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>看我从儿子出生以后给他买的一堆数学书<br/>然后他没有看（当然我也没有看）<br/>大家来批判我一下<br/>-- from 水木拾光 APP]]></description>
+    </item>
+    <item>
+      <title>[Memory] 到了多少年龄就开始怀念以前 le ?</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188710</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188710</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 17:41:00 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】]]></description>
+    </item>
+    <item>
+      <title>找人聊天，最近有时间</title>
+      <link>https://www.newsmth.net/nForum/article/Divorce/2227541</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Divorce/2227541</guid>
+      <author>larax</author>
+      <pubDate>Sun, 25 Oct 2026 17:28:33 +0000</pubDate>
+      <description><![CDATA[男女不限。最近无欲无求状态，时间宽裕。可以聊天。<br/>人到中年，我是男人。<br/>我在海外，没法线下。或者说如果你觉得我在什么方面可以帮到你，也可以聊聊<br/>聊一下 可能无法改变你、我的命运，但或许能开一扇窗。<br/>发私信就行]]></description>
+    </item>
+    <item>
+      <title>到了多少年龄就开始怀念以前 le ?</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/190048</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190048</guid>
+      <author>Max2018</author>
+      <pubDate>Sun, 25 Oct 2026 17:24:59 +0000</pubDate>
+    </item>
+    <item>
+      <title>高德分屏导航来了 Duo有面子</title>
+      <link>https://www.newsmth.net/nForum/article/AutoWorld/1945336421</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/AutoWorld/1945336421</guid>
+      <author>nisus</author>
+      <pubDate>Sun, 25 Oct 2026 17:18:23 +0000</pubDate>
+      <description><![CDATA[首个针对折叠屏适配.<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>真是没有年轻人了，这个版面都没人了</title>
+      <link>https://www.newsmth.net/nForum/article/Beipiao/126419</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Beipiao/126419</guid>
+      <author>dijiudaomen</author>
+      <pubDate>Sun, 25 Oct 2026 17:10:00 +0000</pubDate>
+      <description><![CDATA[北方越来越颓了<br/>发自「今日水木 on PJZ110」]]></description>
+    </item>
+    <item>
+      <title>听了一晚上林栖的歌，才发现。。。</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647722</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647722</guid>
+      <author>syr</author>
+      <pubDate>Sun, 25 Oct 2026 16:46:25 +0000</pubDate>
+      <description><![CDATA[是个AI，现在AI可真是太厉害了，我还心想唱得这么好听，我以前咋从没听过？<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>[SecondDigi] [转让] Iphone 17 pro max 橙色，256G，已过保</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188709</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188709</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>如题，单手机，壳子忘了扔哪了，轻微磕碰，屏幕很小划痕，92%的电池.<br/>和平里和平新城自取，6500，站内联系。]]></description>
+    </item>
+    <item>
+      <title>[Age] 跟小孩聊天，说不找女朋友：（</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188708</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188708</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】]]></description>
+    </item>
+    <item>
+      <title>[ChildEducation] 小班孩子反馈保育员太严厉，不想上学，怎么办</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188707</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188707</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>目前在一个硬件很不错的公立园。但是保育员大妈很老派，对孩子训斥为主。曾经吓唬孩子再哭就让他去别的班，放学不让回家。为了工作省事，午睡不让脱袜子。<br/>孩子妈妈比较焦虑，考虑换到附近一个私立园。但是实在讲，这个私立园校区非常小，没什么活动地方。]]></description>
+    </item>
+    <item>
+      <title>[QingJiao] 杰青回老家都见不到县级</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188706</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188706</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>我认识的一个杰清回老家扫墓，镇长请他吃了个饭。镇长是他的高中同学<br/>没听说县里请他吃饭<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>[Divorce] 找人聊天，最近有时间</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188705</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188705</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>男女不限。最近无欲无求状态，时间宽裕。可以聊天。<br/>人到中年，我是男人。<br/>我在海外，没法线下。或者说如果你觉得我在什么方面可以帮到你，也可以聊聊<br/>聊一下 可能无法改变你、我的命运，但或许能开一扇窗。<br/>发私信就行]]></description>
+    </item>
+    <item>
+      <title>[Memory] 人生最幸福的两天</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188704</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188704</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>展开回忆一下人生最幸福的两天。<br/>那是多年前的一个冬天。<br/>女王大人因为生化痛苦了半年。同时她正在读的一门冷门专业也读不下去了。<br/>我在公司也实在干不动了，轻微抑郁，辞掉了工作。<br/>那是家顶级公司，再找那样的恐怕难，当时觉得太冲动了。<br/>新工作要换个地方，收入还少了不少。而且，还要办签证。<br/>我们住了几年的家也找好了租客，就等签证下来就启程。<br/>可笑的是，这根本不是计划中的。我们早就办了本地雪场的当年的雪季卡。还没用过几次，就要搬家走了。<br/>雪季卡有一个促销优惠，叫做雪场互惠。去外地几个雪场可以免费滑两天。其中有一个还挺有名。但是挺远。<br/>正好我没工作了，她学业也停了，又没有孩子，又在等签证。这个优惠不用白不用啊。<br/>启程，直奔那个很有名的雪场。<br/>出发第一天，就遇到大雪，高速公路上也全积满雪。幸好带了雪链。<br/>但只能开的很慢。结果忘了摘，雪链磨断了。<br/>本来一天的路程，第三天早上才到。<br/>然后直接上山，开滑。果然超棒的雪场，非周末，人不多。野的地方全是厚厚的粉雪不会滑，就在里面打滚。压好的雪道可以练技术，又长又好玩。<br/>我特别喜欢那种双人牵引。虽然结婚多年了，坐那个还是有情侣的感觉。<br/>我俩从早滑到晚。脚趾都挤肿了。<br/>中午我整了个气炉，在车旁边煮碗面吃。<br/>晚上下山，订了个了山脚下的快捷酒店。<br/>一个拐弯，车失控，打滑，当时感觉命是不是要交代了。<br/>幸好那个弯道有缓冲区，在缓冲区停了下来。死里逃生啊。<br/>到了酒店，远超我的想象。<br/>快捷酒店的价格，大酒店的规模。<br/>不但大，还有游泳池和SPA池。<br/>我俩游了会儿泳，又泡了SPA。<br/>而且可能是非周末，加上这几天雪大，泳池和SPA就我们俩人。<br/>回到房间，我带了个日式电火锅，拿出路上超市买的牛肉，蔬菜，搞了一锅寿喜锅。<br/>边吃，我们边看互相给拍的视频，互相点评滑雪技术。<br/>吃完，睡觉，那时候我们也没有刷小视频的爱好，最多也就刷刷水木清华。<br/>可能是开车，滑雪，游泳，SPA太费体力，加上死里逃生，造成荷尔蒙有点异常。总之睡前搞的有点猛。<br/>我们在那儿玩了两天，滑雪，游泳，SPA，火锅，还喝了点啤酒。最重要的，胡搞了两晚。<br/>我想，以后有机会还来吧。这么好玩，性价比还高。<br/>一个月后，她又怀孕了。结果我们已经到了另一个国家。太尴尬了。<br/>舔着大肚子找房子，孕检，办各种证明。<br/>结果这次一切正常，异常的顺利。<br/>又过了9个月，孩子出生了。<br/>然后，我又换了几份工作，碾转回到最初的地方。<br/>我还是办了同一个地方的雪季卡，但是再也没有那个有名雪场的互惠票了。<br/>我们俩也都身材走样，不再是那两个能滑一天雪，然后游泳，SPA，再胡搞的人了。<br/>那两天，再也无法复刻了。]]></description>
+    </item>
+    <item>
+      <title>[Aero] 美限制C919关键系统对华出口</title>
+      <link>https://www.newsmth.net/nForum/article/ShiDa/188703</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188703</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 25 Oct 2026 16:41:01 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>国货当自强！]]></description>
+    </item>
+    <item>
+      <title>东北话确实“感染性”很强啊</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647713</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647713</guid>
+      <author>axe</author>
+      <pubDate>Sun, 25 Oct 2026 16:33:14 +0000</pubDate>
+      <description><![CDATA[东北姑娘远嫁广西，生了个儿子，儿子一口东北话]]></description>
+    </item>
+    <item>
+      <title>我娃真贴心</title>
+      <link>https://www.newsmth.net/nForum/article/Age/20418539</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Age/20418539</guid>
+      <author>daturann</author>
+      <pubDate>Sun, 25 Oct 2026 16:31:26 +0000</pubDate>
+      <description><![CDATA[傍晚的时候陪我娃看绘本，陪娃看绘本我觉得是最疲倦的活。照本宣科，很多绘本实在是罗里吧嗦。一边看一边组织语言太费脑子了，再加上故事实在是很无聊。<br/>几本之后，我已经进入了梦游状态。<br/>实在撑不住了，跑房间里去躺着，我娃就追过来了，撵都撵不走。现在但凡是玩耍，她就是很粘我。没办法，只能让她爬上床。<br/>然后我就立马晕过去了（睡着了）。醒来的时候发现身上盖着毯子。哈哈哈，娃真贴心。出来看了看时间，睡了半小时，娃在旁边也不吵，陪我睡了半小时。]]></description>
+    </item>
+    <item>
+      <title>很难想象用2W多的爱疯多夹在车载支架上导航…</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647710</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647710</guid>
+      <author>Ceraphim</author>
+      <pubDate>Sun, 25 Oct 2026 16:31:03 +0000</pubDate>
+      <description><![CDATA[高德还在吹嘘专门为了爱疯多做了适配…估计市场上的支架也得跟风为爱疯多搞一个适配，原来那种夹不进去。本老的导航/娱乐专用机才2K，用了好多年…<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>想一个人去外地呆几天</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3564603</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3564603</guid>
+      <author>Missing7</author>
+      <pubDate>Sun, 25 Oct 2026 16:20:56 +0000</pubDate>
+      <description><![CDATA[没有娃，不联系人！]]></description>
+    </item>
+    <item>
+      <title>巴西第二轮总统选举结果即将揭晓</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647695</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647695</guid>
+      <author>nisus</author>
+      <pubDate>Sun, 25 Oct 2026 16:10:37 +0000</pubDate>
+      <description><![CDATA[右翼参议员弗拉维奥·博索纳罗对阵现任总统卢拉·达席尔瓦。最新民调显示，两人支持率分别为47%和46%。<br/>如果博索纳罗胜选选，巴西外交重心将会偏移：<br/>优先拉近美国，谈美巴自贸、加入美方美洲安全倡议，在稀土、供应链上会承受美方压力；<br/>金砖、本币结算、全球南方这类议题优先级下调。<br/>投资审查门槛抬升：基建、矿产、新能源的中资项目，审批、反垄断、环保审查会更严。<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>肚子好饿</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3564594</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3564594</guid>
+      <author>Missing7</author>
+      <pubDate>Sun, 25 Oct 2026 16:09:14 +0000</pubDate>
+      <description><![CDATA[起来收拾一下，拖了地，煮个面吃，还没煮好，娃就醒了，唉！]]></description>
+    </item>
+    <item>
+      <title>又被曼联坑了！！这是准备去保级了吧</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47647690</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647690</guid>
+      <author>Ceraphim</author>
+      <pubDate>Sun, 25 Oct 2026 16:04:57 +0000</pubDate>
+      <description><![CDATA[连着三场1-1就忍了，今主场打伯恩都能输0-3！偏偏就这个比分没上…<br/>--发自 ismth(丝滑版)]]></description>
     </item>
     <item>
       <title>中印又有事了？</title>
@@ -468,30 +857,6 @@
       <description><![CDATA[除非说的低的可怜<br/>以版上的水平，怎么也得五千起步<br/>你非要去跟体制内比，跟特权阶层比，那不是自找不痛快<br/>再说了，那个时候，有几个不是一身是病的，那还能到处玩？<br/>五千，八千有多大区别？]]></description>
     </item>
     <item>
-      <title>[航空航天] 美限制C919关键系统对华出口</title>
-      <link>https://www.newsmth.net/nForum/article/Aero/563694</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Aero/563694</guid>
-      <author>航空航天</author>
-      <pubDate>Sun, 25 Oct 2026 11:15:01 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Aero_563694.jpg?v=" alt="" /><br/>美限制C919关键系统对华出口]]></description>
-    </item>
-    <item>
-      <title>[离婚] 带孩子再婚好难！【观恋综有感】</title>
-      <link>https://www.newsmth.net/nForum/article/Divorce/2226944</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Divorce/2226944</guid>
-      <author>离婚</author>
-      <pubDate>Sun, 25 Oct 2026 11:15:01 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Divorce_2226944.jpg?v=" alt="" /><br/>带孩子再婚好难！【观恋综有感】]]></description>
-    </item>
-    <item>
-      <title>[汽车世界] 灯杆施工图</title>
-      <link>https://www.newsmth.net/nForum/article/AutoWorld/1945335918</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/AutoWorld/1945335918</guid>
-      <author>汽车世界</author>
-      <pubDate>Sun, 25 Oct 2026 11:15:01 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945335918.jpg?v=" alt="" /><br/>灯杆施工图]]></description>
-    </item>
-    <item>
       <title>温水煮这么多年，现在已经是热锅了，欧洲人还自嗨</title>
       <link>https://www.newsmth.net/nForum/article/NewExpress/47646335</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646335</guid>
@@ -682,14 +1047,6 @@
       <description><![CDATA[儿子做不成了，做孙子]]></description>
     </item>
     <item>
-      <title>今年老钟顺差1.3we，去年1we，占了全球顺差40%</title>
-      <link>https://www.newsmth.net/nForum/article/Stock/11611452</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Stock/11611452</guid>
-      <author>meirenai</author>
-      <pubDate>Sun, 25 Oct 2026 10:39:46 +0000</pubDate>
-      <description><![CDATA[目测未来出口基本上没有增长空间了<br/>感觉接下来消费可能是个风口<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
       <title>父母与孩子</title>
       <link>https://www.newsmth.net/nForum/article/Liyidaiwa/19454</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Liyidaiwa/19454</guid>
@@ -727,14 +1084,6 @@
       <author>shawn2024</author>
       <pubDate>Sun, 25 Oct 2026 09:52:11 +0000</pubDate>
       <description><![CDATA[女的延迟退休至65，男女一样？]]></description>
-    </item>
-    <item>
-      <title>欧洲各国退休年龄 不解释看图</title>
-      <link>https://www.newsmth.net/nForum/article/Geography/693377</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Geography/693377</guid>
-      <author>bessone</author>
-      <pubDate>Sun, 25 Oct 2026 09:40:44 +0000</pubDate>
-      <description><![CDATA[男女都一样 差不多都65起步<br/>瑞典丹麦最苦逼<br/>干到70才让退<br/>丹麦74<br/>具体看图<br/>东方大国才是真正福利的大国]]></description>
     </item>
     <item>
       <title>咖啡小憩</title>
@@ -1017,30 +1366,6 @@
       <description><![CDATA[还是只是个噱头]]></description>
     </item>
     <item>
-      <title>[似水流年] 很多人看了都会沉默的话</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190032</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Memory/190032</guid>
-      <author>似水流年</author>
-      <pubDate>Sun, 25 Oct 2026 04:30:07 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Memory_190032.jpg?v=" alt="" /><br/>很多人看了都会沉默的话]]></description>
-    </item>
-    <item>
-      <title>[青年教师] 32家单位迎来中央巡视，多所高校列入名单</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034123</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/QingJiao/1034123</guid>
-      <author>青年教师</author>
-      <pubDate>Sun, 25 Oct 2026 04:30:07 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/QingJiao_1034123.jpg?v=" alt="" /><br/>32家单位迎来中央巡视，多所高校列入名单]]></description>
-    </item>
-    <item>
-      <title>[家庭生活] 居家办公的烦恼</title>
-      <link>https://www.newsmth.net/nForum/article/FamilyLife/1767759461</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/FamilyLife/1767759461</guid>
-      <author>家庭生活</author>
-      <pubDate>Sun, 25 Oct 2026 04:30:07 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767759461.jpg?v=" alt="" /><br/>居家办公的烦恼]]></description>
-    </item>
-    <item>
       <title>北上广深，一线城市家庭正在加速变的贫穷吧</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3563938</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563938</guid>
@@ -1175,28 +1500,12 @@
       <description><![CDATA[今天，湖南麻阳张雪机车创始人张雪驾驶改装机车MX450成功刷新“改装摩托车在开阔水域行驶最远距离”吉尼斯世界纪录<br/>--发自 ismth(丝滑版)]]></description>
     </item>
     <item>
-      <title>大家收入拖后腿了吗？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643970</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643970</guid>
-      <author>ddle</author>
-      <pubDate>Sun, 25 Oct 2026 04:07:32 +0000</pubDate>
-      <description><![CDATA[前三季度，全国居民人均可支配收入同比名义增长5.3%，扣除价格因素，实际增长4.4%，比上半年分别加快0.1个和0.2个百分点。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
       <title>中午吃了一顿红烧肉，爽呆了</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3563885</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563885</guid>
       <author>lili2030</author>
       <pubDate>Sun, 25 Oct 2026 04:04:26 +0000</pubDate>
       <description><![CDATA[各位老六<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>邻居家有个臭毛病</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643947</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643947</guid>
-      <author>axe</author>
-      <pubDate>Sun, 25 Oct 2026 04:03:38 +0000</pubDate>
-      <description><![CDATA[家里一炖肉炖鱼的，就喜欢把门打开一条缝]]></description>
     </item>
     <item>
       <title>公狗腰</title>
@@ -1215,36 +1524,12 @@
       <description><![CDATA[这几天同事总蹭我车，心如刀割<br/>--发自 ismth(丝滑版)]]></description>
     </item>
     <item>
-      <title>富豪们排队把钱从香港，新加坡搬去美国</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643933</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643933</guid>
-      <author>llzllx</author>
-      <pubDate>Sun, 25 Oct 2026 03:59:29 +0000</pubDate>
-      <description><![CDATA[因为美国没有加入CRS，不会给中国送数据。]]></description>
-    </item>
-    <item>
-      <title>青岛曾能进一步吗？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643917</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643917</guid>
-      <author>model</author>
-      <pubDate>Sun, 25 Oct 2026 03:56:23 +0000</pubDate>
-      <description><![CDATA[贵校隔壁的]]></description>
-    </item>
-    <item>
       <title>高校的5个肥差</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034211</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034211</guid>
       <author>babu2015</author>
       <pubDate>Sun, 25 Oct 2026 03:56:19 +0000</pubDate>
       <description><![CDATA[食材采购、验收、库管、财务、食堂经理等5类岗位。]]></description>
-    </item>
-    <item>
-      <title>2028年丑国奥运会  要展示丑国的什么国宝呢？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643919</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643919</guid>
-      <author>liangxianfan</author>
-      <pubDate>Sun, 25 Oct 2026 03:55:06 +0000</pubDate>
-      <description><![CDATA[2016年阴国奥运会  开幕式展示的是阴国NHS医疗系统<br/>2020年巴西奥运会  开幕式展示的是巴西国宝 名模吉赛尔<br/>那么2028年丑国奥运会<br/>要展示丑国的什么国宝呢<br/>懂的说说]]></description>
     </item>
     <item>
       <title>卖书了</title>
@@ -1261,38 +1546,6 @@
       <author>lili2030</author>
       <pubDate>Sun, 25 Oct 2026 03:54:10 +0000</pubDate>
       <description><![CDATA[各位老六<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>Steve Mao 阴谋论 出来了 by江边日出 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643902</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643902</guid>
-      <author>pkupctner</author>
-      <pubDate>Sun, 25 Oct 2026 03:53:24 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 QingJiao 讨论区 】<br/>如果相关 bribery 数据被 cell 交给了背后的政府，比如 cia、fbi 和 mi6，那将毫无疑问构成国家安全问题。根据 Jack Ma 的南华报报道，bribe 顶刊编辑已经是公开的秘密，尤其是医学期刊，大家都心照不宣的花大钱发顶刊。然而，能够发 cns 的，显然都不是一般的研究人员。如果他们的把柄在别人手中，后果是不言而喻的不堪设想。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>急问：芬必得的布洛芬0.4克的改成了金芬必得了吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643886</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643886</guid>
-      <author>saic</author>
-      <pubDate>Sun, 25 Oct 2026 03:51:56 +0000</pubDate>
-      <description><![CDATA[原来买的叫芬必得，现在只看到金芬必得]]></description>
-    </item>
-    <item>
-      <title>地青当过男闺蜜吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643879</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643879</guid>
-      <author>wobaba</author>
-      <pubDate>Sun, 25 Oct 2026 03:50:36 +0000</pubDate>
-      <description><![CDATA[什么体验]]></description>
-    </item>
-    <item>
-      <title>自驾水平，fsd大幅领先</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47643873</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47643873</guid>
-      <author>Tianyake99</author>
-      <pubDate>Sun, 25 Oct 2026 03:49:33 +0000</pubDate>
-      <description><![CDATA[看了B站一个up主的测评，他测的特斯拉是全血版的特斯拉，不知道破解还是怎么弄得，对比国内遥遥领先和小鹏等，fsd可以说是断层式领先，还是全视觉方案，简单说就是觉得有一个经验丰富司机在替你开车，全程高强度那种。这么看，将来自驾的主要玩家应该不是各主机厂家，而是AI巨头。<br/>--发自 ismth(丝滑版)]]></description>
     </item>
     <item>
       <title>法国岌岌可危</title>
@@ -1335,257 +1588,12 @@
       <description><![CDATA[如果相关 bribery 数据被 cell 交给了背后的政府，比如 cia、fbi 和 mi6，那将毫无疑问构成国家安全问题。根据 Jack Ma 的南华报报道，bribe 顶刊编辑已经是公开的秘密，尤其是医学期刊，大家都心照不宣的花大钱发顶刊。然而，能够发 cns 的，显然都不是一般的研究人员。如果他们的把柄在别人手中，后果是不言而喻的不堪设想。<br/>--发自 ismth(丝滑版)]]></description>
     </item>
     <item>
-      <title>很多人看了都会沉默的话</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190032</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190032</guid>
-      <author>DDOO</author>
-      <pubDate>Sun, 25 Oct 2026 03:29:56 +0000</pubDate>
-    </item>
-    <item>
       <title>焦虑</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3563840</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563840</guid>
       <author>sarahplaying</author>
       <pubDate>Sun, 25 Oct 2026 03:28:03 +0000</pubDate>
       <description><![CDATA[明天领导要回来上班了<br/>我是她休产假期间招进来的<br/>所以至今还没有见过面<br/>然而<br/>最近这两周是我孕吐最严重的时候<br/>领导万一凶我我吐了怎么办<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>最新排序名单</title>
-      <link>https://www.newsmth.net/nForum/article/GaoKao/683587</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/GaoKao/683587</guid>
-      <author>shuiyouli</author>
-      <pubDate>Sun, 25 Oct 2026 03:27:24 +0000</pubDate>
-      <description><![CDATA[北清人师]]></description>
-    </item>
-    <item>
-      <title>最惊艳的几次美食体验</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780085</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780085</guid>
-      <author>coolsailor</author>
-      <pubDate>Sun, 25 Oct 2026 03:16:17 +0000</pubDate>
-      <description><![CDATA[1. 我第一次带女友回家过年，我爸不知道怎么回事，买了堆青辣椒，做了一次农家小炒肉。那个香啊，可惜他再也没能复刻成功过。<br/>2. 有一次我去一个外企打工，我是没有编制的零时员工。结果一个项目整组全靠我输出。每晚加班，team lead带我去楼下（国贸）的一个餐馆吃饭，说能报销。感觉一顿饭能抵我一周的薪水。点了个红烧肉，然后我点了一碗米饭，team lead说他点三碗，另一个Sr. engineer也说，必须点三碗。后来一碗饭真不够，那个红烧肉确实做的有点东西。<br/>3. 有一次去北边远郊区办个什么事，去了一个西北餐馆，点了个拉条子。太好吃了，配几个串，啤酒，太绝了。可惜后来在去任何西北餐馆，都吃不出那个味道。<br/>4. 有一次春游，一个同学带了一大袋水煮带壳花生，分给我们吃。太上瘾了，后来再也复刻不了那种感觉。<br/>5. 我记得是西直门，北交附近的一个小餐馆，大盘鸡太好吃了。估计早没了吧。<br/>6. 有一次参加团队徒步。大家轮流背领队的一个70L大背包，我还说是什么。到了地方，他打开包，支一个烧烤架，然后烤鸡翅。鸡翅就是简单用盐和酱油腌了一下。太好吃了。<br/>7. 第一次吃珍宝蟹，太爽了。不是阳澄湖那种垃圾小螃蟹能比的。<br/>8. 一次父母来我们家小住半年。知道我老婆爱吃锅包肉，我爸尝试自己做。他说是按照一个菜谱，最后出来成品跟我们之前吃的锅包肉都不一样。但我觉得完爆任何餐馆的锅包肉了。第一次改变了我对锅包肉的刻板印象：锅包肉也能很好吃。他后来再也没有复刻成功。<br/>9. 很多很多年前，清河永泰那个地方还非常破。有一个卖鸡蛋罐饼的摊位，他们必须三个人配合一起做，围着一个烤炉。饼一定要在烤炉里烤一下，不是现在的简化板就烙一下。太好吃了，再没吃到过。]]></description>
-    </item>
-    <item>
-      <title>马竞浪子已回头！阿尔瓦雷斯连场破门+公开道歉</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190070</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190070</guid>
-      <author>historia</author>
-      <pubDate>Sun, 25 Oct 2026 03:14:39 +0000</pubDate>
-      <description><![CDATA[寇乔10-25 09:26体坛+原创<br/>体坛周报全媒体报道<br/>本周六西甲第10轮，马德里竞技主场1比0小胜拉科鲁尼亚，在比巴塞罗那先赛的情况下逼近了西甲领头羊，以2分之差暂列积分榜次席。此役马竞最大的亮点，当属打进全场唯一进球的阿尔瓦雷斯。这也是“小蜘蛛”连续两场破门，周中欧冠马竞1比1战平斯图加特，也是这位阿根廷前锋为本队建功。而一周前对西班牙人的1比0胜利，阿尔瓦雷斯还有一次助攻。<br/>显而易见，小蜘蛛的状态目前非常不错，而故事的重点，在于这发生在夏天的转会闹剧之后。此役助球队获胜，阿尔瓦雷斯也公开向马竞球迷做出了道歉，承认世界杯期间的言论就是个错误。<br/>美加墨世界杯期间，阿尔瓦雷斯曾在接受采访时表达了希望转会加盟巴萨的愿望。当时阿根廷人宣称，让他转会才是对双方最好的选择。而时隔数月，夏天未能如愿以偿的阿尔瓦雷斯似乎终于彻底回心转意，他在对拉科鲁尼亚赛后表示：“我向我们的球迷道歉，他们一直以来都对我非常慷慨。那既不是合适的时机，也不是恰当的处理方式。如果我是球迷，我也会生气的。”随后阿根廷人还补充了一句，“现在，是时候为（马竞的）一切而战了。”<br/>场上有优异的表现，场下又公开道歉，这明显算是阿尔瓦雷斯放弃转会执念的信号，现在他要安心留下来为马竞奋斗。而对此转变，主帅西蒙尼倒是表现得比较平静，赛后他表示：“说实话，这件事做得对还是错，不是由我来评判的。生活还要继续，各种情况都会发生，每个人都必须面对实际发生在自己身上的事情。事情已经发生了，那就这样吧。”<br/>不过马竞主帅还是高度评价了阿尔瓦雷斯的表现，认为他确实努力修复了其与球迷的关系：“他踢了一场精彩的比赛。球迷们为他的进球欢呼，就像为球队的每一个进球欢呼一样，无论进球的是阿尔瓦雷斯还是其他人。显然他们也认可阿尔瓦雷斯在比赛中的付出，因为他的表现非常出色，水准极高。他延续了前几天在欧冠比赛中的出色发挥。”<br/>“我们正在看到最好的阿尔瓦雷斯。正如我最近所说的，无论是为了俱乐部的目标，还是为了满足球迷的期待，我们都需要阿尔瓦雷斯保持这样的状态。”西蒙尼如此夸奖道。另外据马竞主帅透露，虽然阿尔瓦雷斯的言论曾在外界引发轩然大波，但球队内部始终很平静地面对这件事，“因为他是个讨人喜欢的小伙子，一直表现得很好。我们非常了解他，也知道他经历过的整个过程。他与我们相处时始终表现得很好，一直尊重球员、队友、工作人员、医生和新闻部门的同事，也始终努力在球场上为我们的球迷拿出最好的表现。我认为，通过这样的方式，他正在重新回到上赛季所处的位置。”]]></description>
-    </item>
-    <item>
-      <title>北京社保哪种交法最划得来？</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/348026</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348026</guid>
-      <author>shenmu</author>
-      <pubDate>Sun, 25 Oct 2026 02:49:46 +0000</pubDate>
-      <description><![CDATA[比如一个人本来工作到退休需要交30年，<br/>A.交20年社保，30年医保<br/>B.交25年社保，30年医保<br/>C.交30年社保，30年医保<br/>如果都按最低档缴费。]]></description>
-    </item>
-    <item>
-      <title>太惨了。一时不慎得了精神分裂。</title>
-      <link>https://www.newsmth.net/nForum/article/Tooooold/524627</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Tooooold/524627</guid>
-      <author>sleepless2</author>
-      <pubDate>Sun, 25 Oct 2026 02:48:57 +0000</pubDate>
-      <description><![CDATA[始终在现实和虚幻中徘徊。分辨不清楚什么是真什么是假。太惨了。大家说呢。]]></description>
-    </item>
-    <item>
-      <title>[Memory] 很多人看了都会沉默的话</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188686</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188686</guid>
-      <author>deliver</author>
-      <pubDate>Sun, 25 Oct 2026 02:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】]]></description>
-    </item>
-    <item>
-      <title>[GaoKao] 最新排序名单</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188685</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188685</guid>
-      <author>deliver</author>
-      <pubDate>Sun, 25 Oct 2026 02:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>北清人师]]></description>
-    </item>
-    <item>
-      <title>20年社保还是有点难度的吧</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/348024</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348024</guid>
-      <author>fakelake</author>
-      <pubDate>Sun, 25 Oct 2026 02:40:39 +0000</pubDate>
-      <description><![CDATA[25岁工作到50失业，中间只有5年时间供休整]]></description>
-    </item>
-    <item>
-      <title>各省下饭菜统计</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780179</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780179</guid>
-      <author>hok852</author>
-      <pubDate>Sun, 25 Oct 2026 02:35:22 +0000</pubDate>
-      <description><![CDATA[个人感觉<br/>所谓下饭菜特指吃完一碗米饭需要添的那种<br/>东北：豆角炖排骨<br/>山东：蒜爆肉<br/>山西：过油肉<br/>江浙：茨菇烧肉<br/>湖南：辣椒炒肉<br/>四川：回锅肉<br/>云南：黑三剁<br/>福建：海蛎煎蛋<br/>。。]]></description>
-    </item>
-    <item>
-      <title>小孩的吐槽</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3563760</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563760</guid>
-      <author>antaplus</author>
-      <pubDate>Sun, 25 Oct 2026 01:58:49 +0000</pubDate>
-      <description><![CDATA[我侄子的外婆对他约束比较多，这不让那不让的，他比较怕外婆。家里其他人基本是随便怎么玩，保证安全就行。他妈妈也偶尔管一下。<br/>小孩现在吓唬人就说: 婆来了。<br/>他还有个口头禅就是要出差了，有时候去海海，有时候去北京。<br/>刚才视频，他跟我说: 去海海出差，带婆来。。。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>人体工学键盘</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559286</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559286</guid>
-      <author>ueb</author>
-      <pubDate>Sun, 25 Oct 2026 01:58:21 +0000</pubDate>
-    </item>
-    <item>
-      <title>[OurEstate] 北上的经济是彻底要嗝了</title>
-      <link>https://www.newsmth.net/nForum/article/ShiDa/188684</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/ShiDa/188684</guid>
-      <author>deliver</author>
-      <pubDate>Sun, 25 Oct 2026 01:41:01 +0000</pubDate>
-      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>大城市的经济现在很差，北京上海社零烂的很，连全国平均线都达不到。]]></description>
-    </item>
-    <item>
-      <title>清纯可爱</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559275</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559275</guid>
-      <author>inikang</author>
-      <pubDate>Sun, 25 Oct 2026 01:36:30 +0000</pubDate>
-      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>现在职称评聘体系对大学老师真的不公平，没人关注</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034162</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034162</guid>
-      <author>hitmanman</author>
-      <pubDate>Sun, 25 Oct 2026 01:34:09 +0000</pubDate>
-      <description><![CDATA[很多在企业、研究所里的，靠着一个省级项目参与、2-3篇排第四、第五的挂名论文，就是高级工程师（副高）了。<br/>大学老师主持两三个省级项目、青基的，SCI第一作者自己写的十来篇，还是讲师，比比皆是（没名额，得排队，职称评聘要求越来越高，达标了排队没排上，过2年又不满足评职称要求了）。]]></description>
-    </item>
-    <item>
-      <title>菜鸡互啄</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3563750</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563750</guid>
-      <author>shawn2024</author>
-      <pubDate>Sun, 25 Oct 2026 01:25:02 +0000</pubDate>
-      <description><![CDATA[好久没玩了，估计都是新手，菜鸡互啄夺冠<br/>- 来自 水木说]]></description>
-    </item>
-    <item>
-      <title>喜欢打台球吗</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559270</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559270</guid>
-      <author>fengkang</author>
-      <pubDate>Sun, 25 Oct 2026 01:07:50 +0000</pubDate>
-      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>说说帝都豆腐脑排名。</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780163</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780163</guid>
-      <author>jiangb</author>
-      <pubDate>Sun, 25 Oct 2026 01:05:56 +0000</pubDate>
-      <description><![CDATA[第1 原鸿宾楼展览路这边的豆腐脑配煮蛋和油饼，现在不开了。<br/>第2 护国寺小吃的，偏咸<br/>第3 庆丰包子]]></description>
-    </item>
-    <item>
-      <title>各位老七都起床了没？</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3563741</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563741</guid>
-      <author>Max2018</author>
-      <pubDate>Sun, 25 Oct 2026 00:58:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>到了多少年龄就开始怀念以前 le ?</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190048</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190048</guid>
-      <author>Max2018</author>
-      <pubDate>Sun, 25 Oct 2026 00:55:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>跟小孩聊天，说不找女朋友：（</title>
-      <link>https://www.newsmth.net/nForum/article/Age/20418530</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Age/20418530</guid>
-      <author>fangwill2010</author>
-      <pubDate>Sun, 25 Oct 2026 00:52:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>最好的食物应该是妈妈做的饭菜吧：）</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780157</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780157</guid>
-      <author>jocelyn2010</author>
-      <pubDate>Sun, 25 Oct 2026 00:47:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>先有面包先有爱情？</title>
-      <link>https://www.newsmth.net/nForum/article/Love/6340724</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Love/6340724</guid>
-      <author>fangwill2027</author>
-      <pubDate>Sun, 25 Oct 2026 00:42:02 +0000</pubDate>
-    </item>
-    <item>
-      <title>2027考公数据！</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/348009</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348009</guid>
-      <author>HFHC</author>
-      <pubDate>Sun, 25 Oct 2026 00:40:11 +0000</pubDate>
-    </item>
-    <item>
-      <title>川子纹去掉还是比较容易，花了1.8个。</title>
-      <link>https://www.newsmth.net/nForum/article/Beauty/389010</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Beauty/389010</guid>
-      <author>Richard2027</author>
-      <pubDate>Sun, 25 Oct 2026 00:38:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>公 事业的区别！</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/348008</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348008</guid>
-      <author>HFHC</author>
-      <pubDate>Sun, 25 Oct 2026 00:36:37 +0000</pubDate>
-    </item>
-    <item>
-      <title>有时候真是活见鬼</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250215</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250215</guid>
-      <author>wuduan2</author>
-      <pubDate>Sun, 25 Oct 2026 00:36:03 +0000</pubDate>
-      <description><![CDATA[某个Excel文件<br/>我清晰的记得我修改成什么样了<br/>但是打开后发现没有改成那个样子<br/>我想可能是在另一台计算机修改的，忘了同步回来，这段时间只用过这两台电脑，<br/>然而打开另一台计算机发现也没有改。<br/>我安慰自己说可能改了之后忘了保存了。<br/>然后又出现另一个更诡异的事情，我的Excel表格两个单元格计算结果出错，颠倒了，<br/>我并没有修改过其中的公式啊<br/>百思不得其解<br/>于是关闭这个Excel，重新打开，计算结果正常了<br/>最近经常出现类似的事<br/>让我习惯于理性思维的大脑一时间无法接受]]></description>
-    </item>
-    <item>
-      <title>早上起来一碗红枣桂圆粥，舒服的很</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250213</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250213</guid>
-      <author>Richard2018</author>
-      <pubDate>Sun, 25 Oct 2026 00:25:32 +0000</pubDate>
-    </item>
-    <item>
-      <title>下雨天在家盖厚被子躺着真幸福</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3563731</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3563731</guid>
-      <author>Cadillac2025</author>
-      <pubDate>Sun, 25 Oct 2026 00:05:04 +0000</pubDate>
-      <description><![CDATA[刷刷水木刷刷痘印 看看美女。大家今天怎么过？但周末两天都阴天确实不太好 至少应该阳光灿烂一天<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>32家单位迎来中央巡视，多所高校列入名单</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034123</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034123</guid>
-      <author>HLWJSJ</author>
-      <pubDate>Sat, 24 Oct 2026 23:25:15 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>维修室内门更换门把手</title>
-      <link>https://www.newsmth.net/nForum/article/DIY/11267</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11267</guid>
-      <author>digital</author>
-      <pubDate>Sat, 24 Oct 2026 23:18:29 +0000</pubDate>
-      <description><![CDATA[出租房的几个室内门，开发商给安装的门把手是那种一个小圆面板，直接用三颗尖头螺丝拧在木门上面的。<br/>时间长了，螺丝松动，屡次重新拧紧，木头都已经糟了，把手开始活动。租户一开始用透明胶带把两边缠住凑合用。<br/>后来粘也粘不住了，只能维修。<br/>怎么修呢，原来这种样式的把手肯定不能用了，买来也装不上了。<br/>调整门锁位置，也是不现实的。<br/>换锁芯的话，不仅要求新的锁芯跟旧的锁芯外观尺寸一致，门框上的那部分也得重新开孔，也不是个好方法。<br/>最好的办法是买两个尺寸合适的有宽大面板的把手，这种把手的两块面板有对开的螺丝孔，螺丝直接拧紧面板，面板被压紧在木门上面，木门本身不会有什么损伤，除了需要在面板螺丝孔的位置钻两个孔。<br/>这里“尺寸合适”的意思是，新面板的“中心孔”距离必须跟旧锁芯中心孔的距离也就是上下两个舌头的中心距离一致，否则面板套不上去。<br/>原来这个门锁的锁芯设计很特别，上下两个舌头的中心距是70毫米，对应的面板中心孔距也要求是这么长，但是这个孔距的面板非常难找，我找了很长时间，才勉强找到孔距72毫米的，觉得应当可以用，就买了回来。<br/>把新面板套在旧锁芯上试了一下，是可以套上去的。然后在门上面描好紧固螺丝孔的位置，门的两侧都要描好。<br/>电钻开孔，可以稍微开大一点，这样后面容易调整位置，我用的是8毫米的钻头。<br/>上下孔开好了就可以把两块面板套上，拧紧螺丝，就搞定了，实测使用效果很好，比原来的好多了，非常结实。<br/>新的把手是不带锁芯的，一套是50元。租户之前自己找了个师傅，说能修，一个门200元，还让师傅跟我打电话，我一听他说的方法就知道肯定装不上去，他根本没有这种尺寸的面板。]]></description>
-    </item>
-    <item>
-      <title>[股市] 太搞笑了，有个股票叫中国神话，煤炭龙头20倍pe</title>
-      <link>https://www.newsmth.net/nForum/article/Stock/11611523</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Stock/11611523</guid>
-      <author>股市</author>
-      <pubDate>Sat, 24 Oct 2026 23:07:15 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Stock_11611523.jpg?v=" alt="" /><br/>太搞笑了，有个股票叫中国神话，煤炭龙头20倍pe]]></description>
     </item>
   </channel>
 </rss>
