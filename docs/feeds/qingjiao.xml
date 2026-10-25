@@ -5,9 +5,41 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 11:15:01 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 25 Oct 2026 16:02:16 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>各位大佬在接收保研学生的时候看重本科科研吗</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034323</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034323</guid>
+      <author>smartlinux</author>
+      <pubDate>Sun, 25 Oct 2026 15:25:18 +0000</pubDate>
+      <description><![CDATA[总觉得本科高科研有些儿戏]]></description>
+    </item>
+    <item>
+      <title>大家同学中最稳拿的现在什么情况 (转载)</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034310</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034310</guid>
+      <author>inception10</author>
+      <pubDate>Sun, 25 Oct 2026 13:23:27 +0000</pubDate>
+      <description><![CDATA[【 以下文字转载自 NewExpress 讨论区 】<br/>我大学同学，毕业后一直在学校任教当教授，正好赶上现在科技浪潮，跟学生一起创办公司，最近听说居然很快就要上市了，估值几百个亿，而且公司成立到现在也没几年，真是名利双收啊，而且现在学校这边的职位还都在，也没辞职，平时也看他没怎么搞科研，真是厉害呀]]></description>
+    </item>
+    <item>
+      <title>领导布这种局，有什么建议</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034306</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034306</guid>
+      <author>bamboo79</author>
+      <pubDate>Sun, 25 Oct 2026 12:52:46 +0000</pubDate>
+      <description><![CDATA[领导是大型校企一把手，又是院系绝对实控人（院系领导，长聘教授委员会基本都是其学生和团队），还是领域重大项目科研经费管理机构和验收评价机构挂靠单位负责人，影响力大。<br/>领导设计了个大设施能从全国高校源源不断收费，其中不少被其多种包装后输送到家族公司。<br/>本人是在校许多年的事编研究系列，由于坚持原则在违规流程上不配合领导，还刚直多次谏言。先是在获得重要国家科技奖励的年份被领导主持长聘教授会没有理由硬变成了一年聘期，然后今年又要通过长聘教授会（成员全是其学生和团队成员）以投票方式不动声色把人解聘。]]></description>
+    </item>
+    <item>
+      <title>ZZ：震撼！北大杰青 nature （子刊）被质疑用随机数生成器</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034287</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034287</guid>
+      <author>pkupctner</author>
+      <pubDate>Sun, 25 Oct 2026 12:15:58 +0000</pubDate>
+      <description><![CDATA[然而，Figure 5 中实验数据被质疑由随机器生成，作者尚未回复。质疑者通过逆向分析，发现图中的数据可以使用 NumPy 的随机数生成器复现，随机种子为：np.random.seed(42)而且，生成数据的过程还相当讲究。每组 400 个数据点中，300 个来自标准差为 3 的正态分布，80 个来自标准差为 6 的正态分布，剩下 20 个则使用均匀分布制造正负两侧的离群值。然而，质疑者将生成的数据与论文 PDF 中提取的散点进行比较，发现两者几乎完全吻合，甚至连数据的排列顺序都相同。<br/>在全部 16 组数据中，最低的 Pearson 相关系数竟然高达 0.999999996！这意味着什么？计算机的伪随机数生成器实际上是确定性的。只要采用相同的算法、随机种子和调用顺序，就能够得到相同的随机数。而质疑者几乎完整复现了论文数据的生成过程。<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>条子生目前都身居要职了吧</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034266</link>
@@ -369,37 +401,6 @@
       <author>shuiyouli</author>
       <pubDate>Tue, 20 Oct 2026 10:23:57 +0000</pubDate>
       <description><![CDATA[10月15日，求是科技基金会在官网正式公布了2026年度的求是杰出科学家奖的完整名单，本次共有四位获奖人，他们因其突破性研究和对人类知识的贡献而获表彰，奖金一百万。<br/>本次求是杰出科学家奖分别授予了数学（Mathematics）和物理（Physics）两大领域，数学领域的获奖人是来自纽约大学和法国高等科学研究所（IHES）的双聘教授王虹和来自复旦大学的王国祯教授。王虹本次因“其在调和分析与几何测度论方面的贡献”而获表彰，包括她在局部光滑化、Furstenberg集方面的开创性工作，尤其是解决了三维挂谷猜想。王国祯本次因“其在同伦论以及球面稳定同伦群计算方面的开创性贡献”而获此殊荣。<br/>物理领域的获奖人是上海交通大学的贾金锋院士和美国科罗拉多大学博尔德分校的叶军院士。]]></description>
-    </item>
-    <item>
-      <title>撤稿蔓延到微分方程了</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1033489</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033489</guid>
-      <author>isotropic</author>
-      <pubDate>Tue, 20 Oct 2026 10:19:12 +0000</pubDate>
-      <description><![CDATA[更正幅度过大无法通过更正解决：北京大学一篇数值方法论文被撤回]]></description>
-    </item>
-    <item>
-      <title>这边有看过路易体痴呆患者写的“故障的大脑”这本书的没有呢？</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1033487</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033487</guid>
-      <author>xpu</author>
-      <pubDate>Tue, 20 Oct 2026 10:06:15 +0000</pubDate>
-      <description><![CDATA[对日本路易体痴呆症患者所写的“故障的大脑”，有何评价呢？]]></description>
-    </item>
-    <item>
-      <title>为什么不在国内多设立一些国际奖项？</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1033442</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033442</guid>
-      <author>kadoyo</author>
-      <pubDate>Tue, 20 Oct 2026 08:53:25 +0000</pubDate>
-      <description><![CDATA[国际奖项是面向全球进行评选的，这样的评奖多了，又客观又公正，奖金也很丰富，自然提高国家的声誉吧？ 有关奖金来源的压力也会促使基金会这样的机构产生并发展运营--类似诺奖]]></description>
-    </item>
-    <item>
-      <title>[讨论]那么多助力论文课题工厂为啥没人管啊</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1033441</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033441</guid>
-      <author>dataee</author>
-      <pubDate>Tue, 20 Oct 2026 08:48:23 +0000</pubDate>
     </item>
   </channel>
 </rss>
