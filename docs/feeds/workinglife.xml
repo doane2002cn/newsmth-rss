@@ -5,9 +5,41 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 23:11:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 04:33:06 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>除了gwy，其它都不算tzn</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348198</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348198</guid>
+      <author>Crusade</author>
+      <pubDate>Mon, 26 Oct 2026 02:33:47 +0000</pubDate>
+      <description><![CDATA[医生，教师，国企央企都不算真正的tzn]]></description>
+    </item>
+    <item>
+      <title>正确的延迟退休方式应该是</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348176</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348176</guid>
+      <author>livingdead</author>
+      <pubDate>Mon, 26 Oct 2026 02:08:55 +0000</pubDate>
+      <description><![CDATA[55岁以上让出岗位，闲置工作半天拿最低工资，单位继续给缴纳社保至退休。或者完全不上班，单位给缴纳60%社保，个人40%至退休。]]></description>
+    </item>
+    <item>
+      <title>不要注册公司创业，不要注册公司创业，不要注册公司创业！！！</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348169</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348169</guid>
+      <author>GUAZHA</author>
+      <pubDate>Mon, 26 Oct 2026 01:37:52 +0000</pubDate>
+      <description><![CDATA[现在已经没人玩了<br/>所以已经到了鼓吹“opc”、“主理人”的阶段了<br/>“每个企业后面都有一个隐藏股东……只要企业赚了钱，不管进不进行分红，都需要向它缴纳25%的所得税。如果还想分红的话，还需要缴纳20%的分红税”。<br/>这构成了一个基础的“抽成”比例：<br/>企业所得税：税率通常为25%。<br/>股东分红个税：税率为20%。<br/>仅这两项，对于最终想拿到手的利润，综合税负就能达到40%（粗略计算：25% + 75%×20% = 40%）。如果再叠加增值税及附加税费，整体的税费负担会进一步上升。在一些非正式的讨论中，将包含增值税等流转税在内的整体负担感，粗略地比喻为接近60%，以此形容“隐形股东”拿走了大头。这个数字更多是传达一种税负沉重的直观感受，而非严格的精算结果。]]></description>
+    </item>
+    <item>
+      <title>又要到工位对ai发号施令了</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348133</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348133</guid>
+      <author>veriloghdl</author>
+      <pubDate>Sun, 25 Oct 2026 23:26:55 +0000</pubDate>
+      <description><![CDATA[现在吧实验仪器得账号密码告诉ai，让它去分析log，定位代码，修改bug<br/>发现我都没啥可干的了<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>现在为什么码农接不到私活了</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/348107</link>
@@ -366,37 +398,6 @@
       <author>fakelake</author>
       <pubDate>Wed, 21 Oct 2026 13:28:44 +0000</pubDate>
       <description><![CDATA[拿养老金一样的都行，好不容易找到份工，领导训下属像家长训小孩似的，产线员工都说没见过这么凶的]]></description>
-    </item>
-    <item>
-      <title>星巴克不让随便坐了</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347548</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347548</guid>
-      <author>bdhjl</author>
-      <pubDate>Wed, 21 Oct 2026 11:14:38 +0000</pubDate>
-      <description><![CDATA[咋整啊俺们这些没工作的<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>码农被裁，跟AI真没关系，说白了是软件新增需求停滞了，库太多</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347536</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347536</guid>
-      <author>popcorners</author>
-      <pubDate>Wed, 21 Oct 2026 10:16:07 +0000</pubDate>
-      <description><![CDATA[一方面，各种应用已经成熟。<br/>另一方面，框架库也都包装更便捷，直接调用。<br/>没有AI出现，程序员也是35裁员，被替代。]]></description>
-    </item>
-    <item>
-      <title>回望2026，真是码农生死线</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347530</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347530</guid>
-      <author>Crusade</author>
-      <pubDate>Wed, 21 Oct 2026 09:35:13 +0000</pubDate>
-      <description><![CDATA[2026年初，码农突然发现，agent编程突飞猛进，真的达到可用级别了<br/>但是有两问题，一个是token烧的太厉害烧不起，另一个是A/0行了但国模还不大行<br/>现在年末了，这俩问题都解决了。国模编程也行了，并且token价格暴跌。现在小公司闭着眼睛按需烧国模token，都一点不心疼了，你要是烧的太少领导还会批评你工作不饱和。<br/>老板们在2026年底已经看出来了，便宜易用的码农替代品已经出现。就看2027会不会动手了。我猜老板们心中已有b number，再让码农过最后一个好年，过完年就动手。<br/>2027，码农生死线！！！]]></description>
-    </item>
-    <item>
-      <title>特快说某清华AI大厂新秀，爹是合肥经开主任</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347522</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347522</guid>
-      <author>popcorners</author>
-      <pubDate>Wed, 21 Oct 2026 08:10:48 +0000</pubDate>
     </item>
   </channel>
 </rss>

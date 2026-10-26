@@ -5,9 +5,165 @@
     <link>https://www.newsmth.net/nForum/board/NewExpress</link>
     <description>水木特快（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 25 Oct 2026 23:11:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 04:33:06 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/newexpress.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>李建和毛不易婚礼发言对比</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650474</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650474</guid>
+      <author>xubin823</author>
+      <pubDate>Mon, 26 Oct 2026 04:27:40 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>马一龙：司机违反协议把星链用于军事所以关闭</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650470</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650470</guid>
+      <author>Hudson57</author>
+      <pubDate>Mon, 26 Oct 2026 04:27:18 +0000</pubDate>
+      <description><![CDATA[司机：尼玛你放p根本就没那么个协议。<br/>来源X]]></description>
+    </item>
+    <item>
+      <title>地青结婚邀请了ex吗？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650463</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650463</guid>
+      <author>wobaba</author>
+      <pubDate>Mon, 26 Oct 2026 04:26:21 +0000</pubDate>
+    </item>
+    <item>
+      <title>AI 的昨日版面总结</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650467</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650467</guid>
+      <author>enz</author>
+      <pubDate>Mon, 26 Oct 2026 04:26:19 +0000</pubDate>
+      <description><![CDATA[咋就没了呢<br/>今天版面总结一下，多好玩啊]]></description>
+    </item>
+    <item>
+      <title>毛不易买在本版买热搜了吗？还是新娘买了</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650461</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650461</guid>
+      <author>DoorWay</author>
+      <pubDate>Mon, 26 Oct 2026 04:26:11 +0000</pubDate>
+      <description><![CDATA[嗯？]]></description>
+    </item>
+    <item>
+      <title>地青都是猥琐的思想，一看到男女关系好就肯定干过</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650452</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650452</guid>
+      <author>wang99168</author>
+      <pubDate>Mon, 26 Oct 2026 04:25:30 +0000</pubDate>
+      <description><![CDATA[真的是朋友不行吗]]></description>
+    </item>
+    <item>
+      <title>24岁中国女游客到泰国见“网友”，刚落地上车就被劫持送往泰缅</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650432</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650432</guid>
+      <author>abcdman</author>
+      <pubDate>Mon, 26 Oct 2026 04:22:44 +0000</pubDate>
+      <description><![CDATA[24岁中国女游客到泰国见“网友”，刚落地上车就被劫持送往泰缅边境]]></description>
+    </item>
+    <item>
+      <title>毛不易就是男闺蜜</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650429</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650429</guid>
+      <author>Jinx</author>
+      <pubDate>Mon, 26 Oct 2026 04:22:20 +0000</pubDate>
+      <description><![CDATA[大家不要大惊小怪]]></description>
+    </item>
+    <item>
+      <title>发现ai已经可以任意操纵人类语音了。通用ai可自发下开源模型生</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650397</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650397</guid>
+      <author>Engelberger</author>
+      <pubDate>Mon, 26 Oct 2026 04:19:06 +0000</pubDate>
+      <description><![CDATA[TTS 的原理其实一条主线就能讲清楚：**把文字变成波形，中间隔着一道“频谱”**。现代 TTS 基本都是三段式流水线，你手上这三个东西正好各占一段。<br/># 一、原理：三段式流水线<br/>```<br/>文本 → ① 文本前端 → 音素序列 → ② 声学模型 → mel 频谱 → ③ 声码器 → 波形<br/>```<br/>## ① 文本前端：把“字”变成“怎么读”<br/>这一段全是语言学的活：<br/>- **文本规范化（TN）**：`2026年` → `二零二六年`，`3.5%` → `百分之三点五`<br/>- **分词与注音（G2P，grapheme-to-phoneme）**：汉字 → 拼音 → 音素<br/>- **多音字消歧**：`银行` vs `行走`，`重要` vs `重复`<br/>- **韵律预测**：哪儿停顿、哪儿重读、句调往上还是往下<br/>&gt; 我们折腾 DiffSinger 时卡住的“音素器”，就属于这一段。日志里那些 `zh/zh`、`zh/ong`、`zh/sh`、`zh/eng`，就是 G2P 的输出——`zh` 是声母、`ong` 是韵母。<br/>## ② 声学模型：把“怎么读”变成“声音长什么样”<br/>输入音素序列（带时长、音高、韵律），输出 **mel 频谱图**——一张“时间 × 频率能量”的图，通常 80 或 128 维，每 10~12.5 毫秒一帧。<br/>它决定了**音色、语调、情感**，但还不是声音，只是声音的“配方”。<br/>## ③ 声码器：把“配方”还原成“声音”<br/>mel 谱 → 波形。这一步在历史上长期是音质瓶颈。<br/>&gt; 你装的那三个 `nsf_hifigan`、`...2024.02`、`pc_nsf_hifigan...2025.02`，就是这个位置。DiffSinger 声库之所以要“指定声码器”，就是因为同一张 mel 谱、换不同声码器，音色会变。<br/>## 新范式：跳过频谱，直接猜“音频 token”<br/>2023 年之后出现了另一条路：用神经音频编解码器把波形压成**离散 token**，TTS 就变成“给定文本，预测音频 token”的语言模型问题，token 再解码回波形。<br/>&gt; Qwen3-TTS 用的就是这套——它名字里的 `12Hz` 指 tokenizer 把音频压到**每秒 12 个 token**。10 秒音频只有 120 帧，比 mel 谱（每秒 100 帧）紧凑得多，所以长文本更稳、还能用自然语言指挥音色。]]></description>
+    </item>
+    <item>
+      <title>AI和机器人替代劳动力，是不是该让它们交社保</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650388</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650388</guid>
+      <author>hongshu2000</author>
+      <pubDate>Mon, 26 Oct 2026 04:18:33 +0000</pubDate>
+    </item>
+    <item>
+      <title>老外煎蛋只煎一面？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650385</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650385</guid>
+      <author>lvxiaoming</author>
+      <pubDate>Mon, 26 Oct 2026 04:18:13 +0000</pubDate>
+      <description><![CDATA[真的假的<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>太惨了，独自去做核磁，被劝返。</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650367</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650367</guid>
+      <author>TUMISONG</author>
+      <pubDate>Mon, 26 Oct 2026 04:16:13 +0000</pubDate>
+      <description><![CDATA[必需要有人陪同，太惨了。还得回去请家属，结果今天家属还挺忙，换个时间吧。诶。]]></description>
+    </item>
+    <item>
+      <title>毛的意思是</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650363</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650363</guid>
+      <author>eiming</author>
+      <pubDate>Mon, 26 Oct 2026 04:15:29 +0000</pubDate>
+      <description><![CDATA[我们以前有过，现在感觉结不结婚也就那样，以后你们闹矛盾，忍忍，不要怨我。<br/>#发自zSMTH-v-@vivo V2314A]]></description>
+    </item>
+    <item>
+      <title>更多选择更多欢笑尽在麦当劳！</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650360</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650360</guid>
+      <author>carbon</author>
+      <pubDate>Mon, 26 Oct 2026 04:15:20 +0000</pubDate>
+    </item>
+    <item>
+      <title>苏州为啥不把高尔夫还湖于民？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650346</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650346</guid>
+      <author>NRN</author>
+      <pubDate>Mon, 26 Oct 2026 04:13:49 +0000</pubDate>
+      <description><![CDATA[一个金鸡湖高尔夫球场<br/>把核心位置的一大片湖景封起来独占<br/>旁边密密麻麻的成片别墅区域<br/>太吓人了<br/>不可想象<br/>你打球就打球<br/>把沿湖区域封起来做甚<br/>全国各地都在搞还湖于民 还河于民<br/>打通 断头河 断头湖<br/>甚至很多红线内的沿河小区都拆了围墙让出河道了<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>卢拉80岁了，还能思考吗？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650325</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650325</guid>
+      <author>world</author>
+      <pubDate>Mon, 26 Oct 2026 04:12:05 +0000</pubDate>
+      <description><![CDATA[太牛逼了]]></description>
+    </item>
+    <item>
+      <title>毛不易真贱</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650317</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650317</guid>
+      <author>hijack</author>
+      <pubDate>Mon, 26 Oct 2026 04:11:23 +0000</pubDate>
+      <description><![CDATA[在别人婚礼上宣誓主权<br/>不是蠢是纯坏]]></description>
+    </item>
+    <item>
+      <title>有多少地青用过角磨机的</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650304</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650304</guid>
+      <author>bdhjl</author>
+      <pubDate>Mon, 26 Oct 2026 04:09:57 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>从毛不易的发言看出这俩睡过的可能性有多大</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650299</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650299</guid>
+      <author>woodnotes</author>
+      <pubDate>Mon, 26 Oct 2026 04:09:40 +0000</pubDate>
+    </item>
+    <item>
+      <title>现在看着AI推理过程跟当年黑客帝国里面看代码也差不多了</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47650284</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47650284</guid>
+      <author>netv</author>
+      <pubDate>Mon, 26 Oct 2026 04:07:35 +0000</pubDate>
+      <description><![CDATA[大部分人就看着字符滚动，最终只看结果]]></description>
+    </item>
     <item>
       <title>用ai做虚拟人格，会不会以假乱真</title>
       <link>https://www.newsmth.net/nForum/article/NewExpress/47647840</link>
@@ -238,165 +394,6 @@
       <author>ddle</author>
       <pubDate>Sun, 25 Oct 2026 15:30:19 +0000</pubDate>
       <description><![CDATA[10月13日，火山引擎以2.3亿元中标东阳国资的“横店影视AI服务平台”项目，搭建面向横店剧组开放的影视大模型、素材资产库与AI创作工具平台，分三年交付。在10月23日的大会现场，该服务平台被命名为“横店π”。<br/>火山引擎数智平台解决方案总经理萧然介绍，横店有50多个实景拍摄基地，超2300个场景点位，以及超过15万名注册群演资源，有肖像、声音、表演、角色等真人素材数据供给。<br/>“更重要的是，这里每天都有真实发生的影视生产和创作，这些将会为影视大模型的发展提供持续的、高质量的影视素材。”<br/>影视行业的碳基饲料被横店打包出售<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>小哥用ai黑进了电视，发现电视一直在监听和上传数据</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647585</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647585</guid>
-      <author>Engelberger</author>
-      <pubDate>Sun, 25 Oct 2026 15:30:10 +0000</pubDate>
-    </item>
-    <item>
-      <title>广东那边民间演出是不是挺发达的</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647569</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647569</guid>
-      <author>zskmkimi</author>
-      <pubDate>Sun, 25 Oct 2026 15:25:16 +0000</pubDate>
-      <description><![CDATA[经常看到直播村里“民间大舞台”的<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>北京秋雨七律</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647570</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647570</guid>
-      <author>newdriver</author>
-      <pubDate>Sun, 25 Oct 2026 15:25:03 +0000</pubDate>
-      <description><![CDATA[帝苑秋深雨暗寒，<br/>长街落叶满朱栏。<br/>红墙湿燕归何处，<br/>碧瓦流珠滴旧坛。<br/>北海芦花迷晚渡，<br/>南山雁字过层峦。<br/>孤灯照壁虫声碎，<br/>故国衣冠梦未阑。<br/>本机AI生成的，很牛b啊]]></description>
-    </item>
-    <item>
-      <title>AI失控了怎么办</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647566</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647566</guid>
-      <author>wqf</author>
-      <pubDate>Sun, 25 Oct 2026 15:24:33 +0000</pubDate>
-      <description><![CDATA[和元宝的讨论<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>AI在一件事情上很弱，那就是预测！</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647558</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647558</guid>
-      <author>wkill</author>
-      <pubDate>Sun, 25 Oct 2026 15:21:40 +0000</pubDate>
-      <description><![CDATA[比如预测足球比赛结果， 目前准确率不高于市场赔率。<br/>我的相关论文快发表了。]]></description>
-    </item>
-    <item>
-      <title>我靠，现在有了AI，机顶盒等任何硬件都可以扮演任何角色</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647538</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647538</guid>
-      <author>Engelberger</author>
-      <pubDate>Sun, 25 Oct 2026 15:13:51 +0000</pubDate>
-      <description><![CDATA[硬件失去了以前的角色定义，变成了纯粹的硬件：计算单元+存储单元，有的还有外设。。。<br/>全家的硬件都乱套了，可以由AI任意赋予身份和组合使用了。]]></description>
-    </item>
-    <item>
-      <title>这几天谷爱凌和毛不易的行为很多保守的人肯定看不惯的</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647534</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647534</guid>
-      <author>bfield</author>
-      <pubDate>Sun, 25 Oct 2026 15:11:27 +0000</pubDate>
-      <description><![CDATA[会觉得他俩情商低，正式场合不合适的穿搭不合适的讲话。<br/>其实人家勇于自我表达，这是很难得的。不用装模作样。]]></description>
-    </item>
-    <item>
-      <title>双055配置的航妈编队出现在菲绿缤</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647515</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647515</guid>
-      <author>axe</author>
-      <pubDate>Sun, 25 Oct 2026 15:05:30 +0000</pubDate>
-      <description><![CDATA[换句话说，联军后路被断了]]></description>
-    </item>
-    <item>
-      <title>蔡康永微博回应了</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647500</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647500</guid>
-      <author>Saintikki</author>
-      <pubDate>Sun, 25 Oct 2026 15:02:23 +0000</pubDate>
-      <description><![CDATA[https://weibo.com/1282005885/RolyYbBNL?refer_flag=1001030103_]]></description>
-    </item>
-    <item>
-      <title>爱因斯坦高考的物理为什么只考了6分？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47647481</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47647481</guid>
-      <author>DDOO</author>
-      <pubDate>Sun, 25 Oct 2026 14:54:30 +0000</pubDate>
-      <description><![CDATA[其实他的数学、几何、物理都是6分，因为当时瑞士的高考6分是满分。 他化学5分。]]></description>
-    </item>
-    <item>
-      <title>温水煮这么多年，现在已经是热锅了，欧洲人还自嗨</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646335</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646335</guid>
-      <author>danaodai</author>
-      <pubDate>Sun, 25 Oct 2026 11:12:22 +0000</pubDate>
-      <description><![CDATA[质变会突然发生的，他们不知道吗？<br/>以前的高福利是因为先行工业化的成果，收割全世界市场，现在市场都丢了，还想躺下去，真是服了。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>多位网友晒iPhoneDuo屏幕裂了</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646328</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646328</guid>
-      <author>flaredll</author>
-      <pubDate>Sun, 25 Oct 2026 11:10:59 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>为什么不理他呢？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646309</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646309</guid>
-      <author>carbon</author>
-      <pubDate>Sun, 25 Oct 2026 11:07:03 +0000</pubDate>
-      <description><![CDATA[因为这笔虚伪，嘴上舔的急切，嘴里还不让步]]></description>
-    </item>
-    <item>
-      <title>二毛要自建星链</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646302</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646302</guid>
-      <author>yeguo</author>
-      <pubDate>Sun, 25 Oct 2026 11:06:23 +0000</pubDate>
-      <description><![CDATA[摆脱依赖]]></description>
-    </item>
-    <item>
-      <title>当然jiangyounan舔的不止是他跌，也舔他干吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646299</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646299</guid>
-      <author>carbon</author>
-      <pubDate>Sun, 25 Oct 2026 11:05:50 +0000</pubDate>
-      <description><![CDATA[比如教主<br/>天天填个没玩<br/>可栖<br/>他爹也好，他妈也好，都不理他]]></description>
-    </item>
-    <item>
-      <title>地青们，一起去天津看农机展去</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646290</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646290</guid>
-      <author>cqhb</author>
-      <pubDate>Sun, 25 Oct 2026 11:05:32 +0000</pubDate>
-      <description><![CDATA[一年一度的农机展10月26-28要在天津开搞了<br/>以往的农机展都是谁家发动机大、谁家割台宽，现在的农机展大概是谁家的算法厉害、谁家信息化程度高、谁家新能源走得快了<br/>这几十年农业机械进步太大了<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>jiangyounan名为淡然，打酱油</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646285</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646285</guid>
-      <author>carbon</author>
-      <pubDate>Sun, 25 Oct 2026 11:04:45 +0000</pubDate>
-      <description><![CDATA[实际上舔他爹比谁都迄今，可惜他跌不理他]]></description>
-    </item>
-    <item>
-      <title>刚想出去吃饭</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646281</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646281</guid>
-      <author>saic</author>
-      <pubDate>Sun, 25 Oct 2026 11:04:30 +0000</pubDate>
-      <description><![CDATA[呃法克，今天竟然真下雨了]]></description>
-    </item>
-    <item>
-      <title>明天重要会议召开</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646278</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646278</guid>
-      <author>shuiyouli</author>
-      <pubDate>Sun, 25 Oct 2026 11:04:19 +0000</pubDate>
-      <description><![CDATA[10.26-10.29]]></description>
-    </item>
-    <item>
-      <title>星链在俄乌中有什么不可替代的作用？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47646261</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47646261</guid>
-      <author>nighthawk</author>
-      <pubDate>Sun, 25 Oct 2026 11:00:49 +0000</pubDate>
-      <description><![CDATA[用作军用可以视为武器击毁吧]]></description>
     </item>
   </channel>
 </rss>
