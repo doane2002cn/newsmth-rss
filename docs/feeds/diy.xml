@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Oct 2026 04:33:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 12:48:48 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>维护清理燃气壁挂炉</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11276</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11276</guid>
+      <author>digital</author>
+      <pubDate>Mon, 26 Oct 2026 06:32:54 +0000</pubDate>
+      <description><![CDATA[老的依玛壁挂炉，之前换过一个风机，换完之后才明白，这玩意完全可以自己弄，并且不用出问题就换风机，很可能就是风机脏了。风机叶轮很容易积灰，轴承也会积灰，导致转速变慢，风压不够的话，就无法启动点火，大多数壁挂炉的点火问题都是因为这个引起的。<br/>拆装壁挂炉并不麻烦，主要就是拧一些螺丝。<br/>拆之前，务必先拔下壁挂炉的电源插头。<br/>先拆掉外壳，然后就会看到主面板，依玛是主面板四角各一个小螺丝，中间一个大螺丝，都拧下来，就能看到燃烧室防火墙外侧的隔热钢板，也是螺丝固定，拆掉这层钢板就能看见防火墙了，轻轻一提就把防火墙取下来了，然后就可以看到后面的燃烧室，点火针，几排长条的炉头，上方则是热交换器。炉头下方有一层托板，这些地方都是容易落灰尘，很脏的，用强力吸尘器都吸干净，特别是炉头上边的火眼，也要吸干净，热交换器的钢片，要用带毛刷的吸头，边刷边吸，尽量不要留一点灰尘。<br/>清理完燃烧室之后，可以拆下风机，风机是用三颗螺丝固定在机身上的，先把连接风机的三根电源接线端子拔下来，然后拔掉风机右上角的软管，这根软管是连接风压开关的。<br/>拧掉固定风机的三颗螺丝，就可以把风机取下来，可以看到叶轮上面全是尘土，风机外壳内侧也有不少尘土。<br/>用强力吸尘器先吸一遍，叶轮上可能会粘一些尘土吸不动，要用毛刷先刷下来，然后接着吸干净。<br/>机壳内侧的尘土，要晃一晃磕一磕，然后从出风口伸进吸头把尘土吸干净。<br/>电机轴承的各个位置，要喷一些WD40润滑，可以稍微多喷一点。<br/>最后，风机原样装回。接好风压开关软管，插回电源接线端子。<br/>剩下的防火墙隔热板，外壳盖板，机器外壳，按倒序装回即可。<br/>上电试机，发现运转噪声明显变低，跟新机器一样。<br/>这个壁挂炉维护清理的工作，应当每年采暖季之前都要做一次。]]></description>
+    </item>
     <item>
       <title>维修室内门更换门把手</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11267</link>

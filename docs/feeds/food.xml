@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Oct 2026 04:33:06 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 12:48:48 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>羡慕北京呀，鸡蛋价格暴跌</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1780399</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780399</guid>
+      <author>FuZu</author>
+      <pubDate>Mon, 26 Oct 2026 10:04:28 +0000</pubDate>
+      <description><![CDATA[我这儿走访了几个超市，超市也对比了，最低价都是4块5一斤。]]></description>
+    </item>
+    <item>
+      <title>有人擅长园艺种植的吗</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1780384</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780384</guid>
+      <author>Iamaluckypig</author>
+      <pubDate>Mon, 26 Oct 2026 08:13:24 +0000</pubDate>
+      <description><![CDATA[家里有不少19升的矿泉水桶，想废物利用，种点啥。<br/>但是我之前的种植经验来看，种点东西感觉还挺难的。<br/>但是视频号上发现矿泉水桶啥都能种。我怕我瞎忙活没有结果。<br/>有没有擅长城市里面阳台种植的指点一下]]></description>
+    </item>
     <item>
       <title>求推荐牛排</title>
       <link>https://www.newsmth.net/nForum/article/Food/1780353</link>
@@ -389,22 +405,6 @@
       <author>qhfq</author>
       <pubDate>Mon, 12 Oct 2026 14:39:09 +0000</pubDate>
       <description><![CDATA[才十块钱一斤，为什么这么便宜啊，好不好吃]]></description>
-    </item>
-    <item>
-      <title>虾 蟹 贝是清蒸，鱼该怎么做才好吃呢？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1779128</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1779128</guid>
-      <author>lele20260212</author>
-      <pubDate>Mon, 12 Oct 2026 12:58:08 +0000</pubDate>
-      <description><![CDATA[天津著名的北塘海鲜市场，<br/>北京人常来购买，<br/>都是刚从海里捞出来的海鲜。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>干豆角烧鸡肉挺好吃的。</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1779115</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1779115</guid>
-      <author>Iamaluckypig</author>
-      <pubDate>Mon, 12 Oct 2026 05:48:17 +0000</pubDate>
-      <description><![CDATA[铁锅炖鸡，放点土豆，干豆角，美味]]></description>
     </item>
   </channel>
 </rss>
