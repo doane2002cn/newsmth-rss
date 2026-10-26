@@ -5,9 +5,33 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Oct 2026 12:48:48 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 20:27:04 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>失业半年，拿了个90的offer，没什么太好的机会</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348387</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348387</guid>
+      <author>wormvirus</author>
+      <pubDate>Mon, 26 Oct 2026 16:02:25 +0000</pubDate>
+      <description><![CDATA[干一年是一年吧]]></description>
+    </item>
+    <item>
+      <title>养老金问题可以公开谈了</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348385</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348385</guid>
+      <author>chery</author>
+      <pubDate>Mon, 26 Oct 2026 15:53:54 +0000</pubDate>
+      <description><![CDATA[好现象]]></description>
+    </item>
+    <item>
+      <title>有可能是码农最后一个冬天了</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/348383</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348383</guid>
+      <author>Crusade</author>
+      <pubDate>Mon, 26 Oct 2026 15:20:26 +0000</pubDate>
+      <description><![CDATA[明年批量噶，勿谓言之不预]]></description>
+    </item>
     <item>
       <title>这身体算什么水平，到需要换工作的程度么？</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/348360</link>
@@ -376,30 +400,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347710</guid>
       <author>popcorners</author>
       <pubDate>Thu, 22 Oct 2026 12:19:04 +0000</pubDate>
-    </item>
-    <item>
-      <title>看一则人行新闻，去年居民贷款3890亿，今年接近0。不贷款。</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347709</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347709</guid>
-      <author>iloveanfield</author>
-      <pubDate>Thu, 22 Oct 2026 12:11:36 +0000</pubDate>
-      <description><![CDATA[～～～中长期贷款短期贷款为零。]]></description>
-    </item>
-    <item>
-      <title>这届年轻人遭戴维斯双沙</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347670</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347670</guid>
-      <author>Crusade</author>
-      <pubDate>Thu, 22 Oct 2026 06:28:59 +0000</pubDate>
-      <description><![CDATA[AI挤压年轻人工作空间，相当于沙利润<br/>jj下行，大势不好，相当于沙估值<br/>太难了，遭遇戴维斯双沙]]></description>
-    </item>
-    <item>
-      <title>新一代AI年轻人做生意不需要懂“社会化”了，老登们引以为傲的</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/347659</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/347659</guid>
-      <author>popcorners</author>
-      <pubDate>Thu, 22 Oct 2026 04:51:48 +0000</pubDate>
-      <description><![CDATA[老登们还在愁自己不够社会化，不懂饭局酒局。<br/>新一代AI年轻老板已经不需要“社会化”了，因为没啥用。<br/>老一辈本质就是效率低下的互相试探，毫无意义。]]></description>
     </item>
   </channel>
 </rss>
