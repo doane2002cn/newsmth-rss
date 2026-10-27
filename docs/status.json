@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-27 23:20:07 +0800",
+  "generated": "2026-10-28 06:07:37 +0800",
   "banned": false,
   "sources": [
     {
@@ -18,7 +18,7 @@
       "key": "shida",
       "name": "近期热帖",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "age",
@@ -30,7 +30,7 @@
       "key": "baking",
       "name": "烘焙坊",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "beauty",
@@ -47,8 +47,8 @@
     {
       "key": "book",
       "name": "书籍",
-      "count": 22,
-      "status": "304 未变化"
+      "count": 23,
+      "status": "更新 +20"
     },
     {
       "key": "boy",
@@ -90,7 +90,7 @@
       "key": "food",
       "name": "我爱吃，我想吃",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "funnytime",
@@ -132,13 +132,13 @@
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 52,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "jade_jewelry",
       "name": "珠光宝气",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "liyidaiwa",
@@ -173,20 +173,20 @@
     {
       "key": "older",
       "name": "养老",
-      "count": 22,
-      "status": "304 未变化"
+      "count": 23,
+      "status": "更新 +20"
     },
     {
       "key": "phd",
       "name": "博士生",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pondoflotus",
       "name": "荷塘月色",
       "count": 21,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "pregnancy",
@@ -198,13 +198,13 @@
       "key": "qingjiao",
       "name": "青年教师",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "shuibuzhao",
       "name": "失眠",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "single",
@@ -216,7 +216,7 @@
       "key": "tooooold",
       "name": "五十知天命",
       "count": 41,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "wedding",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 6,
+      "status": "更新 +6"
     }
   ]
 }
