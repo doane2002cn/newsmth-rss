@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Bull</link>
     <description>四十不惑（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 26 Oct 2026 20:27:04 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2026 00:41:25 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/bull.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>东亚厨神早餐</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3565693</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3565693</guid>
+      <author>lili2030</author>
+      <pubDate>Mon, 26 Oct 2026 23:11:32 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>一天过去了，各位老六</title>
+      <link>https://www.newsmth.net/nForum/article/Bull/3565672</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3565672</guid>
+      <author>bigsillyboy</author>
+      <pubDate>Mon, 26 Oct 2026 22:44:14 +0000</pubDate>
+      <description><![CDATA[老六是啥意思<br/>- 来自 水木社区APP v3.5.7]]></description>
+    </item>
     <item>
       <title>发生了什么？</title>
       <link>https://www.newsmth.net/nForum/article/Bull/3565662</link>
@@ -391,22 +407,6 @@
       <author>Missing7</author>
       <pubDate>Sun, 25 Oct 2026 16:09:14 +0000</pubDate>
       <description><![CDATA[起来收拾一下，拖了地，煮个面吃，还没煮好，娃就醒了，唉！]]></description>
-    </item>
-    <item>
-      <title>我妈好辛苦</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3564544</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3564544</guid>
-      <author>Missing7</author>
-      <pubDate>Sun, 25 Oct 2026 14:40:59 +0000</pubDate>
-      <description><![CDATA[客人走了，留下她一个人收拾残局，收了三个小时还没收完，我爸一点忙也是不帮的~<br/>我在干嘛，带娃！]]></description>
-    </item>
-    <item>
-      <title>吃过的饭店倒闭了</title>
-      <link>https://www.newsmth.net/nForum/article/Bull/3564528</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Bull/3564528</guid>
-      <author>antaplus</author>
-      <pubDate>Sun, 25 Oct 2026 14:19:57 +0000</pubDate>
-      <description><![CDATA[查订单发现这家店倒闭了<br/>离开广东前最后一次北京出差，之前在深圳工作的领导让我帮他去北京汇报一个我做的项目，属于友情支持。<br/>中午到北京，下午我们俩陪老登爬了香山，边爬山还边聊工作，晚上住香山。<br/>吃完饭我们说送打车老登回去，他说自己在某某子公司得罪了人，天天有人告他，要坐地铁回家。。。然后我就叫车回酒店，领导说我们陪他坐地铁回家，我就取消了订单。然后坐地铁到他家附近，我们又打车回的香山。。]]></description>
     </item>
   </channel>
 </rss>
