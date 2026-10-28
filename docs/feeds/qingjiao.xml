@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 28 Oct 2026 12:42:14 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 20:13:44 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>当年老J的队伍，也分德械师教导总队，和地方杂牌军保安团。</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034792</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034792</guid>
+      <author>popcorners</author>
+      <pubDate>Wed, 28 Oct 2026 13:44:07 +0000</pubDate>
+      <description><![CDATA[亲疏有别，实力悬殊。]]></description>
+    </item>
     <item>
       <title>各位毕业班班主任，今年就业怎么样了</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034782</link>
@@ -390,14 +398,6 @@
       <author>carbon</author>
       <pubDate>Sat, 24 Oct 2026 05:14:41 +0000</pubDate>
       <description><![CDATA[微博 渔老板公布了他跟某大学教授的合作论文]]></description>
-    </item>
-    <item>
-      <title>相信AI替代人类的是智商问题</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1033995</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1033995</guid>
-      <author>oldgirl</author>
-      <pubDate>Sat, 24 Oct 2026 03:28:35 +0000</pubDate>
-      <description><![CDATA[AI只是经验和已有知识的大数据总结归纳，解决的是人力，不是人类，AI解决的是辅助/效率/及节约时间和精力。<br/>AI能创新吗，能发现吗，能发明吗。。]]></description>
     </item>
   </channel>
 </rss>
