@@ -5,7 +5,7 @@
     <link>https://www.newsmth.net/nForum/board/Pregnancy</link>
     <description>怀孕（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 28 Oct 2026 05:26:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:42:14 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/pregnancy.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -167,6 +167,14 @@
       <author>jgkn</author>
       <pubDate>Mon, 22 Jun 2026 04:50:33 +0000</pubDate>
       <description><![CDATA[说X精子比Y精子寿命长<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>版面积分变更记录</title>
+      <link>https://www.newsmth.net/nForum/article/Pregnancy/1519004</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Pregnancy/1519004</guid>
+      <author>deliver</author>
+      <pubDate>Mon, 01 Jun 2026 12:21:33 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>[版面积分变更情况]<br/>版面积分:   100000 -&gt; 105115  ↑5115<br/>[原因]: 本期版面积分考核(202605) 版面积分已达“积分帽”100000]]></description>
     </item>
   </channel>
 </rss>

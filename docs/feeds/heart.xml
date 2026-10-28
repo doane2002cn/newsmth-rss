@@ -5,9 +5,33 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 28 Oct 2026 05:26:51 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Oct 2026 12:42:14 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>叶文洁对着太阳上缘发射是不对的</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250297</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250297</guid>
+      <author>wuduan2</author>
+      <pubDate>Wed, 28 Oct 2026 09:06:59 +0000</pubDate>
+      <description><![CDATA[三体不知道看了听了多少遍，对这个细节一直没注意，书中写道她要对太阳发送电波：<br/>“红岸天线定位器的十字丝的中心对在它的上缘，这是考虑了电波运行的提前量”。<br/>这次听到这里，忽然意识到这个是不对的<br/>如果太阳绕着地球转，那她这么做是对的，电波传到太阳需要时间，太阳光到达地球也需要<br/>时间。<br/>但不是，太阳东升西落是因为地球的自转，<br/>地球公转对太阳位置的影响很小（在几分钟之内）<br/>所以我们看到的虽然是8分钟之前的太阳，<br/>但是在看到它的那一刻射入我们眼睛的光线就是来自那一刻太阳的真实方向，<br/>在那一刻发射电波，只要向那个方向发射就行了，<br/>就是说对准太阳中心发射就行了。]]></description>
+    </item>
+    <item>
+      <title>今天没有撸铁</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250295</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250295</guid>
+      <author>newluna81</author>
+      <pubDate>Wed, 28 Oct 2026 08:18:37 +0000</pubDate>
+      <description><![CDATA[因为据说隔天撸铁更好，进步更快<br/>所以以后隔天撸铁]]></description>
+    </item>
+    <item>
+      <title>明天打算摊红薯丝饼做早餐</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250293</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250293</guid>
+      <author>newluna81</author>
+      <pubDate>Wed, 28 Oct 2026 07:26:55 +0000</pubDate>
+      <description><![CDATA[哈哈]]></description>
+    </item>
     <item>
       <title>难题</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250289</link>
@@ -382,30 +406,6 @@
       <author>newluna81</author>
       <pubDate>Mon, 12 Oct 2026 22:31:13 +0000</pubDate>
       <description><![CDATA[嗯，今天已经吃完早餐，山药葛根玉米羹+三个小烤红薯]]></description>
-    </item>
-    <item>
-      <title>北京可能确实是美食荒漠</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249925</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249925</guid>
-      <author>teetea</author>
-      <pubDate>Mon, 12 Oct 2026 12:29:53 +0000</pubDate>
-      <description><![CDATA[从我的经验看，外地好吃的店在北京开的分店，连它应该有的70%的味道都还原不了！不能为了控制成本降低品质吧，让人以为本来这家就这么难吃呢。]]></description>
-    </item>
-    <item>
-      <title>继续，挑战5天不消费</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249917</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249917</guid>
-      <author>newluna81</author>
-      <pubDate>Mon, 12 Oct 2026 09:25:01 +0000</pubDate>
-      <description><![CDATA[嗯，家里囤的货可以吃好久了]]></description>
-    </item>
-    <item>
-      <title>刚发现被网盘自动续费好几个月，痛心疾首！</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249890</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249890</guid>
-      <author>Yonoyan</author>
-      <pubDate>Mon, 12 Oct 2026 01:50:11 +0000</pubDate>
-      <description><![CDATA[一下子就不快乐了~~~~~<br/>忘了啥时候又因为啥原因开的夸克网盘了。当时选的3天试用版，忘了取消了，刚发现已经自动续了半年了。oh no！]]></description>
     </item>
   </channel>
 </rss>
