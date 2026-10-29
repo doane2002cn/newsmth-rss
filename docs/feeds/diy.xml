@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2026 09:49:16 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 18:37:46 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>改一下CR2032座子</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11293</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11293</guid>
+      <author>someonesnone</author>
+      <pubDate>Thu, 29 Oct 2026 13:25:21 +0000</pubDate>
+      <description><![CDATA[也不知道是犯了啥冲了, 小米的系列设备只要用到2032电池, 到我手上用久了必接触不良,一狠心换电池座<br/>先对比着画出大概裁剪范围<br/>拆出电路板 吹下原来的弹片(果然为了省成本是弹片+外壳固定结构<br/>拿出我的超声波刀,给外壳切口(像泥一样就切开了<br/>原样装回去检测不干涉, 齐活]]></description>
+    </item>
     <item>
       <title>AI服务器+文件服务器</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11280</link>
