@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2026 00:48:47 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2026 09:49:16 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>今天把自行车前面装了个篓子</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250312</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250312</guid>
+      <author>newluna81</author>
+      <pubDate>Thu, 29 Oct 2026 02:19:54 +0000</pubDate>
+      <description><![CDATA[嗯，方便多了]]></description>
+    </item>
     <item>
       <title>错觉，蒸土豆比红薯甜</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250303</link>
@@ -398,14 +406,6 @@
       <author>newluna81</author>
       <pubDate>Tue, 13 Oct 2026 22:00:06 +0000</pubDate>
       <description><![CDATA[嗯，早餐吃完了，山药葛根玉米羹+摊面饼]]></description>
-    </item>
-    <item>
-      <title>回家吃黄瓜</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249948</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249948</guid>
-      <author>Yxchai</author>
-      <pubDate>Tue, 13 Oct 2026 08:58:40 +0000</pubDate>
-      <description><![CDATA[然后去游泳~]]></description>
     </item>
   </channel>
 </rss>
