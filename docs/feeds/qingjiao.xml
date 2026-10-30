@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Oct 2026 09:54:40 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 17:59:23 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>像材料、JG这类比较冷门的学科</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1035013</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1035013</guid>
+      <author>JavaGuyHan</author>
+      <pubDate>Fri, 30 Oct 2026 10:40:27 +0000</pubDate>
+      <description><![CDATA[交给高校的院士们还是可以的，反正研究的团队也比较少，集中精力搞。<br/>像ICT这种本来就靠近市场的热门学科肯定不行，交给高校帽子们基本99%都是pian经费，浪费纳S人的钱，只能靠企业。我在某大型it公司干了近20年，近10年都在做所谓的高校生态建设，真的是看透了。]]></description>
+    </item>
     <item>
       <title>北理工的裴轶什么来头</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034998</link>
@@ -388,14 +396,6 @@
       <author>bamboo79</author>
       <pubDate>Sun, 25 Oct 2026 12:52:46 +0000</pubDate>
       <description><![CDATA[领导是大型校企一把手，又是院系绝对实控人（院系领导，长聘教授委员会基本都是其学生和团队），还是领域重大项目科研经费管理机构和验收评价机构挂靠单位负责人，影响力大。<br/>领导设计了个大设施能从全国高校源源不断收费，其中不少被其多种包装后输送到家族公司。<br/>本人是在校许多年的事编研究系列，由于坚持原则在违规流程上不配合领导，还刚直多次谏言。先是在获得重要国家科技奖励的年份被领导主持长聘教授会没有理由硬变成了一年聘期，然后今年又要通过长聘教授会（成员全是其学生和团队成员）以投票方式不动声色把人解聘。]]></description>
-    </item>
-    <item>
-      <title>ZZ：震撼！北大杰青 nature （子刊）被质疑用随机数生成器</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034287</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034287</guid>
-      <author>pkupctner</author>
-      <pubDate>Sun, 25 Oct 2026 12:15:58 +0000</pubDate>
-      <description><![CDATA[然而，Figure 5 中实验数据被质疑由随机器生成，作者尚未回复。质疑者通过逆向分析，发现图中的数据可以使用 NumPy 的随机数生成器复现，随机种子为：np.random.seed(42)而且，生成数据的过程还相当讲究。每组 400 个数据点中，300 个来自标准差为 3 的正态分布，80 个来自标准差为 6 的正态分布，剩下 20 个则使用均匀分布制造正负两侧的离群值。然而，质疑者将生成的数据与论文 PDF 中提取的散点进行比较，发现两者几乎完全吻合，甚至连数据的排列顺序都相同。<br/>在全部 16 组数据中，最低的 Pearson 相关系数竟然高达 0.999999996！这意味着什么？计算机的伪随机数生成器实际上是确定性的。只要采用相同的算法、随机种子和调用顺序，就能够得到相同的随机数。而质疑者几乎完整复现了论文数据的生成过程。<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
