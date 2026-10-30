@@ -5,9 +5,33 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:49:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 09:54:40 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>北理工的裴轶什么来头</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034998</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034998</guid>
+      <author>dancefree</author>
+      <pubDate>Fri, 30 Oct 2026 06:32:59 +0000</pubDate>
+      <description><![CDATA[双非本+一年水硕+博士和后，就能在985混个教授]]></description>
+    </item>
+    <item>
+      <title>基金评审人会用AI判断创新性吗？</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034993</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034993</guid>
+      <author>ohiostate</author>
+      <pubDate>Fri, 30 Oct 2026 05:40:02 +0000</pubDate>
+      <description><![CDATA[感觉AI的评价大都是胡说八道。典型的拿鸡毛当令箭。基金评审人要是这么看，很多本子要被无辜枪毙了]]></description>
+    </item>
+    <item>
+      <title>开会没有口头报告只有海报的是不是就是小孩那桌？</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1034964</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034964</guid>
+      <author>pkupctner</author>
+      <pubDate>Fri, 30 Oct 2026 01:42:25 +0000</pubDate>
+      <description><![CDATA[偷偷摸摸混过去还好，要是再拿个最佳海报奖那就更尴尬了]]></description>
+    </item>
     <item>
       <title>强调企业参与，是企业也要来分科研经费了吗？</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034942</link>
@@ -33,7 +57,7 @@
       <description><![CDATA[就是现在年轻博士的水平。]]></description>
     </item>
     <item>
-      <title>cell出版社最新声明，查无此事</title>
+      <title>Cell出版社最新声明，没人提供证据，查无此事</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1034927</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034927</guid>
       <author>babu2015</author>
@@ -372,29 +396,6 @@
       <author>pkupctner</author>
       <pubDate>Sun, 25 Oct 2026 12:15:58 +0000</pubDate>
       <description><![CDATA[然而，Figure 5 中实验数据被质疑由随机器生成，作者尚未回复。质疑者通过逆向分析，发现图中的数据可以使用 NumPy 的随机数生成器复现，随机种子为：np.random.seed(42)而且，生成数据的过程还相当讲究。每组 400 个数据点中，300 个来自标准差为 3 的正态分布，80 个来自标准差为 6 的正态分布，剩下 20 个则使用均匀分布制造正负两侧的离群值。然而，质疑者将生成的数据与论文 PDF 中提取的散点进行比较，发现两者几乎完全吻合，甚至连数据的排列顺序都相同。<br/>在全部 16 组数据中，最低的 Pearson 相关系数竟然高达 0.999999996！这意味着什么？计算机的伪随机数生成器实际上是确定性的。只要采用相同的算法、随机种子和调用顺序，就能够得到相同的随机数。而质疑者几乎完整复现了论文数据的生成过程。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>条子生目前都身居要职了吧</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034266</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034266</guid>
-      <author>dataee</author>
-      <pubDate>Sun, 25 Oct 2026 10:02:50 +0000</pubDate>
-    </item>
-    <item>
-      <title>都60岁的人了介绍里还写“杰青”....</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034249</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034249</guid>
-      <author>firedog</author>
-      <pubDate>Sun, 25 Oct 2026 07:28:43 +0000</pubDate>
-      <description><![CDATA[看到一个专家报告介绍，已经60周岁了，还“杰青”。。。。是不是可以建议到一定年龄称为“资深杰青”？]]></description>
-    </item>
-    <item>
-      <title>不尚贤，使民不争；不贵难得之货，使民不为盗；</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1034248</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1034248</guid>
-      <author>pkupctner</author>
-      <pubDate>Sun, 25 Oct 2026 07:27:52 +0000</pubDate>
-      <description><![CDATA[不见可欲，使心不乱。<br/>问题是，那怎么显出领导的有为？<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>

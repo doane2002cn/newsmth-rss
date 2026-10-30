@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 30 Oct 2026 00:49:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 09:54:40 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我又来河边晒太阳了</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250330</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250330</guid>
+      <author>newluna81</author>
+      <pubDate>Fri, 30 Oct 2026 06:05:20 +0000</pubDate>
+      <description><![CDATA[真惬意]]></description>
+    </item>
+    <item>
+      <title>早上被单位小朋友推荐“雪绵豆沙”。高低得去尝尝啊</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250326</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250326</guid>
+      <author>Yonoyan</author>
+      <pubDate>Fri, 30 Oct 2026 01:58:38 +0000</pubDate>
+      <description><![CDATA[东北名菜（名小吃），蛋白打发至硬性发泡之后加淀粉定型，裹红豆沙，团成丸子，低温油炸，炸至雪白，出锅后洒上一点白糖。颜色洁白，口感绵软。光听描述就馋了，周末找个东北餐馆尝尝去。<br/>虽然是小吃，但是做法很费事。后厨忙的时候，如果同时点了锅包肉和雪绵豆沙，会被厨师骂的。哈哈哈哈]]></description>
+    </item>
     <item>
       <title>今天把自行车前面装了个篓子</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250312</link>
@@ -390,22 +406,6 @@
       <author>wuduan2</author>
       <pubDate>Wed, 14 Oct 2026 01:26:55 +0000</pubDate>
       <description><![CDATA[今早出门的时候2度]]></description>
-    </item>
-    <item>
-      <title>水木这个功能很拉胯</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249968</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249968</guid>
-      <author>Yxchai</author>
-      <pubDate>Wed, 14 Oct 2026 00:21:35 +0000</pubDate>
-      <description><![CDATA[在term写了一篇长文，因为有敏感词待站务审核，就发不出来了，也没有备份。<br/>白忙活一场！]]></description>
-    </item>
-    <item>
-      <title>挑战五天零消费的——第二天！</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249966</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249966</guid>
-      <author>newluna81</author>
-      <pubDate>Tue, 13 Oct 2026 22:00:06 +0000</pubDate>
-      <description><![CDATA[嗯，早餐吃完了，山药葛根玉米羹+摊面饼]]></description>
     </item>
   </channel>
 </rss>
