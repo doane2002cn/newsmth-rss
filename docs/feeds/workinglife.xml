@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 29 Oct 2026 18:37:46 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 30 Oct 2026 00:49:17 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>感觉明年算法码农也会大批失业</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/349115</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/349115</guid>
+      <author>gogo4528</author>
+      <pubDate>Thu, 29 Oct 2026 22:45:04 +0000</pubDate>
+      <description><![CDATA[听一个大厂的同事说，他们现在都不微调大模型了，通用大模型+智能体+skill基本就解决问题了，原来每个业务都自己写智能体，现在也不让写了，全公司用一个，他们现在工作就是给各业务写skill]]></description>
+    </item>
     <item>
       <title>码农失业后的人生流程图，大家现在在第几步</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/349104</link>
@@ -391,14 +399,6 @@
       <author>iloveanfield</author>
       <pubDate>Tue, 27 Oct 2026 00:14:54 +0000</pubDate>
       <description><![CDATA[～～～]]></description>
-    </item>
-    <item>
-      <title>失业半年，拿了个90的offer，没什么太好的机会</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/348387</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/348387</guid>
-      <author>wormvirus</author>
-      <pubDate>Mon, 26 Oct 2026 16:02:25 +0000</pubDate>
-      <description><![CDATA[干一年是一年吧]]></description>
     </item>
   </channel>
 </rss>
