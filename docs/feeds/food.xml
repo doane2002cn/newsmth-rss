@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Oct 2026 12:12:51 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 19:15:31 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>泰餐</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1781177</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781177</guid>
+      <author>Maggie6761</author>
+      <pubDate>Sat, 31 Oct 2026 13:36:00 +0000</pubDate>
+      <description><![CDATA[我最爱的冬阴功汤，咖喱<br/>- 来自 水木社区APP v3.5.7]]></description>
+    </item>
     <item>
       <title>有人用低温水浴的方法做过牛肉吗？效果如何？</title>
       <link>https://www.newsmth.net/nForum/article/Food/1781173</link>
@@ -397,14 +405,6 @@
       <author>camuswayne</author>
       <pubDate>Wed, 21 Oct 2026 01:50:32 +0000</pubDate>
       <description><![CDATA[最近吃了很多次潮汕菜，尤其是潮汕火锅，非常满意。<br/>清汤锅，让健身人群十分满意，辣口的咸口的重口的任意口的，自己调汁就是了，基本符合全人群。<br/>老了以后，我就以潮汕菜为主了，太靠谱了。比其他地方各种菜系都靠谱和健康。]]></description>
-    </item>
-    <item>
-      <title>谁能给我推荐一家熟瓜子仁吃？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1779800</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1779800</guid>
-      <author>sqsl</author>
-      <pubDate>Tue, 20 Oct 2026 11:56:42 +0000</pubDate>
-      <description><![CDATA[不要那种浸泡出过油的，谢谢<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
