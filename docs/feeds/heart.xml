@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Oct 2026 05:22:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:12:51 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>今天我很快乐</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250334</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250334</guid>
+      <author>newluna81</author>
+      <pubDate>Sat, 31 Oct 2026 10:22:30 +0000</pubDate>
+      <description><![CDATA[很快乐]]></description>
+    </item>
     <item>
       <title>我又来河边晒太阳了</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250330</link>
@@ -398,14 +406,6 @@
       <author>teetea</author>
       <pubDate>Wed, 14 Oct 2026 15:01:16 +0000</pubDate>
       <description><![CDATA[床底下哗啦哗啦响，是个猫猫头。<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>明天零度了</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/249972</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/249972</guid>
-      <author>wuduan2</author>
-      <pubDate>Wed, 14 Oct 2026 01:26:55 +0000</pubDate>
-      <description><![CDATA[今早出门的时候2度]]></description>
     </item>
   </channel>
 </rss>

@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Boy</link>
     <description>老男孩（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Oct 2026 05:22:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:12:51 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/boy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>大家平时有没有这个念头</title>
+      <link>https://www.newsmth.net/nForum/article/Boy/1310451</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310451</guid>
+      <author>shuhanmoon</author>
+      <pubDate>Sat, 31 Oct 2026 12:08:17 +0000</pubDate>
+      <description><![CDATA[为什么我的命这么苦]]></description>
+    </item>
     <item>
       <title>挖坑~ 树洞</title>
       <link>https://www.newsmth.net/nForum/article/Boy/1310416</link>
@@ -397,14 +405,6 @@
       <author>shuhanmoon</author>
       <pubDate>Mon, 12 Oct 2026 14:52:54 +0000</pubDate>
       <description><![CDATA[这两天买了一个新电脑<br/>把旧电脑的东西传到新电脑上<br/>然后旧电脑重新做了个系统<br/>突然发现<br/>一个很重要的文件丢了<br/>怎么也找不到<br/>急的脑仁都疼了<br/>媳妇还扇风加火的说<br/>我就说你会丢吧<br/>气得我恶狠狠罵了她一顿<br/>我发现媳妇有个特点<br/>只要见到我真生气<br/>就不说话了<br/>老老实实到旁边呆着去了]]></description>
-    </item>
-    <item>
-      <title>咳嗽两周了</title>
-      <link>https://www.newsmth.net/nForum/article/Boy/1309872</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1309872</guid>
-      <author>waytogo</author>
-      <pubDate>Mon, 12 Oct 2026 10:38:00 +0000</pubDate>
-      <description><![CDATA[不见好<br/>感觉身子越来越弱了<br/>哎～]]></description>
     </item>
   </channel>
 </rss>

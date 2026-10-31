@@ -5,9 +5,40 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 31 Oct 2026 05:22:53 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 31 Oct 2026 12:12:51 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>舞蹈小师妹</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560316</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560316</guid>
+      <author>nextworld8</author>
+      <pubDate>Sat, 31 Oct 2026 10:36:32 +0000</pubDate>
+    </item>
+    <item>
+      <title>发一个</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560305</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560305</guid>
+      <author>keke2021</author>
+      <pubDate>Sat, 31 Oct 2026 08:18:01 +0000</pubDate>
+      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
+    </item>
+    <item>
+      <title>慵懒的我，可爱的我【美美哒！】</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560303</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560303</guid>
+      <author>lele20260212</author>
+      <pubDate>Sat, 31 Oct 2026 07:14:47 +0000</pubDate>
+      <description><![CDATA[（见图）]]></description>
+    </item>
+    <item>
+      <title>各有千秋</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560298</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560298</guid>
+      <author>rwgcz</author>
+      <pubDate>Sat, 31 Oct 2026 06:19:01 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>和女钓友一起钓鱼</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/560287</link>
@@ -365,38 +396,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559811</guid>
       <author>gxfu</author>
       <pubDate>Wed, 28 Oct 2026 03:11:49 +0000</pubDate>
-    </item>
-    <item>
-      <title>show</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559809</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559809</guid>
-      <author>inikang</author>
-      <pubDate>Wed, 28 Oct 2026 03:09:42 +0000</pubDate>
-      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>几个学生</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559782</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559782</guid>
-      <author>FlyingBaO</author>
-      <pubDate>Wed, 28 Oct 2026 01:40:42 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>早上运动</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559739</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559739</guid>
-      <author>whh726</author>
-      <pubDate>Tue, 27 Oct 2026 22:54:49 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>美食与佳人 【美美哒！】</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/559737</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/559737</guid>
-      <author>lele20260212</author>
-      <pubDate>Tue, 27 Oct 2026 22:47:05 +0000</pubDate>
-      <description><![CDATA[（见图）]]></description>
     </item>
   </channel>
 </rss>
