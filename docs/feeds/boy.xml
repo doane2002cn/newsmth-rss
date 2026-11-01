@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Boy</link>
     <description>老男孩（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Nov 2026 01:34:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 05:52:08 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/boy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>版面积分变更记录</title>
+      <link>https://www.newsmth.net/nForum/article/Boy/1310465</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310465</guid>
+      <author>deliver</author>
+      <pubDate>Sun, 01 Nov 2026 02:57:44 +0000</pubDate>
+      <description><![CDATA[【此篇文章是由自动发信系统所张贴】<br/>[版面积分变更情况]<br/>版面积分:    88887 -&gt; 93868   ↑4981<br/>[原因]: 本期版面积分考核(202610)]]></description>
+    </item>
     <item>
       <title>挖坑 ~  推荐一个综艺</title>
       <link>https://www.newsmth.net/nForum/article/Boy/1310453</link>
@@ -397,14 +405,6 @@
       <author>shuhanmoon</author>
       <pubDate>Tue, 13 Oct 2026 07:46:39 +0000</pubDate>
       <description><![CDATA[想起来之前<br/>我们有位老教师<br/>没有返聘他<br/>气得在院长那里捶胸顿足]]></description>
-    </item>
-    <item>
-      <title>看了一下社保，感觉日子还能过</title>
-      <link>https://www.newsmth.net/nForum/article/Boy/1309880</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1309880</guid>
-      <author>bluezxz</author>
-      <pubDate>Tue, 13 Oct 2026 01:28:42 +0000</pubDate>
-      <description><![CDATA[养老保险、医保都缴了20+年了<br/>就算现在失业不交了，55岁后拿到的退休金也够用<br/>毕竟我的物质欲望很低，而且队友还有收入]]></description>
     </item>
   </channel>
 </rss>
