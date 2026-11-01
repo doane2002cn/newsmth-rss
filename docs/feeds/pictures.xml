@@ -5,7 +5,7 @@
     <link>https://www.newsmth.net/nForum/mainpage</link>
     <description>精彩贴图（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Nov 2026 05:52:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:12:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/pictures.xml" rel="self" type="application/rss+xml"/>
     <item>
@@ -33,14 +33,6 @@
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Memory_190676.jpg?v=" alt="" /><br/>何人不羡少年时，只是少年不自知。]]></description>
     </item>
     <item>
-      <title>[股市] 从深圳看牛市已经结束</title>
-      <link>https://www.newsmth.net/nForum/article/Stock/11620983</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Stock/11620983</guid>
-      <author>股市</author>
-      <pubDate>Sun, 01 Nov 2026 05:52:08 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Stock_11620983.jpg?v=" alt="" /><br/>从深圳看牛市已经结束]]></description>
-    </item>
-    <item>
       <title>[铁路] “女子高铁上和男友开免提打1小时电话”冲上热搜第一</title>
       <link>https://www.newsmth.net/nForum/article/Railway/1199101</link>
       <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Railway/1199101</guid>
@@ -49,12 +41,20 @@
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Railway_1199101.jpg?v=" alt="" /><br/>“女子高铁上和男友开免提打1小时电话”冲上热搜第一]]></description>
     </item>
     <item>
-      <title>[服饰搭配] 和女钓友一起钓鱼</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/560287</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/FashionShow/560287</guid>
-      <author>服饰搭配</author>
-      <pubDate>Sun, 01 Nov 2026 05:52:08 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FashionShow_560287.jpg?v=" alt="" /><br/>和女钓友一起钓鱼]]></description>
+      <title>[股市] 明天是开两个会啊好像</title>
+      <link>https://www.newsmth.net/nForum/article/Stock/11621384</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Stock/11621384</guid>
+      <author>股市</author>
+      <pubDate>Sun, 01 Nov 2026 13:12:02 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Stock_11621384.jpg?v=" alt="" /><br/>明天是开两个会啊好像]]></description>
+    </item>
+    <item>
+      <title>[电视秀] 何洁和李宇春因为何洁婚礼没有短信邀请李宇春争议而破裂 (转载)</title>
+      <link>https://www.newsmth.net/nForum/article/TVShow/1556413</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/TVShow/1556413</guid>
+      <author>电视秀</author>
+      <pubDate>Sun, 01 Nov 2026 13:12:02 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/TVShow_1556413.jpg?v=" alt="" /><br/>何洁和李宇春因为何洁婚礼没有短信邀请李宇春争议而破裂 (转载)]]></description>
     </item>
     <item>
       <title>[手机·移动通信] 移动老校园卡扩容</title>
@@ -65,12 +65,12 @@
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Mobile_1969055.jpg?v=" alt="" /><br/>移动老校园卡扩容]]></description>
     </item>
     <item>
-      <title>[鹊桥·征男友女友] 83年女征回老家的良伴</title>
-      <link>https://www.newsmth.net/nForum/article/PieLove/2954704</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/PieLove/2954704</guid>
-      <author>鹊桥·征男友女友</author>
+      <title>[服饰搭配] 和女钓友一起钓鱼</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560287</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/FashionShow/560287</guid>
+      <author>服饰搭配</author>
       <pubDate>Sun, 01 Nov 2026 05:52:08 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/PieLove_2954704.jpg?v=" alt="" /><br/>83年女征回老家的良伴]]></description>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FashionShow_560287.jpg?v=" alt="" /><br/>和女钓友一起钓鱼]]></description>
     </item>
   </channel>
 </rss>

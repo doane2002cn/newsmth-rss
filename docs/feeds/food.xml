@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Nov 2026 05:52:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:12:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>老外 喝酒都木有下酒菜 怎么喝得下去？</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1781257</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781257</guid>
+      <author>ygdmjg</author>
+      <pubDate>Sun, 01 Nov 2026 10:59:58 +0000</pubDate>
+      <description><![CDATA[rt]]></description>
+    </item>
     <item>
       <title>煎饼卷大葱确实解腻，可口美味</title>
       <link>https://www.newsmth.net/nForum/article/Food/1781231</link>
@@ -102,7 +110,7 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781068</guid>
       <author>FuZu</author>
       <pubDate>Fri, 30 Oct 2026 10:39:27 +0000</pubDate>
-      <description><![CDATA[是每个人的手法不一样吗？还是调料的细微差异。]]></description>
+      <description><![CDATA[是每个人的手法不一样吗？还是调料的细微差异。<br/>各个亲戚炖的肉，味道明显不同。]]></description>
     </item>
     <item>
       <title>越来越爱原生态食品了</title>
@@ -397,14 +405,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780080</guid>
       <author>zhtoad</author>
       <pubDate>Fri, 23 Oct 2026 16:22:26 +0000</pubDate>
-    </item>
-    <item>
-      <title>今天吃了拼多多上买的山药裤带面</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780067</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780067</guid>
-      <author>newluna81</author>
-      <pubDate>Fri, 23 Oct 2026 11:10:26 +0000</pubDate>
-      <description><![CDATA[真的特别好吃，入口滑腻，香的很哪]]></description>
     </item>
   </channel>
 </rss>

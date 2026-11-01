@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Memory</link>
     <description>似水流年（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Nov 2026 05:52:08 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 01 Nov 2026 13:12:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/memory.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>大家都见过这种窗帘吗？</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/190907</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190907</guid>
+      <author>linyiye</author>
+      <pubDate>Sun, 01 Nov 2026 13:01:11 +0000</pubDate>
+      <description><![CDATA[小时候村里窗帘就是这种，大约是九几年吧，还有一种是熊猫抱着竹子的。当时物质虽然贫乏，但审美还是不错的，尤其是晚上停电后，月光照在窗帘上，就和露天放电影的荧幕一样。<br/>附件中照片是83年。]]></description>
+    </item>
     <item>
       <title>今年最火的歌曲</title>
       <link>https://www.newsmth.net/nForum/article/Memory/190879</link>
@@ -397,14 +405,6 @@
       <author>moonriver007</author>
       <pubDate>Sun, 25 Oct 2026 06:47:56 +0000</pubDate>
       <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>失业是婚姻的最后一根稻草</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190102</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190102</guid>
-      <author>VeryMuch2</author>
-      <pubDate>Sun, 25 Oct 2026 04:57:17 +0000</pubDate>
-      <description><![CDATA[平日两个人相处的就不是很愉快，看在钱的份上都忍了。]]></description>
     </item>
   </channel>
 </rss>
