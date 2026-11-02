@@ -5,9 +5,16 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 01 Nov 2026 19:32:20 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2026 00:34:21 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>Drake的中国女友</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/560412</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560412</guid>
+      <author>rwgcz</author>
+      <pubDate>Sun, 01 Nov 2026 23:46:20 +0000</pubDate>
+    </item>
     <item>
       <title>周末锻炼身体</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/560388</link>
@@ -386,13 +393,6 @@
       <author>lele20260212</author>
       <pubDate>Thu, 29 Oct 2026 22:24:13 +0000</pubDate>
       <description><![CDATA[（见图）]]></description>
-    </item>
-    <item>
-      <title>老家的邻居小姐姐</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/560065</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560065</guid>
-      <author>nextworld8</author>
-      <pubDate>Thu, 29 Oct 2026 13:40:46 +0000</pubDate>
     </item>
   </channel>
 </rss>

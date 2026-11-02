@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-02 03:32:20 +0800",
+  "generated": "2026-11-02 08:34:21 +0800",
   "banned": false,
   "sources": [
     {
@@ -42,7 +42,7 @@
       "key": "beipiao",
       "name": "北漂生活",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "book",
@@ -54,7 +54,7 @@
       "key": "boy",
       "name": "老男孩",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "bull",
@@ -78,7 +78,7 @@
       "key": "diy",
       "name": "独具匠心",
       "count": 31,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "fashionshow",
@@ -102,7 +102,7 @@
       "key": "gentle_fashion",
       "name": "绅士·时尚",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "get_pregnant",
@@ -114,7 +114,7 @@
       "key": "girl",
       "name": "女孩子",
       "count": 23,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "healtheworld",
@@ -126,13 +126,13 @@
       "key": "healthylife",
       "name": "健康生活",
       "count": 33,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "jade_jewelry",
@@ -150,7 +150,7 @@
       "key": "love",
       "name": "谈情说爱",
       "count": 49,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "memory",
@@ -162,13 +162,13 @@
       "key": "motorbike",
       "name": "摩托天地",
       "count": 27,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "motss",
       "name": "自由左岸",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "older",
@@ -234,7 +234,7 @@
       "key": "woodenart",
       "name": "木艺",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "workinglife",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 4,
-      "status": "更新 +4"
+      "count": 8,
+      "status": "更新 +8"
     }
   ]
 }
