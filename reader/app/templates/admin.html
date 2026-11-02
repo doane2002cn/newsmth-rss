@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>远程登录 · 水木阅读</title>
+  <link rel="stylesheet" href="/static/reader.css">
+</head>
+<body class="admin-page">
+  <header class="admin-bar">
+    <div class="admin-brand">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#wifi"></use></svg>
+      <div class="admin-brand-text">
+        <strong>水木远程登录</strong>
+        <small>
+          登录票据 {{ session_ttl_label }}内有效；浏览器会话会持久保存{% if browser_mode == "shared-cdp" %}；复用 Oracle 常驻桌面{% endif %}
+        </small>
+      </div>
+    </div>
+    <div class="admin-actions">
+      <span class="admin-status" id="adminStatus"><span id="adminStatusText">正在检查</span></span>
+      <button class="admin-button" id="openLogin" type="button">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#log-in"></use></svg>
+        <span>打开水木登录页</span>
+      </button>
+      <button class="admin-button" id="reloadFrame" type="button">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#refresh"></use></svg>
+        <span>重连画面</span>
+      </button>
+      {% if next_url %}
+      <a class="admin-button" href="{{ next_url }}">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#book-open"></use></svg>
+        <span>返回文章</span>
+      </a>
+      {% endif %}
+      <button class="admin-button" id="logoutButton" type="button" aria-label="退出管理会话">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#external-link"></use></svg>
+        <span>退出</span>
+      </button>
+    </div>
+  </header>
+
+  {% if not browser_ready %}
+  <div class="admin-alert">远程浏览器尚未就绪。请先查看容器健康状态，再重新连接。</div>
+  {% elif opened %}
+  <div class="admin-alert">已切换到水木手机版登录页。请直接在下方完成账号登录和滑块验证。</div>
+  {% endif %}
+
+  <main class="admin-shell">
+    <iframe
+      class="vnc-frame"
+      id="vncFrame"
+      src="{{ vnc_url }}"
+      title="水木远程浏览器"
+      allow="clipboard-read; clipboard-write"
+    ></iframe>
+  </main>
+  <script src="/static/admin.js" defer></script>
+</body>
+</html>

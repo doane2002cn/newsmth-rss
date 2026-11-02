@@ -16,19 +16,24 @@
   · 失败 → stdout 打印一行提示(会被投递给用户), 退出码 0
 用法:
   python3 smth_digest.py            正常：拉数据 → 发卡
-  python3 smth_digest.py --dry-run  不发送，只把卡片写到 /tmp 并打印摘要(自检用)
+  python3 smth_digest.py --dry-run  不发送，只打印卡片摘要并校验链接(自检用)
 """
 import json
 import html
+import base64
+import hashlib
+import hmac
 import os
 import re
 import subprocess
 import sys
+import tempfile
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -43,9 +48,11 @@ BOARDS_JSON = f"{BASE}/boards.json"
 
 ENV_FILE = "/opt/data/.env"
 CARD_API = "/opt/data/workspace/scripts/feishu_card_api.py"
-CARD_FILE = "/tmp/smth_card.json"
+CARD_TMP_DIR = "/tmp"
+CARD_FILE_PREFIX = "smth_card_"
 CHAT = "oc_b8559c55f250b54d396a8d8105bb1355"
 CST = timezone(timedelta(hours=8))
+READER_TOKEN_TTL = 90 * 24 * 3600
 
 MAX_PER_SECTION = 8        # 特快 / 知性感性 每节最多几条
 MAX_PICTURES = 5
@@ -252,6 +259,38 @@ def strip_board_prefix(title):
     return re.sub(r"^\s*\[[^\]]{1,12}\]\s*", "", title or "").strip()
 
 
+def _b64url(value):
+    return base64.urlsafe_b64encode(value).rstrip(b"=").decode("ascii")
+
+
+def reader_link(it):
+    """把水木原链换成私人阅读网关的签名链接；配置异常时拒绝发卡。"""
+    original = it["link"]
+    secret = os.environ.get("READER_SIGNING_SECRET", "").strip()
+    public_base = os.environ.get(
+        "READER_PUBLIC_BASE", "https://smth-reader.12879737.xyz"
+    ).rstrip("/")
+    match = re.search(r"/article/([^/?#]+)/(\d+)", original)
+    if len(secret) < 32:
+        raise RuntimeError("READER_SIGNING_SECRET 缺失或长度不足")
+    if not match:
+        raise RuntimeError(f"无法识别水木文章链接: {original}")
+    payload = {
+        "v": 1,
+        "typ": "article",
+        "board": urllib.parse.unquote(match.group(1)),
+        "topic": match.group(2),
+        "title": strip_board_prefix(it["title"])[:160],
+        "exp": int(time.time()) + READER_TOKEN_TTL,
+    }
+    body = json.dumps(
+        payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    ).encode("utf-8")
+    signature = hmac.new(secret.encode("utf-8"), body, hashlib.sha256).digest()
+    token = f"{_b64url(body)}.{_b64url(signature)}"
+    return f"{public_base}/a/{token}"
+
+
 # 飞书会把行首的普通空格吃掉，缩进只能靠可见字符表达；
 # 这里用全角空格 + 中点，即使空格被吞掉也能看出这是子行。
 SUB = "　· "
@@ -400,7 +439,7 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
         it = by_n.get(int(r["n"]))
         if not it:
             continue
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
         why = (r.get("why") or "").strip()
         if why:
             md.append(f"{SUB}推荐理由：{clip(why, 46)}")
@@ -412,7 +451,7 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     top = sec["topten"]
     md.append(f"**🔥 今日十大**（{len(top)} 条）")
     for i, it in enumerate(top, 1):
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
         line = sub_line(it, sections, limit=44)
         if line:
             md.append(line)
@@ -425,7 +464,7 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
         items = sec[key][:MAX_PER_SECTION]
         md.append(f"**{emoji} {title}**（{len(items)} 条）")
         for i, it in enumerate(items, 1):
-            md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+            md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
             line = sub_line(it, sections, with_board=(key == "sensibility"))
             if line:
                 md.append(line)
@@ -436,7 +475,7 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     pics = sec["pictures"][:MAX_PICTURES]
     md.append(f"**🖼 精彩贴图**（{len(pics)} 张）")
     for i, it in enumerate(pics, 1):
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({it['link']})")
+        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
         # 贴图重在图片本身；desc 里是图片地址，不能当摘要，只在有中文板块名时标来源
         if sections.get(it["board"], ("", ""))[1]:
             md.append(SUB + board_label(sections, it["board"]))
@@ -462,15 +501,105 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
 
 
 def send_card(card):
-    with open(CARD_FILE, "w", encoding="utf-8") as f:
-        json.dump(card, f, ensure_ascii=False)
-    r = subprocess.run(["python3", CARD_API, "--card-file", CARD_FILE, "--chat", CHAT],
-                       capture_output=True, text=True, timeout=90)
-    ok = r.returncode == 0 and "OK message_id" in (r.stdout or "")
-    log = f"[info] 卡片已送达 {r.stdout.strip()}" if ok else \
-          f"[warn] 卡片直发失败 rc={r.returncode} {r.stdout.strip()} {r.stderr.strip()}"
-    print(log, file=sys.stderr)
-    return ok
+    card_file = ""
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            suffix=".json",
+            prefix=CARD_FILE_PREFIX,
+            dir=CARD_TMP_DIR,
+            delete=False,
+        ) as f:
+            card_file = f.name
+            json.dump(card, f, ensure_ascii=False)
+        r = subprocess.run(
+            ["python3", CARD_API, "--card-file", card_file, "--chat", CHAT],
+            capture_output=True,
+            text=True,
+            timeout=90,
+        )
+        ok = r.returncode == 0 and "OK message_id" in (r.stdout or "")
+        log = f"[info] 卡片已送达 {r.stdout.strip()}" if ok else \
+              f"[warn] 卡片直发失败 rc={r.returncode} " \
+              f"{r.stdout.strip()} {r.stderr.strip()}"
+        print(log, file=sys.stderr)
+        return ok
+    finally:
+        if card_file:
+            try:
+                os.unlink(card_file)
+            except FileNotFoundError:
+                pass
+
+
+def validate_card(card):
+    """确保卡片只包含 Reader 签名链接，绝不把原链或 SMZDM 链接发出去。"""
+    serialized = json.dumps(card, ensure_ascii=False)
+    lowered = serialized.lower()
+    if "smzdm.com" in lowered:
+        raise RuntimeError("卡片中混入了 SMZDM 域名")
+    if "newsmth.net" in lowered:
+        raise RuntimeError("卡片中仍有未转换的水木原始链接")
+
+    links = re.findall(r"\]\((https?://[^)\s]+)\)", serialized)
+    if not links:
+        raise RuntimeError("卡片中没有找到文章链接")
+
+    public_base = os.environ.get(
+        "READER_PUBLIC_BASE", "https://smth-reader.12879737.xyz"
+    ).rstrip("/")
+    base = urllib.parse.urlparse(public_base)
+    prefix = f"{base.path.rstrip('/')}/a/"
+    for link in links:
+        parsed = urllib.parse.urlparse(link)
+        if (
+            parsed.scheme != "https"
+            or parsed.netloc != base.netloc
+            or not parsed.path.startswith(prefix)
+        ):
+            raise RuntimeError(f"非 Reader 文章链接: {link}")
+    return links
+
+
+def prewarm_reader_links(links):
+    """在发卡前填充 Reader 缓存，避免读者首次点击时等待上游水木。"""
+    unique_links = list(dict.fromkeys(links))
+    if not unique_links:
+        return 0, 0
+    try:
+        workers = max(1, min(6, int(os.environ.get("READER_PREWARM_WORKERS", "4"))))
+    except ValueError:
+        workers = 4
+    try:
+        timeout = max(5, min(60, int(os.environ.get("READER_PREWARM_TIMEOUT", "30"))))
+    except ValueError:
+        timeout = 30
+
+    def warm(link):
+        req = urllib.request.Request(
+            link,
+            headers={"User-Agent": "smth-digest-prewarm/1.0"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as response:
+                return response.status == 200
+        except Exception:                                      # noqa: BLE001
+            return False
+
+    ready = 0
+    started = time.monotonic()
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        futures = [executor.submit(warm, link) for link in unique_links]
+        for future in as_completed(futures):
+            if future.result():
+                ready += 1
+    total = len(unique_links)
+    print(
+        f"[info] Reader 预热完成 {ready}/{total}，耗时 {time.monotonic() - started:.1f}s",
+        file=sys.stderr,
+    )
+    return ready, total
 
 
 def main():
@@ -530,14 +659,27 @@ def main():
     reads = fallback_reads(pool) if ai_broken else (data.get("must_read") or fallback_reads(pool))
     summary = "" if ai_broken else (data.get("summary") or "")
 
-    card = render_card(sec, reads, summary, last_build, ai_broken, pool,
-                       delayed, sections)
+    try:
+        card = render_card(sec, reads, summary, last_build, ai_broken, pool,
+                           delayed, sections)
+        links = validate_card(card)
+    except RuntimeError as e:
+        print(f"⚠️ 水木社区每日推荐卡片生成或链接校验失败：{e}")
+        return 0
     if dry:
         print("─" * 28 + " CARD PREVIEW (dry-run) " + "─" * 28)
         print(card["elements"][0]["content"])
         print("─" * 70)
-        print(f"[dry-run] 未发送；卡片 JSON 见 {CARD_FILE}")
+        print(f"[dry-run] 未发送；已校验 {len(links)} 个 Reader 链接")
+        ready, total = prewarm_reader_links(links)
+        print(f"[dry-run] Reader 缓存预热 {ready}/{total}")
         return 0
+    ready, total = prewarm_reader_links(links)
+    if ready < total:
+        print(
+            f"[warn] Reader 仍有 {total - ready} 篇未进入缓存，卡片将保留重试与登录入口",
+            file=sys.stderr,
+        )
     if not send_card(card):
         print("⚠️ 水木社区每日推荐：卡片发送失败（详见日志）")
     return 0

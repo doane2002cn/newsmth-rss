@@ -1,0 +1,25 @@
+services:
+  smth-reader:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: smth-reader:local
+    container_name: smth-reader
+    restart: unless-stopped
+    env_file:
+      - .env
+    volumes:
+      - ./data:/data
+    expose:
+      - "8010"
+    networks:
+      - ai-workstation_default
+    shm_size: "1gb"
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+
+networks:
+  ai-workstation_default:
+    external: true

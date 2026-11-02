@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>{{ title }} · 水木阅读</title>
+  <link rel="stylesheet" href="/static/reader.css">
+</head>
+<body data-stale="{{ 'true' if stale else 'false' }}">
+  <div class="progress" id="progress"></div>
+
+  <header class="topbar">
+    <div class="topbar-left">
+      <button class="icon-button" id="backButton" type="button" aria-label="返回上一页">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#arrow-left"></use></svg>
+      </button>
+    </div>
+    <p class="topbar-title">水木阅读</p>
+    <div class="topbar-right">
+      <button class="session-pill" id="sessionButton" type="button" aria-label="查看阅读会话状态">
+        <span class="session-dot"></span>
+        <span>{{ '缓存模式' if stale else '会话正常' }}</span>
+      </button>
+      <button class="icon-button" id="menuButton" type="button" aria-label="更多操作" aria-expanded="false">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#more-horizontal"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <nav class="menu" id="menu" aria-label="更多操作">
+    <button type="button" data-copy-link>复制当前链接</button>
+    <a href="/admin">检查远程登录会话</a>
+  </nav>
+
+  <main class="shell">
+    <aside class="context-rail">
+      <p class="rail-label">From</p>
+      <p class="rail-value">{{ article.board }}</p>
+      <p class="rail-note">第 {{ current_page }} / {{ article.total_pages }} 页<br>读取于 {{ cache_age_label }}</p>
+      <div class="rail-rule"></div>
+      <div class="rail-status">{{ '显示上次缓存' if stale else '私人会话在线' }}</div>
+    </aside>
+
+    <article class="article">
+      {% if stale %}
+      <div class="stale-banner" role="status">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#clock"></use></svg>
+        <span>{{ notice }}。当前展示 {{ cache_age_label }} 的正文快照。<a href="/relogin/{{ token }}">重新登录水木</a></span>
+      </div>
+      {% endif %}
+
+      <div class="article-content" id="articleContent">
+        <div class="article-kicker">
+          <span>{{ article.board }}</span>
+          <span class="kicker-rule"></span>
+          <span>#{{ article.topic }}</span>
+          {% if current_page > 1 %}<span>第 {{ current_page }} 页</span>{% endif %}
+        </div>
+
+        <h1>{{ title }}</h1>
+
+        <div class="byline">
+          {% if current_page == 1 and first_post %}
+          <strong>{{ first_post.author }}</strong>
+          {% if first_post.date %}<span class="byline-dot"></span><time>{{ first_post.date }}</time>{% endif %}
+          <span class="byline-dot"></span>
+          <span>正文约 {{ body_length }} 字</span>
+          {% else %}
+          <strong>讨论续页</strong>
+          <span class="byline-dot"></span>
+          <span>本页 {{ replies|length }} 条</span>
+          {% endif %}
+        </div>
+
+        <hr class="article-rule">
+
+        {% if current_page == 1 and first_post %}
+        <div class="article-body">
+          {{ first_post.body_html | safe }}
+        </div>
+
+        <div class="source-note">
+          <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#book-open"></use></svg>
+          <span>正文由私人阅读会话抓取并清洗。页面打开时会优先读取本机缓存，不经过水木的游客验证码页面。</span>
+        </div>
+        {% endif %}
+
+        <section class="discussion" id="discussionAnchor">
+          <div class="section-head">
+            <h2>{{ '讨论' if current_page == 1 else '讨论续页' }}</h2>
+            <span class="section-meta">全帖 {{ article.total_posts }} 篇</span>
+          </div>
+
+          {% if replies %}
+            {% for reply in replies %}
+            <article class="reply">
+              <div class="avatar" aria-hidden="true">{{ reply.author[:1] }}</div>
+              <div class="reply-main">
+                <div class="reply-head">
+                  <span class="reply-name">
+                    {{ reply.author }}
+                    {% if reply.position %}<span class="reply-position">{{ reply.position }}</span>{% endif %}
+                  </span>
+                  {% if reply.date %}<time class="reply-time">{{ reply.date }}</time>{% endif %}
+                </div>
+                <div class="reply-body">{{ reply.body_html | safe }}</div>
+                {% if reply.likes %}<p class="reply-likes">点赞 {{ reply.likes|join('、') }}</p>{% endif %}
+              </div>
+            </article>
+            {% endfor %}
+          {% else %}
+            <p class="empty-replies">这一页暂时没有可显示的回复。</p>
+          {% endif %}
+
+          <nav class="pager" aria-label="文章分页">
+            <a class="pager-link {{ 'is-disabled' if not prev_url else '' }}" href="{{ prev_url or '#' }}">
+              <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#chevron-left"></use></svg>
+              上一页
+            </a>
+            <span class="pager-number">{{ current_page }} / {{ article.total_pages }}</span>
+            <a class="pager-link {{ 'is-disabled' if not next_url else '' }}" href="{{ next_url or '#' }}">
+              下一页
+              <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#chevron-right"></use></svg>
+            </a>
+          </nav>
+        </section>
+      </div>
+    </article>
+
+    <aside class="context-rail right-rail">
+      <p class="rail-label">On this page</p>
+      <p class="rail-value">阅读位置</p>
+      <nav class="toc">
+        <a href="#articleContent">标题与正文</a>
+        <a href="#discussionAnchor">讨论 {{ article.total_posts - 1 }}</a>
+      </nav>
+      <div class="rail-rule" style="margin-top: 24px;"></div>
+      <p class="rail-note">底部工具栏可调整字号<br>收藏状态只保存在本机</p>
+    </aside>
+  </main>
+
+  <nav class="bottom-dock" aria-label="阅读工具栏">
+    <button class="dock-button" id="fontDown" type="button" aria-label="缩小字号">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#minus"></use></svg>
+    </button>
+    <button class="dock-button" id="fontUp" type="button" aria-label="放大字号">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#plus"></use></svg>
+    </button>
+    <span class="dock-separator"></span>
+    <button class="dock-button" id="bookmarkButton" type="button" aria-label="收藏文章" aria-pressed="false">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#bookmark"></use></svg>
+      <span class="dock-label">收藏</span>
+    </button>
+    <button class="dock-button" type="button" data-copy-link aria-label="复制链接">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#copy"></use></svg>
+      <span class="dock-label">复制链接</span>
+    </button>
+    <span class="dock-separator"></span>
+    <a class="dock-button {{ 'is-disabled' if not prev_url else '' }}" href="{{ prev_url or '#' }}" aria-label="上一页">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#chevron-left"></use></svg>
+    </a>
+    <a class="dock-button {{ 'is-disabled' if not next_url else '' }}" href="{{ next_url or '#' }}" aria-label="下一页">
+      <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#chevron-right"></use></svg>
+    </a>
+  </nav>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="/static/reader.js" defer></script>
+</body>
+</html>

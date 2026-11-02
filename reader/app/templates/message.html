@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>{{ title }} · 水木阅读</title>
+  <link rel="stylesheet" href="/static/reader.css">
+</head>
+<body>
+  <main class="message-page">
+    <section class="message-panel">
+      <div class="message-icon">
+        <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#shield-check"></use></svg>
+      </div>
+      <p class="message-eyebrow">{{ eyebrow }}</p>
+      <h1>{{ title }}</h1>
+      <p class="message-copy">{{ description }}</p>
+      {% if action_url or secondary_url %}
+      <div class="message-actions">
+        {% if action_url %}
+        <a class="primary-button" href="{{ action_url }}">{{ action_label or '继续' }}</a>
+        {% endif %}
+        {% if secondary_url %}
+        <a class="secondary-button" href="{{ secondary_url }}">{{ secondary_label or '返回' }}</a>
+        {% endif %}
+      </div>
+      {% endif %}
+    </section>
+  </main>
+</body>
+</html>
