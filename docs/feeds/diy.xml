@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Nov 2026 06:32:17 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 03 Nov 2026 17:00:28 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>介质阻挡放电</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11309</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11309</guid>
+      <author>MasonBJ</author>
+      <pubDate>Tue, 03 Nov 2026 14:08:50 +0000</pubDate>
+      <description><![CDATA[继续我的等离子发生器实验,拿2mm螺杆和打磨用的小锯片做放电装置.<br/>石英玻璃管内径有点大,高压不够高,放正中时不能击穿.没有表能测这电压,估计10000V左右.]]></description>
+    </item>
     <item>
       <title>版面积分变更记录</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11303</link>
