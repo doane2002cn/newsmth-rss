@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 03 Nov 2026 23:14:28 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2026 06:02:40 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>食神们 今年有在旗舰店买了褚橙的吗？</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1781501</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781501</guid>
+      <author>tascioni</author>
+      <pubDate>Wed, 04 Nov 2026 05:14:03 +0000</pubDate>
+      <description><![CDATA[相比往年 今年味道如何？]]></description>
+    </item>
     <item>
       <title>芋头挺好吃的。</title>
       <link>https://www.newsmth.net/nForum/article/Food/1781453</link>
@@ -398,14 +406,6 @@
       <author>archer</author>
       <pubDate>Sun, 25 Oct 2026 04:22:28 +0000</pubDate>
       <description><![CDATA[不敢吃了。]]></description>
-    </item>
-    <item>
-      <title>各省下饭菜统计</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780179</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780179</guid>
-      <author>hok852</author>
-      <pubDate>Sun, 25 Oct 2026 02:35:22 +0000</pubDate>
-      <description><![CDATA[个人感觉<br/>所谓下饭菜特指吃完一碗米饭需要添的那种<br/>东北：豆角炖排骨<br/>山东：蒜爆肉<br/>山西：过油肉<br/>江浙：茨菇烧肉<br/>湖南：辣椒炒肉<br/>四川：回锅肉<br/>云南：黑三剁<br/>福建：海蛎煎蛋<br/>。。]]></description>
     </item>
   </channel>
 </rss>
