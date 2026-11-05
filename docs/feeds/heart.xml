@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 04 Nov 2026 21:15:56 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 06:30:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>发愿</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250399</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250399</guid>
+      <author>newluna81</author>
+      <pubDate>Thu, 05 Nov 2026 05:48:16 +0000</pubDate>
+      <description><![CDATA[这个月不买零食]]></description>
+    </item>
+    <item>
+      <title>晒太阳归来</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250396</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250396</guid>
+      <author>newluna81</author>
+      <pubDate>Thu, 05 Nov 2026 00:48:21 +0000</pubDate>
+      <description><![CDATA[心情愉快]]></description>
+    </item>
     <item>
       <title>今天早上撸铁愉快</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250395</link>
@@ -390,22 +406,6 @@
       <author>newluna81</author>
       <pubDate>Sat, 17 Oct 2026 06:52:25 +0000</pubDate>
       <description><![CDATA[健康养心]]></description>
-    </item>
-    <item>
-      <title>天气好的日子都快乐</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250072</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250072</guid>
-      <author>Richard2018</author>
-      <pubDate>Sat, 17 Oct 2026 02:30:55 +0000</pubDate>
-      <description><![CDATA[- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>挑战五天零消费的——第五天！</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250067</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250067</guid>
-      <author>newluna81</author>
-      <pubDate>Fri, 16 Oct 2026 21:33:42 +0000</pubDate>
-      <description><![CDATA[今天早上在用豆浆机磨五红汤，哈哈，准备就着吐司吃]]></description>
     </item>
   </channel>
 </rss>
