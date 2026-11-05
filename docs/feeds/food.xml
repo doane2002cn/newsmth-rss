@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Nov 2026 06:30:02 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Nov 2026 17:20:59 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>人在美国的朋友来看一下</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1781554</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781554</guid>
+      <author>moonwalker</author>
+      <pubDate>Thu, 05 Nov 2026 09:55:52 +0000</pubDate>
+      <description><![CDATA[这个肯德基烤包是不是有点小啊？<br/>就这套餐三十多块钱，价值5美元呢！]]></description>
+    </item>
     <item>
       <title>我的一些做饭秘笈</title>
       <link>https://www.newsmth.net/nForum/article/Food/1781547</link>
@@ -398,14 +406,6 @@
       <author>wuduan2</author>
       <pubDate>Mon, 26 Oct 2026 00:10:55 +0000</pubDate>
       <description><![CDATA[今天在食堂想打一个酱香饼吃<br/>忽然看到上面一个很大的“贵”字<br/>当然前面还有小字“好吃，就是”<br/>我心想，我也不是必须吃这个，这是涨价了吗？那就先别打了。<br/>我从没看过它的价格。现在的价格是1.09/50克<br/>不知道贴这个是啥意思。。。]]></description>
-    </item>
-    <item>
-      <title>苦难的行军</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780287</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780287</guid>
-      <author>chery</author>
-      <pubDate>Sun, 25 Oct 2026 11:53:53 +0000</pubDate>
-      <description><![CDATA[过年的年货]]></description>
     </item>
   </channel>
 </rss>
