@@ -5,9 +5,169 @@
     <link>https://www.newsmth.net/nForum/board/NewExpress</link>
     <description>水木特快（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 06 Nov 2026 06:24:50 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 16:43:59 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/newexpress.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>转载，新聊斋之大模型</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729118</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729118</guid>
+      <author>rockeyes</author>
+      <pubDate>Fri, 06 Nov 2026 16:39:29 +0000</pubDate>
+      <description><![CDATA[不久以前，一位陈姓书生用家中弱弱的机器跑 Qwen3.5-0.8B 模型。有次模型推理死循环崩溃了，怎么也搞不好，因为陈生是调参白痴，他找朋友给介绍了一个高手来帮忙解决问题。<br/>入夜以后，高手敲门进屋，话也不多说，直接看了看显示屏，问陈生有没有高质量训练集和强劲算力，陈生回答说都没有。<br/>高手想了一下，叫陈生把模型的的 safetensors 权重文件拿给他。陈生疑惑，想问要干什么，但人家是高手，也不好多说，就把权重导出来给他了。<br/>只见高手把权重文件拖进一个奇怪的十六进制编辑器内，然后登进入终端，开始在键盘上不停地敲击。他按键的速度非常快，但是只改浮点数权重。起初还能看见手指的起落，很快便快得根本看不清动作。陈生更加搞不懂这是在干什么，但也不敢问，只看了半个多小时，那高手还是不停地改东改西。陈生渐渐有些困，问高手这东西要搞多久，回答说要几个小时。于是陈生给他倒了杯茶，就一个人去隔壁睡觉了。<br/>夜里一阵冷风激得陈生醒来，看看表已经在凌晨五点，就起身到隔壁，看见高手在终端里面跑评测集。过了一会儿，他说，你试试看。陈生遂坐上椅子测了一下，竟然看到模型的数学能力翻了6倍，指令遵循提高3倍，关键是真的不卡在死循环了。陈生大喜，连忙千恩万谢高手，谢过之后人家就道别走了。<br/>后来，陈生慢慢对大模型有更多理解，终于想明白，原来那天夜里高手根本没有跑反向传播的算法，只是手工修改了0.016%的参数...<br/>陈生佩服得五体投地，就问朋友那位高手的下落，朋友回答说杳无音讯。又过了一阵子，陈生读一篇顶会论文，看到内容似曾相识，但作者列表的照片却没有一张脸见过。<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>现在民主党2028年上台，是超过65%概率的吧？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729109</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729109</guid>
+      <author>Howxi</author>
+      <pubDate>Fri, 06 Nov 2026 16:28:53 +0000</pubDate>
+      <description><![CDATA[话说民主党候选人是谁来着？]]></description>
+    </item>
+    <item>
+      <title>解决丑国的问题，唯一，最佳办法就是拆分</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729105</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729105</guid>
+      <author>shuimu0691</author>
+      <pubDate>Fri, 06 Nov 2026 16:25:19 +0000</pubDate>
+      <description><![CDATA[之前也有讨论过的USA，UBB，USC……<br/>红也罢蓝也罢各过各的]]></description>
+    </item>
+    <item>
+      <title>吃了一个月他汀</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729075</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729075</guid>
+      <author>wundg</author>
+      <pubDate>Fri, 06 Nov 2026 15:52:58 +0000</pubDate>
+      <description><![CDATA[会整晚做梦，特别多梦。<br/>另外就是会轻微影响那方面功能：因为胆固醇是合成睾酮的原料，他汀抑制胆固醇合成，可能轻度影响 Leydig 细胞类固醇生成。]]></description>
+    </item>
+    <item>
+      <title>ai有没有生成很牛逼的唐诗宋词？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729071</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729071</guid>
+      <author>Howxi</author>
+      <pubDate>Fri, 06 Nov 2026 15:46:26 +0000</pubDate>
+      <description><![CDATA[各位达人要不贴个几首？]]></description>
+    </item>
+    <item>
+      <title>有了AI后，能混出名堂的职业</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729050</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729050</guid>
+      <author>Z5boy</author>
+      <pubDate>Fri, 06 Nov 2026 15:38:44 +0000</pubDate>
+      <description><![CDATA[只有体育运动员了吧？<br/>歌星，演员，科学家都会被替代]]></description>
+    </item>
+    <item>
+      <title>VETO</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729051</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729051</guid>
+      <author>nighthawk</author>
+      <pubDate>Fri, 06 Nov 2026 15:38:42 +0000</pubDate>
+      <description><![CDATA[不是MAGA了]]></description>
+    </item>
+    <item>
+      <title>草地露营真好</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47729020</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47729020</guid>
+      <author>bfield</author>
+      <pubDate>Fri, 06 Nov 2026 15:28:32 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>已经有几块钱的房子了</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728999</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728999</guid>
+      <author>jhlh</author>
+      <pubDate>Fri, 06 Nov 2026 15:19:54 +0000</pubDate>
+      <description><![CDATA[公众号里看到的<br/>一个是在鹤港<br/>另一个是在哪里忘记了<br/>是拍卖的<br/>是卖方的促销<br/>先出价到十几块的就成交<br/>但是要缴两万多块的税<br/>还有物业费好像<br/>所以<br/>实际上并不白给]]></description>
+    </item>
+    <item>
+      <title>接下来两年，西大会陷入内斗吗？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728996</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728996</guid>
+      <author>coolidge</author>
+      <pubDate>Fri, 06 Nov 2026 15:19:27 +0000</pubDate>
+      <description><![CDATA[小日子会更加铤而走险吧]]></description>
+    </item>
+    <item>
+      <title>叙利亚隐蔽营地</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728984</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728984</guid>
+      <author>huaiqing</author>
+      <pubDate>Fri, 06 Nov 2026 15:13:45 +0000</pubDate>
+      <description><![CDATA[每个人一本书<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>吕特暗示乌克兰割地</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728973</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728973</guid>
+      <author>cii</author>
+      <pubDate>Fri, 06 Nov 2026 15:07:16 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>华裔干活，印度裔当官</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728963</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728963</guid>
+      <author>bearooo</author>
+      <pubDate>Fri, 06 Nov 2026 15:01:15 +0000</pubDate>
+      <description><![CDATA[美国]]></description>
+    </item>
+    <item>
+      <title>白衣逆行者这么好的电影怎么撤档了？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728949</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728949</guid>
+      <author>fatcat</author>
+      <pubDate>Fri, 06 Nov 2026 14:55:38 +0000</pubDate>
+      <description><![CDATA[多么正能量]]></description>
+    </item>
+    <item>
+      <title>这几天是什么鬼节要来了？</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728930</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728930</guid>
+      <author>luchu</author>
+      <pubDate>Fri, 06 Nov 2026 14:49:06 +0000</pubDate>
+      <description><![CDATA[路边卖烧纸的和烧纸的那么多？感觉比清明和七七还多。]]></description>
+    </item>
+    <item>
+      <title>听说中科大每天给每个学生发1亿token</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728925</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728925</guid>
+      <author>bfield</author>
+      <pubDate>Fri, 06 Nov 2026 14:45:59 +0000</pubDate>
+      <description><![CDATA[很大方啊<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>科技已经发达 美国两党完全可以划分东西帝国两凯撒共治吧</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728918</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728918</guid>
+      <author>chengyz2013</author>
+      <pubDate>Fri, 06 Nov 2026 14:44:37 +0000</pubDate>
+      <description><![CDATA[这样也不用浪费时间了 两边凯撒互相竞争 看谁治理好<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>国际社会应该对支持电诈的国家人人喊打</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728906</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728906</guid>
+      <author>foxgod</author>
+      <pubDate>Fri, 06 Nov 2026 14:42:15 +0000</pubDate>
+      <description><![CDATA[让其成为过街老鼠<br/>在地球上混不下去]]></description>
+    </item>
+    <item>
+      <title>本中也投下了光荣的一票</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728903</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728903</guid>
+      <author>fatcat</author>
+      <pubDate>Fri, 06 Nov 2026 14:41:42 +0000</pubDate>
+      <description><![CDATA[候选人俩人是本单位的，一个是领导，一个是知名教授，另外俩不认识，一个领导年轻，一个基层年纪大，也不知道他们怎么代表我参政议政。我选了个老成持重的，但据说错了，应该选年轻有为的]]></description>
+    </item>
+    <item>
+      <title>传统印度 波斯医学咋样 有啥理论作为支撑 没阴阳五行吧</title>
+      <link>https://www.newsmth.net/nForum/article/NewExpress/47728902</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47728902</guid>
+      <author>chengyz2013</author>
+      <pubDate>Fri, 06 Nov 2026 14:41:35 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>常冰玉挨骂了</title>
       <link>https://www.newsmth.net/nForum/article/NewExpress/47726176</link>
@@ -241,163 +401,6 @@
       <author>stockjack</author>
       <pubDate>Thu, 05 Nov 2026 22:29:28 +0000</pubDate>
       <description><![CDATA[剧名，寒门散修。短剧]]></description>
-    </item>
-    <item>
-      <title>昨晚是聚聚画的最后一根k线吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723202</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723202</guid>
-      <author>veriloghdl</author>
-      <pubDate>Thu, 05 Nov 2026 22:24:18 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>群众在自发纪念杨云锦烈士125周年诞辰</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723199</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723199</guid>
-      <author>jzgk</author>
-      <pubDate>Thu, 05 Nov 2026 22:23:24 +0000</pubDate>
-    </item>
-    <item>
-      <title>很多女的故意摸我老人家的小手</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723190</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723190</guid>
-      <author>stockjack</author>
-      <pubDate>Thu, 05 Nov 2026 22:18:11 +0000</pubDate>
-      <description><![CDATA[大渐弥留，圣女赐我长生路。一个开焚化铺的老登。短剧]]></description>
-    </item>
-    <item>
-      <title>惊天暴论，ai是中华文明的助手。</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723187</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723187</guid>
-      <author>jzgk</author>
-      <pubDate>Thu, 05 Nov 2026 22:01:25 +0000</pubDate>
-      <description><![CDATA[我们最大的短板，就是后发，八九成的数据文献资料都是西文。应该借此ai机会，全部译成中文。然后把他们打烂。]]></description>
-    </item>
-    <item>
-      <title>地老们，起来聊天了，刷到王朔</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723186</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723186</guid>
-      <author>jzgk</author>
-      <pubDate>Thu, 05 Nov 2026 21:58:34 +0000</pubDate>
-      <description><![CDATA[说七十岁后，开始喜欢聊天晒太阳了，才理解村口胡同口老大爷。<br/>我们也不远了吧]]></description>
-    </item>
-    <item>
-      <title>美股这是要套现跑路啦？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723179</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723179</guid>
-      <author>ardenguo</author>
-      <pubDate>Thu, 05 Nov 2026 21:03:32 +0000</pubDate>
-      <description><![CDATA[落袋为安了？<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>小时候的一个想法，AI短剧时代实现了</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723177</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723177</guid>
-      <author>poocp</author>
-      <pubDate>Thu, 05 Nov 2026 20:51:02 +0000</pubDate>
-      <description><![CDATA[凭啥只有小孩才看动画片，必须让全年龄段统统都看动画片！<br/>如今终于在AI生成短剧的时代实现了。]]></description>
-    </item>
-    <item>
-      <title>刷了两天短剧 个人认为</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723173</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723173</guid>
-      <author>veriloghdl</author>
-      <pubDate>Thu, 05 Nov 2026 20:32:01 +0000</pubDate>
-      <description><![CDATA[影视业完球了<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>挣钱不易</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723165</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723165</guid>
-      <author>seracron</author>
-      <pubDate>Thu, 05 Nov 2026 19:55:10 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>驴档众院要超250的节奏</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723153</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723153</guid>
-      <author>nighthawk</author>
-      <pubDate>Thu, 05 Nov 2026 17:23:54 +0000</pubDate>
-      <description><![CDATA[还有30多个没出来，好几个差距就是几百上千票的样子，竞争挺激烈<br/>之前象档只多几个席位，这次驴多了近百]]></description>
-    </item>
-    <item>
-      <title>胡塞向沙特开出停火价码：51B USD！！</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723132</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723132</guid>
-      <author>Ceraphim</author>
-      <pubDate>Thu, 05 Nov 2026 16:52:27 +0000</pubDate>
-      <description><![CDATA[据 花街日报<br/>这下好玩了<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>米国股民也会哀嚎要求华府出手救市吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723124</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723124</guid>
-      <author>flyingworm</author>
-      <pubDate>Thu, 05 Nov 2026 16:43:58 +0000</pubDate>
-      <description><![CDATA[痛斥只做庄不作局]]></description>
-    </item>
-    <item>
-      <title>明儿个大早美股七仙女的头头组团去跪驴档头头能救市吗？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723122</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723122</guid>
-      <author>Ceraphim</author>
-      <pubDate>Thu, 05 Nov 2026 16:39:32 +0000</pubDate>
-      <description><![CDATA[CEO们：我们早就看床破不顺眼了，今遇明公，公若不弃…<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>征信里有个苏银凯基消费金融有限公司服务哪个平台？</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723116</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723116</guid>
-      <author>vehicle9</author>
-      <pubDate>Thu, 05 Nov 2026 16:21:24 +0000</pubDate>
-      <description><![CDATA[征信里突然多了一个苏银凯基消费金融有限公司的小贷额度（一年期），找了半天也没搞懂是花呗、白条、抖音月付、还是啥？]]></description>
-    </item>
-    <item>
-      <title>川P要high呀</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723113</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723113</guid>
-      <author>djshaofei</author>
-      <pubDate>Thu, 05 Nov 2026 16:18:43 +0000</pubDate>
-      <description><![CDATA[看吧<br/>你们选出来Dem，难怪股市药丸<br/>不听老人言，吃亏在眼前]]></description>
-    </item>
-    <item>
-      <title>我正在教AI如何造核弹…… (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723111</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723111</guid>
-      <author>FangGuan</author>
-      <pubDate>Thu, 05 Nov 2026 16:11:57 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 AI 讨论区 】<br/>为什么以前总有人认为有了AI，普通人就可以让AI教自己造核弹了呢？我现在却是反过来，正在手把手的教AI造核弹，AI它是真的一点都不懂啊…………]]></description>
-    </item>
-    <item>
-      <title>美国股民骂民主党吗</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723107</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723107</guid>
-      <author>netv</author>
-      <pubDate>Thu, 05 Nov 2026 16:07:12 +0000</pubDate>
-      <description><![CDATA[赢了选举输了钱<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>费城半导体指数有望创下2020年3月以来最大单日跌幅，最新下跌11</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723106</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723106</guid>
-      <author>fatcat</author>
-      <pubDate>Thu, 05 Nov 2026 16:06:58 +0000</pubDate>
-      <description><![CDATA[完了，全完了]]></description>
-    </item>
-    <item>
-      <title>标普也在冲-3.7%</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723098</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723098</guid>
-      <author>VIV</author>
-      <pubDate>Thu, 05 Nov 2026 15:54:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>股民今晚又该失眠了</title>
-      <link>https://www.newsmth.net/nForum/article/NewExpress/47723092</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/NewExpress/47723092</guid>
-      <author>VIV</author>
-      <pubDate>Thu, 05 Nov 2026 15:51:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
