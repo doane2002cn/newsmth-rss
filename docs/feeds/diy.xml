@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Nov 2026 23:33:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 06:24:50 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>周末动手改70迈M80opro行程记录仪为长焦</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11316</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11316</guid>
+      <author>cugbboy</author>
+      <pubDate>Fri, 06 Nov 2026 02:34:29 +0000</pubDate>
+      <description><![CDATA[M800 pro是70迈一款旗舰行车记录仪，色彩比较鲜艳，夜视也很出色，原厂自带130度广角镜头，有畸变，虽然视角大，但是看着难受，我之前用M310改过一个长焦行车记录仪，但是M310就是100块钱的入门机器，成像比较差，这次入手了旗舰机，准备动手改，已经买了6mm和8mm镜头各1个，20mm孔距镜头底座一个。原厂的底座是M12*0.35的，市面上的长焦镜头是M12*0.5螺纹，所以长焦镜头也不能安装在原厂底座上。<br/>M800 pro的COMS是索尼IMX678传感器，长方形的，和普通的传感器不同，市面上没有能够直接使用的镜头底座，这是最大的难点，目前想到的方案就是用20mm孔距的底座直接改造底座，20mm底座需要在两个18mm底座之间再开两个孔距18mm，直径1mm的螺丝孔（图3两个红圈），或者用704胶直接粘贴，目前我选择开孔的方案。只要孔开好了，固定了镜头底座，就是直接安装上镜头，调焦即可。<br/>目前机器已经拆开，镜头和底座还在路上，工具都有，包括1mm的打孔设备也有，周末到手后开干，到时候更新。]]></description>
+    </item>
     <item>
       <title>介质阻挡放电</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11309</link>

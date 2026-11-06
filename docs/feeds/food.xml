@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 05 Nov 2026 23:33:51 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 06:24:50 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>有人买到GB/T 47387 2026全麦面粉了吗</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1781571</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781571</guid>
+      <author>digital</author>
+      <pubDate>Fri, 06 Nov 2026 01:41:20 +0000</pubDate>
+      <description><![CDATA[刚刚实行的新国标。]]></description>
+    </item>
     <item>
       <title>人在美国的朋友来看一下</title>
       <link>https://www.newsmth.net/nForum/article/Food/1781554</link>
@@ -398,14 +406,6 @@
       <author>mercyrune</author>
       <pubDate>Mon, 26 Oct 2026 01:22:58 +0000</pubDate>
       <description><![CDATA[孩子想吃潮汕鱼丸，这玩意是不是不能冷链寄，口感会不好<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>好吃，就是贵！</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1780334</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1780334</guid>
-      <author>wuduan2</author>
-      <pubDate>Mon, 26 Oct 2026 00:10:55 +0000</pubDate>
-      <description><![CDATA[今天在食堂想打一个酱香饼吃<br/>忽然看到上面一个很大的“贵”字<br/>当然前面还有小字“好吃，就是”<br/>我心想，我也不是必须吃这个，这是涨价了吗？那就先别打了。<br/>我从没看过它的价格。现在的价格是1.09/50克<br/>不知道贴这个是啥意思。。。]]></description>
     </item>
   </channel>
 </rss>
