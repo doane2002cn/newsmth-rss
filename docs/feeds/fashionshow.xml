@@ -5,9 +5,23 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 06 Nov 2026 16:43:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 23:01:01 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>小姨子</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/561239</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/561239</guid>
+      <author>nextworld8</author>
+      <pubDate>Fri, 06 Nov 2026 16:47:17 +0000</pubDate>
+    </item>
+    <item>
+      <title>新招的助理</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/561238</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/561238</guid>
+      <author>nextworld8</author>
+      <pubDate>Fri, 06 Nov 2026 16:45:18 +0000</pubDate>
+    </item>
     <item>
       <title>有一位漂亮女同事是什么样的体验？ (转载)</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/561237</link>
@@ -379,22 +393,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560712</guid>
       <author>rwgcz</author>
       <pubDate>Tue, 03 Nov 2026 12:33:30 +0000</pubDate>
-    </item>
-    <item>
-      <title>共享单车歧视女性</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/560709</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560709</guid>
-      <author>nextworld8</author>
-      <pubDate>Tue, 03 Nov 2026 12:07:56 +0000</pubDate>
-      <description><![CDATA[车座设计仅为了适合男性 而忽略女性实际<br/>有歧视的嫌疑<br/>估计设计师都是男性 应该充实一半的女性]]></description>
-    </item>
-    <item>
-      <title>成熟的姐姐【美美哒！】</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/560702</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/560702</guid>
-      <author>lele20260212</author>
-      <pubDate>Tue, 03 Nov 2026 11:46:13 +0000</pubDate>
-      <description><![CDATA[（见图）]]></description>
     </item>
   </channel>
 </rss>

@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 06 Nov 2026 16:43:59 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2026 23:01:01 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>4050也跟着延长了吗</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/350522</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/350522</guid>
+      <author>veriloghdl</author>
+      <pubDate>Fri, 06 Nov 2026 22:33:26 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>快到年底总结了。不敢看不敢看。盆满钵满，沟满壕平，大口吃肉</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/350514</link>
@@ -396,14 +404,6 @@
       <author>iloveanfield</author>
       <pubDate>Tue, 03 Nov 2026 02:22:05 +0000</pubDate>
       <description><![CDATA[～～～意思是不会应交未交，扩大分母。指数不变。好像是新知识。]]></description>
-    </item>
-    <item>
-      <title>长尾应用会爆发的</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/349751</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/349751</guid>
-      <author>tijunna</author>
-      <pubDate>Tue, 03 Nov 2026 01:20:54 +0000</pubDate>
-      <description><![CDATA[AI使得开发成本降低，原本没被满足的小众化、特殊场景化的小规模应用会爆发。]]></description>
     </item>
   </channel>
 </rss>
