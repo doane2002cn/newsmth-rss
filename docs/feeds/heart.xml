@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 07 Nov 2026 05:49:04 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 12:53:25 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>山药裤带面</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250416</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250416</guid>
+      <author>newluna81</author>
+      <pubDate>Sat, 07 Nov 2026 08:52:04 +0000</pubDate>
+      <description><![CDATA[如图<br/>看起来不错吧？吃起来特别香啊]]></description>
+    </item>
     <item>
       <title>忙一早</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250413</link>
@@ -398,14 +406,6 @@
       <author>newluna81</author>
       <pubDate>Sun, 18 Oct 2026 11:31:16 +0000</pubDate>
       <description><![CDATA[哈哈，继续挑战零消费]]></description>
-    </item>
-    <item>
-      <title>今天有消费</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250087</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250087</guid>
-      <author>newluna81</author>
-      <pubDate>Sun, 18 Oct 2026 11:29:56 +0000</pubDate>
-      <description><![CDATA[拼多多上买了5斤土豆5.69元<br/>5斤山药裤带面11.64元<br/>修自行车花了5元<br/>总共花了22元钱]]></description>
     </item>
   </channel>
 </rss>
