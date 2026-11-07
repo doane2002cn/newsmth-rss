@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-07 20:53:25 +0800",
+  "generated": "2026-11-08 03:23:02 +0800",
   "banned": false,
   "sources": [
     {
@@ -24,7 +24,7 @@
       "key": "age",
       "name": "大龄男女",
       "count": 43,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "baking",
@@ -48,13 +48,13 @@
       "key": "book",
       "name": "书籍",
       "count": 27,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "boy",
       "name": "老男孩",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "bull",
@@ -96,7 +96,7 @@
       "key": "funnytime",
       "name": "杂谈趣闻",
       "count": 36,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "gentle_fashion",
@@ -132,13 +132,13 @@
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "jade_jewelry",
       "name": "珠光宝气",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "liyidaiwa",
@@ -156,13 +156,13 @@
       "key": "memory",
       "name": "似水流年",
       "count": 60,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "motorbike",
       "name": "摩托天地",
       "count": 28,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motss",
@@ -210,13 +210,13 @@
       "key": "single",
       "name": "光协",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "tooooold",
       "name": "五十知天命",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "wedding",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 7,
+      "status": "更新 +7"
     }
   ]
 }
