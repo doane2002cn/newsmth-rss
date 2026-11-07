@@ -5,9 +5,16 @@
     <link>https://www.newsmth.net/nForum/board/Memory</link>
     <description>似水流年（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 06 Nov 2026 23:01:01 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 07 Nov 2026 05:49:04 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/memory.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>冬天都干啥</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/191524</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/191524</guid>
+      <author>moonriver007</author>
+      <pubDate>Sat, 07 Nov 2026 02:01:18 +0000</pubDate>
+    </item>
     <item>
       <title>外面好冷</title>
       <link>https://www.newsmth.net/nForum/article/Memory/191488</link>
@@ -398,13 +405,6 @@
       <author>DDOO</author>
       <pubDate>Fri, 30 Oct 2026 00:00:42 +0000</pubDate>
       <description><![CDATA[最重要的一定是智商，女士的智商影响决定全部后代的智商；男性的智商决定他的事业高度，未来潜力；<br/>其次是人品，人品找个和自己匹配的就好；<br/>再次是外貌，这个就看缘分了。<br/>至于对方现在的收入、家境什么的，无所谓，长期来看这些都是不重要因素。]]></description>
-    </item>
-    <item>
-      <title>曾经的首富</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/190571</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/190571</guid>
-      <author>DDOO</author>
-      <pubDate>Thu, 29 Oct 2026 05:14:02 +0000</pubDate>
     </item>
   </channel>
 </rss>
