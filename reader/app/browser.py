@@ -1,9 +1,11 @@
 from __future__ import annotations
 
 import asyncio
+import hashlib
 import json
 import logging
 import os
+import tempfile
 import time
 from pathlib import Path
 from typing import Any
@@ -79,6 +81,11 @@ def _is_smth_cookie(cookie: dict[str, Any]) -> bool:
     return domain == "newsmth.net" or domain.endswith(".newsmth.net")
 
 
+def _has_complete_smth_session(cookies: list[dict[str, Any]]) -> bool:
+    names = {str(cookie.get("name") or "") for cookie in cookies}
+    return SMTH_COOKIE_NAMES.issubset(names)
+
+
 class BrowserManager:
     def __init__(self, settings: Settings) -> None:
         self.settings = settings
@@ -92,6 +99,7 @@ class BrowserManager:
         self._status_lock = asyncio.Lock()
         self._status_cache: tuple[float, dict[str, Any]] | None = None
         self._verification_block_until = 0.0
+        self._last_cookie_snapshot_digest = b""
 
     @property
     def mode(self) -> str:
@@ -232,7 +240,7 @@ class BrowserManager:
             cookies = await self._smth_cookies()
         except PlaywrightError:
             return False
-        return any(str(cookie.get("name") or "") in SMTH_COOKIE_NAMES for cookie in cookies)
+        return _has_complete_smth_session(cookies)
 
     async def _restore_cookie_snapshot(self) -> None:
         if await self._has_smth_session_cookie():
@@ -247,33 +255,58 @@ class BrowserManager:
                 for cookie in payload
                 if isinstance(cookie, dict) and _is_smth_cookie(cookie)
             ]
-            if not cookies:
+            if not _has_complete_smth_session(cookies):
                 return
             await self.context.add_cookies(cookies)
             LOGGER.info("restored SMTH cookies from protected snapshot")
         except (OSError, ValueError, TypeError, PlaywrightError):
             LOGGER.warning("could not restore SMTH cookie snapshot")
 
-    async def _save_cookie_snapshot(self) -> None:
+    async def _save_cookie_snapshot(
+        self, cookies: list[dict[str, Any]] | None = None
+    ) -> bool:
         try:
-            cookies = await self._smth_cookies()
-            if not cookies:
-                return
+            if cookies is None:
+                cookies = await self._smth_cookies()
+            if not _has_complete_smth_session(cookies):
+                return False
             snapshot_path = self.settings.cookie_snapshot_path
-            snapshot_path.parent.mkdir(parents=True, exist_ok=True)
-            temp_path = snapshot_path.with_name(f".{snapshot_path.name}.tmp")
-            descriptor = os.open(
-                temp_path,
-                os.O_WRONLY | os.O_CREAT | os.O_TRUNC,
-                0o600,
+            ordered_cookies = sorted(
+                cookies,
+                key=lambda cookie: (
+                    str(cookie.get("domain") or ""),
+                    str(cookie.get("path") or ""),
+                    str(cookie.get("name") or ""),
+                ),
             )
-            with os.fdopen(descriptor, "w", encoding="utf-8") as handle:
-                json.dump(cookies, handle, ensure_ascii=True, separators=(",", ":"))
-            os.chmod(temp_path, 0o600)
-            os.replace(temp_path, snapshot_path)
+            payload = json.dumps(
+                ordered_cookies,
+                ensure_ascii=True,
+                separators=(",", ":"),
+            ).encode("utf-8")
+            digest = hashlib.sha256(payload).digest()
+            if self._last_cookie_snapshot_digest == digest and snapshot_path.is_file():
+                return True
+            snapshot_path.parent.mkdir(parents=True, exist_ok=True)
+            descriptor, temp_name = tempfile.mkstemp(
+                prefix=f".{snapshot_path.name}.",
+                suffix=".tmp",
+                dir=snapshot_path.parent,
+            )
+            temp_path = Path(temp_name)
+            try:
+                with os.fdopen(descriptor, "wb") as handle:
+                    handle.write(payload)
+                os.chmod(temp_path, 0o600)
+                os.replace(temp_path, snapshot_path)
+            finally:
+                temp_path.unlink(missing_ok=True)
             os.chmod(snapshot_path, 0o600)
+            self._last_cookie_snapshot_digest = digest
+            return True
         except (OSError, PlaywrightError):
             LOGGER.warning("could not save SMTH cookie snapshot")
+            return False
 
     async def _throttle(self) -> None:
         elapsed = time.monotonic() - self._last_request_at
@@ -356,13 +389,25 @@ class BrowserManager:
         article_ready = bool(data.get("article_ready"))
         if not article_ready and "/article/" in url and not challenge:
             article_ready = len(page_text.strip()) >= 120
+        try:
+            cookies = await self._smth_cookies()
+        except PlaywrightError:
+            cookies = []
+        session_cookie_present = _has_complete_smth_session(cookies)
+        logged_in = bool(data.get("logged_in")) or session_cookie_present
+        session_persisted = False
+        if (article_ready or logged_in) and not challenge and not rate_limited:
+            session_persisted = await self._save_cookie_snapshot(cookies)
+            if session_persisted and article_ready:
+                self._verification_block_until = 0.0
         return {
             "url": url,
             "title": str(data.get("title") or "")[:160],
             "challenge": challenge,
             "rate_limited": rate_limited,
             "article_ready": article_ready and not challenge and not rate_limited,
-            "logged_in": bool(data.get("logged_in")),
+            "logged_in": logged_in,
+            "session_persisted": session_persisted,
         }
 
     async def fetch_image(self, url: str) -> tuple[bytes, str]:

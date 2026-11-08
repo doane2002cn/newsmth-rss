@@ -17,6 +17,26 @@ from app.parser import GuestVerificationRequired
 
 
 SECRET = "browser-test-secret-" + "z" * 40
+SESSION_COOKIES = [
+    {
+        "name": "main[UTMPUSERID]",
+        "value": "alice",
+        "domain": ".newsmth.net",
+        "path": "/",
+    },
+    {
+        "name": "main[UTMPKEY]",
+        "value": "secret-key",
+        "domain": ".newsmth.net",
+        "path": "/",
+    },
+    {
+        "name": "main[UTMPNUM]",
+        "value": "12345",
+        "domain": ".newsmth.net",
+        "path": "/",
+    },
+]
 
 
 def make_settings(tmp_path: Path) -> Settings:
@@ -127,14 +147,7 @@ def test_verification_cooldown_recovers_after_page_is_readable(
             FakeResponse(body=b"Read verification"),
             FakeResponse(body=b"<table class='article'>article</table>"),
         ],
-        cookies=[
-            {
-                "name": "main[UTMPUSERID]",
-                "value": "alice",
-                "domain": ".newsmth.net",
-                "path": "/",
-            }
-        ],
+        cookies=SESSION_COOKIES,
     )
     manager._page = FakePage()  # type: ignore[assignment]
 
@@ -214,12 +227,7 @@ def test_cookie_snapshot_restores_only_when_browser_has_no_smth_cookie(
     snapshot.write_text(
         json.dumps(
             [
-                {
-                    "name": "main[UTMPKEY]",
-                    "value": "secret",
-                    "domain": ".newsmth.net",
-                    "path": "/",
-                },
+                *SESSION_COOKIES,
                 {
                     "name": "unrelated",
                     "value": "ignored",
@@ -237,5 +245,92 @@ def test_cookie_snapshot_restores_only_when_browser_has_no_smth_cookie(
     asyncio.run(manager._restore_cookie_snapshot())
 
     assert [cookie["name"] for cookie in context.added_cookies] == [
-        "main[UTMPKEY]"
+        "main[UTMPUSERID]",
+        "main[UTMPKEY]",
+        "main[UTMPNUM]",
     ]
+
+
+def test_page_status_persists_complete_session_without_upstream_request(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+    manager._page = FakePage()  # type: ignore[assignment]
+
+    status = asyncio.run(manager.page_status())
+
+    assert status["logged_in"] is True
+    assert status["session_persisted"] is True
+    assert context.request.calls == []
+    snapshot = settings.cookie_snapshot_path
+    assert snapshot.is_file()
+    assert "secret-key" in snapshot.read_text(encoding="utf-8")
+    if os.name != "nt":
+        assert stat.S_IMODE(snapshot.stat().st_mode) == 0o600
+
+
+def test_page_status_does_not_persist_partial_guest_cookies(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    manager = BrowserManager(settings)
+    manager._context = FakeContext(  # type: ignore[assignment]
+        cookies=[SESSION_COOKIES[0]]
+    )
+    manager._page = FakePage(  # type: ignore[assignment]
+        state={
+            "url": "https://m.newsmth.net/index",
+            "title": "水木社区",
+            "text": "游客页面",
+            "html": "<html>游客页面</html>",
+            "article_ready": False,
+            "logged_in": False,
+        }
+    )
+
+    status = asyncio.run(manager.page_status())
+
+    assert status["logged_in"] is False
+    assert status["session_persisted"] is False
+    assert not settings.cookie_snapshot_path.exists()
+
+
+def test_partial_session_cookie_is_completed_from_snapshot(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=[SESSION_COOKIES[0]])
+    manager._context = context  # type: ignore[assignment]
+
+    asyncio.run(manager._restore_cookie_snapshot())
+
+    assert [cookie["name"] for cookie in context.added_cookies] == [
+        "main[UTMPUSERID]",
+        "main[UTMPKEY]",
+        "main[UTMPNUM]",
+    ]
+
+
+def test_complete_live_session_is_not_overwritten_by_snapshot(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+
+    asyncio.run(manager._restore_cookie_snapshot())
+
+    assert context.added_cookies == []
