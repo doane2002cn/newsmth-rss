@@ -44,6 +44,7 @@ SMTH_COOKIE_NAMES = {
     "main[UTMPKEY]",
     "main[UTMPNUM]",
 }
+SMTH_GUEST_USER_IDS = {"", "0", "anonymous", "guest"}
 RATE_LIMIT_MARKERS = (
     "ip已被封禁",
     "访问过于频繁",
@@ -82,8 +83,18 @@ def _is_smth_cookie(cookie: dict[str, Any]) -> bool:
 
 
 def _has_complete_smth_session(cookies: list[dict[str, Any]]) -> bool:
-    names = {str(cookie.get("name") or "") for cookie in cookies}
-    return SMTH_COOKIE_NAMES.issubset(names)
+    values = {
+        str(cookie.get("name") or ""): str(cookie.get("value") or "").strip()
+        for cookie in cookies
+    }
+    if not SMTH_COOKIE_NAMES.issubset(values):
+        return False
+    user_id = values["main[UTMPUSERID]"].lower()
+    return (
+        user_id not in SMTH_GUEST_USER_IDS
+        and bool(values["main[UTMPKEY]"])
+        and bool(values["main[UTMPNUM]"])
+    )
 
 
 class BrowserManager:

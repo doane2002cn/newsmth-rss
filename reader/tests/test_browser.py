@@ -37,6 +37,13 @@ SESSION_COOKIES = [
         "path": "/",
     },
 ]
+GUEST_SESSION_COOKIES = [
+    {
+        **cookie,
+        "value": "guest" if cookie["name"] == "main[UTMPUSERID]" else cookie["value"],
+    }
+    for cookie in SESSION_COOKIES
+]
 
 
 def make_settings(tmp_path: Path) -> Settings:
@@ -298,6 +305,32 @@ def test_page_status_does_not_persist_partial_guest_cookies(
     assert not settings.cookie_snapshot_path.exists()
 
 
+def test_complete_guest_cookie_names_are_not_persisted(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    manager = BrowserManager(settings)
+    manager._context = FakeContext(  # type: ignore[assignment]
+        cookies=GUEST_SESSION_COOKIES
+    )
+    manager._page = FakePage(  # type: ignore[assignment]
+        state={
+            "url": "https://m.newsmth.net/index",
+            "title": "水木社区",
+            "text": "游客页面",
+            "html": "<html>游客页面</html>",
+            "article_ready": False,
+            "logged_in": False,
+        }
+    )
+
+    status = asyncio.run(manager.page_status())
+
+    assert status["logged_in"] is False
+    assert status["session_persisted"] is False
+    assert not settings.cookie_snapshot_path.exists()
+
+
 def test_partial_session_cookie_is_completed_from_snapshot(
     tmp_path: Path,
 ) -> None:
@@ -329,6 +362,23 @@ def test_complete_live_session_is_not_overwritten_by_snapshot(
     )
     manager = BrowserManager(settings)
     context = FakeContext(cookies=SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+
+    asyncio.run(manager._restore_cookie_snapshot())
+
+    assert context.added_cookies == []
+
+
+def test_guest_snapshot_is_not_restored(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(GUEST_SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext()
     manager._context = context  # type: ignore[assignment]
 
     asyncio.run(manager._restore_cookie_snapshot())
