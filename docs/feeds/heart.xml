@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Nov 2026 00:26:33 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 10:11:32 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>调整撸铁项目</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250424</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250424</guid>
+      <author>newluna81</author>
+      <pubDate>Sun, 08 Nov 2026 09:36:38 +0000</pubDate>
+      <description><![CDATA[调整撸铁项目<br/>下次去撸铁准备做：<br/>高位下拉：6组<br/>坐姿划船：6组<br/>蝴蝶机夹胸：4组<br/>反向蝴蝶机：4组<br/>坐姿腿屈伸：4组<br/>坐姿髋内收：8组]]></description>
+    </item>
     <item>
       <title>山药裤带面</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250416</link>
@@ -398,14 +406,6 @@
       <author>newluna81</author>
       <pubDate>Sun, 18 Oct 2026 11:34:52 +0000</pubDate>
       <description><![CDATA[刚到家，撑得很，玩会儿再去洗洗睡]]></description>
-    </item>
-    <item>
-      <title>从明天开始再挑战三天不消费</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250088</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250088</guid>
-      <author>newluna81</author>
-      <pubDate>Sun, 18 Oct 2026 11:31:16 +0000</pubDate>
-      <description><![CDATA[哈哈，继续挑战零消费]]></description>
     </item>
   </channel>
 </rss>
