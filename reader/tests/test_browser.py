@@ -467,3 +467,26 @@ def test_shared_browser_uses_isolated_context_not_default_context(
     ]
     assert browser.created_contexts[0].new_page_calls == 1
     assert default_context.new_page_calls == 0
+
+
+def test_session_watcher_persists_cookies_without_network_request(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+
+    async def run_watcher() -> None:
+        task = asyncio.create_task(manager._watch_session_cookies())
+        await asyncio.sleep(0.01)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+
+    asyncio.run(run_watcher())
+
+    assert context.request.calls == []
+    snapshot = settings.cookie_snapshot_path
+    assert snapshot.is_file()
+    assert "alice" in snapshot.read_text(encoding="utf-8")

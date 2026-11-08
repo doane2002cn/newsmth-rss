@@ -7,6 +7,7 @@ import logging
 import os
 import tempfile
 import time
+from contextlib import suppress
 from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
@@ -112,6 +113,7 @@ class BrowserManager:
         self._status_cache: tuple[float, dict[str, Any]] | None = None
         self._verification_block_until = 0.0
         self._last_cookie_snapshot_digest = b""
+        self._session_watch_task: asyncio.Task[None] | None = None
 
     @property
     def mode(self) -> str:
@@ -137,6 +139,9 @@ class BrowserManager:
             await self._start_local_browser()
         self._context.set_default_timeout(30_000)
         self._context.set_default_navigation_timeout(45_000)
+        self._session_watch_task = asyncio.create_task(
+            self._watch_session_cookies()
+        )
         LOGGER.info("Chromium browser is ready in %s mode", self.mode)
 
     async def _start_local_browser(self) -> None:
@@ -211,6 +216,11 @@ class BrowserManager:
         return page
 
     async def stop(self) -> None:
+        if self._session_watch_task:
+            self._session_watch_task.cancel()
+            with suppress(asyncio.CancelledError):
+                await self._session_watch_task
+            self._session_watch_task = None
         if self._context and self._close_context_on_stop:
             await self._context.close()
         self._context = None
@@ -328,6 +338,11 @@ class BrowserManager:
         except (OSError, PlaywrightError):
             LOGGER.warning("could not save SMTH cookie snapshot")
             return False
+
+    async def _watch_session_cookies(self) -> None:
+        while True:
+            await self._save_cookie_snapshot()
+            await asyncio.sleep(3)
 
     async def _throttle(self) -> None:
         elapsed = time.monotonic() - self._last_request_at

@@ -13,7 +13,8 @@ Chromium profile 中，飞书卡片只携带 HMAC 签名链接，不包含账号
 管理页会从浏览器中读取水木会话 Cookie。只有 `main[UTMPUSERID]`、
 `main[UTMPKEY]`、`main[UTMPNUM]` 三枚 Cookie 齐全且用户不是 `guest` 时才写入
 `data/chromium-cookies.json`，权限设为 `0600`。这一步只读取浏览器状态，不额外请求
-水木；浏览器只剩部分旧 Cookie 时，会自动用完整快照补齐。
+水木。网关也会在后台自动检查并保存会话，不依赖管理页是否一直打开；浏览器只剩部分
+旧 Cookie 时，会自动用完整快照补齐。
 
 ## 本地检查
 
