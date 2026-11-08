@@ -106,12 +106,32 @@ class FakeContext:
         self.request = FakeRequest(responses or [])
         self.cookie_data = cookies or []
         self.added_cookies: list[dict[str, Any]] = []
+        self.pages: list[FakePage] = []
+        self.new_page_calls = 0
+        self.default_timeout = 0
+        self.default_navigation_timeout = 0
+        self.closed = False
 
     async def cookies(self, urls):
         return list(self.cookie_data)
 
     async def add_cookies(self, cookies):
         self.added_cookies.extend(cookies)
+
+    async def new_page(self):
+        self.new_page_calls += 1
+        page = FakePage()
+        self.pages.append(page)
+        return page
+
+    def set_default_timeout(self, timeout):
+        self.default_timeout = timeout
+
+    def set_default_navigation_timeout(self, timeout):
+        self.default_navigation_timeout = timeout
+
+    async def close(self):
+        self.closed = True
 
 
 class FakePage:
@@ -134,7 +154,9 @@ class FakePage:
         self.goto_error = goto_error
         self.goto_calls: list[str] = []
 
-    async def evaluate(self, script: str):
+    async def evaluate(self, script: str, *args):
+        if script.startswith("(name)"):
+            return None
         return self.state
 
     async def goto(self, url: str, **kwargs):
@@ -142,6 +164,38 @@ class FakePage:
         self.url = url
         if self.goto_error:
             raise self.goto_error
+
+    async def bring_to_front(self):
+        return None
+
+
+class FakeChromium:
+    def __init__(self, browser: "FakeBrowser") -> None:
+        self.browser = browser
+        self.cdp_urls: list[str] = []
+
+    async def connect_over_cdp(self, url: str):
+        self.cdp_urls.append(url)
+        return self.browser
+
+
+class FakePlaywright:
+    def __init__(self, browser: "FakeBrowser") -> None:
+        self.chromium = FakeChromium(browser)
+
+
+class FakeBrowser:
+    def __init__(self, default_context: FakeContext) -> None:
+        self.contexts = [default_context]
+        self.default_context = default_context
+        self.context_options: list[dict[str, Any]] = []
+        self.created_contexts: list[FakeContext] = []
+
+    async def new_context(self, **kwargs):
+        self.context_options.append(kwargs)
+        context = FakeContext()
+        self.created_contexts.append(context)
+        return context
 
 
 def test_verification_cooldown_recovers_after_page_is_readable(
@@ -384,3 +438,32 @@ def test_guest_snapshot_is_not_restored(
     asyncio.run(manager._restore_cookie_snapshot())
 
     assert context.added_cookies == []
+
+
+def test_shared_browser_uses_isolated_context_not_default_context(
+    tmp_path: Path,
+) -> None:
+    settings = replace(
+        make_settings(tmp_path),
+        browser_cdp_url="http://ai-workstation:9223",
+    )
+    default_context = FakeContext(cookies=GUEST_SESSION_COOKIES)
+    browser = FakeBrowser(default_context)
+    manager = BrowserManager(settings)
+    manager._playwright = FakePlaywright(browser)  # type: ignore[assignment]
+
+    asyncio.run(manager._start_shared_browser())
+
+    assert manager.context is browser.created_contexts[0]
+    assert manager.context is not default_context
+    assert browser.context_options == [
+        {
+            "viewport": {"width": 1280, "height": 800},
+            "device_scale_factor": 1,
+            "locale": "zh-CN",
+            "timezone_id": "Asia/Shanghai",
+            "accept_downloads": False,
+        }
+    ]
+    assert browser.created_contexts[0].new_page_calls == 1
+    assert default_context.new_page_calls == 0

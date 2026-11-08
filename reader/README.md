@@ -6,7 +6,7 @@ Chromium profile 中，飞书卡片只携带 HMAC 签名链接，不包含账号
 ## 工作方式
 
 1. 用户通过一次性登录链接进入受保护的远程 Chromium，完成水木登录和 Geetest。
-2. 阅读网关用同一个浏览器上下文请求文章接口，清洗正文、回复和图片。
+2. 阅读网关在常驻 Chromium 中建立独立浏览器上下文，请求文章接口并清洗正文、回复和图片。
 3. 文章缓存 30 分钟，上游不可用时最多回退到 7 天内的快照。
 4. 普通阅读页只做 HTML 抓取、解析和缓存，不调用大模型，不消耗 token。
 
@@ -43,10 +43,12 @@ VNC_HTTP_URL=http://ai-workstation:6080
 VNC_WEBSOCKET_URL=ws://ai-workstation:6080/websockify
 ```
 
-阅读网关通过 `cdp-proxy` 连接常驻 Chromium，并维护一个带
-`window.name=smth-reader-gateway` 标记的专用标签页。水木 Cookie 存在常驻浏览器的
-持久 profile 中，远程桌面仍只通过带管理会话 Cookie 的 `/admin/vnc/` 代理访问。
-如果 `BROWSER_CDP_URL` 留空，容器会回退到内置 Xvfb、x11vnc 和 websockify。
+阅读网关通过 `cdp-proxy` 连接常驻 Chromium，但不复用桌面上的默认标签页或 Cookie。
+它会新建独立浏览器上下文，并维护一个带 `window.name=smth-reader-gateway` 标记的
+专用标签页；桌面其他水木页面无法再覆盖阅读网关的水木会话。有效 Cookie 会写入受保护
+快照，容器或浏览器重启后自动恢复。远程桌面仍只通过带管理会话 Cookie 的
+`/admin/vnc/` 代理访问。如果 `BROWSER_CDP_URL` 留空，容器会回退到内置 Xvfb、
+x11vnc 和 websockify。
 
 Compose 默认把容器接入 `ai-workstation_default` 外部网络，不向宿主机发布 8010。
 `READER_BIND_HOST` 设为 `0.0.0.0`，Cloudflare Tunnel 使用稳定的 Docker DNS：

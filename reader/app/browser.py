@@ -105,6 +105,7 @@ class BrowserManager:
         self._context: BrowserContext | None = None
         self._page: Page | None = None
         self._shared_browser = bool(settings.browser_cdp_url)
+        self._close_context_on_stop = False
         self._request_lock = asyncio.Lock()
         self._last_request_at = 0.0
         self._status_lock = asyncio.Lock()
@@ -158,6 +159,7 @@ class BrowserManager:
                 "--window-size=1280,800",
             ],
         )
+        self._close_context_on_stop = True
         self._page = (
             self._context.pages[0]
             if self._context.pages
@@ -174,11 +176,17 @@ class BrowserManager:
         self._browser = await self._playwright.chromium.connect_over_cdp(
             self.settings.browser_cdp_url
         )
-        if not self._browser.contexts:
-            raise SMTHUnavailable("shared Chromium has no default browser context")
-        self._context = self._browser.contexts[0]
+        self._context = await self._browser.new_context(
+            viewport={"width": 1280, "height": 800},
+            device_scale_factor=1,
+            locale="zh-CN",
+            timezone_id="Asia/Shanghai",
+            accept_downloads=False,
+        )
+        self._close_context_on_stop = True
         self._page = await self._find_reader_page()
         await self._restore_cookie_snapshot()
+        LOGGER.info("created isolated browser context for SMTH reader")
 
     async def _find_reader_page(self) -> Page:
         assert self._context is not None
@@ -203,11 +211,12 @@ class BrowserManager:
         return page
 
     async def stop(self) -> None:
-        if self._context and not self._shared_browser:
+        if self._context and self._close_context_on_stop:
             await self._context.close()
         self._context = None
         self._page = None
         self._browser = None
+        self._close_context_on_stop = False
         if self._playwright:
             await self._playwright.stop()
             self._playwright = None
@@ -227,6 +236,7 @@ class BrowserManager:
     async def _navigate(self, url: str) -> None:
         try:
             await self.page.goto(url, wait_until="domcontentloaded")
+            await self.page.bring_to_front()
         except PlaywrightError as exc:
             if "ERR_ABORTED" not in str(exc).upper():
                 raise SMTHUnavailable(f"navigation failed: {exc}") from exc
