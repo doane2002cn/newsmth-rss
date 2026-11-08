@@ -5,9 +5,33 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Nov 2026 10:11:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 17:54:28 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>让AI画个图真是闹心啊</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250427</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250427</guid>
+      <author>wuduan2</author>
+      <pubDate>Sun, 08 Nov 2026 11:37:38 +0000</pubDate>
+      <description><![CDATA[画的是一个装置的结构示意图，给了它参考图，<br/>画出来的东西整体效果是可以的，<br/>但是里面有一些问题，<br/>我就让它改，<br/>每次改完它就说已经都改好了，<br/>实际上没有，<br/>有的问题改好几次都改不好，而每次它都说改好了，<br/>最后终于把这个问题改好了，<br/>但又把原来没问题的地方改坏了，<br/>就这么反复折腾，浪费很多很多时间，<br/>要是一个真人干这件事，顶多修改一两次就会一点问题没有，甚至可能一次都不用修改<br/>因为人类有眼睛，人类的思维配合他们的眼睛，配合的很好，有些问题根本不会犯错]]></description>
+    </item>
+    <item>
+      <title>下单买了糯米粉</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250426</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250426</guid>
+      <author>newluna81</author>
+      <pubDate>Sun, 08 Nov 2026 10:59:02 +0000</pubDate>
+      <description><![CDATA[准备做红薯饼和南瓜饼吃，哈哈]]></description>
+    </item>
+    <item>
+      <title>下单买了32块原味糍粑</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250425</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250425</guid>
+      <author>newluna81</author>
+      <pubDate>Sun, 08 Nov 2026 10:42:04 +0000</pubDate>
+      <description><![CDATA[只要8.74元，哈哈<br/>煎糍粑当早餐吃]]></description>
+    </item>
     <item>
       <title>调整撸铁项目</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250424</link>
@@ -382,30 +406,6 @@
       <author>WLL8905</author>
       <pubDate>Mon, 19 Oct 2026 13:53:08 +0000</pubDate>
       <description><![CDATA[节后一直加班！<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>今年的天气确实有点离谱</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250107</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250107</guid>
-      <author>teetea</author>
-      <pubDate>Mon, 19 Oct 2026 12:06:33 +0000</pubDate>
-      <description><![CDATA[上周办公室还30度热的要中暑，周末风雨组合下来，今天就觉得要把我的小太阳拿出来了……]]></description>
-    </item>
-    <item>
-      <title>牛马的一周又开始了。</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250094</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250094</guid>
-      <author>Yxchai</author>
-      <pubDate>Mon, 19 Oct 2026 00:21:56 +0000</pubDate>
-      <description><![CDATA[继续减肥~争取达到目标]]></description>
-    </item>
-    <item>
-      <title>今晚我侄女过生日聚餐</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250089</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250089</guid>
-      <author>newluna81</author>
-      <pubDate>Sun, 18 Oct 2026 11:34:52 +0000</pubDate>
-      <description><![CDATA[刚到家，撑得很，玩会儿再去洗洗睡]]></description>
     </item>
   </channel>
 </rss>

@@ -5,16 +5,24 @@
     <link>https://www.newsmth.net/nForum/board/DIY</link>
     <description>独具匠心（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 08 Nov 2026 10:11:32 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 08 Nov 2026 17:54:28 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/diy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>给Squier 电吉他更换拾音器</title>
+      <link>https://www.newsmth.net/nForum/article/DIY/11327</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11327</guid>
+      <author>A1551067</author>
+      <pubDate>Sun, 08 Nov 2026 15:55:46 +0000</pubDate>
+      <description><![CDATA[Squier 子弹，手感极佳，我把依班娜雅马哈都卖了，只保留了它，但它的声音太尖细，正好有人卖一对Epiphone的双线圈拾音器，更换。为了防止日后又想换回原来的拾音器，在电路上留了两个接头，以后不用焊接，直接插拔就可以了。<br/>现在声音沉稳圆润，非常满意，可能有人觉得是个四不像，即丢失了芬味，又没得到gibson味，但我觉得自己喜欢就够了。<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>手搓70迈M800pro长焦行车记录仪</title>
       <link>https://www.newsmth.net/nForum/article/DIY/11325</link>
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/DIY/11325</guid>
       <author>cugbboy</author>
       <pubDate>Sun, 08 Nov 2026 10:07:28 +0000</pubDate>
-      <description><![CDATA[之前动手改过一台70迈M310的行车记录仪，把原厂广角改成了12mm长焦，但是310记录仪的CMOS是国产小靶面，成像一般，属于100原级应有的水平，因为底座用的大小用的是标准的18mm孔距，而原厂底座是18mm孔距0.35丝，和常见的M12广角镜头0.5的丝不兼容，但是网上随便买一个标准的18mm底座就能解决这个问题。<br/>M800pro是70迈旗舰款行车记录仪，CMOS使用了索尼的IMX678传感器，随时行车记录仪里面第一梯队的传感器，但是这个CMOS是长方形，用公模18mm底座无法全部盖住CMOS，而共模20mm孔距的底座又对不上PCB上的螺孔，导致镜头底座无法固定。原厂使用的是特制底座，孔径18mm，一边16mm长，一边18mm长，螺纹是0.35的，而网上长焦镜头使用的是0.5的丝，所以无法直接拧入原厂底座，搞定底座是最困难的。<br/>于是乎，想到用20孔距的底座改孔距，把原来20mm两个1mm的螺孔改为两个18mm的螺孔，本来想到用钻头，但是太小，不好作业，最简单的办法就是把1mm钻头加热，直接烫开一个1mm的孔，用螺丝刀再扩一下，用纱布打磨光滑，经过几番打磨，基本成型，和原来18mm底座完美对穿。<br/>然后是去掉原来机器上的底座，M800底座是螺丝+密封胶固定，需要用电吹风加热，不难取下来，换上新的底座，换镜头，利用10m远的物体对焦，锁上定焦环，完美搞定。<br/>最后附上一张原厂130°广角镜头和6mm长焦镜头的照片对比。6mm长焦镜头没有畸变，看起来更自然，索尼的传感器色彩也很棒。]]></description>
+      <description><![CDATA[之前动手改过一台70迈M310的行车记录仪，把原厂广角改成了12mm长焦，但是310记录仪的CMOS是国产小靶面，成像一般，属于100原级应有的水平，因为底座用的大小用的是标准的18mm孔距，而原厂底座是18mm孔距0.35丝，和常见的M12广角镜头0.5的丝不兼容，但是网上随便买一个标准的18mm底座就能解决这个问题。<br/>M800pro是70迈旗舰款行车记录仪，CMOS使用了索尼的IMX678传感器，属于行车记录仪里面第一梯队的传感器，但是这个CMOS是长方形，用公模18mm底座无法全部盖住CMOS，而公模20mm孔距的底座又对不上PCB上的螺孔，导致镜头底座无法固定。原厂使用的是特制底座，孔径18mm，一边16mm长，一边18mm长，螺纹是0.35的，而网上长焦镜头使用的是0.5的丝，所以无法直接拧入原厂底座，搞定底座是最困难的。<br/>于是乎，想到用20孔距的底座改孔距，把原来20mm两个1mm的螺孔改为两个18mm的螺孔，本来想到用钻头，但是太小，不好作业，最简单的办法就是把1mm钻头加热，直接烫开一个1mm的孔，用螺丝刀再扩一下，用纱布打磨光滑，经过几番打磨，基本成型，和原来18mm底座完美对穿。<br/>然后是去掉原来机器上的底座，M800底座是螺丝+密封胶固定，需要用电吹风加热，不难取下来，换上新的底座，换镜头，利用10m远的物体对焦，锁上定焦环，完美搞定。<br/>最后附上一张原厂130°广角镜头和6mm长焦镜头可视范围的的照片对比。6mm长焦镜头没有畸变，看起来更自然。对比图上一张用AI更换了天空颜色，和下面的广角是同一个地方，方便对比，310的传感器没有这个蓝天白云的效果。]]></description>
     </item>
     <item>
       <title>周末动手改70迈M80opro行程记录仪为长焦</title>
