@@ -4,9 +4,11 @@ import os
 import time
 from dataclasses import replace
 from pathlib import Path
+from urllib.parse import parse_qs, urlparse
 
 from fastapi.testclient import TestClient
 
+from app.browser import SMTHRateLimited
 from app.config import Settings
 from app.main import _article_cache_key, create_app
 from app.parser import GuestVerificationRequired
@@ -41,6 +43,38 @@ def make_settings(tmp_path: Path) -> Settings:
 class GuestBrowser:
     async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
         raise GuestVerificationRequired("challenge")
+
+
+class RateLimitedBrowser:
+    async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
+        raise SMTHRateLimited("HTTP 403")
+
+
+class TargetBrowser:
+    mode = "test"
+
+    def __init__(self, *, valid: bool = False) -> None:
+        self.valid = valid
+        self.open_target_calls: list[tuple[str, str, int]] = []
+        self.open_login_calls = 0
+
+    async def open_target(self, board: str, topic: str, page: int) -> None:
+        self.open_target_calls.append((board, topic, page))
+
+    async def open_login(self) -> None:
+        self.open_login_calls += 1
+
+    async def session_status(self, force: bool = False):
+        return {"valid": self.valid, "user": "alice" if self.valid else ""}
+
+    async def page_status(self):
+        return {
+            "challenge": False,
+            "rate_limited": False,
+            "article_ready": True,
+            "logged_in": True,
+            "url": "https://m.newsmth.net/article/NewExpress/47582736?p=1",
+        }
 
 
 def test_health_and_admin_protection(tmp_path) -> None:
@@ -100,9 +134,103 @@ def test_article_without_login_does_not_leak_challenge(tmp_path) -> None:
         app.state.browser = GuestBrowser()
         response = client.get(f"/a/{token}")
         assert response.status_code == 401
-        assert "重新登录水木" in response.text
+        assert "完成阅读验证" in response.text
         assert "guest-read-challenge" not in response.text
         assert "请完成验证" not in response.text
+
+
+def test_rate_limit_is_not_rendered_as_login_expiry(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    token = article_token(
+        SECRET,
+        "NewExpress",
+        "47582736",
+        "标题",
+        int(time.time()) + 900,
+    )
+    with TestClient(app) as client:
+        app.state.browser = RateLimitedBrowser()
+        response = client.get(f"/a/{token}")
+        assert response.status_code == 502
+        assert "暂时限制了访问频率" in response.text
+        assert "这不是登录失效" in response.text
+        assert "/relogin/" not in response.text
+
+
+def test_relogin_opens_the_current_article_challenge(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    token = article_token(
+        SECRET,
+        "NewExpress",
+        "47582736",
+        "标题",
+        int(time.time()) + 900,
+    )
+    with TestClient(app) as client:
+        response = client.get(
+            f"/relogin/{token}?challenge=1&p=2",
+            follow_redirects=False,
+        )
+
+    assert response.status_code == 303
+    location = urlparse(response.headers["location"])
+    params = parse_qs(location.query)
+    assert location.path == "/admin"
+    assert params["open"] == ["1"]
+    assert params["challenge"] == ["1"]
+    assert params["board"] == ["NewExpress"]
+    assert params["topic"] == ["47582736"]
+    assert params["page"] == ["2"]
+    assert params["next"] == [f"/a/{token}?p=2"]
+    assert "smth_reader_admin=" in response.headers["set-cookie"]
+
+
+def test_admin_open_uses_target_article_for_challenge(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    login = admin_login_token(SECRET, int(time.time()) + 900, jti="d" * 32)
+    with TestClient(app) as client:
+        client.get(f"/login/{login}")
+        browser = TargetBrowser()
+        app.state.browser = browser
+        response = client.get(
+            "/admin?"
+            "open=1&next=%2Fa%2Ftoken%3Fp%3D1"
+            "&board=NewExpress&topic=47582736&page=1&challenge=1"
+        )
+
+    assert response.status_code == 200
+    assert browser.open_target_calls == [("NewExpress", "47582736", 1)]
+    assert browser.open_login_calls == 0
+    assert "已直接打开当前文章" in response.text
+
+
+def test_admin_reuses_valid_session_without_opening_login(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    login = admin_login_token(SECRET, int(time.time()) + 900, jti="e" * 32)
+    with TestClient(app) as client:
+        client.get(f"/login/{login}")
+        browser = TargetBrowser(valid=True)
+        app.state.browser = browser
+        response = client.get(
+            "/admin?open=1&next=%2Fa%2Ftoken%3Fp%3D1",
+            follow_redirects=False,
+        )
+
+    assert response.status_code == 303
+    assert response.headers["location"] == "/a/token?p=1"
+    assert browser.open_login_calls == 0
+
+
+def test_admin_page_status_is_available_for_auto_return(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    login = admin_login_token(SECRET, int(time.time()) + 900, jti="f" * 32)
+    with TestClient(app) as client:
+        client.get(f"/login/{login}")
+        app.state.browser = TargetBrowser()
+        response = client.get("/admin/page-status")
+
+    assert response.status_code == 200
+    assert response.json()["article_ready"] is True
 
 
 def test_stale_cache_is_used_when_login_expires(tmp_path) -> None:

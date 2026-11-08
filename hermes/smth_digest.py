@@ -33,7 +33,6 @@ import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
-from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 
@@ -563,40 +562,61 @@ def validate_card(card):
 
 
 def prewarm_reader_links(links):
-    """在发卡前填充 Reader 缓存，避免读者首次点击时等待上游水木。"""
+    """只串行预热少量文章；首篇触发保护就停止，避免加重水木风控。"""
     unique_links = list(dict.fromkeys(links))
     if not unique_links:
         return 0, 0
     try:
-        workers = max(1, min(6, int(os.environ.get("READER_PREWARM_WORKERS", "4"))))
+        limit = max(0, min(8, int(os.environ.get("READER_PREWARM_LIMIT", "3"))))
     except ValueError:
-        workers = 4
+        limit = 3
     try:
         timeout = max(5, min(60, int(os.environ.get("READER_PREWARM_TIMEOUT", "30"))))
     except ValueError:
         timeout = 30
+
+    candidates = unique_links[:limit]
+    if not candidates:
+        print("[info] Reader 预热已关闭", file=sys.stderr)
+        return 0, 0
 
     def warm(link):
         req = urllib.request.Request(
             link,
             headers={"User-Agent": "smth-digest-prewarm/1.0"},
         )
-        try:
-            with urllib.request.urlopen(req, timeout=timeout) as response:
-                return response.status == 200
-        except Exception:                                      # noqa: BLE001
-            return False
+        with urllib.request.urlopen(req, timeout=timeout) as response:
+            return response.status == 200
 
     ready = 0
     started = time.monotonic()
-    with ThreadPoolExecutor(max_workers=workers) as executor:
-        futures = [executor.submit(warm, link) for link in unique_links]
-        for future in as_completed(futures):
-            if future.result():
+    stopped = False
+    for link in candidates:
+        try:
+            if warm(link):
                 ready += 1
-    total = len(unique_links)
+            else:
+                stopped = True
+                break
+        except urllib.error.HTTPError as exc:
+            print(
+                f"[warn] Reader 预热在第 {ready + 1} 篇停止：HTTP {exc.code}",
+                file=sys.stderr,
+            )
+            stopped = True
+            break
+        except Exception as exc:                               # noqa: BLE001
+            print(
+                f"[warn] Reader 预热在第 {ready + 1} 篇停止：{type(exc).__name__}",
+                file=sys.stderr,
+            )
+            stopped = True
+            break
+    total = len(candidates)
     print(
-        f"[info] Reader 预热完成 {ready}/{total}，耗时 {time.monotonic() - started:.1f}s",
+        f"[info] Reader 串行预热 {ready}/{total}"
+        f"（候选 {len(unique_links)}，{'已熔断' if stopped else '完成'}），"
+        f"耗时 {time.monotonic() - started:.1f}s",
         file=sys.stderr,
     )
     return ready, total

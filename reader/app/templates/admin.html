@@ -8,7 +8,14 @@
   <title>远程登录 · 水木阅读</title>
   <link rel="stylesheet" href="/static/reader.css">
 </head>
-<body class="admin-page">
+<body
+  class="admin-page"
+  data-next-url="{{ next_url }}"
+  data-target-board="{{ target_board }}"
+  data-target-topic="{{ target_topic }}"
+  data-target-page="{{ target_page }}"
+  data-challenge-mode="{{ '1' if challenge_mode else '0' }}"
+>
   <header class="admin-bar">
     <div class="admin-brand">
       <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#wifi"></use></svg>
@@ -23,7 +30,7 @@
       <span class="admin-status" id="adminStatus"><span id="adminStatusText">正在检查</span></span>
       <button class="admin-button" id="openLogin" type="button">
         <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#log-in"></use></svg>
-        <span>打开水木登录页</span>
+        <span>{{ '重新打开验证页' if challenge_mode else '打开水木登录页' }}</span>
       </button>
       <button class="admin-button" id="reloadFrame" type="button">
         <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#refresh"></use></svg>
@@ -44,8 +51,10 @@
 
   {% if not browser_ready %}
   <div class="admin-alert">远程浏览器尚未就绪。请先查看容器健康状态，再重新连接。</div>
+  {% elif opened and challenge_mode %}
+  <div class="admin-alert" id="adminAlert">已直接打开当前文章。请在下方输入验证码，验证成功会自动返回正文。</div>
   {% elif opened %}
-  <div class="admin-alert">已切换到水木手机版登录页。请直接在下方完成账号登录和滑块验证。</div>
+  <div class="admin-alert" id="adminAlert">已切换到水木手机版登录页。请直接在下方完成账号登录和滑块验证。</div>
   {% endif %}
 
   <main class="admin-shell">

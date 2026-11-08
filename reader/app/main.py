@@ -30,7 +30,7 @@ try:
 except ImportError:  # pragma: no cover - compatibility with older websockets
     from websockets import connect as websocket_connect
 
-from .browser import BrowserManager, SMTHUnavailable
+from .browser import BrowserManager, SMTHRateLimited, SMTHUnavailable
 from .cache import BinaryFileCache, FileCache
 from .config import Settings
 from .models import ArticlePage
@@ -330,8 +330,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             )
             article_cache.write(key, parsed.to_dict())
             return parsed, 0, False, "", "MISS"
+        except SMTHRateLimited:
+            raise
         except GuestVerificationRequired:
-            error = "水木登录态已失效"
+            error = "水木要求完成一次阅读验证"
             if cached_page and cached_age <= app_settings.stale_ttl_seconds:
                 return cached_page, cached_age, True, error, "STALE"
             raise
@@ -383,15 +385,28 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return render_message(
                 request,
                 status_code=401,
-                eyebrow="SESSION EXPIRED",
-                title="水木登录态已失效，重新登录一次即可继续阅读。",
+                eyebrow="READ CHALLENGE",
+                title="水木需要再完成一次阅读验证。",
                 description=(
-                    "阅读网关没有把水木的游客验证码直接暴露给你。"
-                    "点击下方按钮，在受保护的远程浏览器里完成登录和验证，"
-                    "之后飞书里的所有水木链接都会复用这个会话。"
+                    "水木会对部分文章单独弹出验证码。点击下方按钮后，"
+                    "远程浏览器会直接打开当前文章，完成验证即自动返回正文。"
                 ),
-                action_url=f"/relogin/{token}",
-                action_label="重新登录水木",
+                action_url=f"/relogin/{token}?{urlencode({'challenge': 1, 'p': page_number})}",
+                action_label="完成阅读验证",
+            )
+        except SMTHRateLimited:
+            LOGGER.warning("article request is rate limited by SMTH")
+            return render_message(
+                request,
+                status_code=502,
+                eyebrow="UPSTREAM RATE LIMIT",
+                title="水木暂时限制了访问频率。",
+                description=(
+                    "这不是登录失效，通常与短时间内连续预热或打开文章过多有关。"
+                    "请稍后重试，现有缓存和登录会话不受影响。"
+                ),
+                action_url=f"/a/{token}?p={page_number}",
+                action_label="稍后重试",
             )
         except (SMTHUnavailable, ArticleParseError) as exc:
             LOGGER.warning("article unavailable: %s", type(exc).__name__)
@@ -537,9 +552,14 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         return response
 
     @application.get("/relogin/{token}", response_class=HTMLResponse)
-    async def relogin(request: Request, token: str) -> Response:
+    async def relogin(
+        request: Request,
+        token: str,
+        challenge: int = 0,
+        p: int = 1,
+    ) -> Response:
         try:
-            loads_typed(token, app_settings.secret, "article")
+            payload = loads_typed(token, app_settings.secret, "article")
         except InvalidToken:
             return render_message(
                 request,
@@ -548,9 +568,21 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 title="阅读链接已失效，无法建立登录会话",
                 description="请在飞书里重新获取最新推荐卡片。",
             )
-        next_url = _safe_next(f"/a/{token}")
+        board = str(payload.get("board") or "")
+        topic = str(payload.get("topic") or "")
+        page_number = max(1, min(p, 999))
+        next_url = _safe_next(f"/a/{token}?{urlencode({'p': page_number})}")
+        params = {
+            "open": 1,
+            "next": next_url,
+            "board": board,
+            "topic": topic,
+            "page": page_number,
+        }
+        if challenge:
+            params["challenge"] = 1
         response = RedirectResponse(
-            "/admin?" + urlencode({"open": 1, "next": next_url}),
+            "/admin?" + urlencode(params),
             status_code=303,
         )
         _set_session_cookie(response, app_settings)
@@ -565,6 +597,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         request: Request,
         open: int = 0,
         next: str = "",
+        board: str = "",
+        topic: str = "",
+        page: int = 1,
+        challenge: int = 0,
     ) -> HTMLResponse | Response:
         if not _valid_admin_session(request, app_settings):
             return render_message(
@@ -581,12 +617,26 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         manager: BrowserManager | None = request.app.state.browser
         browser_ready = manager is not None
         opened = False
+        target_valid = bool(
+            re.fullmatch(r"[A-Za-z0-9_]{1,64}", board)
+            and re.fullmatch(r"\d{1,32}", topic)
+        )
+        page_number = max(1, min(page, 999))
+        challenge_mode = bool(target_valid and challenge)
         if manager and open:
             try:
-                await manager.open_login()
+                if challenge_mode:
+                    await manager.open_target(board, topic, page_number)
+                elif safe_next:
+                    status = await manager.session_status(force=False)
+                    if status.get("valid"):
+                        return RedirectResponse(safe_next, status_code=303)
+                    await manager.open_login()
+                else:
+                    await manager.open_login()
                 opened = True
             except Exception:  # noqa: BLE001
-                LOGGER.exception("failed to open the SMTH login page")
+                LOGGER.exception("failed to open the SMTH browser target")
         vnc_url = (
             "/admin/vnc/vnc.html?"
             + urlencode(
@@ -607,6 +657,10 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 "browser_mode": manager.mode if manager else "",
                 "browser_error": request.app.state.browser_error,
                 "opened": opened,
+                "challenge_mode": challenge_mode,
+                "target_board": board if target_valid else "",
+                "target_topic": topic if target_valid else "",
+                "target_page": page_number,
                 "vnc_url": vnc_url,
                 "next_url": safe_next,
                 "session_ttl_label": _format_session_ttl(
@@ -616,14 +670,60 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         )
 
     @application.post("/admin/open-login")
-    async def open_login(request: Request) -> Response:
+    async def open_login(
+        request: Request,
+        board: str = "",
+        topic: str = "",
+        page: int = 1,
+        challenge: int = 0,
+        next: str = "",
+    ) -> Response:
         if not _valid_admin_session(request, app_settings):
             raise HTTPException(status_code=401, detail="admin session required")
         manager: BrowserManager | None = request.app.state.browser
         if not manager:
             raise HTTPException(status_code=503, detail="browser is not ready")
-        await manager.open_login()
+        page_number = max(1, min(page, 999))
+        target_valid = bool(
+            re.fullmatch(r"[A-Za-z0-9_]{1,64}", board)
+            and re.fullmatch(r"\d{1,32}", topic)
+        )
+        safe_next = _safe_next(next)
+        try:
+            if target_valid and challenge:
+                await manager.open_target(board, topic, page_number)
+            elif safe_next:
+                status = await manager.session_status(force=False)
+                if status.get("valid"):
+                    return JSONResponse({"ok": True, "redirect": safe_next})
+                await manager.open_login()
+            else:
+                await manager.open_login()
+        except SMTHRateLimited as exc:
+            raise HTTPException(status_code=502, detail="SMTH is rate limiting") from exc
         return JSONResponse({"ok": True})
+
+    @application.get("/admin/page-status")
+    async def page_status(request: Request) -> JSONResponse:
+        if not _valid_admin_session(request, app_settings):
+            raise HTTPException(status_code=401, detail="admin session required")
+        manager: BrowserManager | None = request.app.state.browser
+        if not manager:
+            return JSONResponse(
+                {
+                    "challenge": False,
+                    "rate_limited": False,
+                    "article_ready": False,
+                    "logged_in": False,
+                    "error": "browser_not_ready",
+                },
+                status_code=503,
+            )
+        try:
+            result = await manager.page_status()
+        except SMTHUnavailable as exc:
+            raise HTTPException(status_code=503, detail="page state unavailable") from exc
+        return JSONResponse(result)
 
     @application.get("/admin/session-status")
     async def session_status(request: Request) -> JSONResponse:
@@ -634,7 +734,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return JSONResponse(
                 {"valid": False, "user": "", "error": "browser_not_ready"}
             )
-        result = await manager.session_status(force=True)
+        result = await manager.session_status(force=False)
         return JSONResponse(result)
 
     @application.post("/logout")

@@ -1,12 +1,17 @@
 from __future__ import annotations
 
 import asyncio
+import json
+import os
+import stat
 from dataclasses import replace
 from pathlib import Path
+from typing import Any
 
 import pytest
+from playwright.async_api import Error as PlaywrightError
 
-from app.browser import BrowserManager
+from app.browser import BrowserManager, SMTHRateLimited
 from app.config import Settings
 from app.parser import GuestVerificationRequired
 
@@ -38,39 +43,199 @@ def make_settings(tmp_path: Path) -> Settings:
 
 
 class FakeResponse:
-    status = 200
+    def __init__(self, status: int = 200, body: bytes = b"", data=None) -> None:
+        self.status = status
+        self._body = body
+        self._data = data
+        self.headers = {"content-type": "text/html; charset=gb18030"}
+
+    @property
+    def ok(self) -> bool:
+        return 200 <= self.status < 300
 
     async def body(self) -> bytes:
-        return "Read verification".encode()
+        return self._body
+
+    async def json(self):
+        return self._data
 
 
 class FakeRequest:
-    def __init__(self) -> None:
-        self.calls = 0
+    def __init__(self, responses: list[FakeResponse]) -> None:
+        self.responses = responses
+        self.calls: list[str] = []
 
-    async def get(self, *args, **kwargs) -> FakeResponse:
-        self.calls += 1
-        return FakeResponse()
+    async def get(self, url: str, *args, **kwargs) -> FakeResponse:
+        self.calls.append(url)
+        return self.responses.pop(0)
 
 
 class FakeContext:
-    def __init__(self) -> None:
-        self.request = FakeRequest()
+    def __init__(
+        self,
+        responses: list[FakeResponse] | None = None,
+        cookies: list[dict[str, Any]] | None = None,
+    ) -> None:
+        self.request = FakeRequest(responses or [])
+        self.cookie_data = cookies or []
+        self.added_cookies: list[dict[str, Any]] = []
+
+    async def cookies(self, urls):
+        return list(self.cookie_data)
+
+    async def add_cookies(self, cookies):
+        self.added_cookies.extend(cookies)
 
 
-def test_guest_verification_trips_fast_fail_cooldown(
+class FakePage:
+    def __init__(
+        self,
+        *,
+        url: str = "https://m.newsmth.net/article/NewExpress/1?p=1",
+        state: dict[str, Any] | None = None,
+        goto_error: Exception | None = None,
+    ) -> None:
+        self.url = url
+        self.state = state or {
+            "url": url,
+            "title": "文章",
+            "text": "文章正文" * 80,
+            "html": "<table class='article'><td>文章正文</td></table>",
+            "article_ready": True,
+            "logged_in": True,
+        }
+        self.goto_error = goto_error
+        self.goto_calls: list[str] = []
+
+    async def evaluate(self, script: str):
+        return self.state
+
+    async def goto(self, url: str, **kwargs):
+        self.goto_calls.append(url)
+        self.url = url
+        if self.goto_error:
+            raise self.goto_error
+
+
+def test_verification_cooldown_recovers_after_page_is_readable(
     tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
 ) -> None:
-    monkeypatch.setattr("app.browser.is_guest_verification", lambda text: True)
-    manager = BrowserManager(
-        replace(make_settings(tmp_path), request_interval_seconds=0)
+    settings = make_settings(tmp_path)
+    manager = BrowserManager(settings)
+    manager._context = FakeContext(  # type: ignore[assignment]
+        [
+            FakeResponse(body=b"Read verification"),
+            FakeResponse(body=b"<table class='article'>article</table>"),
+        ],
+        cookies=[
+            {
+                "name": "main[UTMPUSERID]",
+                "value": "alice",
+                "domain": ".newsmth.net",
+                "path": "/",
+            }
+        ],
     )
-    manager._context = FakeContext()  # type: ignore[assignment]
+    manager._page = FakePage()  # type: ignore[assignment]
 
     with pytest.raises(GuestVerificationRequired):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
-    with pytest.raises(GuestVerificationRequired):
-        asyncio.run(manager.fetch_article_html("NewExpress", "2", 1))
 
-    assert manager._context.request.calls == 1
+    html = asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
+
+    assert "table" in html
+    assert manager._context.request.calls == [
+        "https://www.newsmth.net/nForum/article/NewExpress/1?ajax&p=1",
+        "https://www.newsmth.net/nForum/article/NewExpress/1?ajax&p=1",
+    ]
+    snapshot = settings.cookie_snapshot_path
+    assert snapshot.is_file()
+    if os.name != "nt":
+        assert stat.S_IMODE(snapshot.stat().st_mode) == 0o600
+    assert "alice" in snapshot.read_text(encoding="utf-8")
+
+
+def test_open_target_uses_mobile_article_not_index(tmp_path: Path) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    page = FakePage()
+    manager._page = page  # type: ignore[assignment]
+
+    asyncio.run(manager.open_target("NewExpress", "47582736", 3))
+
+    assert page.goto_calls == [
+        "https://m.newsmth.net/article/NewExpress/47582736?p=3"
+    ]
+
+
+def test_err_aborted_is_accepted_when_navigation_reached_target(
+    tmp_path: Path,
+) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    target = "https://m.newsmth.net/article/NewExpress/47582736?p=1"
+    page = FakePage(
+        url=target,
+        goto_error=PlaywrightError("net::ERR_ABORTED at navigation"),
+    )
+    manager._page = page  # type: ignore[assignment]
+
+    asyncio.run(manager.open_target("NewExpress", "47582736", 1))
+
+    assert page.goto_calls == [target]
+
+
+def test_http_403_is_rate_limit_not_login_expiry(tmp_path: Path) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    manager._context = FakeContext(  # type: ignore[assignment]
+        [FakeResponse(status=403, body=b"forbidden")]
+    )
+
+    with pytest.raises(SMTHRateLimited):
+        asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
+
+
+def test_rate_limit_page_is_classified_without_clearing_cookie(
+    tmp_path: Path,
+) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    manager._context = FakeContext(  # type: ignore[assignment]
+        [FakeResponse(body="因为访问过于频繁，已被系统封禁".encode("gb18030"))]
+    )
+
+    with pytest.raises(SMTHRateLimited):
+        asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
+    assert manager._verification_block_until == 0
+
+
+def test_cookie_snapshot_restores_only_when_browser_has_no_smth_cookie(
+    tmp_path: Path,
+) -> None:
+    settings = replace(make_settings(tmp_path), request_interval_seconds=0)
+    snapshot = settings.cookie_snapshot_path
+    snapshot.write_text(
+        json.dumps(
+            [
+                {
+                    "name": "main[UTMPKEY]",
+                    "value": "secret",
+                    "domain": ".newsmth.net",
+                    "path": "/",
+                },
+                {
+                    "name": "unrelated",
+                    "value": "ignored",
+                    "domain": ".example.com",
+                    "path": "/",
+                },
+            ]
+        ),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext()
+    manager._context = context  # type: ignore[assignment]
+
+    asyncio.run(manager._restore_cookie_snapshot())
+
+    assert [cookie["name"] for cookie in context.added_cookies] == [
+        "main[UTMPKEY]"
+    ]

@@ -56,6 +56,10 @@ class Settings:
     def profile_dir(self) -> Path:
         return self.data_dir / "chromium-profile"
 
+    @property
+    def cookie_snapshot_path(self) -> Path:
+        return self.data_dir / "chromium-cookies.json"
+
     @classmethod
     def from_env(cls) -> "Settings":
         secret = os.getenv("READER_SIGNING_SECRET", "").strip()
