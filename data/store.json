@@ -1,5 +1,5 @@
 {
- "last_run": "2026-11-10 00:01:51 +0800",
+ "last_run": "2026-11-10 09:28:14 +0800",
  "sources": {
   "age": {
    "items": [
@@ -454,7 +454,7 @@
      "ts": 1791266746
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 06:39:08 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:43:02 GMT"
   },
   "baking": {
    "items": [
@@ -896,7 +896,7 @@
      "ts": 1759200074
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 23:36:32 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:30:43 GMT"
   },
   "beipiao": {
    "items": [
@@ -1117,7 +1117,7 @@
      "ts": 1776665376
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 20:59:23 GMT"
+   "last_modified": "Mon, 09 Nov 2026 23:29:56 GMT"
   },
   "book": {
    "items": [
@@ -1365,7 +1365,7 @@
      "ts": 1780120171
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 21:34:26 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:49:02 GMT"
   },
   "boy": {
    "items": [
@@ -1910,10 +1910,127 @@
      "ts": 1792056997
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 12:04:49 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:02:02 GMT"
   },
   "bull": {
    "items": [
+    {
+     "author": "AGust2022",
+     "body": "大铁锅，老灶头，\n加柴火，会有锅气\n在某处打字过多也一样，也会有版气，\n不过有点像被窝气",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579479",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579479",
+     "pub_date": "Tue, 10 Nov 2026 01:13:38 +0000",
+     "title": "锅气",
+     "ts": 1794273218
+    },
+    {
+     "author": "bigsillyboy",
+     "body": "相比，皮衣还是小儿科\n根据他来亚洲出差的次数\n感觉见面的机会也不多\n皮带都没道歉\n皮衣却要道歉\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579465",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579465",
+     "pub_date": "Tue, 10 Nov 2026 01:08:31 +0000",
+     "title": "皮衣与皮带",
+     "ts": 1794272911
+    },
+    {
+     "author": "shawn2024",
+     "body": "大体意思就是纯活着把，每天吃喝维持正常得生理指标。没有理想，也没有什么牵挂，更没有什么爱不爱的。",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579464",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579464",
+     "pub_date": "Tue, 10 Nov 2026 01:03:02 +0000",
+     "title": "纯过日子",
+     "ts": 1794272582
+    },
+    {
+     "author": "dabada",
+     "body": "一个人一千左右呢\n还不能自己点菜\n据说是肯定能吃饱\n也能吃撑\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579460",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579460",
+     "pub_date": "Tue, 10 Nov 2026 01:01:57 +0000",
+     "title": "那种很贵的欧玛卡塞值得一吃吗？",
+     "ts": 1794272517
+    },
+    {
+     "author": "zhaodaliang",
+     "body": "广州再见\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579448",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579448",
+     "pub_date": "Tue, 10 Nov 2026 00:47:36 +0000",
+     "title": "到家干啥？",
+     "ts": 1794271656
+    },
+    {
+     "author": "Talker2020",
+     "body": "全球都在等着一本书的上架\n孩子们连夜排在书店门口\n只为喜滋滋的捧着崭新的滚烫的书籍回家，一口气读完…\n很捉急了\n大佬们集思广益\n发自「今日水木 on iPhone 12 Pro Max」",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579425",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579425",
+     "pub_date": "Tue, 10 Nov 2026 00:17:12 +0000",
+     "title": "如何复制J.K.罗琳创造的文学盛况",
+     "ts": 1794269832
+    },
+    {
+     "author": "xiaofeizai",
+     "body": "建水紫陶真好用\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579418",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579418",
+     "pub_date": "Tue, 10 Nov 2026 00:08:10 +0000",
+     "title": "泡茶",
+     "ts": 1794269290
+    },
+    {
+     "author": "t3w4",
+     "body": "比昨天报的还小几岁，这个年纪是不是还可以啊？哈哈",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579406",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579406",
+     "pub_date": "Mon, 09 Nov 2026 23:56:44 +0000",
+     "title": "乡民们，黄乐才42啊",
+     "ts": 1794268604
+    },
+    {
+     "author": "s111111",
+     "body": "北京暖气来了，夜里热得不行…\n嗓子干得疼，半夜喝了几次水，\n盖被子出汗，要换薄薄毯子了\n室内闷热，今晚我还要多开一扇窗户\n感觉还是湿润的空气，能香香的入眠～",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579347",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579347",
+     "pub_date": "Mon, 09 Nov 2026 23:07:53 +0000",
+     "title": "难受之夜～",
+     "ts": 1794265673
+    },
+    {
+     "author": "Cadillac2025",
+     "body": "打呼噜的 爱喝酒的，基本都有。严重的可以打着呼噜心脏大脑受损或直接归西\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579336",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579336",
+     "pub_date": "Mon, 09 Nov 2026 22:53:42 +0000",
+     "title": "你们的老公或你们有睡眠呼吸暂停么",
+     "ts": 1794264822
+    },
+    {
+     "author": "liangf",
+     "body": "气温继续骤降\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579332",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579332",
+     "pub_date": "Mon, 09 Nov 2026 22:47:36 +0000",
+     "title": "寒冷天气",
+     "ts": 1794264456
+    },
+    {
+     "author": "sarahplaying",
+     "body": "我就坚持两件事\n第一照顾好自己，把孩子健健康康生下来\n第二坚持心平气和的上班，赚钱养娃\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579325",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579325",
+     "pub_date": "Mon, 09 Nov 2026 22:17:44 +0000",
+     "title": "未来的这200多天里",
+     "ts": 1794262664
+    },
+    {
+     "author": "Missing7",
+     "body": "相亲的时候，对方妈妈一直问我问题，感觉男的挺妈宝呀。。。\n这都啥梦？",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3579317",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3579317",
+     "pub_date": "Mon, 09 Nov 2026 21:25:15 +0000",
+     "title": "刚才梦到去相亲",
+     "ts": 1794259515
+    },
     {
      "author": "zhaodaliang",
      "body": "看展，喝酒，掼蛋，喝酒，掼蛋，看展，喝酒，掼蛋，喝酒。\n--发自 ismth(丝滑版)",
@@ -2336,126 +2453,9 @@
      "pub_date": "Sun, 08 Nov 2026 12:45:04 +0000",
      "title": "丽丽对自己很大方",
      "ts": 1794141904
-    },
-    {
-     "author": "mymz27",
-     "body": "的朋友圈可能忘了屏蔽我\n或是分组漏了我\n她经常在朋友圈秀恩爱\n我觉得也还好吧\n今天秀恩爱的时候\n顺便秀了夫妻生活\n并且有PP\n我看到同事朋友圈发这种话题和PP\n感觉略微尴尬\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577698",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577698",
-     "pub_date": "Sun, 08 Nov 2026 12:05:19 +0000",
-     "title": "我感觉我同事",
-     "ts": 1794139519
-    },
-    {
-     "author": "Cadillac2025",
-     "body": "坚持再坚持。主动发帖容易失言\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577697",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577697",
-     "pub_date": "Sun, 08 Nov 2026 12:04:13 +0000",
-     "title": "以后只回帖不发帖",
-     "ts": 1794139453
-    },
-    {
-     "author": "dashudashu",
-     "body": "可能是400-500吧。。。吃好像真的花不了几个钱，中年男人去按个摩泡个澡，都得好几百。。你们找导师的，得好几千吧，，这才是大钱吧。。你们说说",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577693",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577693",
-     "pub_date": "Sun, 08 Nov 2026 11:59:36 +0000",
-     "title": "本中自己一个人吃过最贵的，是在抖音上买了一个帝王蟹餐",
-     "ts": 1794139176
-    },
-    {
-     "author": "xaiobaicai",
-     "body": "说自己很抠门，实则在夸自己。\n加油花了很多钱，说心疼得很，显示抠门实则展示自己的油车。\n展示自己的鸡蛋不给别人，说自己抠门，实则展示他家有养大量的鸡。还隐含展示他不被美色所动。\n还有类似的例子很多。然后猪大火上了他的当，也跟着实实在在地展示自己的缺点。\n我们这些实在人要学会明着展示缺点，实则在表扬自己，展示自己的优点。\n发自「今日水木 on iPhone 12 mini」",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577644",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577644",
-     "pub_date": "Sun, 08 Nov 2026 11:27:48 +0000",
-     "title": "粑粑罗萨很精明",
-     "ts": 1794137268
-    },
-    {
-     "author": "v1da",
-     "body": "独栋，占地800平米，院子里有个果园，十几棵各种果树，挂满果子。\n院子里还有几棵长了几十年的大树。\n好像是贵版一些版友的梦想？其实实现梦想不难\n- 发自水木超级智能 on iPhone Duo",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577641",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577641",
-     "pub_date": "Sun, 08 Nov 2026 11:25:59 +0000",
-     "title": "刚去参观了一个朋友的房子",
-     "ts": 1794137159
-    },
-    {
-     "author": "jake2028123",
-     "body": "但是他春节回家说，只要他自己愿意干，可以干到七十岁\n在深圳的一个台湾人开的公司\n他高中毕业就去了这家公司，现在四十多岁了\n看来失业的却很行业有关系",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577637",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577637",
-     "pub_date": "Sun, 08 Nov 2026 11:16:38 +0000",
-     "title": "我一个弟弟只读了一个高中",
-     "ts": 1794136598
-    },
-    {
-     "author": "xiaofeizai",
-     "body": "从毕业到现在，自己一个人吃饭，从来没超过100元！\n最贵的是去吃一个人那种火锅，呷哺呷哺，单人火锅58块。\n请领导或者请女友就贵些，但自己吃就无所谓了。\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577631",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577631",
-     "pub_date": "Sun, 08 Nov 2026 11:07:33 +0000",
-     "title": "本猪很抠门",
-     "ts": 1794136053
-    },
-    {
-     "author": "xiaofeizai",
-     "body": "广东佬能尝出这盘白切鸡的鸡已经死了两小时还是已经死了八小时还是已经死了一天。\n什么水平？\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577624",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577624",
-     "pub_date": "Sun, 08 Nov 2026 10:46:06 +0000",
-     "title": "广东佬的舌头",
-     "ts": 1794134766
-    },
-    {
-     "author": "lili2030",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577618",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577618",
-     "pub_date": "Sun, 08 Nov 2026 10:30:38 +0000",
-     "title": "今日战绩",
-     "ts": 1794133838
-    },
-    {
-     "author": "Talker2020",
-     "body": "黄金家族鼎盛时期\n向西打到莱茵河（今法国），向南打到爪哇岛（今印尼），向东试图征服日本（两次出征皆以失败告终，因为他们低估了海洋的威力，没有龙骨支撑的远洋大船）\n迷信的西方称这股来自东方的旋风般的神秘力量为“上帝的马鞭”\n黄金家族的西征促进了东西方的陆路交流\n本青喜欢看这段历史：世界征服者史！\n然而，铁木真的起点很低，他的父亲本来是乞颜部的首领，在铁木真10岁左右被敌对部落毒死，部众令投它部，只剩下铁木真母子，而在生存环境恶劣的草原，落单就基本意味着死亡\n望周知～\n发自「今日水木 on iPhone 12 Pro Max」",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577613",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577613",
-     "pub_date": "Sun, 08 Nov 2026 10:19:05 +0000",
-     "title": "世界征服者史",
-     "ts": 1794133145
-    },
-    {
-     "author": "gegeblue",
-     "body": "姑娘对自己皮肤不白一直耿耿于怀，我安慰她没关系，到时找一个和爸爸一样的老公也挺好。姑娘说：那可不行，你长得太挫了。小小年纪怎么价值观这么坚定呢。\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577611",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577611",
-     "pub_date": "Sun, 08 Nov 2026 10:17:21 +0000",
-     "title": "耿耿于怀",
-     "ts": 1794133041
-    },
-    {
-     "author": "AGust2022",
-     "body": "醒来听晚风\n帘幕不知冷\n悠悠摇摆中\n小锅残米冷\n青椒自转红\n何以果我腹\n餐送又一通",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577603",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577603",
-     "pub_date": "Sun, 08 Nov 2026 09:55:13 +0000",
-     "title": "卧时日当空",
-     "ts": 1794131713
-    },
-    {
-     "author": "dashudashu",
-     "body": "男人之间，真的有所谓可以经得起考验的友情不。。你们说说。。福生无量天尊",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3577586",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3577586",
-     "pub_date": "Sun, 08 Nov 2026 09:40:45 +0000",
-     "title": "札木合与铁木真，年少时候三次结为安达，中年反目成仇",
-     "ts": 1794130845
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:30:34 GMT"
+   "last_modified": "Tue, 10 Nov 2026 01:15:57 GMT"
   },
   "children": {
    "items": [
@@ -2784,7 +2784,7 @@
      "ts": 1789032157
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 21:27:40 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:31:44 GMT"
   },
   "coffee": {
    "items": [
@@ -3406,10 +3406,100 @@
      "ts": 1788401495
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 00:38:11 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:00:24 GMT"
   },
   "fashionshow": {
    "items": [
+    {
+     "author": "touchsong1",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561783",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561783",
+     "pub_date": "Tue, 10 Nov 2026 01:18:57 +0000",
+     "title": "眷恋",
+     "ts": 1794273537
+    },
+    {
+     "author": "silimi",
+     "body": "有同好吗，一起玩啊",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561780",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561780",
+     "pub_date": "Tue, 10 Nov 2026 01:18:02 +0000",
+     "title": "末日求生爱好者",
+     "ts": 1794273482
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561768",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561768",
+     "pub_date": "Tue, 10 Nov 2026 01:09:20 +0000",
+     "title": "观景 品茗 放空【美美哒！】",
+     "ts": 1794272960
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561763",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561763",
+     "pub_date": "Tue, 10 Nov 2026 01:05:11 +0000",
+     "title": "沉思中【美美哒！】",
+     "ts": 1794272711
+    },
+    {
+     "author": "rwgcz",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561762",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561762",
+     "pub_date": "Tue, 10 Nov 2026 01:04:29 +0000",
+     "title": "结束秋假，准备返程",
+     "ts": 1794272669
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561756",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561756",
+     "pub_date": "Tue, 10 Nov 2026 00:47:22 +0000",
+     "title": "休闲女孩儿的小幸福【美美哒！】",
+     "ts": 1794271642
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561750",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561750",
+     "pub_date": "Tue, 10 Nov 2026 00:38:45 +0000",
+     "title": "【最佳】夏天的记忆【美美哒！】",
+     "ts": 1794271125
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561749",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561749",
+     "pub_date": "Tue, 10 Nov 2026 00:37:18 +0000",
+     "title": "知性女孩【美美哒！】",
+     "ts": 1794271038
+    },
+    {
+     "author": "qianliye80",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561723",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561723",
+     "pub_date": "Mon, 09 Nov 2026 22:12:25 +0000",
+     "title": "初冬穿搭",
+     "ts": 1794262345
+    },
+    {
+     "author": "lele20260212",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561711",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561711",
+     "pub_date": "Mon, 09 Nov 2026 16:14:26 +0000",
+     "title": "人间尤物【美美哒！】",
+     "ts": 1794240866
+    },
     {
      "author": "nextworld8",
      "body": "",
@@ -3859,102 +3949,21 @@
      "pub_date": "Fri, 06 Nov 2026 05:21:51 +0000",
      "title": "明天立冬",
      "ts": 1793942511
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561137",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561137",
-     "pub_date": "Fri, 06 Nov 2026 04:50:28 +0000",
-     "title": "迷人的连衣裙【美美哒！】",
-     "ts": 1793940628
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561130",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561130",
-     "pub_date": "Fri, 06 Nov 2026 03:54:10 +0000",
-     "title": "【今日最佳】喜欢碎花裙的女孩子【美美哒！】",
-     "ts": 1793937250
-    },
-    {
-     "author": "wrt23",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561120",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561120",
-     "pub_date": "Fri, 06 Nov 2026 03:18:14 +0000",
-     "title": "秋伊更浓啦",
-     "ts": 1793935094
-    },
-    {
-     "author": "inikang",
-     "body": "- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561098",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561098",
-     "pub_date": "Fri, 06 Nov 2026 01:48:37 +0000",
-     "title": "绿肥红瘦",
-     "ts": 1793929717
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561058",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561058",
-     "pub_date": "Thu, 05 Nov 2026 23:14:06 +0000",
-     "title": "爱笑的女孩子运气都不差！【美美哒！】",
-     "ts": 1793920446
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561049",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561049",
-     "pub_date": "Thu, 05 Nov 2026 23:06:10 +0000",
-     "title": "快乐的吊带衫【美美哒！】",
-     "ts": 1793919970
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561048",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561048",
-     "pub_date": "Thu, 05 Nov 2026 23:00:27 +0000",
-     "title": "【贵在真实】四十岁的精彩！【美美哒！】",
-     "ts": 1793919627
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561047",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561047",
-     "pub_date": "Thu, 05 Nov 2026 22:55:09 +0000",
-     "title": "骨感灵动的小精灵【美美哒！】",
-     "ts": 1793919309
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561042",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561042",
-     "pub_date": "Thu, 05 Nov 2026 22:22:40 +0000",
-     "title": "知性的姐姐就是一枝花！【美美哒！】",
-     "ts": 1793917360
-    },
-    {
-     "author": "lele20260212",
-     "body": "（见图）",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561041",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561041",
-     "pub_date": "Thu, 05 Nov 2026 22:21:25 +0000",
-     "title": "御姐风  好飒！【美美哒！】",
-     "ts": 1793917285
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:00:56 GMT"
+   "last_modified": "Tue, 10 Nov 2026 01:18:58 GMT"
   },
   "food": {
    "items": [
+    {
+     "author": "coolsailor",
+     "body": "2. 曾经在一家外企工作。每年某国感恩节，一帮小资都要从西餐厅弄个火鸡到公司当午餐。贼难吃，又柴，又腥，整个办公室一股味道。后来一个感恩节，去了一个朋友家里做客，他家自己烤火鸡。完全中式做法，用老干妈腌制的，还真好吃啊。\n3. 有次露营，一个朋友矫情非要带个高压锅。结果营地还真有电。买了几斤牛排骨，高压锅一蒸，然后把骨头剃下来，肉太软烂好吃了。另一个朋友说还不到位，他拿出一包麻辣火锅调料，然后把蒸好的牛肉在锅里跟调料一炒。那个味道，绝了。后来我们尝试在家里复刻，完全无法复现。",
+     "guid": "http://www.newsmth.net/nForum/article/Food/1782154",
+     "link": "https://www.newsmth.net/nForum/article/Food/1782154",
+     "pub_date": "Mon, 09 Nov 2026 16:57:06 +0000",
+     "title": "普通菜感到很惊艳的几次",
+     "ts": 1794243426
+    },
     {
      "author": "kidddd",
      "body": "我爱吃的小吃家常菜是这些，写完发现我真是碳水动物啊\n各地好吃的菜都不少，但是让我久久不能忘怀的，还是肉+碳水\n出差到当地的时候，我会专程去找这些吃的，找到了会心中大喜\n上海：红烧牛肉拌面、响油鳝糊浇头面（可能江苏人有意见）\n山东：焖饼，羊汤烧饼（许昌有一家超级好吃，后来找不到了）\n北京：炸酱面、铜锅涮肉（日常的京菜馆子推荐海碗居）\n湖北：炒豆丝、泡蒸鳝片\n湖南：各种路边小炒，农家一碗香、攸县香干、萝卜干腊肉啥的\n陕西：汇通面、肉丸胡辣汤；还有油泼面羊肉泡馍啥的\n江苏：锅盖面，海门羊肉\n福建：蚵仔煎、姜母鸭\n广东：肠粉、煲仔饭、豉汁凤爪\n江西：减辣的江西小炒\n东北：春饼、烀饼、小鸡炖蘑菇\n西北：羊肉，烤包子\n云南和川渝的菜感觉都还不错但具体又说不上来，四川的火锅对我来说太油太辣了\n安徽土菜印象中也很好吃，不过具体也说不上来，臭鳜鱼并不惊艳\n河南、河北、山西、天津、贵州记不得有啥好吃的，还是去得少；贵州就记得辣了，酸汤鱼是真辣",
@@ -4485,18 +4494,9 @@
      "pub_date": "Wed, 28 Oct 2026 06:08:34 +0000",
      "title": "这个季节的山东潍坊青萝卜挺好吃的。",
      "ts": 1793167714
-    },
-    {
-     "author": "FuZu",
-     "body": "豆包说第5到12条肋骨上的，自里脊到下踹前的五花五层中五花。\n回头一琢磨，排骨19元一斤，五花肉10块钱，肯定剃骨头多带点肉。\n难道酒店用来做梅菜扣肉的五花肉都是订制的？",
-     "guid": "http://www.newsmth.net/nForum/article/Food/1780501",
-     "link": "https://www.newsmth.net/nForum/article/Food/1780501",
-     "pub_date": "Tue, 27 Oct 2026 16:41:49 +0000",
-     "title": "逛完菜市场，没找到视频里的五花肉",
-     "ts": 1793119309
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:27:44 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:01:58 GMT"
   },
   "funnytime": {
    "items": [
@@ -4834,7 +4834,7 @@
      "ts": 1789563698
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 05:34:03 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:47:26 GMT"
   },
   "gentle_fashion": {
    "items": [
@@ -5037,7 +5037,7 @@
      "ts": 1759282307
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 05:37:14 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:53:10 GMT"
   },
   "get_pregnant": {
    "items": [
@@ -5240,7 +5240,7 @@
      "ts": 1767228173
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 08:14:32 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:39:41 GMT"
   },
   "girl": {
    "items": [
@@ -5452,7 +5452,7 @@
      "ts": 1778555245
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 21:35:43 GMT"
+   "last_modified": "Mon, 09 Nov 2026 20:59:53 GMT"
   },
   "healtheworld": {
    "items": [
@@ -5637,7 +5637,7 @@
      "ts": 1717925519
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 00:31:34 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:08:50 GMT"
   },
   "healthylife": {
    "items": [
@@ -6520,7 +6520,7 @@
      "ts": 1792283506
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 09:05:40 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:35:34 GMT"
   },
   "jade_jewelry": {
    "items": [
@@ -6736,6 +6736,15 @@
   },
   "liyidaiwa": {
    "items": [
+    {
+     "author": "sgxlx",
+     "body": "对娃的教育，体验苦难，生存压力，社会的暗流涌动，是很重要的一环。\n如何学会处理人际关系？家长要放手，让娃多参加活动（例如，体育运动），多碰壁。",
+     "guid": "http://www.newsmth.net/nForum/article/Liyidaiwa/20185",
+     "link": "https://www.newsmth.net/nForum/article/Liyidaiwa/20185",
+     "pub_date": "Tue, 10 Nov 2026 00:42:00 +0000",
+     "title": "对带娃的劝告",
+     "ts": 1794271320
+    },
     {
      "author": "chonggsl",
      "body": "离婚后和儿子相处了五年\n也有过几次特别激烈的冲突\n互不相让\n甚至斗殴\n但慢慢彼此都了解了多方的底线在哪里\n磨合也越来越好了\n儿子的思维方式仍然是我心里的结\n他属于神经系统能量低、易焦虑、敏感型宝宝\n所以容易着急、容易攻击人\n一旦有这个苗头\n就冷处理\n离他远一点\n让他安静一下\n等他恢复了\n他又成了那个世界上我最爱最牵挂最可爱的人\n都说一个人是\n先天基因+后天脑模型的训练\n我总觉得要训练我儿子的大脑\n难度极高\n也许我尚未掌握苏格拉底产婆术\n也许是他拒绝被迭代和优化\n总之\n困难重重啊\n- 来自 水木社区APP v3.5.7",
@@ -7266,18 +7275,9 @@
      "pub_date": "Fri, 09 Oct 2026 13:27:25 +0000",
      "title": "2026.10.9",
      "ts": 1791552445
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n由于 sgxlx 在 Liyidaiwa 版的 干扰版面讨论秩序 行为，\n被暂时取消在本版的发文权力 7 天。\n水木站务组值班站务：cococi\nFri Oct  9 13:46:40 2026",
-     "guid": "http://www.newsmth.net/nForum/article/Liyidaiwa/19121",
-     "link": "https://www.newsmth.net/nForum/article/Liyidaiwa/19121",
-     "pub_date": "Fri, 09 Oct 2026 05:46:40 +0000",
-     "title": "sgxlx被取消在Liyidaiwa版的发文权限",
-     "ts": 1791524800
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 21:15:18 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:47:50 GMT"
   },
   "love": {
    "items": [
@@ -7822,7 +7822,7 @@
      "ts": 1791591942
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 14:48:13 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:43:50 GMT"
   },
   "memory": {
    "items": [
@@ -8367,7 +8367,7 @@
      "ts": 1793318442
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 11:21:22 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:08:22 GMT"
   },
   "motorbike": {
    "items": [
@@ -8633,7 +8633,7 @@
      "ts": 1789092297
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 23:46:05 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:41:26 GMT"
   },
   "motss": {
    "items": [
@@ -8836,10 +8836,190 @@
      "ts": 1769908538
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 23:12:22 GMT"
+   "last_modified": "Mon, 09 Nov 2026 23:11:01 GMT"
   },
   "newexpress": {
    "items": [
+    {
+     "author": "WilliamWW",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746560",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746560",
+     "pub_date": "Tue, 10 Nov 2026 01:21:46 +0000",
+     "title": "【威廉暴论】美国中期之后，老中如何输",
+     "ts": 1794273706
+    },
+    {
+     "author": "lvxiaoming",
+     "body": "看到循环寿命只有400到700次\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746533",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746533",
+     "pub_date": "Tue, 10 Nov 2026 01:19:46 +0000",
+     "title": "电驴的电池只能用一两年？",
+     "ts": 1794273586
+    },
+    {
+     "author": "zoom4",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746526",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746526",
+     "pub_date": "Tue, 10 Nov 2026 01:19:00 +0000",
+     "title": "好奇我们是怎么对待地下党的？",
+     "ts": 1794273540
+    },
+    {
+     "author": "charkor",
+     "body": "其他城市，要么 只有美景（三亚），要么只有就业（上海），要么....\n只有北京，既有  美景、美食、工作机会、医疗条件、教育资源、文化，基本上都齐全了。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746506",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746506",
+     "pub_date": "Tue, 10 Nov 2026 01:16:12 +0000",
+     "title": "中国最美好的城市——北京",
+     "ts": 1794273372
+    },
+    {
+     "author": "webee",
+     "body": "结尾还diss下粗粮码农英语不太好\n#发自zSMTH@V2324A",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746470",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746470",
+     "pub_date": "Tue, 10 Nov 2026 01:12:54 +0000",
+     "title": "b站有逆向粗粮手机反诈模块",
+     "ts": 1794273174
+    },
+    {
+     "author": "sko",
+     "body": "换服务器了吗？",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746463",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746463",
+     "pub_date": "Tue, 10 Nov 2026 01:12:25 +0000",
+     "title": "水木竟然如此丝滑？",
+     "ts": 1794273145
+    },
+    {
+     "author": "sniperGG",
+     "body": "这次真快要结束了吧\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746376",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746376",
+     "pub_date": "Tue, 10 Nov 2026 01:04:10 +0000",
+     "title": "美伊再次和谈，原油暴跌",
+     "ts": 1794272650
+    },
+    {
+     "author": "AmazingDog",
+     "body": "是不是版上地青没吃过好的？啊？",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746348",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746348",
+     "pub_date": "Tue, 10 Nov 2026 01:01:53 +0000",
+     "title": "我不明白，为什么贵站名媛征婚，总是喜欢晒饭菜呢？",
+     "ts": 1794272513
+    },
+    {
+     "author": "jzgk",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746341",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746341",
+     "pub_date": "Tue, 10 Nov 2026 01:01:18 +0000",
+     "title": "解放战争摧枯拉朽的根本原因是啥",
+     "ts": 1794272478
+    },
+    {
+     "author": "Fangio",
+     "body": "本田汽车10日宣布，将在美俄亥俄州原有工厂附近新建一座整车厂，也是其在美的第八座工厂，同时改造现有工厂生产线，预计总投资30亿美元，2029年投产。新工厂专门生产不插电混动车，年产能24万辆，后续如果市场变化，也能生产纯电动车。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746339",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746339",
+     "pub_date": "Tue, 10 Nov 2026 01:00:58 +0000",
+     "title": "此处不留爷，自有留爷处！",
+     "ts": 1794272458
+    },
+    {
+     "author": "heema",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746325",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746325",
+     "pub_date": "Tue, 10 Nov 2026 00:59:10 +0000",
+     "title": "国师们。皇帝知道岳飞是被冤枉的吗",
+     "ts": 1794272350
+    },
+    {
+     "author": "sialons",
+     "body": "本科预科为院校专业组最低调档线下80分，民族班40分。西安交大2025年预科班章程：\"最低不低于一本线\"。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746316",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746316",
+     "pub_date": "Tue, 10 Nov 2026 00:58:27 +0000",
+     "title": "少岷预科班每年录取近6万人，可降80分录取",
+     "ts": 1794272307
+    },
+    {
+     "author": "lugc",
+     "body": "给川的电话里说，‘我完全不知道她是间谍’\n还是这句的翻译有问题",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746296",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746296",
+     "pub_date": "Tue, 10 Nov 2026 00:56:41 +0000",
+     "title": "皮衣黄承认间谍了？",
+     "ts": 1794272201
+    },
+    {
+     "author": "chengyz2013",
+     "body": "特地为了滇池 改吃淡水\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746276",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746276",
+     "pub_date": "Tue, 10 Nov 2026 00:55:08 +0000",
+     "title": "很多地青不知道 滇池出现海鸥也就40年的事",
+     "ts": 1794272108
+    },
+    {
+     "author": "jzgk",
+     "body": "展开是14.7英寸，折上很便携啊",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746273",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746273",
+     "pub_date": "Tue, 10 Nov 2026 00:54:33 +0000",
+     "title": "华为玩的花啊，好像出了个folds笔记本",
+     "ts": 1794272073
+    },
+    {
+     "author": "pancake",
+     "body": "一个壁挂空调，不靠外墙，冷凝水做了一个25mm的UPVC管，接到卫生间地漏。\n为了防反味，在中间做了一个S弯，空调厂家的师傅说这里容易堵死，说空调里面有灰尘毛絮，会形成空调鼻涕，一两年会把S弯堵死。\n不知道是不是会这样啊？需要大费周章的在S弯底部加个清扫口吗？",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746297",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746297",
+     "pub_date": "Tue, 10 Nov 2026 00:54:32 +0000",
+     "title": "空调冷凝水排水管做S弯会堵吗？",
+     "ts": 1794272072
+    },
+    {
+     "author": "jiangyounan",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746266",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746266",
+     "pub_date": "Tue, 10 Nov 2026 00:54:12 +0000",
+     "title": "这帮知识分子不把人与人的关系挑拨至绝境死不罢休",
+     "ts": 1794272052
+    },
+    {
+     "author": "Missing7",
+     "body": "刚才在床上给他换了尿包，换下来的尿包扔地上，换好后我抱着他蹲下来让他捡地上的尿包，他捡起来了，然后我抱着他走到外面的垃圾桶边上，让他扔进去，他松开手扔进去了哈哈。。。\n小迪庆今天满365天，阳历一周岁~",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746264",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746264",
+     "pub_date": "Tue, 10 Nov 2026 00:54:09 +0000",
+     "title": "小迪庆又长大了",
+     "ts": 1794272049
+    },
+    {
+     "author": "insomniaypf",
+     "body": "纳斯达克和标普的K线是纯正的高层需要的慢牛.A股实现不了慢牛很大可能是A股的码农和金融技术团队问题,如果外包给正规团队,完全可以实现慢牛.",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746256",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746256",
+     "pub_date": "Tue, 10 Nov 2026 00:53:16 +0000",
+     "title": "zjh能不能把整个A股外包给华尔街团队??",
+     "ts": 1794271996
+    },
+    {
+     "author": "Tianyake99",
+     "body": "小米天气也拉了？\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47746253",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47746253",
+     "pub_date": "Tue, 10 Nov 2026 00:53:02 +0000",
+     "title": "本老的红米手机显示正在下雪",
+     "ts": 1794271982
+    },
     {
      "author": "fatcat",
      "body": "好像是餐饮？",
@@ -9199,189 +9379,9 @@
      "pub_date": "Mon, 09 Nov 2026 05:40:12 +0000",
      "title": "擦！我向豆包求证吹都biu~biu~biu~的事",
      "ts": 1794202812
-    },
-    {
-     "author": "jzgk",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739045",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739045",
-     "pub_date": "Sun, 08 Nov 2026 21:36:26 +0000",
-     "title": "为啥吃个几百的自助都舍不得，股市随便几万波澜不惊",
-     "ts": 1794173786
-    },
-    {
-     "author": "jzgk",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739040",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739040",
-     "pub_date": "Sun, 08 Nov 2026 21:25:03 +0000",
-     "title": "一个青椒死了高知共情，那些打工人为啥不被高知共情呢",
-     "ts": 1794173103
-    },
-    {
-     "author": "iccv2009",
-     "body": "巴西三叉戟横扫亚冠，把棒子的冠军队按在地上揍。\n广州冇赢够！\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739027",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739027",
-     "pub_date": "Sun, 08 Nov 2026 19:31:51 +0000",
-     "title": "想念恒大了",
-     "ts": 1794166311
-    },
-    {
-     "author": "dropstar",
-     "body": "？\n发自「今日水木 on iPhone 14 Plus」",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739024",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739024",
-     "pub_date": "Sun, 08 Nov 2026 18:53:07 +0000",
-     "title": "广州中轴线拆迁？",
-     "ts": 1794163987
-    },
-    {
-     "author": "eyesclose",
-     "body": "发射时，后背腰子位置发酸，怎么办",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739022",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739022",
-     "pub_date": "Sun, 08 Nov 2026 18:19:56 +0000",
-     "title": "腰子后侧酸",
-     "ts": 1794161996
-    },
-    {
-     "author": "wang99168",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739021",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739021",
-     "pub_date": "Sun, 08 Nov 2026 17:57:10 +0000",
-     "title": "张子强为什么在香港没人敢动他啊？得罪那么多富豪",
-     "ts": 1794160630
-    },
-    {
-     "author": "Ceraphim",
-     "body": "哈哈哈，小伙子从小就知道哪个行业利润高，而且做这个还能卡BUG，父母不敢打！笑死\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739012",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739012",
-     "pub_date": "Sun, 08 Nov 2026 17:34:24 +0000",
-     "title": "千万不能打，一哭起来更像了！",
-     "ts": 1794159264
-    },
-    {
-     "author": "nighthawk",
-     "body": "bd上也有折毛词条\n这能力创作小说没问题啊",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47739011",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47739011",
-     "pub_date": "Sun, 08 Nov 2026 17:30:59 +0000",
-     "title": "这事真的？",
-     "ts": 1794159059
-    },
-    {
-     "author": "sortie",
-     "body": "最上方的黄色气泡聊天内容被遮挡三分之二，照样识别。\n更别说这手写体了：\n亲爱的小芳，你好！\n时光飞逝，岁月荏苒，转眼间我们已经结婚65年了，我还记得，25岁那年我们结婚了，第二年有了孩子，坐在院子大树下，一家三口很开心。40岁那年我失业了，你用温柔坚定的声音告诉我不要灰心，给我鼓励，我重拾信心找到了一份更好的工作。70岁那年我不小心摔伤了腿，你推着轮椅，到院子大树下，一起看星星，你说，这辈子有我很幸福！现在记性差了，常常忘记回家的路，但是不会忘记到院子大树的路，眼睛花了，看不清前方的家，但一眼就能认出你，脑海里清晰记得当初第一次见你扎小辫子的样子，纵使年华已去，但此生有你已无憾。\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738964",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738964",
-     "pub_date": "Sun, 08 Nov 2026 16:09:05 +0000",
-     "title": "美国大豆包的识字能力超出天际了",
-     "ts": 1794154145
-    },
-    {
-     "author": "dropstar",
-     "body": "？\n发自「今日水木 on iPhone 14 Plus」",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738937",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738937",
-     "pub_date": "Sun, 08 Nov 2026 15:50:46 +0000",
-     "title": "吉林男篮主教练，清华数学系的？",
-     "ts": 1794153046
-    },
-    {
-     "author": "goodmansy",
-     "body": "不禁陷入了沉思",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738912",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738912",
-     "pub_date": "Sun, 08 Nov 2026 15:32:57 +0000",
-     "title": "Ai会不会用来拍那种电影？",
-     "ts": 1794151977
-    },
-    {
-     "author": "Ceraphim",
-     "body": "在驴D的带领下，各地民众纷纷叫停当地的数据中心建设项目，基层ZF也纷纷表示暂停审批新项目，这是要把AI往死里整？\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738848",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738848",
-     "pub_date": "Sun, 08 Nov 2026 15:16:29 +0000",
-     "title": "数据中心的显卡/芯片可是早早就锁定产能下了定的，西大这下纷纷",
-     "ts": 1794150989
-    },
-    {
-     "author": "wuzhishan",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738836",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738836",
-     "pub_date": "Sun, 08 Nov 2026 15:11:13 +0000",
-     "title": "山西太原一建筑着火 5人死亡",
-     "ts": 1794150673
-    },
-    {
-     "author": "eagertofly",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738818",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738818",
-     "pub_date": "Sun, 08 Nov 2026 15:08:16 +0000",
-     "title": "朗子收过路费的话输家是谁",
-     "ts": 1794150496
-    },
-    {
-     "author": "fatcat",
-     "body": "奥巴马前总统发表重要讲话强调，坚持发展与安全并重，推动人工智能更好服务人民、服务就业、服务民主治理\n会议明确提出：“数据是用来算的，不是用来炒的”\n路边社华盛顿11月8日电  全国人工智能工作会议11月8日在华盛顿召开。会议深入学习贯彻民主党关于科技创新和数字经济发展的重要主张，全面分析当前美国人工智能发展面临的新形势、新挑战，研究部署下一阶段人工智能健康有序发展重点工作。美国前总统巴拉克·奥巴马出席会议并发表重要讲话。\n会议指出，人工智能是引领新一轮科技革命和产业变革的战略性技术，是推动经济高质量发展、培育新质生产力、提升国家综合竞争力的重要力量。近年来，美国人工智能技术创新不断取得突破，基础模型能力持续提升，算力基础设施加快建设，产业应用场景不断拓展，为经济社会发展注入了新的动力。同时也要清醒看到，人工智能领域存在资本无序扩张、算力资源过度集中、数据权益保障不足、部分企业盲目追求模型规模、技术发展与社会治理脱节等突出问题，必须引起高度重视，采取有力措施加以解决。\n奥巴马在讲话中强调，发展人工智能，必须坚持以人民为中心的发展思想，坚持科技向善、创新驱动、安全可控，坚持有效市场和有为政府相结合，统筹发展与安全、效率与公平、创新与监管，推动人工智能发展成果更多更公平惠及全体美国人民。\n奥巴马指出，人工智能发展的根本目的，是增进人民福祉，而不是制造新的财富分配不公；是提高社会生产效率，而不是单纯推高科技企业估值；是增强国家创新能力，而不是让少数科技巨头垄断数据、算力和技术进步带来的全部收益。\n奥巴马强调，必须牢牢把握人工智能发展的正确方向，深刻认识数据和算力的基础性、公共性和战略性作用，牢固树立“数据是用来算的，不是用来炒的”发展理念，坚决遏制人工智能领域脱离实际需求的投机炒作行为。\n会议认为，当前部分地区和企业存在重建设轻应用、重投入轻产出、重模型参数轻实际效果等倾向。一些企业将算力建设异化为资本运作工具，将模型训练异化为融资手段，将技术创新异化为估值竞赛，偏离了人工智能服务实体经济、服务社会发展的根本要求。\n会议强调，要坚持因地制宜、分类施策，合理确定人工智能基础设施建设规模和布局，防止脱离实际需求盲目上马大型数据中心，防止以人工智能名义变相圈占土地、囤积能源和套取公共补贴，严禁利用虚假技术突破、夸大模型性能等方式误导投资者和社会公众。\n要建立健全算力资源供需监测和风险预警机制，加强对大型数据中心建设的统筹规划，提高现有算力资源利用效率，促进算力资源向科研创新、中小企业和公共服务领域合理流动。\n会议指出，人工智能基础设施建设必须坚持绿色低碳发展，科学评估电力、水资源和土地消耗，合理划分建设成本与社会成本，防止出现企业投资获利、社区承担电价上涨和资源消耗的局面。要压实大型科技企业和数据中心运营商责任，不得将人工智能产业发展的成本不合理转嫁给普通家庭和中小企业。…",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738812",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738812",
-     "pub_date": "Sun, 08 Nov 2026 15:06:28 +0000",
-     "title": "fake news：全国人工智能工作会议在华盛顿召开",
-     "ts": 1794150388
-    },
-    {
-     "author": "Howxi",
-     "body": "写 小姨多鹤的，也有一些作品。\n蒋方舟这些有啥？没懂\n韩寒也没看到啥。",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738799",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738799",
-     "pub_date": "Sun, 08 Nov 2026 15:01:48 +0000",
-     "title": "张爱玲好歹有几句流传下来",
-     "ts": 1794150108
-    },
-    {
-     "author": "HLFish",
-     "body": "南京今天大风降温，出去遛狗时看到一对夫妻，大概三十多岁，躲在银行自助服务区角落，身上盖着衣服在休息，可能没赚到钱，连小旅店也住不起了。\n走了没多远，又遇到一中年妇女，说她和家里人吵架离家出走了，让我给她点钱买吃的，我说旁边米线店还没关门，我请她吃米线，她说太麻烦了，她赶时间，走了。",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738793",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738793",
-     "pub_date": "Sun, 08 Nov 2026 15:01:07 +0000",
-     "title": "街边银行的自助服务区住了两个人",
-     "ts": 1794150067
-    },
-    {
-     "author": "imul",
-     "body": "简直呵呵了\n南方海景房10w加都卖不掉，一些3,4线跌到3,4k都卖不出去\n房产税的核心是地价，你房子都卖成建筑成本了，还有个der的地价可言\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738775",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738775",
-     "pub_date": "Sun, 08 Nov 2026 14:55:44 +0000",
-     "title": "一群人还在琢磨收房产税",
-     "ts": 1794149744
-    },
-    {
-     "author": "flaredll",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738773",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738773",
-     "pub_date": "Sun, 08 Nov 2026 14:54:35 +0000",
-     "title": "游民vs流浪汉",
-     "ts": 1794149675
-    },
-    {
-     "author": "fatcat",
-     "body": "报纸，那么多字，错误已经非常少了",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47738763",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47738763",
-     "pub_date": "Sun, 08 Nov 2026 14:50:57 +0000",
-     "title": "感觉ChatGPT 生图能力又上了一个新台阶",
-     "ts": 1794149457
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:53:39 GMT"
+   "last_modified": "Tue, 10 Nov 2026 01:21:48 GMT"
   },
   "older": {
    "items": [
@@ -9837,64 +9837,44 @@
   "pictures": {
    "items": [
     {
-     "author": "二手房交流",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/OurEstate_3530084.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/OurEstate/3530084",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/OurEstate_3530084.jpg?v=\" alt=\"\" /><br/>我们的M2总量是美欧日三者M2总和",
-     "link": "https://www.newsmth.net/nForum/article/OurEstate/3530084",
-     "pub_date": "Mon, 09 Nov 2026 16:01:51 +0000",
-     "title": "[二手房交流] 我们的M2总量是美欧日三者M2总和",
-     "ts": 1794240111
+     "author": "高考·大学",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/GaoKao_684606.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/GaoKao/684606",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/GaoKao_684606.jpg?v=\" alt=\"\" /><br/>我的乖乖，研究生报考规模连续三年回落",
+     "link": "https://www.newsmth.net/nForum/article/GaoKao/684606",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[高考·大学] 我的乖乖，研究生报考规模连续三年回落",
+     "ts": 1794274094
     },
     {
-     "author": "服饰搭配",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/FashionShow_561536.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/FashionShow/561536",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/FashionShow_561536.jpg?v=\" alt=\"\" /><br/>与女同事一起出差",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561536",
-     "pub_date": "Mon, 09 Nov 2026 16:01:51 +0000",
-     "title": "[服饰搭配] 与女同事一起出差",
-     "ts": 1794240111
+     "author": "怀旧文化",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/Nostalgia_34303.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/Nostalgia/34303",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Nostalgia_34303.jpg?v=\" alt=\"\" /><br/>看到这个，能引起地老们回忆吧？",
+     "link": "https://www.newsmth.net/nForum/article/Nostalgia/34303",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[怀旧文化] 看到这个，能引起地老们回忆吧？",
+     "ts": 1794274094
     },
     {
-     "author": "地理",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/Geography_695988.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/Geography/695988",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Geography_695988.jpg?v=\" alt=\"\" /><br/>美国要重新调查赵长鹏案件",
-     "link": "https://www.newsmth.net/nForum/article/Geography/695988",
-     "pub_date": "Mon, 09 Nov 2026 16:01:51 +0000",
-     "title": "[地理] 美国要重新调查赵长鹏案件",
-     "ts": 1794240111
+     "author": "家庭生活",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767775290.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/FamilyLife/1767775290",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767775290.jpg?v=\" alt=\"\" /><br/>男人生理上喜欢上一个女人",
+     "link": "https://www.newsmth.net/nForum/article/FamilyLife/1767775290",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[家庭生活] 男人生理上喜欢上一个女人",
+     "ts": 1794274094
     },
     {
-     "author": "汽车世界",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945341508.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/AutoWorld/1945341508",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945341508.jpg?v=\" alt=\"\" /><br/>全新亚洲龙只要13.38-19.18w了",
-     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945341508",
-     "pub_date": "Sat, 07 Nov 2026 12:53:25 +0000",
-     "title": "[汽车世界] 全新亚洲龙只要13.38-19.18w了",
-     "ts": 1794056005
-    },
-    {
-     "author": "青年教师",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/QingJiao_1036660.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/QingJiao/1036660",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/QingJiao_1036660.jpg?v=\" alt=\"\" /><br/>zz 青椒之死：考核",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036660",
-     "pub_date": "Mon, 09 Nov 2026 06:02:36 +0000",
-     "title": "[青年教师] zz 青椒之死：考核",
-     "ts": 1794204156
-    },
-    {
-     "author": "鹊桥·征男友女友",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/PieLove_2956481.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/PieLove/2956481",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/PieLove_2956481.jpg?v=\" alt=\"\" /><br/>代76征婚男征女",
-     "link": "https://www.newsmth.net/nForum/article/PieLove/2956481",
-     "pub_date": "Mon, 09 Nov 2026 06:02:36 +0000",
-     "title": "[鹊桥·征男友女友] 代76征婚男征女",
-     "ts": 1794204156
+     "author": "儿童教育",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/ChildEducation_2595778.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/ChildEducation/2595778",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/ChildEducation_2595778.jpg?v=\" alt=\"\" /><br/>五年级数学考80多分",
+     "link": "https://www.newsmth.net/nForum/article/ChildEducation/2595778",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[儿童教育] 五年级数学考80多分",
+     "ts": 1794274094
     },
     {
      "author": "似水流年",
@@ -9907,17 +9887,37 @@
      "ts": 1794204156
     },
     {
-     "author": "股市",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/Stock_11286430.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/Stock/11286430",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Stock_11286430.jpg?v=\" alt=\"\" /><br/>分析一个半导体设备+材料核心供应商-------万业企业",
-     "link": "https://www.newsmth.net/nForum/article/Stock/11286430",
-     "pub_date": "Mon, 09 Nov 2026 06:02:36 +0000",
-     "title": "[股市] 分析一个半导体设备+材料核心供应商-------万业企业",
-     "ts": 1794204156
+     "author": "新软件介绍",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/NewSoftware_295589.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/NewSoftware/295589",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/NewSoftware_295589.jpg?v=\" alt=\"\" /><br/>水木拾光 最新水木客户端",
+     "link": "https://www.newsmth.net/nForum/article/NewSoftware/295589",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[新软件介绍] 水木拾光 最新水木客户端",
+     "ts": 1794274094
+    },
+    {
+     "author": "数码单反",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/DSLR_808771104.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/DSLR/808771104",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/DSLR_808771104.jpg?v=\" alt=\"\" /><br/>上海街拍",
+     "link": "https://www.newsmth.net/nForum/article/DSLR/808771104",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[数码单反] 上海街拍",
+     "ts": 1794274094
+    },
+    {
+     "author": "人工智能",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/AI_97277.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/AI/97277",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AI_97277.jpg?v=\" alt=\"\" /><br/>我用chatgpt 手搓了两个水木客户端",
+     "link": "https://www.newsmth.net/nForum/article/AI/97277",
+     "pub_date": "Tue, 10 Nov 2026 01:28:14 +0000",
+     "title": "[人工智能] 我用chatgpt 手搓了两个水木客户端",
+     "ts": 1794274094
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 16:06:49 GMT"
+   "last_modified": "Tue, 10 Nov 2026 01:33:13 GMT"
   },
   "pondoflotus": {
    "items": [
@@ -10138,7 +10138,7 @@
      "ts": 1756221503
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 05:33:09 GMT"
+   "last_modified": "Mon, 09 Nov 2026 22:37:46 GMT"
   },
   "pregnancy": {
    "items": [
@@ -10354,6 +10354,15 @@
   },
   "qingjiao": {
    "items": [
+    {
+     "author": "pkupctner",
+     "body": "如果你只会资源型科研，那你就不应该做科研。钉死资源上限，自然就能改变生态。",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037117",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037117",
+     "pub_date": "Tue, 10 Nov 2026 00:16:34 +0000",
+     "title": "现在应该做的就是终结恐龙时代",
+     "ts": 1794269794
+    },
     {
      "author": "yzjba",
      "body": "最近好几个巴铁的申请人套词",
@@ -10884,21 +10893,192 @@
      "pub_date": "Thu, 05 Nov 2026 06:24:00 +0000",
      "title": "从学院引进的博士这块感觉不到进步",
      "ts": 1793859840
-    },
-    {
-     "author": "popcorners",
-     "body": "现在的核心矛盾，就是高校提升层次，看不上基层教师了。\n但基层教师是旧体系的，没法裁掉。加上领导又抠门，不想掏钱补偿。\n现在闹大了，不如酣畅淋漓的摊牌，谈个价格，把基层教师裁掉，腾笼换鸟，换年轻力强的新人来。",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036253",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036253",
-     "pub_date": "Thu, 05 Nov 2026 05:30:59 +0000",
-     "title": "高校需要一场正大光明的裁员，把旧体系的基层教师给点补偿遣散",
-     "ts": 1793856659
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:41:03 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:16:34 GMT"
   },
   "shida": {
    "items": [
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n小学成绩一直是班上中上。\n五年级很叛逆。\n六年级好一些。\n七年级没有之前叛逆。道理能听进去，认可父母说的（主要是妈妈管），但是执行不了。到执行层面就各种拖沓。不想。\n每天6点50起床，洗漱吃饭，去上学。\n晚自习后8点20到家，作业基本上不会带回家。吃点东西，磨蹭一下，读下英语。9点开始洗漱。9点半睡觉。每天洗澡时间都特别长。说了也改不了。\n学校里玩的时间比较多，早读前，所有课间，午饭后晚饭后晚自习做完作业后。所以小孩虽然觉得比较累，学校里还是挺愉快。\n因为在家太拖沓，所以周末也就完成学校作业。连学校的改错和查漏补缺都没有好好做。家里额外做的只有读点英语背单词。\n初中第一次月考语文数学都在300多名（约950学生），英语600多。期中考试语数500多，英语700多。总分位次600多。\n英语并不太担心，主要问题是词汇量。\n现在问题最大的是语文的阅读理解、文言文以及数学。\n阅读理解：无论作业还是试卷，大片红色改错。\n文言文：一些比较浅显的怎么也错，或者是偏了。只能说比阅读理解好一丢丢。\n数学：最恼火。计算一塌糊涂，成绩波动可以在80多和120多之间波动。审题是一部分，看错/看漏/开括号忘变号/抄漏抄错数字or符号等等。稍微困难的题目没有思路且畏难情绪比较重。感觉基础知识掌握得也很一般。\n小孩也很希望取得好成绩，自强的心是很多的。但是对自己下不到狠心。也有种自己已经很努力了但是还是不行的不自信和自卑感。也有到处都是筛子都不想补的无力感。其实家长的角度，并没有很努力，拖沓，不专注效率不高，没有认真钻研的态度和达成目标的执着。\n现在头痛中。还请教大家作为家长该如何帮助她。感激不尽。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189294",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189294",
+     "pub_date": "Tue, 10 Nov 2026 00:41:01 +0000",
+     "title": "[ChildEducation] 七年级语数英全面翻车，怎么办",
+     "ts": 1794271261
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n虽然泡沫惊人，但就是不跌",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189293",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189293",
+     "pub_date": "Mon, 09 Nov 2026 23:41:00 +0000",
+     "title": "[Stock] 美股真牛逼，叫嚣做空美股的呢？",
+     "ts": 1794267660
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n这个趋势不会改变\n一些迪粉不要拿什么合资车当挡箭牌\n中国汽车不是只有笛子一个品牌。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189292",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189292",
+     "pub_date": "Mon, 09 Nov 2026 23:41:00 +0000",
+     "title": "[AutoWorld] 其他国产品牌会吃掉笛子国内的份额",
+     "ts": 1794267660
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n0.51 复制打开抖音，看看【我就是我（乾崑车主互关 置顶求赞）的作品】小艺又立功 # 鸿蒙智行 # 问界M5  https://v.douyin.com/4SWVgT0JrHE/ M@W.MW :6pm Duf:/ 05/21\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189291",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189291",
+     "pub_date": "Mon, 09 Nov 2026 21:41:01 +0000",
+     "title": "[AutoWorld] 天天说智驾这不行那不行，就问你这种侧后方来车，",
+     "ts": 1794260461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189290",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189290",
+     "pub_date": "Mon, 09 Nov 2026 19:41:01 +0000",
+     "title": "[OurEstate] 我们的M2总量是美欧日三者M2总和",
+     "ts": 1794253261
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n11月9日，快舟航天对外放出了一份极其长远的路线图。\n规划里面提到，在未来的三年里面，快舟一号甲、快舟十一号合计计划发射超50次。\n而到2027年，10吨级的固液混合火箭快舟十二号，以及20吨级的可回收液体火箭快舟六号双双首飞，同时，规划的80吨、140吨、甚至200到300吨级的液氧甲烷发动机也会全面铺开试车。\n未来三年快舟一号甲和快舟十一号要打超50次，平均下来就是一年将近17发\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189289",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189289",
+     "pub_date": "Mon, 09 Nov 2026 18:41:01 +0000",
+     "title": "[Aero] 科工:固体箭三年50次",
+     "ts": 1794249661
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189288",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189288",
+     "pub_date": "Mon, 09 Nov 2026 17:41:01 +0000",
+     "title": "[QingJiao] 青椒之死姊妹篇：XF之死（zz）",
+     "ts": 1794246061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n刚有人一句话点醒了我：有些人，是真的没吃过好的。\n想想也是。一个人如果从小没吃过几顿像样的饭，你跟他讨论食材新鲜、火候到位、营养搭配，确实有点强人所难。人家连肚子都没填饱，你还跟人家讲究米其林标准？对真正吃过好东西的人来说，尊重不是赠品，承诺不是奢侈品，边界更不是什么需要感恩戴德的特殊待遇。但对长期习惯情感匮乏的人来说，别人偶尔释放一点温柔，就可能被当成深情；给一点关注，就能理解成偏爱；不愿承诺却又不肯放手，竟然也能被包装成一种难以言说的灵魂羁绊。\n一个人如果连汤都没喝过，他看别人端着碗，第一反应当然是“你肯定是想抢”。他没法理解“我不想喝”这回事，因为在他的经验里，碗里那点东西就是全部的世界。你站在旁边说这汤不新鲜，他听见的不是“汤不新鲜”，而是“你喝不上”。这就是为什么我说这菜不新鲜，他们说你吃不起。在他们的认知系统里，没有人会主动拒绝一碗汤，只可能是没抢到。\n问题是，这个闭环有个前提：世界上只有一碗汤。可现实是，有人喝过正经的汤，知道什么叫火候、什么叫食材、所以他能平静地说“这汤不行。但连汤都没喝上的人听不了这个，你否定他的汤，等于否定他唯一的营养来源，等于否定他这些年靠这碗汤撑下来的全部意义。他当然要反击，而且反击的方式只能是：你肯定是想喝。\n一个真正喝过好汤的人，不会把“有人批评这碗汤”自动理解成“有人想抢这碗汤”，因为他知道汤不止一碗，好汤也不需要靠抢。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189287",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189287",
+     "pub_date": "Mon, 09 Nov 2026 17:41:01 +0000",
+     "title": "[Memory] 有些人，是真的没吃过好的",
+     "ts": 1794246061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n谢谢帮主\n【 在 aKong 的大作中提到: 】\n:  见者有份\n: --\n:\n: FROM 60.191.13.* [浙江–杭州 电信]\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189286",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189286",
+     "pub_date": "Mon, 09 Nov 2026 17:41:01 +0000",
+     "title": "[DCE.THU] 超帽发积分",
+     "ts": 1794246061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n哼！\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189285",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189285",
+     "pub_date": "Mon, 09 Nov 2026 17:41:01 +0000",
+     "title": "[Shuibuzhao] 哼",
+     "ts": 1794246061
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n据说很适合大体重",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189284",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189284",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[RunningLife] 361度泡沫这鞋怎么样？",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189283",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189283",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[METech] 福耀科技大学牛逼了，建立首条高校芯片生产线！",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n最近好几个巴铁的申请人套词",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189282",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189282",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[QingJiao] 有人带过巴铁的学生吗",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n这几年北京，他们不买房，也没有卵压力",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189281",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189281",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[OurEstate] 年轻同事大部分是河北人了",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n如果还是与俄国的话，基本不可能\n比如出名的是 夏尔西里。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189280",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189280",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[Geography] 不知不觉，与西边几个斯坦，就拿回了不少土地",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n关于我：\n坐标北京，女，生于1984年冬，净高169/体重120，白净娴雅，大方灵动。离异未育（过往双方都很好，具体可线下沟通，不必要胡乱猜测），有生育意愿，生育指标还可以，具体可双方沟通商量。\n经济独立无负担，家庭也没有任何压力和负担。应届统招一本，办公室朝九晚五工作，遗憾未能继续深造，所以一边努力工作、一边烟火居家。\n读过几本书，走过一些路，见过些许世面，有自己的独立思考，依然为人端正，温暖良善，内心单纯纯净，未被世界污染、未被世俗带偏，且越来越坚定纯粹。\n爱学习、坐得住、喜钻研，尤爱历史文化方面，对与历史文化相关的古建、古书古籍、艺术科技地理等也有兴趣，对一切积极美好的事物有好奇心和求知欲。\n感情上，慢热且长情，还有些后知后觉，不会一下子很热情积极，但会有很周到的礼仪，有些被动，需要在交流了解互动中慢慢看到诚意、感知同频、发现亮点、感受相吸.\n虽然经济基础很重要但绝对不是只靠说有多少经济实力能够吸引我靠近的，更想要基于爱情的人生伴侣，\n能够在精神和情感上产生羁绊、理解、共鸣，以爱为基础走进婚姻，珠联璧合，打怪升级，把家庭经营好。\n所以，谈不了很多感情，快餐感情不适合我。\n个性有古灵精怪的一面，但仅限于和非常亲近的亲人家人朋友之间。\n文字没有音容笑貌，隔着距离，也许可以在轻松放松的线下，像老朋友一般坐下来聊聊天，\n从一封信一餐饭开始，慢慢了解，慢慢靠近，慢慢认可和坚定，度过很多一起的时光，\n往后余生，相濡以沫、相互陪伴，年老时依然能够挽手散步，坐着摇椅慢慢聊，这是最浪漫的事。\n日常研究菜品美食，育儿养生运动，养花种菜，看书看剧看历史看文化，哼唱一些好听的入心的歌曲……\n其实也是喜欢交朋友的，但选择朋友和选择爱人一样也是有要求的，所以知心好友并不多，放入心里了的好朋友，会很珍惜朋友之情。\n关于你：\n你得是个好人（因为不论男女，首先得是个好人，宅心仁厚、文明礼貌、知书达理、言而有信），\n底蕴涵养兼备，为人温暖正派（硬性要求）。\n身体健康，相貌周正（略有颜控），干净舒朗，不嗜烟酒，言谈举止得体、健康。\n不排斥离异带娃，如您有小娃，我会更加欢喜，会用心抚养疼爱。\n不拘泥地域，最重要是精神同频——能够相知、理解、包容、懂得、珍惜。\n关于我们：\n地域婚育不设限，渴求认知同频，灵魂共鸣。\n愿相遇、并相惜，走进烟火日常，经营长期稳定的情感和家庭。\n往后余生，鹣鲽情深，夫唱妇随，有一个“坐着摇椅慢慢聊”的幸福而浪漫的长久陪伴。\n陪伴是最长情的告白。\n联系邮箱：3143928962@qq.com\n信如其人，欣赏我的男士、契合我的男士，知道如何来信，来信轻薄无状、不诚意者，邮件就不回复了。\n只愿意把时间花在喜欢的人和事上，为了热爱，愿意付出。\n愿有缘相遇、珍惜相遇，在这个快餐时代，能够有一些坚守。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189279",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189279",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[PieLove] 42岁女想要基于爱情的婚姻",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n下面三个女生哪个可以娶回家？\n左1： 98年公司前台，1.62 100斤左右，喜欢健生旅游烘培，家里独生女，父母都在老家县城，朋友圈全是旅游打卡照，要求男生有上进心疼人，会给女生安全感\n中间：94年培训机构舞蹈老师，1.68 90斤，身材比例好气质出众，朋友圈都是自己美照和表演照片，之前一直专注事业，现在年纪大了想稳定下来，找个踏实过日子的男生，不要求对方多金，真心对自己好就行\n右边：00年，培训机构英语，长相中等偏上，喜欢韩剧逛漫展，性格慢热，朋友圈学生作业和动漫手办和演唱会现场，男生1.80以上，干净清爽，懂得尊重女生，不要太粘人，婚后尊重各自的私密空间\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189278",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189278",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[Love] 这三个女孩选哪个",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n提前学，在学校里能轻松应对课堂知识，作业轻松完成，没啥订正，还有自己的玩乐时间，成绩始终班级前列，小孩信心满满。\n不提前学，现在考学分离，作业又多，校内作业来不及做得带回家补。\n这边错那边错，窟窿一大堆，作业多做不完，每天鸡飞狗跳的做到9点10点，放学经常被老师留下补课，导致大人焦虑、小孩都厌学。\n你怎么选？\n在孩子和家长的能力和可接受范围内，努力鸡到孩子的天花板，也许能获得更好的人生，我个人觉得是值得的。\n提前学不是课本拿出来拼命学、拼命刷题，学到百分百。语文英语大量阅读，大量听，数学开拓思维，实际上都是在提前学的范围内呀。\n正常跟着学，要学得扎实也得预习+复习，相当于至少学三遍，提前学一遍无非是多学一遍，花不了多少时间，后面作业做得快，少订正也省回来不少力气。\n不提前学，尤其是背默单词，背课文，背不下来，好长时间，孩子痛苦，大人也痛苦。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189277",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189277",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[ChildEducation] 为啥现在小学初中流行疯狂超前学，语数英都是",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189276",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189276",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[FashionShow] 人间尤物【美美哒！】",
+     "ts": 1794242461
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n大学生终于不一窝蜂去考研了！好现象。\n2026 年考研报名人数为 343 万。自 2023 年峰值后，报考规模连续三年回落，基本回到 2020 年前后的水平。2027年报考刚结束，报考人数还没具体公布，看考研机构给出的数据大概是330万，比2026又降了。\n从就业看 考研确实没啥意思了，还不如直接考公解决工作问题，因为就算研究生毕业，尤其文科研究生，也不好找工作的。",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189275",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189275",
+     "pub_date": "Mon, 09 Nov 2026 16:41:01 +0000",
+     "title": "[GaoKao] 我的乖乖，研究生报考规模连续三年回落",
+     "ts": 1794242461
+    },
     {
      "author": "deliver",
      "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\ncoolsailor ((无)) 于  (Sat Nov  7 10:43:52 2026)  在\n【每个省的招牌菜 v2】 的大作中提到:\n1. 北京 => 烤鸭\n2. 上海 => 无 (删掉了阳春面)\n3. 天津 => 包子\n4. 重庆 => 水煮鱼\n5. 香港 => 叉烧肉\n6. 黑龙江 => 锅包肉\n7. 吉林 => 锅包肉\n8. 辽宁 => 锅包肉\n9. 内蒙古 => 无\n10. 河北 => 驴肉火烧\n11. 山东 => 德州扒鸡（换掉v1煎饼卷大葱）\n12. 山西 => 刀削面\n13. 陕西 => 肉夹馍\n14. 甘肃 => 拉面\n15. 青海 => 无\n16. 宁夏 => 无\n17. 新疆 => 羊肉串\n18. 西藏 => 无\n19. 云南 => 过桥米线\n20. 四川 => 麻婆豆腐\n21. 贵州 => 无\n22. 广西 => 螺蛳粉\n23. 广东 => 白斩鸡\n24. 福建 => 佛跳墙\n25. 湖南 => 臭豆腐\n26. 湖北 => 鸭脖（换掉v1热干面）\n27. 江西 => 无\n28. 江苏 => 上汤狮子头（换掉v1的鸭血粉丝汤）\n29. 浙江 => 西湖醋鱼（换掉v1小笼包）\n30. 安徽 => 臭鱖鱼（换掉v1板面）\n31. 河南 => 无（删掉了烩面）\n32. 台湾 => 卤肉饭\n33. 海南 => 文昌鸡\n34. 澳门 => 无（删掉了葡式蛋挞）\n科不科学？\n--v2说明--\n欢迎具体的反驳。\n泛泛而谈，为怼而怼，企图站bigger制高点，都是老登行为，请自重。\n☆─────────────────────────────────────☆\nrandomh (gameover) 于  (Sat Nov  7 10:45:34 2026)  在\n【Re: 每个省的招牌菜】 的大作中提到:\n北京只能是羊肉\n上海啥阳春面啊，一碗阳春面是写上海的？不是大闸蟹，也得是罗宋汤啊\n☆─────────────────────────────────────☆\ncoolsailor ((无)) 于  (Sat Nov  7 10:47:55 2026)  在\n【Re: 每个省的招牌菜】 的大作中提到:\n阳春面不是上海，那上海无\n【 在 randomh 的大作中提到: 】\n: 北京只能是羊肉\n: 上海啥阳春面啊，一碗阳春面是写上海的？不是大闸蟹，也得是罗宋汤啊\n☆─────────────────────────────────────☆\ncoolsailor ((无)) 于  (Sat Nov  7 11:25:11 2026)  在\n【Re: 每个省的招牌菜】 的大作中提到:\n北京羊肉什么鬼\n- 来自 水木社区APP v3.5…",
@@ -11258,192 +11438,21 @@
      "pub_date": "Sun, 08 Nov 2026 15:41:08 +0000",
      "title": "[合集] [Aero] 中国空间站将迎来首位外籍航天员",
      "ts": 1794152468
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\npigpang (pigpang) 于  (Sat Nov  7 12:28:42 2026)  在\n【天通苑能买吗】 的大作中提到:\n不想在房子上花太多钱了 孩子随前夫落户远郊区后 想买个城里的小两居 或者便宜老破小 或者天通苑电梯大两居三居都行 回龙观三百到四百的次新 或者回龙观便宜老破小选哪个区域好呢？\n东西城海淀老破小估计没法买了 因为好像要房户一致吧（前夫就打算窝那个远郊区不出来 孩子也不能单独立户） 房户不一致还能上学的可能就是朝阳区还行。\n但是买朝阳区新房哪怕是小两居估计三百多万预算只能买个特别偏的孩子上村小。 买朝阳区老房我网上看了下望京的预算内的好破都 三百万买个这么破的心不甘情不愿的\n所以我也在想不行就买个回龙观天通苑啥的 网上看到天通苑选择还挺多的 有很多房子装修还可以 板楼外立面啥的也不会显得很旧 都是零几年的房子 怎么办呢 天通苑能买吗？\n- 来自 水木社区APP v3.5.7\n☆─────────────────────────────────────☆\npigpang (pigpang) 于  (Sat Nov  7 12:30:54 2026)  在\n【Re: 天通苑能买吗】 的大作中提到:\n买回龙观周边的次新 好像很多也是只能上村小\n买回龙观靠近城里一点的老破小可能学校能好一点？很纠结了 不知道买哪里好\n☆─────────────────────────────────────☆\nthuuht (thuuht) 于  (Sat Nov  7 12:38:04 2026)  在\n【Re: 天通苑能买吗】 的大作中提到:\n在市里租房，都能派到很不错的学校\n【 在 pigpang 的大作中提到: 】\n: 不想在房子上花太多钱了&amp;nbsp;孩子随前夫落户远郊区后&amp;nbsp;想买个城里的小两居&amp;nbsp;或者便宜老破小&amp;nbs ...\n☆─────────────────────────────────────☆\nthuuht (thuuht) 于  (Sat Nov  7 12:43:32 2026)  在\n【Re: 天通苑能买吗】 的大作中提到:\n有房的，只能通过自己的房子派位（学校可能很垃圾），反而不能通过租房来派位了，现在市里的小学，多好派，哈哈\n【 在 pigpang 的大作中提到: 】\n: 不想在房子上花太多钱了&amp;nbsp;孩子随前夫落户远郊区后&amp;nbsp;想买个城里的小两居&amp;nbsp;或者便宜老破小&amp;nbs ...\n☆─────────────────────────────────────☆\nNoFee (NoFee) 于  (Sat No…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189234",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189234",
-     "pub_date": "Sun, 08 Nov 2026 15:41:08 +0000",
-     "title": "[合集] [OurEstate] 天通苑能买吗",
-     "ts": 1794152468
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nmeirenai (中年惨男) 于  (Sat Nov  7 21:06:19 2026)  在\n【听说有个20e级别私募，满仓满融单吊某个股爆仓了】 的大作中提到:\n该私募基金大概在6月份到7月份买入一只光模块概念股，建仓成本200以上，三季报显示，加仓到了800多万股。总体持仓投入接近20亿元（包括了融资)。\n10月20日左右，该私募触发了第一次爆仓，大量的仓位被迫割肉，净值降到了1.2左右。之后，随着股价的继续下跌，不断触发连环爆仓，截止11月6日，该基金净值已经跌到了0.57元。十几亿的资产净值，跌到仅剩下2亿左右。\n该基金从1元净值做到4元多，用了三年时间，从4元跌到0.57元，仅仅只用了4个月的时间\n--发自 ismth(丝滑版)\n针对很多人说私募有25%个股持仓限制，豆包这么说：\n上海飒露紫私募（交易猿/全龙这家）是中基协正规登记备案的私募管理人\n全称：上海飒露紫私募基金管理有限公司\n- 在基金业协会完成登记，登记编号：P1061592，属于私募证券管理人，旗下产品也都备案；基金经理全龙具备基金从业资格 。\n- 产品是券商托管的私募基金，资金走托管账户，不是野盘、不是代客理财、不是场外非法配资。\n但要区分两件事：机构合规 ≠ 策略保守\n1. 公司资质是正规的：备案、托管、合格投资者门槛这些手续齐全；\n2. 投资策略非常激进\n- 这只属于老备案产品，当时合同写明允许高集中度、可使用券商融资杠杆，投资人签约前已经在合同上看到这个风险，在当时规则下合同本身合规；\n- 不是公司违规违法，而是策略风险极大：高单票集中度+融资杠杆，遇到个股大幅下跌直接击穿平仓线，造成巨大回撤。\n- 网传的1.7倍杠杆、重仓东山精密，属于产品投资策略的风险翻车，不是非法集资或者黑私募。\n☆─────────────────────────────────────☆\nMaxiu (Matthew) 于  (Sat Nov  7 21:30:05 2026)  在\n【Re: 听说有个20e级别私募，满仓满融单吊某个股爆仓了】 的大作中提到:\n能信吗？20e 是这个认知？这个风控？这个玩法？\n【 在 meirenai 的大作中提到: 】\n:\n: 该私募基金大概在6月份到7月份买入一只光模块概念股，建仓成本200以上，三季报显示，加仓到了800多万股。总体持仓投入接近20亿元（包括了融资)。\n: 10月20日左右，该私募触发了第一次爆仓，大量的仓位被迫割肉，净值降到了1.2左右。之后，随着股价的继续下跌，不断触发连环爆仓，截止11月6日，该基金净值已经跌到了0.57元。十几亿的资产净值，跌到仅剩下2亿左右。\n: 该基金从1元净值做到4元多，用了三年时间，从4元跌到0.…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189233",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189233",
-     "pub_date": "Sun, 08 Nov 2026 15:41:08 +0000",
-     "title": "[合集] [Stock] 听说有个20e级别私募，满仓满融单吊某个股爆仓",
-     "ts": 1794152468
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n☆─────────────────────────────────────☆\nwangsibo (Bourne) 于  (Thu Nov  5 14:14:00 2026)  在\n【合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低了】 的大作中提到:\n搞笑至极，看看那些喷张雪的，张雪给的工资，重庆大学毕业的都已经看不上了，为啥？\n☆─────────────────────────────────────☆\ntrumpchi (传奇) 于  (Thu Nov  5 14:22:51 2026)  在\n【Re: 合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低】 的大作中提到:\n因为重庆有个能开高工资的赛力斯作为参照物了\n不能只怪这些学生\n【 在 wangsibo 的大作中提到: 】\n: 搞笑至极，看看那些喷张雪的，张雪给的工资，重庆大学毕业的都已经看不上了，为啥？\n☆─────────────────────────────────────☆\nsenyu2 (森罗) 于  (Thu Nov  5 14:24:52 2026)  在\n【Re: 合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低】 的大作中提到:\n综合薪资十万，一个月到手五六千吧，985的强学科应该看的上？\n【 在 wangsibo 的大作中提到: 】\n: 搞笑至极，看看那些喷张雪的，张雪给的工资，重庆大学毕业的都已经看不上了，为啥？ ...\n☆─────────────────────────────────────☆\nwangsibo (Bourne) 于  (Thu Nov  5 14:40:45 2026)  在\n【Re: 合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低】 的大作中提到:\n所以国产汽车给的工资高，对吧？\n【 在 trumpchi 的大作中提到: 】\n: 因为重庆有个能开高工资的赛力斯作为参照物了\n: 不能只怪这些学生\n:\n☆─────────────────────────────────────☆\nwangsibo (Bourne) 于  (Thu Nov  5 14:41:21 2026)  在\n【Re: 合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低】 的大作中提到:\n所以国产汽车给的工资更高，是吧？\n【 在 senyu2 的大作中提到: 】\n: 综合薪资十万，一个月到手五六千吧，985的强学科应该看的上？\n☆─────────────────────────────────────☆\nimyourdad (大放厥词，烎) 于  (Thu Nov  5 14:50:56 2026)  在\n【Re: 合资车救不活了，你们也不怀念了，开始攻击国产汽车工资低】 的大作中提到:\n那是乱带节奏。\n【 在 w…",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189232",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189232",
-     "pub_date": "Sun, 08 Nov 2026 15:41:07 +0000",
-     "title": "[合集] [AutoWorld] 合资车救不活了，你们也不怀念了，开始攻击",
-     "ts": 1794152467
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n杀年猪了 没钱就来回宰华人，反正也没法反抗\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189225",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189225",
-     "pub_date": "Sun, 08 Nov 2026 07:41:02 +0000",
-     "title": "[Geography] 美国要重新调查赵长鹏案件",
-     "ts": 1794123662
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n我爸爸总是神叨叨的说谁谁谁良心不好，遭报应。\n我觉得有点玄乎。\n但我最近认识的两个人的遭遇让我心里打鼓。\n一个是高中女同学，在上海工作，她母亲乳腺癌父亲糖尿病陆续去世，\n去世时可能都不到60岁。她亲戚都指责她不孝不管父母，后来她四十岁\n也得乳腺癌了。\n还有一个是我表哥，也是经常被说不孝，不管父母，母亲脑梗全瘫，请了住家保姆，\n过年保姆回去几天，他没管，他八十岁的父亲除夕前一天去世，然后\n他五十岁的时候肝癌末期去世。他不抽烟不喝酒，整个家族也没有癌症病史。\n我表哥本身是很温暖很好的一人，不知道为啥后来变成这样。",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189224",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189224",
-     "pub_date": "Sun, 08 Nov 2026 01:41:01 +0000",
-     "title": "[FamilyLife] 你们相信因果吗？",
-     "ts": 1794102061
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189223",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189223",
-     "pub_date": "Sun, 08 Nov 2026 00:41:01 +0000",
-     "title": "[QingJiao] zz 青椒之死：考核",
-     "ts": 1794098461
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n不想在房子上花太多钱了 孩子随前夫落户远郊区后 想买个城里的小两居 或者便宜老破小 或者天通苑电梯大两居三居都行 回龙观三百到四百的次新 或者回龙观便宜老破小选哪个区域好呢？\n东西城海淀老破小估计没法买了 因为好像要房户一致吧（前夫就打算窝那个远郊区不出来 孩子也不能单独立户） 房户不一致还能上学的可能就是朝阳区还行。\n但是买朝阳区新房哪怕是小两居估计三百多万预算只能买个特别偏的孩子上村小。 买朝阳区老房我网上看了下望京的预算内的好破都 三百万买个这么破的心不甘情不愿的\n所以我也在想不行就买个回龙观天通苑啥的 网上看到天通苑选择还挺多的 有很多房子装修还可以 板楼外立面啥的也不会显得很旧 都是零几年的房子 怎么办呢 天通苑能买吗？\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189222",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189222",
-     "pub_date": "Sat, 07 Nov 2026 21:41:01 +0000",
-     "title": "[OurEstate] 天通苑能买吗",
-     "ts": 1794087661
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189221",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189221",
-     "pub_date": "Sat, 07 Nov 2026 19:41:01 +0000",
-     "title": "[TV] 谷雨有看的吗，张颂文新剧",
-     "ts": 1794080461
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n洁玉 AAA抗菌加大加厚渐变款长绒棉毛巾34*76cm 118g/条 【3条装】共有6套18条\n288元\nv:Y29vbA\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189220",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189220",
-     "pub_date": "Sat, 07 Nov 2026 19:41:01 +0000",
-     "title": "[SecondMarket] 转洁玉 AAA抗菌加大加厚长绒棉毛巾118g",
-     "ts": 1794080461
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189219",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189219",
-     "pub_date": "Sat, 07 Nov 2026 18:41:01 +0000",
-     "title": "[FashionShow] 好冷啊～",
-     "ts": 1794076861
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n搞笑至极，看看那些喷张雪的，张雪给的工资，重庆大学毕业的都已经看不上了，为啥？",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189218",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189218",
-     "pub_date": "Sat, 07 Nov 2026 18:41:01 +0000",
-     "title": "[AutoWorld] 合资车救不活了，你们也不怀念了，开始攻击国产汽",
-     "ts": 1794076861
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189217",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189217",
-     "pub_date": "Sat, 07 Nov 2026 17:41:01 +0000",
-     "title": "[FashionShow] 出来爬山啦",
-     "ts": 1794073261
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n该私募基金大概在6月份到7月份买入一只光模块概念股，建仓成本200以上，三季报显示，加仓到了800多万股。总体持仓投入接近20亿元（包括了融资)。\n10月20日左右，该私募触发了第一次爆仓，大量的仓位被迫割肉，净值降到了1.2左右。之后，随着股价的继续下跌，不断触发连环爆仓，截止11月6日，该基金净值已经跌到了0.57元。十几亿的资产净值，跌到仅剩下2亿左右。\n该基金从1元净值做到4元多，用了三年时间，从4元跌到0.57元，仅仅只用了4个月的时间\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189216",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189216",
-     "pub_date": "Sat, 07 Nov 2026 17:41:01 +0000",
-     "title": "[Stock] 听说有个20e级别私募，满仓满融单吊某个股爆仓了",
-     "ts": 1794073261
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n山西临汾一名副驾乘客行驶中用水果刀削苹果，遇急刹后水果刀因惯性直插心脏刺破右心室，经抢救奇迹生还。",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189215",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189215",
-     "pub_date": "Sat, 07 Nov 2026 17:41:01 +0000",
-     "title": "[AutoWorld] 车上吃苹果引发血案",
-     "ts": 1794073261
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n先申明一下，没有什么狗血的情节，都是我的真实经历，主要想聊聊暗流之下复杂的人性。回头看这段往事，本质是想借这段经历，做一场关于人性的探讨。\n第一幕：友谊的原点\n第一章：朝夕相处的异性友谊\n我18岁那年，有这样一个男生走进了我的生活。\n那时我刚从埋头读书的高中走出来，进入氛围自由的大学，很多事情都想试着体验。院里举办才艺比赛，我上台连唱带跳完成了表演。结束之后，同班的晨曦来找我，提出想约我一起自习。我的成绩还算不错，他说自己自律性不强，希望有人可以一起督促。\n看完我的表演，晨曦觉得我应该愿意尝试新鲜事物，他本身也喜欢玩乐，很怀念高中那种无忧无虑结伴玩耍的状态，希望和我成为朋友，单纯拥有一段轻松的友谊。\n高中时期我几乎没有交心的朋友，就连同性之间都很少，更不用提异性友谊。听晨曦描绘的相处模式，我心里有些好奇，也生出一点向往，便答应下来，试着和他做朋友。\n从那之后，我们常常结伴自习。不局限在本校，晨曦总想去别的高校，这座城市里不少大学的教学楼，我们都慢慢熟悉了。\n晨曦很爱吃，对吃食的口味有自己的要求。我们常常专门坐很久的公交，只为吃上一碗合意的面。我当时还不熟悉这座城市，而晨曦是本地人，跟着他到处闲逛，我觉得很有意思。\n饭后晨曦总会想出各式各样的消遣。一开始打算打球，打乒乓球的时候，我总是接不住球，满地捡球，晨曦无奈地笑；后来又教我打篮球，练习三步上篮，我依旧不太擅长。直到一起去K歌，才算是找到了我的主场，终于有一件事，我能比他做得更好。除此之外，我们也一起爬山，各类活动我都愿意跟着体验，好不容易挣脱高中的束缚，我也想多看看、多感受，很感谢晨曦带着我体验这么多。\n有一处反差很有意思：我们两个人里，晨曦反而比我更爱逛街。常常拉着我陪他挑选衣服、逛超市，还会问我衣服好不好看。我看着款式总觉得差别不大，心里只盼着快点结束，去下一个地方玩。\n有时候我不想陪晨曦逛超市，他会反复邀约。我偶尔会觉得有点困扰，心想逛超市明明是一件可以独自完成的事，为什么一定要有人陪着，感觉他比很多女孩子还要依赖同伴。\n我们结伴出行的时候，经常会被路人误会是情侣。路上碰到卖花的小贩，也会上前推销，每次我都觉得尴尬，会下意识拉开一点距离。我也常常在想：为什么大家会习惯性默认，单独出行的一男一女，就一定是恋人关系，这样的刻板印象，会不会有点局限。",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189214",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189214",
-     "pub_date": "Sat, 07 Nov 2026 17:41:01 +0000",
-     "title": "[Memory] 光与影之间：一段关于依恋、选择与人性的往事",
-     "ts": 1794073261
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n感觉物化组，\n大概率会，\n毕竟最后的一丝幻想，\n破灭了，\n华电又该，\n坐收渔翁之利了，\n守门员也会逆势再涨，\n哈哈哈",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189213",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189213",
-     "pub_date": "Sat, 07 Nov 2026 16:41:01 +0000",
-     "title": "[GaoKao] [讨论]27年高考，帝师交大录取线会低于640不？",
-     "ts": 1794069661
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n美滋滋\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189212",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189212",
-     "pub_date": "Sat, 07 Nov 2026 16:41:01 +0000",
-     "title": "[Botany] 立冬的菊",
-     "ts": 1794069661
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n有一个小两房，中介年前跟我说能卖40万，现在就说只能卖30出头了",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189211",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189211",
-     "pub_date": "Sat, 07 Nov 2026 16:41:01 +0000",
-     "title": "[Hunan] 长沙房子降这么快么？",
-     "ts": 1794069661
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n因为男女尺寸差别很大？其实母亲的胸也是每个人类的儿童期口粮，有什么好羞耻的或者需要遮掩的？",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189210",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189210",
-     "pub_date": "Sat, 07 Nov 2026 16:41:01 +0000",
-     "title": "[FashionShow] 好奇问一个问题，为什么服饰要把胸部遮掩起来？",
-     "ts": 1794069661
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n【 以下文字转载自 NewExpress 讨论区 】\nrt",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189209",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189209",
-     "pub_date": "Sat, 07 Nov 2026 16:41:01 +0000",
-     "title": "[XiYou] 西游记里面孙悟空第一个打不过的妖怪是谁？ (转载)",
-     "ts": 1794069661
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:41:07 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:41:01 GMT"
   },
   "shuibuzhao": {
    "items": [
+    {
+     "author": "Langlang0123",
+     "body": "哼！\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Shuibuzhao/59652",
+     "link": "https://www.newsmth.net/nForum/article/Shuibuzhao/59652",
+     "pub_date": "Mon, 09 Nov 2026 17:23:39 +0000",
+     "title": "哼",
+     "ts": 1794245019
+    },
     {
      "author": "urelive",
      "body": "昨夜雨疏风骤\n浓睡不消残酒\n滴\n…",
@@ -11751,7 +11760,7 @@
      "ts": 1788870868
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 02:04:51 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:37:09 GMT"
   },
   "single": {
    "items": [
@@ -11981,7 +11990,7 @@
      "ts": 1782861909
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 12:52:44 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:46:51 GMT"
   },
   "tooooold": {
    "items": [
@@ -12526,63 +12535,18 @@
      "ts": 1791685128
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 05:33:58 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:04:31 GMT"
   },
   "topten": {
    "items": [
     {
-     "author": "wrzwh",
-     "body": "88年出生，女，985硕。未婚未育，失业两年了。目前栖身于帝都自如合租房，老家也不敢回，之前工作的时候回家总被叨叨要嫁人，刚失业那会回家待了两个月，被叨叨失业加嫁人，受不了又回归帝都。手里有点存款，一百来万。能嫁的出去吗？不是非得在帝都",
-     "guid": "http://www.newsmth.net/nForum/article/FamilyLife/1767774270",
-     "link": "https://www.newsmth.net/nForum/article/FamilyLife/1767774270",
-     "pub_date": "Mon, 09 Nov 2026 05:38:06 +0000",
-     "title": "这种，如何能破局呢",
-     "ts": 1794202686
-    },
-    {
-     "author": "chery",
-     "body": "大学生终于不一窝蜂去考研了！好现象。\n2026 年考研报名人数为 343 万。自 2023 年峰值后，报考规模连续三年回落，基本回到 2020 年前后的水平。2027年报考刚结束，报考人数还没具体公布，看考研机构给出的数据大概是330万，比2026又降了。\n从就业看 考研确实没啥意思了，还不如直接考公解决工作问题，因为就算研究生毕业，尤其文科研究生，也不好找工作的。",
-     "guid": "http://www.newsmth.net/nForum/article/GaoKao/684606",
-     "link": "https://www.newsmth.net/nForum/article/GaoKao/684606",
-     "pub_date": "Sun, 08 Nov 2026 17:07:37 +0000",
-     "title": "我的乖乖，研究生报考规模连续三年回落",
-     "ts": 1794157657
-    },
-    {
-     "author": "amaoadiao",
-     "body": "下面三个女生哪个可以娶回家？\n左1： 98年公司前台，1.62 100斤左右，喜欢健生旅游烘培，家里独生女，父母都在老家县城，朋友圈全是旅游打卡照，要求男生有上进心疼人，会给女生安全感\n中间：94年培训机构舞蹈老师，1.68 90斤，身材比例好气质出众，朋友圈都是自己美照和表演照片，之前一直专注事业，现在年纪大了想稳定下来，找个踏实过日子的男生，不要求对方多金，真心对自己好就行\n右边：00年，培训机构英语，长相中等偏上，喜欢韩剧逛漫展，性格慢热，朋友圈学生作业和动漫手办和演唱会现场，男生1.80以上，干净清爽，懂得尊重女生，不要太粘人，婚后尊重各自的私密空间\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Love/6340778",
-     "link": "https://www.newsmth.net/nForum/article/Love/6340778",
-     "pub_date": "Mon, 09 Nov 2026 05:36:53 +0000",
-     "title": "这三个女孩选哪个",
-     "ts": 1794202613
-    },
-    {
-     "author": "jinshuo20",
-     "body": "提前学，在学校里能轻松应对课堂知识，作业轻松完成，没啥订正，还有自己的玩乐时间，成绩始终班级前列，小孩信心满满。\n不提前学，现在考学分离，作业又多，校内作业来不及做得带回家补。\n这边错那边错，窟窿一大堆，作业多做不完，每天鸡飞狗跳的做到9点10点，放学经常被老师留下补课，导致大人焦虑、小孩都厌学。\n你怎么选？\n在孩子和家长的能力和可接受范围内，努力鸡到孩子的天花板，也许能获得更好的人生，我个人觉得是值得的。\n提前学不是课本拿出来拼命学、拼命刷题，学到百分百。语文英语大量阅读，大量听，数学开拓思维，实际上都是在提前学的范围内呀。\n正常跟着学，要学得扎实也得预习+复习，相当于至少学三遍，提前学一遍无非是多学一遍，花不了多少时间，后面作业做得快，少订正也省回来不少力气。\n不提前学，尤其是背默单词，背课文，背不下来，好长时间，孩子痛苦，大人也痛苦。",
-     "guid": "http://www.newsmth.net/nForum/article/ChildEducation/2595587",
-     "link": "https://www.newsmth.net/nForum/article/ChildEducation/2595587",
-     "pub_date": "Sun, 08 Nov 2026 21:38:02 +0000",
-     "title": "为啥现在小学初中流行疯狂超前学，语数英都是？",
-     "ts": 1794173882
-    },
-    {
-     "author": "kadoyo",
-     "body": "请扪心自问一下，这学历那学历，哪一样教会了真才实学？",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036878",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036878",
-     "pub_date": "Mon, 09 Nov 2026 05:24:46 +0000",
-     "title": "爱迪生啥学历都没有，耽误成才了吗？",
-     "ts": 1794201886
-    },
-    {
-     "author": "lowa",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/ADAgent%5FTG/1346906",
-     "link": "https://www.newsmth.net/nForum/article/ADAgent%5FTG/1346906",
-     "pub_date": "Sun, 08 Nov 2026 16:45:38 +0000",
-     "title": "直降10元！超高性价比【源头乳山生蚝】又肥又鲜超满足！",
-     "ts": 1794156338
+     "author": "wenxin99",
+     "body": "关于我：\n坐标北京，女，生于1984年冬，净高169/体重120，白净娴雅，大方灵动。离异未育（过往双方都很好，具体可线下沟通，不必要胡乱猜测），有生育意愿，生育指标还可以，具体可双方沟通商量。\n经济独立无负担，家庭也没有任何压力和负担。应届统招一本，办公室朝九晚五工作，遗憾未能继续深造，所以一边努力工作、一边烟火居家。\n读过几本书，走过一些路，见过些许世面，有自己的独立思考，依然为人端正，温暖良善，内心单纯纯净，未被世界污染、未被世俗带偏，且越来越坚定纯粹。\n爱学习、坐得住、喜钻研，尤爱历史文化方面，对与历史文化相关的古建、古书古籍、艺术科技地理等也有兴趣，对一切积极美好的事物有好奇心和求知欲。\n感情上，慢热且长情，还有些后知后觉，不会一下子很热情积极，但会有很周到的礼仪，有些被动，需要在交流了解互动中慢慢看到诚意、感知同频、发现亮点、感受相吸.\n虽然经济基础很重要但绝对不是只靠说有多少经济实力能够吸引我靠近的，更想要基于爱情的人生伴侣，\n能够在精神和情感上产生羁绊、理解、共鸣，以爱为基础走进婚姻，珠联璧合，打怪升级，把家庭经营好。\n所以，谈不了很多感情，快餐感情不适合我。\n个性有古灵精怪的一面，但仅限于和非常亲近的亲人家人朋友之间。\n文字没有音容笑貌，隔着距离，也许可以在轻松放松的线下，像老朋友一般坐下来聊聊天，\n从一封信一餐饭开始，慢慢了解，慢慢靠近，慢慢认可和坚定，度过很多一起的时光，\n往后余生，相濡以沫、相互陪伴，年老时依然能够挽手散步，坐着摇椅慢慢聊，这是最浪漫的事。\n日常研究菜品美食，育儿养生运动，养花种菜，看书看剧看历史看文化，哼唱一些好听的入心的歌曲……\n其实也是喜欢交朋友的，但选择朋友和选择爱人一样也是有要求的，所以知心好友并不多，放入心里了的好朋友，会很珍惜朋友之情。\n关于你：\n你得是个好人（因为不论男女，首先得是个好人，宅心仁厚、文明礼貌、知书达理、言而有信），\n底蕴涵养兼备，为人温暖正派（硬性要求）。\n身体健康，相貌周正（略有颜控），干净舒朗，不嗜烟酒，言谈举止得体、健康。\n不排斥离异带娃，如您有小娃，我会更加欢喜，会用心抚养疼爱。\n不拘泥地域，最重要是精神同频——能够相知、理解、包容、懂得、珍惜。\n关于我们：\n地域婚育不设限，渴求认知同频，灵魂共鸣。\n愿相遇、并相惜，走进烟火日常，经营长期稳定的情感和家庭。\n往后余生，鹣鲽情深，夫唱妇随，有一个“坐着摇椅慢慢聊”的幸福而浪漫的长久陪伴。\n陪伴是最长情的告白。\n联系邮箱：3143928962@qq.com\n信如其人，欣赏我的男士、契合我的男士，知道如何来信，来信轻薄无状、不诚意者，邮件就不回复了。\n只愿意把时间花在喜欢的人和事上，为了热爱，愿意付出。\n愿有缘相遇、珍惜相遇，在这个快餐时代，能够有一些坚守。",
+     "guid": "http://www.newsmth.net/nForum/article/PieLove/2956581",
+     "link": "https://www.newsmth.net/nForum/article/PieLove/2956581",
+     "pub_date": "Tue, 10 Nov 2026 00:40:24 +0000",
+     "title": "42岁女想要基于爱情的婚姻",
+     "ts": 1794271224
     },
     {
      "author": "HLWJSJ",
@@ -12594,34 +12558,79 @@
      "ts": 1794236533
     },
     {
-     "author": "nextworld8",
+     "author": "lele20260212",
      "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561536",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/561536",
-     "pub_date": "Mon, 09 Nov 2026 05:34:36 +0000",
-     "title": "与女同事一起出差",
-     "ts": 1794202476
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/561711",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/561711",
+     "pub_date": "Tue, 10 Nov 2026 00:35:09 +0000",
+     "title": "人间尤物【美美哒！】",
+     "ts": 1794270909
     },
     {
-     "author": "larryxin",
-     "body": "杀年猪了 没钱就来回宰华人，反正也没法反抗\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Geography/695988",
-     "link": "https://www.newsmth.net/nForum/article/Geography/695988",
-     "pub_date": "Sun, 08 Nov 2026 09:40:11 +0000",
-     "title": "美国要重新调查赵长鹏案件",
-     "ts": 1794130811
+     "author": "MyRina",
+     "body": "刚有人一句话点醒了我：有些人，是真的没吃过好的。\n想想也是。一个人如果从小没吃过几顿像样的饭，你跟他讨论食材新鲜、火候到位、营养搭配，确实有点强人所难。人家连肚子都没填饱，你还跟人家讲究米其林标准？对真正吃过好东西的人来说，尊重不是赠品，承诺不是奢侈品，边界更不是什么需要感恩戴德的特殊待遇。但对长期习惯情感匮乏的人来说，别人偶尔释放一点温柔，就可能被当成深情；给一点关注，就能理解成偏爱；不愿承诺却又不肯放手，竟然也能被包装成一种难以言说的灵魂羁绊。\n一个人如果连汤都没喝过，他看别人端着碗，第一反应当然是“你肯定是想抢”。他没法理解“我不想喝”这回事，因为在他的经验里，碗里那点东西就是全部的世界。你站在旁边说这汤不新鲜，他听见的不是“汤不新鲜”，而是“你喝不上”。这就是为什么我说这菜不新鲜，他们说你吃不起。在他们的认知系统里，没有人会主动拒绝一碗汤，只可能是没抢到。\n问题是，这个闭环有个前提：世界上只有一碗汤。可现实是，有人喝过正经的汤，知道什么叫火候、什么叫食材、所以他能平静地说“这汤不行。但连汤都没喝上的人听不了这个，你否定他的汤，等于否定他唯一的营养来源，等于否定他这些年靠这碗汤撑下来的全部意义。他当然要反击，而且反击的方式只能是：你肯定是想喝。\n一个真正喝过好汤的人，不会把“有人批评这碗汤”自动理解成“有人想抢这碗汤”，因为他知道汤不止一碗，好汤也不需要靠抢。",
+     "guid": "http://www.newsmth.net/nForum/article/Memory/191946",
+     "link": "https://www.newsmth.net/nForum/article/Memory/191946",
+     "pub_date": "Tue, 10 Nov 2026 00:40:17 +0000",
+     "title": "有些人，是真的没吃过好的",
+     "ts": 1794271217
     },
     {
-     "author": "coolsailor",
-     "body": "1. 北京 => 烤鸭\n2. 上海 => 无 (删掉了阳春面)\n3. 天津 => 包子\n4. 重庆 => 水煮鱼\n5. 香港 => 叉烧肉\n6. 黑龙江 => 锅包肉\n7. 吉林 => 锅包肉\n8. 辽宁 => 锅包肉\n9. 内蒙古 => 无\n10. 河北 => 驴肉火烧\n11. 山东 => 德州扒鸡（换掉v1煎饼卷大葱）\n12. 山西 => 刀削面\n13. 陕西 => 肉夹馍\n14. 甘肃 => 拉面\n15. 青海 => 无\n16. 宁夏 => 无\n17. 新疆 => 羊肉串\n18. 西藏 => 无\n19. 云南 => 过桥米线\n20. 四川 => 麻婆豆腐\n21. 贵州 => 无\n22. 广西 => 螺蛳粉\n23. 广东 => 白斩鸡\n24. 福建 => 佛跳墙\n25. 湖南 => 臭豆腐\n26. 湖北 => 鸭脖（换掉v1热干面）\n27. 江西 => 无\n28. 江苏 => 上汤狮子头（换掉v1的鸭血粉丝汤）\n29. 浙江 => 西湖醋鱼（换掉v1小笼包）\n30. 安徽 => 臭鱖鱼（换掉v1板面）\n31. 河南 => 无（删掉了烩面）\n32. 台湾 => 卤肉饭\n33. 海南 => 文昌鸡\n34. 澳门 => 无（删掉了葡式蛋挞）\n科不科学？\n--v2说明--\n欢迎具体的反驳。\n泛泛而谈，为怼而怼，企图站bigger制高点，都是老登行为，请自重。",
-     "guid": "http://www.newsmth.net/nForum/article/Food/1781670",
-     "link": "https://www.newsmth.net/nForum/article/Food/1781670",
-     "pub_date": "Mon, 09 Nov 2026 05:28:47 +0000",
-     "title": "每个省的招牌菜 v2",
-     "ts": 1794202127
+     "author": "appleyesir",
+     "body": "如果还是与俄国的话，基本不可能\n比如出名的是 夏尔西里。",
+     "guid": "http://www.newsmth.net/nForum/article/Geography/693140",
+     "link": "https://www.newsmth.net/nForum/article/Geography/693140",
+     "pub_date": "Tue, 10 Nov 2026 00:36:29 +0000",
+     "title": "不知不觉，与西边几个斯坦，就拿回了不少土地",
+     "ts": 1794270989
+    },
+    {
+     "author": "yuandao888",
+     "body": "这个趋势不会改变\n一些迪粉不要拿什么合资车当挡箭牌\n中国汽车不是只有笛子一个品牌。",
+     "guid": "http://www.newsmth.net/nForum/article/AutoWorld/1945342535",
+     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945342535",
+     "pub_date": "Tue, 10 Nov 2026 00:39:32 +0000",
+     "title": "其他国产品牌会吃掉笛子国内的份额",
+     "ts": 1794271172
+    },
+    {
+     "author": "chery",
+     "body": "大学生终于不一窝蜂去考研了！好现象。\n2026 年考研报名人数为 343 万。自 2023 年峰值后，报考规模连续三年回落，基本回到 2020 年前后的水平。2027年报考刚结束，报考人数还没具体公布，看考研机构给出的数据大概是330万，比2026又降了。\n从就业看 考研确实没啥意思了，还不如直接考公解决工作问题，因为就算研究生毕业，尤其文科研究生，也不好找工作的。",
+     "guid": "http://www.newsmth.net/nForum/article/GaoKao/684606",
+     "link": "https://www.newsmth.net/nForum/article/GaoKao/684606",
+     "pub_date": "Sun, 08 Nov 2026 17:07:37 +0000",
+     "title": "我的乖乖，研究生报考规模连续三年回落",
+     "ts": 1794157657
+    },
+    {
+     "author": "o0O0o",
+     "body": "虽然泡沫惊人，但就是不跌",
+     "guid": "http://www.newsmth.net/nForum/article/Stock/11631026",
+     "link": "https://www.newsmth.net/nForum/article/Stock/11631026",
+     "pub_date": "Tue, 10 Nov 2026 00:37:11 +0000",
+     "title": "美股真牛逼，叫嚣做空美股的呢？",
+     "ts": 1794271031
+    },
+    {
+     "author": "amaoadiao",
+     "body": "下面三个女生哪个可以娶回家？\n左1： 98年公司前台，1.62 100斤左右，喜欢健生旅游烘培，家里独生女，父母都在老家县城，朋友圈全是旅游打卡照，要求男生有上进心疼人，会给女生安全感\n中间：94年培训机构舞蹈老师，1.68 90斤，身材比例好气质出众，朋友圈都是自己美照和表演照片，之前一直专注事业，现在年纪大了想稳定下来，找个踏实过日子的男生，不要求对方多金，真心对自己好就行\n右边：00年，培训机构英语，长相中等偏上，喜欢韩剧逛漫展，性格慢热，朋友圈学生作业和动漫手办和演唱会现场，男生1.80以上，干净清爽，懂得尊重女生，不要太粘人，婚后尊重各自的私密空间\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Love/6340778",
+     "link": "https://www.newsmth.net/nForum/article/Love/6340778",
+     "pub_date": "Mon, 09 Nov 2026 05:36:53 +0000",
+     "title": "这三个女孩选哪个",
+     "ts": 1794202613
+    },
+    {
+     "author": "friday123",
+     "body": "小学成绩一直是班上中上。\n五年级很叛逆。\n六年级好一些。\n七年级没有之前叛逆。道理能听进去，认可父母说的（主要是妈妈管），但是执行不了。到执行层面就各种拖沓。不想。\n每天6点50起床，洗漱吃饭，去上学。\n晚自习后8点20到家，作业基本上不会带回家。吃点东西，磨蹭一下，读下英语。9点开始洗漱。9点半睡觉。每天洗澡时间都特别长。说了也改不了。\n学校里玩的时间比较多，早读前，所有课间，午饭后晚饭后晚自习做完作业后。所以小孩虽然觉得比较累，学校里还是挺愉快。\n因为在家太拖沓，所以周末也就完成学校作业。连学校的改错和查漏补缺都没有好好做。家里额外做的只有读点英语背单词。\n初中第一次月考语文数学都在300多名（约950学生），英语600多。期中考试语数500多，英语700多。总分位次600多。\n英语并不太担心，主要问题是词汇量。\n现在问题最大的是语文的阅读理解、文言文以及数学。\n阅读理解：无论作业还是试卷，大片红色改错。\n文言文：一些比较浅显的怎么也错，或者是偏了。只能说比阅读理解好一丢丢。\n数学：最恼火。计算一塌糊涂，成绩波动可以在80多和120多之间波动。审题是一部分，看错/看漏/开括号忘变号/抄漏抄错数字or符号等等。稍微困难的题目没有思路且畏难情绪比较重。感觉基础知识掌握得也很一般。\n小孩也很希望取得好成绩，自强的心是很多的。但是对自己下不到狠心。也有种自己已经很努力了但是还是不行的不自信和自卑感。也有到处都是筛子都不想补的无力感。其实家长的角度，并没有很努力，拖沓，不专注效率不高，没有认真钻研的态度和达成目标的执着。\n现在头痛中。还请教大家作为家长该如何帮助她。感激不尽。",
+     "guid": "http://www.newsmth.net/nForum/article/ChildEducation/2595827",
+     "link": "https://www.newsmth.net/nForum/article/ChildEducation/2595827",
+     "pub_date": "Tue, 10 Nov 2026 00:40:59 +0000",
+     "title": "七年级语数英全面翻车，怎么办",
+     "ts": 1794271259
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 15:41:03 GMT"
+   "last_modified": "Tue, 10 Nov 2026 00:41:01 GMT"
   },
   "wedding": {
    "items": [
@@ -13018,7 +13027,7 @@
      "ts": 1774094917
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 03:47:53 GMT"
+   "last_modified": "Tue, 10 Nov 2026 01:18:54 GMT"
   },
   "woodenart": {
    "items": [
@@ -13221,7 +13230,7 @@
      "ts": 1752750852
     }
    ],
-   "last_modified": "Sun, 08 Nov 2026 04:19:00 GMT"
+   "last_modified": "Mon, 09 Nov 2026 23:55:09 GMT"
   },
   "workinglife": {
    "items": [
@@ -13766,7 +13775,7 @@
      "ts": 1793768155
     }
    ],
-   "last_modified": "Mon, 09 Nov 2026 14:55:26 GMT"
+   "last_modified": "Mon, 09 Nov 2026 21:07:33 GMT"
   }
  }
 }

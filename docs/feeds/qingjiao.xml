@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 09 Nov 2026 16:01:51 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 10 Nov 2026 01:28:14 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>现在应该做的就是终结恐龙时代</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1037117</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1037117</guid>
+      <author>pkupctner</author>
+      <pubDate>Tue, 10 Nov 2026 00:16:34 +0000</pubDate>
+      <description><![CDATA[如果你只会资源型科研，那你就不应该做科研。钉死资源上限，自然就能改变生态。]]></description>
+    </item>
     <item>
       <title>有人带过巴铁的学生吗</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1037091</link>
@@ -387,14 +395,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1036381</guid>
       <author>babu2015</author>
       <pubDate>Fri, 06 Nov 2026 01:40:58 +0000</pubDate>
-    </item>
-    <item>
-      <title>请问青椒们，自费科研的金额占总金额（包括纵向+横向）的多少？</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1036369</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1036369</guid>
-      <author>FlytoSkyBoy</author>
-      <pubDate>Fri, 06 Nov 2026 00:38:22 +0000</pubDate>
-      <description><![CDATA[1/3，一半？]]></description>
     </item>
   </channel>
 </rss>
