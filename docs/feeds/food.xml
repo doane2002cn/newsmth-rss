@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Nov 2026 01:13:34 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 10:43:29 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>想起当时在洛阳那碗担担面好正宗。</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782247</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782247</guid>
+      <author>sleepless2</author>
+      <pubDate>Wed, 11 Nov 2026 05:31:47 +0000</pubDate>
+      <description><![CDATA[那时候上初中。旁晚下了课就去吃。一碗两块。感觉好正宗。如此正宗的担担面后来在洛阳再也没吃到了。大家说呢。]]></description>
+    </item>
     <item>
       <title>美团拼好饭，很多店可以自取了</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782223</link>
@@ -398,14 +406,6 @@
       <author>HANNING</author>
       <pubDate>Sat, 31 Oct 2026 12:10:52 +0000</pubDate>
       <description><![CDATA[rt。]]></description>
-    </item>
-    <item>
-      <title>微辣中辣特辣菊疼这种划分并不科学</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781157</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781157</guid>
-      <author>noculture</author>
-      <pubDate>Sat, 31 Oct 2026 11:00:16 +0000</pubDate>
-      <description><![CDATA[一直以为是这样，所以很少吃辣，偶尔稍微吃点辣的第二天菊花就难受。直到最近，吃了一次青辣椒的火锅，辣的眼泪流，第二天菊花却并没有事。]]></description>
     </item>
   </channel>
 </rss>
