@@ -5,24 +5,16 @@
     <link>https://www.newsmth.net/nForum/mainpage</link>
     <description>精彩贴图（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 10 Nov 2026 19:39:52 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 01:13:34 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/pictures.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>[家庭生活] 南京一大善人开零元面馆，免费吃面</title>
-      <link>https://www.newsmth.net/nForum/article/FamilyLife/1767767525</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/FamilyLife/1767767525</guid>
-      <author>家庭生活</author>
-      <pubDate>Tue, 10 Nov 2026 19:39:52 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767767525.jpg?v=" alt="" /><br/>南京一大善人开零元面馆，免费吃面]]></description>
-    </item>
-    <item>
-      <title>[幽默全方位] 黄皮衣小三的前同事听说这事都后悔怎么自己没傍上大款 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/MMJoke/1634856808</link>
-      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/MMJoke/1634856808</guid>
-      <author>幽默全方位</author>
-      <pubDate>Tue, 10 Nov 2026 19:39:52 +0000</pubDate>
-      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/MMJoke_1634856808.jpg?v=" alt="" /><br/>黄皮衣小三的前同事听说这事都后悔怎么自己没傍上大款 (转载)]]></description>
+      <title>[汽车世界] 奥迪召回，不过似乎认错了车主</title>
+      <link>https://www.newsmth.net/nForum/article/AutoWorld/1945343115</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/AutoWorld/1945343115</guid>
+      <author>汽车世界</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945343115.jpg?v=" alt="" /><br/>奥迪召回，不过似乎认错了车主]]></description>
     </item>
     <item>
       <title>[股市] 老美太会玩了，之前放风可能不加息，现在又说100%加</title>
@@ -31,6 +23,54 @@
       <author>股市</author>
       <pubDate>Tue, 10 Nov 2026 19:39:52 +0000</pubDate>
       <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Stock_11631639.jpg?v=" alt="" /><br/>老美太会玩了，之前放风可能不加息，现在又说100%加]]></description>
+    </item>
+    <item>
+      <title>[新软件介绍] 水木拾光 最新水木客户端</title>
+      <link>https://www.newsmth.net/nForum/article/NewSoftware/295589</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/NewSoftware/295589</guid>
+      <author>新软件介绍</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/NewSoftware_295589.jpg?v=" alt="" /><br/>水木拾光 最新水木客户端]]></description>
+    </item>
+    <item>
+      <title>[金融产品及个人理财] 中行确实是垃圾</title>
+      <link>https://www.newsmth.net/nForum/article/MyWallet/1223289</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/MyWallet/1223289</guid>
+      <author>金融产品及个人理财</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/MyWallet_1223289.jpg?v=" alt="" /><br/>中行确实是垃圾]]></description>
+    </item>
+    <item>
+      <title>[绿茵世界] 真有老外看中超？ (转载)</title>
+      <link>https://www.newsmth.net/nForum/article/Football/3473013</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Football/3473013</guid>
+      <author>绿茵世界</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Football_3473013.jpg?v=" alt="" /><br/>真有老外看中超？ (转载)]]></description>
+    </item>
+    <item>
+      <title>[似水流年] 出太阳了真好</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/192018</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Memory/192018</guid>
+      <author>似水流年</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Memory_192018.jpg?v=" alt="" /><br/>出太阳了真好]]></description>
+    </item>
+    <item>
+      <title>[电路设计与调试] [求助]板载天线DRC校验问题</title>
+      <link>https://www.newsmth.net/nForum/article/Circuit/388131</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/Circuit/388131</guid>
+      <author>电路设计与调试</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/Circuit_388131.jpg?v=" alt="" /><br/>[求助]板载天线DRC校验问题]]></description>
+    </item>
+    <item>
+      <title>[二手市场主版] 个人一手车出售（哈弗H2，7.5万公里）</title>
+      <link>https://www.newsmth.net/nForum/article/SecondMarket/2114245</link>
+      <guid isPermaLink="true">https://www.newsmth.net/nForum/article/SecondMarket/2114245</guid>
+      <author>二手市场主版</author>
+      <pubDate>Wed, 11 Nov 2026 01:13:34 +0000</pubDate>
+      <description><![CDATA[<img src="https://static.mysmth.net/nForum/img/hotpic/SecondMarket_2114245.jpg?v=" alt="" /><br/>个人一手车出售（哈弗H2，7.5万公里）]]></description>
     </item>
   </channel>
 </rss>
