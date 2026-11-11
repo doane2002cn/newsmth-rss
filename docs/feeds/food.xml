@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 11 Nov 2026 10:43:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 11 Nov 2026 19:31:55 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>方砖厂、沪西老弄堂、麦奀。。。</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782252</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782252</guid>
+      <author>fud021</author>
+      <pubDate>Wed, 11 Nov 2026 10:57:07 +0000</pubDate>
+      <description><![CDATA[各地近年地方特色连锁面馆开始火了，想收集各地的特色面馆，类似方砖厂北京炸酱面<br/>对应其他地方有哪些？<br/>上海的沪西老弄堂或裕兴记？本帮面。香港有个麦奀的云吞面。苏州是松鹤楼吗？]]></description>
+    </item>
     <item>
       <title>想起当时在洛阳那碗担担面好正宗。</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782247</link>
@@ -398,14 +406,6 @@
       <author>Maggie6761</author>
       <pubDate>Sat, 31 Oct 2026 13:36:00 +0000</pubDate>
       <description><![CDATA[我最爱的冬阴功汤，咖喱<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>有人用低温水浴的方法做过牛肉吗？效果如何？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781173</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781173</guid>
-      <author>HANNING</author>
-      <pubDate>Sat, 31 Oct 2026 12:10:52 +0000</pubDate>
-      <description><![CDATA[rt。]]></description>
     </item>
   </channel>
 </rss>
