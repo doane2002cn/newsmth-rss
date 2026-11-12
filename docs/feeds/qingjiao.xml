@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/QingJiao</link>
     <description>青年教师（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:56:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 19:51:27 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/qingjiao.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>请教们，你们客观说下，保研和考研，哪个更能培养选拔优秀人才</title>
+      <link>https://www.newsmth.net/nForum/article/QingJiao/1037501</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1037501</guid>
+      <author>tuolaji</author>
+      <pubDate>Thu, 12 Nov 2026 13:03:45 +0000</pubDate>
+      <description><![CDATA[现在名校的保研已经把考研挤压得没有出路了。]]></description>
+    </item>
     <item>
       <title>“导师明天生日聚餐，每个人都要说敬酒词”</title>
       <link>https://www.newsmth.net/nForum/article/QingJiao/1037468</link>
@@ -385,14 +393,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1036736</guid>
       <author>babu2015</author>
       <pubDate>Sun, 08 Nov 2026 04:59:36 +0000</pubDate>
-    </item>
-    <item>
-      <title>现在还有理想主义者吗</title>
-      <link>https://www.newsmth.net/nForum/article/QingJiao/1036699</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/QingJiao/1036699</guid>
-      <author>norlon</author>
-      <pubDate>Sun, 08 Nov 2026 02:48:42 +0000</pubDate>
-      <description><![CDATA[老中青椒三代里，哪一代理想主义者的比例最高]]></description>
     </item>
   </channel>
 </rss>

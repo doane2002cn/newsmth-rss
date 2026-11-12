@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 12 Nov 2026 10:56:20 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 12 Nov 2026 19:51:27 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>AI时代军工的封闭性会严重拖慢发展速度吧？</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/351466</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351466</guid>
+      <author>livingdead</author>
+      <pubDate>Thu, 12 Nov 2026 14:48:44 +0000</pubDate>
+      <description><![CDATA[被主流技术发展远远甩在后面]]></description>
+    </item>
+    <item>
+      <title>老黄辞职没有补偿了吧</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/351463</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351463</guid>
+      <author>UPD</author>
+      <pubDate>Thu, 12 Nov 2026 14:19:25 +0000</pubDate>
+      <description><![CDATA[要不拿个n+2多好，不知道有没有竞业限制协议，国内公司赶紧把他挖过来吧<br/>--发自 水木拾光(iOS)]]></description>
+    </item>
     <item>
       <title>等一两年人形机器人普及，外卖员都要被消灭</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/351401</link>
@@ -386,22 +402,6 @@
       <author>T0P2</author>
       <pubDate>Tue, 10 Nov 2026 04:39:06 +0000</pubDate>
       <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>南京街头的无家可归者多起来了 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/350922</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/350922</guid>
-      <author>sujkvato</author>
-      <pubDate>Tue, 10 Nov 2026 02:59:49 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 NewExpress 讨论区 】<br/>昨晚看到一对夫妻住在银行自助服务区里<br/>今晚看到有人睡在河边的长椅上，盖着被子，裹得严严实实]]></description>
-    </item>
-    <item>
-      <title>2024年，朝阳区招聘696名社工，1.3万人报名</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/350899</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/350899</guid>
-      <author>dashudashu</author>
-      <pubDate>Mon, 09 Nov 2026 14:55:26 +0000</pubDate>
-      <description><![CDATA[朝阳社工报考情况（196字）<br/>2024年朝阳区社区工作者计划招录696人，报名约1.3万人，报录比接近19:1，竞争热度较高。报考门槛不高，大专及以上、40周岁以下、北京户籍即可报名，不限专业，大量本科、研究生参与报考，考生整体学历逐年抬升，录取分数线持续走高。笔试考查社区实务、基层政策、区情等记忆型内容，裸考很难突围。笔试划定合格线，按照招录人数3:1比例确定面试人选，面试围绕居民调解、社区活动组织等实务场景出题。不少考生将社工视作基层就业选择，基层工作经历也可作为后续定向公考的跳板，但岗位属于合同制，日常基层事务繁杂。]]></description>
     </item>
   </channel>
 </rss>
