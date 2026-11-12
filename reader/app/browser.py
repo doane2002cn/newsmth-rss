@@ -114,6 +114,7 @@ class BrowserManager:
         self._verification_block_until = 0.0
         self._last_cookie_snapshot_digest = b""
         self._session_watch_task: asyncio.Task[None] | None = None
+        self._session_restore_pause_until = 0.0
 
     @property
     def mode(self) -> str:
@@ -236,12 +237,23 @@ class BrowserManager:
         return self.settings.smth_base.replace("//www.", "//m.")
 
     async def open_login(self) -> None:
+        self._pause_session_restore()
         await self._navigate("https://m.newsmth.net/index")
 
     async def open_target(self, board: str, topic: str, page: int = 1) -> None:
+        self._pause_session_restore()
         await self._navigate(
             f"{self.mobile_base}/article/{board}/{topic}?p={max(1, min(page, 999))}"
         )
+
+    def _pause_session_restore(self) -> None:
+        self._session_restore_pause_until = max(
+            self._session_restore_pause_until,
+            time.monotonic() + self.settings.admin_login_ttl_seconds,
+        )
+
+    def _session_restore_is_paused(self) -> bool:
+        return time.monotonic() < self._session_restore_pause_until
 
     async def _navigate(self, url: str) -> None:
         try:
@@ -273,12 +285,12 @@ class BrowserManager:
             return False
         return _has_complete_smth_session(cookies)
 
-    async def _restore_cookie_snapshot(self) -> None:
+    async def _restore_cookie_snapshot(self) -> bool:
         if await self._has_smth_session_cookie():
-            return
+            return False
         snapshot_path = self.settings.cookie_snapshot_path
         if not snapshot_path.is_file():
-            return
+            return False
         try:
             payload = json.loads(snapshot_path.read_text(encoding="utf-8"))
             cookies = [
@@ -287,11 +299,13 @@ class BrowserManager:
                 if isinstance(cookie, dict) and _is_smth_cookie(cookie)
             ]
             if not _has_complete_smth_session(cookies):
-                return
+                return False
             await self.context.add_cookies(cookies)
             LOGGER.info("restored SMTH cookies from protected snapshot")
+            return True
         except (OSError, ValueError, TypeError, PlaywrightError):
             LOGGER.warning("could not restore SMTH cookie snapshot")
+            return False
 
     async def _save_cookie_snapshot(
         self, cookies: list[dict[str, Any]] | None = None
@@ -341,7 +355,20 @@ class BrowserManager:
 
     async def _watch_session_cookies(self) -> None:
         while True:
-            await self._save_cookie_snapshot()
+            try:
+                cookies = await self._smth_cookies()
+                complete = _has_complete_smth_session(cookies)
+                if not complete and not self._session_restore_is_paused():
+                    if await self._restore_cookie_snapshot():
+                        cookies = await self._smth_cookies()
+                        complete = _has_complete_smth_session(cookies)
+                if complete:
+                    self._session_restore_pause_until = 0.0
+                    await self._save_cookie_snapshot(cookies)
+            except asyncio.CancelledError:
+                raise
+            except PlaywrightError:
+                LOGGER.debug("could not inspect SMTH cookies", exc_info=True)
             await asyncio.sleep(3)
 
     async def _throttle(self) -> None:
@@ -382,6 +409,8 @@ class BrowserManager:
     async def _fetch_article_html_locked(
         self, board: str, topic: str, page: int
     ) -> str:
+        if not self._session_restore_is_paused():
+            await self._restore_cookie_snapshot()
         await self._throttle()
         url = f"{self.settings.smth_base}/nForum/article/{board}/{topic}?ajax&p={page}"
         try:
@@ -431,10 +460,13 @@ class BrowserManager:
             cookies = []
         session_cookie_present = _has_complete_smth_session(cookies)
         logged_in = bool(data.get("logged_in")) or session_cookie_present
-        session_persisted = False
+        session_persisted = self.settings.cookie_snapshot_path.is_file()
         if (article_ready or logged_in) and not challenge and not rate_limited:
-            session_persisted = await self._save_cookie_snapshot(cookies)
-            if session_persisted and article_ready:
+            if session_cookie_present:
+                self._session_restore_pause_until = 0.0
+            persisted_now = await self._save_cookie_snapshot(cookies)
+            session_persisted = session_persisted or persisted_now
+            if persisted_now and article_ready:
                 self._verification_block_until = 0.0
         return {
             "url": url,
@@ -443,6 +475,9 @@ class BrowserManager:
             "rate_limited": rate_limited,
             "article_ready": article_ready and not challenge and not rate_limited,
             "logged_in": logged_in,
+            "session_cookie_present": session_cookie_present,
+            "snapshot_available": session_persisted,
+            "session_restore_paused": self._session_restore_is_paused(),
             "session_persisted": session_persisted,
         }
 
@@ -490,6 +525,8 @@ class BrowserManager:
                 "checked_at": int(time.time()),
             }
             try:
+                if not self._session_restore_is_paused():
+                    await self._restore_cookie_snapshot()
                 await self._throttle()
                 response = await self.context.request.get(
                     f"{self.settings.smth_base}/nForum/user/ajax_session.json",

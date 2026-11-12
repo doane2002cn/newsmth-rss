@@ -562,18 +562,28 @@ def validate_card(card):
 
 
 def prewarm_reader_links(links):
-    """只串行预热少量文章；首篇触发保护就停止，避免加重水木风控。"""
+    """串行预热整张卡片；触发登录或风控后立即停止。"""
     unique_links = list(dict.fromkeys(links))
     if not unique_links:
         return 0, 0
     try:
-        limit = max(0, min(8, int(os.environ.get("READER_PREWARM_LIMIT", "3"))))
+        limit = max(0, min(60, int(os.environ.get("READER_PREWARM_LIMIT", "40"))))
     except ValueError:
-        limit = 3
+        limit = 40
     try:
-        timeout = max(5, min(60, int(os.environ.get("READER_PREWARM_TIMEOUT", "30"))))
+        timeout = max(5, min(120, int(os.environ.get("READER_PREWARM_TIMEOUT", "60"))))
     except ValueError:
-        timeout = 30
+        timeout = 60
+    try:
+        interval = max(
+            0.0,
+            min(
+                15.0,
+                float(os.environ.get("READER_PREWARM_INTERVAL_SECONDS", "2")),
+            ),
+        )
+    except ValueError:
+        interval = 2.0
 
     candidates = unique_links[:limit]
     if not candidates:
@@ -591,7 +601,9 @@ def prewarm_reader_links(links):
     ready = 0
     started = time.monotonic()
     stopped = False
-    for link in candidates:
+    for index, link in enumerate(candidates):
+        if index and interval:
+            time.sleep(interval)
         try:
             if warm(link):
                 ready += 1

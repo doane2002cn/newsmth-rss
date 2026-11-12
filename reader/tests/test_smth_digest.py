@@ -39,6 +39,7 @@ def test_prewarm_stops_after_first_http_error(monkeypatch) -> None:
 
     monkeypatch.setattr(smth_digest.urllib.request, "urlopen", fail)
     monkeypatch.setenv("READER_PREWARM_LIMIT", "3")
+    monkeypatch.setenv("READER_PREWARM_INTERVAL_SECONDS", "0")
     ready, total = smth_digest.prewarm_reader_links(
         [f"https://reader.example/a/{index}" for index in range(6)]
     )
@@ -56,6 +57,7 @@ def test_prewarm_is_sequential_and_limits_candidates(monkeypatch) -> None:
 
     monkeypatch.setattr(smth_digest.urllib.request, "urlopen", succeed)
     monkeypatch.setenv("READER_PREWARM_LIMIT", "3")
+    monkeypatch.setenv("READER_PREWARM_INTERVAL_SECONDS", "0")
     ready, total = smth_digest.prewarm_reader_links(
         [f"https://reader.example/a/{index}" for index in range(6)]
     )
@@ -66,3 +68,21 @@ def test_prewarm_is_sequential_and_limits_candidates(monkeypatch) -> None:
         "https://reader.example/a/1",
         "https://reader.example/a/2",
     ]
+
+
+def test_prewarm_default_covers_a_full_card(monkeypatch) -> None:
+    calls = []
+
+    def succeed(request, timeout):
+        calls.append(request.full_url)
+        return OkResponse()
+
+    monkeypatch.setattr(smth_digest.urllib.request, "urlopen", succeed)
+    monkeypatch.delenv("READER_PREWARM_LIMIT", raising=False)
+    monkeypatch.setenv("READER_PREWARM_INTERVAL_SECONDS", "0")
+    links = [f"https://reader.example/a/{index}" for index in range(34)]
+
+    ready, total = smth_digest.prewarm_reader_links(links)
+
+    assert (ready, total) == (34, 34)
+    assert calls == links

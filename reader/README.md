@@ -7,14 +7,20 @@ Chromium profile 中，飞书卡片只携带 HMAC 签名链接，不包含账号
 
 1. 用户通过一次性登录链接进入受保护的远程 Chromium，完成水木登录和 Geetest。
 2. 阅读网关在常驻 Chromium 中建立独立浏览器上下文，请求文章接口并清洗正文、回复和图片。
-3. 文章缓存 30 分钟，上游不可用时最多回退到 7 天内的快照。
-4. 普通阅读页只做 HTML 抓取、解析和缓存，不调用大模型，不消耗 token。
+3. 推送卡片前，Hermes 按卡片顺序串行预热整张卡片，提前保存文章正文；图片在首次展示时缓存。
+4. 文章缓存 30 分钟，上游不可用时最多回退到 7 天内的快照。
+5. 普通阅读页只做 HTML 抓取、解析和缓存，不调用大模型，不消耗 token。
 
 管理页会从浏览器中读取水木会话 Cookie。只有 `main[UTMPUSERID]`、
 `main[UTMPKEY]`、`main[UTMPNUM]` 三枚 Cookie 齐全且用户不是 `guest` 时才写入
 `data/chromium-cookies.json`，权限设为 `0600`。这一步只读取浏览器状态，不额外请求
 水木。网关也会在后台自动检查并保存会话，不依赖管理页是否一直打开；浏览器只剩部分
-旧 Cookie 时，会自动用完整快照补齐。
+旧 Cookie 或已被水木回写成 `guest` 时，会在下一次抓取前自动用完整快照补齐。用户正在
+noVNC 中登录或完成验证码时，自动恢复会暂停 15 分钟，避免旧会话覆盖刚输入的新会话。
+
+推送端的 `READER_PREWARM_LIMIT` 默认是 40，足以覆盖一张完整卡片；
+`READER_PREWARM_INTERVAL_SECONDS` 默认是 2 秒。预热按顺序执行，遇到 401、403、429
+会立即熔断，避免继续触发水木风控。
 
 ## 本地检查
 
@@ -36,7 +42,8 @@ docker compose exec smth-reader python -m app.cli login-url
 
 登录入口默认 15 分钟有效且只能使用一次。`data/` 保存正文缓存和图片缓存，必须持久化。
 
-默认部署复用 Oracle 常驻 `ai-workstation` 的 Chromium 与 noVNC：
+如果部署时设置 `BROWSER_CDP_URL`，阅读网关会复用 Oracle 常驻 `ai-workstation`
+的 Chromium 与 noVNC：
 
 ```text
 BROWSER_CDP_URL=http://ai-workstation:9223

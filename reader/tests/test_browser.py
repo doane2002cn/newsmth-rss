@@ -117,6 +117,23 @@ class FakeContext:
 
     async def add_cookies(self, cookies):
         self.added_cookies.extend(cookies)
+        for incoming in cookies:
+            key = (
+                incoming.get("domain"),
+                incoming.get("path"),
+                incoming.get("name"),
+            )
+            self.cookie_data = [
+                cookie
+                for cookie in self.cookie_data
+                if (
+                    cookie.get("domain"),
+                    cookie.get("path"),
+                    cookie.get("name"),
+                )
+                != key
+            ]
+            self.cookie_data.append(incoming)
 
     async def new_page(self):
         self.new_page_calls += 1
@@ -490,3 +507,80 @@ def test_session_watcher_persists_cookies_without_network_request(
     snapshot = settings.cookie_snapshot_path
     assert snapshot.is_file()
     assert "alice" in snapshot.read_text(encoding="utf-8")
+
+
+def test_session_watcher_restores_guest_cookies_from_snapshot(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=GUEST_SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+
+    async def run_watcher() -> None:
+        task = asyncio.create_task(manager._watch_session_cookies())
+        await asyncio.sleep(0.01)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+
+    asyncio.run(run_watcher())
+
+    restored = {
+        cookie["name"]: cookie["value"] for cookie in context.added_cookies
+    }
+    assert restored["main[UTMPUSERID]"] == "alice"
+    assert context.request.calls == []
+
+
+def test_article_request_restores_snapshot_before_upstream_call(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext(
+        [FakeResponse(body=b"<table class='article'>article</table>")],
+        cookies=GUEST_SESSION_COOKIES,
+    )
+    manager._context = context  # type: ignore[assignment]
+
+    html = asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
+
+    assert "article" in html
+    restored = {
+        cookie["name"]: cookie["value"] for cookie in context.added_cookies
+    }
+    assert restored["main[UTMPUSERID]"] == "alice"
+
+
+def test_session_watcher_does_not_interrupt_active_login(
+    tmp_path: Path,
+) -> None:
+    settings = make_settings(tmp_path)
+    settings.cookie_snapshot_path.write_text(
+        json.dumps(SESSION_COOKIES),
+        encoding="utf-8",
+    )
+    manager = BrowserManager(settings)
+    context = FakeContext(cookies=GUEST_SESSION_COOKIES)
+    manager._context = context  # type: ignore[assignment]
+    manager._pause_session_restore()
+
+    async def run_watcher() -> None:
+        task = asyncio.create_task(manager._watch_session_cookies())
+        await asyncio.sleep(0.01)
+        task.cancel()
+        with pytest.raises(asyncio.CancelledError):
+            await task
+
+    asyncio.run(run_watcher())
+
+    assert context.added_cookies == []
