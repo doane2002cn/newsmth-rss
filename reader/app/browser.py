@@ -261,7 +261,7 @@ class BrowserManager:
 
     async def open_login(self) -> None:
         self._pause_session_restore()
-        await self._navigate("https://m.newsmth.net/index")
+        await self._navigate(f"{self.settings.smth_base}/nForum/mainpage")
 
     async def open_target(self, board: str, topic: str, page: int = 1) -> None:
         self._pause_session_restore()
