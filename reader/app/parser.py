@@ -119,6 +119,17 @@ class ArticleParseError(RuntimeError):
     pass
 
 
+class SMTHArticleNotFound(RuntimeError):
+    pass
+
+
+def is_article_not_found(html: str) -> bool:
+    return (
+        "指定的文章不存在" in html
+        or "文章不存在或链接错误" in html
+    )
+
+
 def is_login_required(html: str) -> bool:
     return (
         "您未登录" in html
@@ -405,6 +416,8 @@ def parse_article(
     image_url_factory,
     fetched_at: int,
 ) -> ArticlePage:
+    if is_article_not_found(html):
+        raise SMTHArticleNotFound("SMTH article was not found")
     if is_login_required(html):
         raise SMTHLoginRequired("SMTH requires login")
     if is_guest_verification(html):

@@ -37,6 +37,7 @@ from .models import ArticlePage
 from .parser import (
     GuestVerificationRequired,
     ArticleParseError,
+    SMTHArticleNotFound,
     SMTHLoginRequired,
     format_cache_age,
     is_allowed_image_url,
@@ -333,6 +334,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return parsed, 0, False, "", "MISS"
         except SMTHRateLimited:
             raise
+        except SMTHArticleNotFound:
+            raise
         except SMTHLoginRequired:
             error = "水木登录会话已失效"
             if cached_page and cached_age <= app_settings.stale_ttl_seconds:
@@ -426,6 +429,17 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 ),
                 action_url=f"/a/{token}?p={page_number}",
                 action_label="稍后重试",
+            )
+        except SMTHArticleNotFound:
+            return render_message(
+                request,
+                status_code=404,
+                eyebrow="ARTICLE NOT FOUND",
+                title="指定的文章不存在或链接错误。",
+                description=(
+                    "水木返回这篇文章当前不可读。可能已被删除、转版，"
+                    "或链接已失效。请回到飞书卡片查看其他内容。"
+                ),
             )
         except (SMTHUnavailable, ArticleParseError) as exc:
             LOGGER.warning("article unavailable: %s", type(exc).__name__)

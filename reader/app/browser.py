@@ -25,8 +25,10 @@ from .config import Settings
 from .parser import (
     GuestVerificationRequired,
     SMTHLoginRequired,
+    SMTHArticleNotFound,
     is_guest_verification,
     is_login_required,
+    is_article_not_found,
 )
 
 LOGGER = logging.getLogger(__name__)
@@ -459,6 +461,8 @@ class BrowserManager:
             raise SMTHUnavailable(f"SMTH article response: HTTP {response.status}")
         if is_rate_limit_page(text) or "ip banned" in text.lower():
             raise SMTHRateLimited("SMTH temporarily blocked this server IP")
+        if is_article_not_found(text):
+            raise SMTHArticleNotFound("SMTH article was not found")
         if is_login_required(text):
             if await self._has_smth_session_cookie():
                 status = await self.session_status(force=True)
