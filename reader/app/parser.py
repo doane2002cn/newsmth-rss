@@ -111,8 +111,20 @@ class GuestVerificationRequired(RuntimeError):
     pass
 
 
+class SMTHLoginRequired(GuestVerificationRequired):
+    pass
+
+
 class ArticleParseError(RuntimeError):
     pass
+
+
+def is_login_required(html: str) -> bool:
+    return (
+        "您未登录" in html
+        or "请登录后继续操作" in html
+        or "用户未登录" in html
+    )
 
 
 def is_guest_verification(html: str) -> bool:
@@ -121,9 +133,6 @@ def is_guest_verification(html: str) -> bool:
         "guest-read-challenge" in lowered
         or "read verification" in lowered
         or "请完成验证" in html
-        or "您未登录" in html
-        or "请登录后继续操作" in html
-        or "用户未登录" in html
     )
 
 
@@ -396,6 +405,8 @@ def parse_article(
     image_url_factory,
     fetched_at: int,
 ) -> ArticlePage:
+    if is_login_required(html):
+        raise SMTHLoginRequired("SMTH requires login")
     if is_guest_verification(html):
         raise GuestVerificationRequired("SMTH returned the guest read challenge")
 

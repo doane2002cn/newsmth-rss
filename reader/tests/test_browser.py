@@ -11,7 +11,7 @@ from typing import Any
 import pytest
 from playwright.async_api import Error as PlaywrightError
 
-from app.browser import BrowserManager, SMTHRateLimited
+from app.browser import BrowserManager, SMTHLoginRequired, SMTHRateLimited
 from app.config import Settings
 from app.parser import GuestVerificationRequired
 
@@ -254,7 +254,7 @@ def test_open_target_uses_mobile_article_not_index(tmp_path: Path) -> None:
     asyncio.run(manager.open_target("NewExpress", "47582736", 3))
 
     assert page.goto_calls == [
-        "https://m.newsmth.net/article/NewExpress/47582736?p=3"
+        "https://www.newsmth.net/nForum/article/NewExpress/47582736?p=3"
     ]
 
 
@@ -262,7 +262,7 @@ def test_err_aborted_is_accepted_when_navigation_reached_target(
     tmp_path: Path,
 ) -> None:
     manager = BrowserManager(make_settings(tmp_path))
-    target = "https://m.newsmth.net/article/NewExpress/47582736?p=1"
+    target = "https://www.newsmth.net/nForum/article/NewExpress/47582736?p=1"
     page = FakePage(
         url=target,
         goto_error=PlaywrightError("net::ERR_ABORTED at navigation"),
@@ -295,6 +295,33 @@ def test_rate_limit_page_is_classified_without_clearing_cookie(
     with pytest.raises(SMTHRateLimited):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
     assert manager._verification_block_until == 0
+
+
+def test_login_required_with_cookies_is_rate_limit(tmp_path: Path) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    manager._context = FakeContext(  # type: ignore[assignment]
+        [
+            FakeResponse(body="您未登录,请登录后继续操作".encode("gb18030")),
+            FakeResponse(status=403, body=b"forbidden"),
+        ],
+        cookies=SESSION_COOKIES,
+    )
+
+    with pytest.raises(SMTHRateLimited):
+        asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
+
+
+def test_login_required_without_cookies_is_not_challenge(
+    tmp_path: Path,
+) -> None:
+    manager = BrowserManager(make_settings(tmp_path))
+    manager._context = FakeContext(  # type: ignore[assignment]
+        [FakeResponse(body="您未登录,请登录后继续操作".encode("gb18030"))],
+        cookies=[],
+    )
+
+    with pytest.raises(SMTHLoginRequired):
+        asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
 
 
 def test_cookie_snapshot_restores_only_when_browser_has_no_smth_cookie(

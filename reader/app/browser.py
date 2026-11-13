@@ -22,7 +22,12 @@ from playwright.async_api import (
 )
 
 from .config import Settings
-from .parser import GuestVerificationRequired, is_guest_verification
+from .parser import (
+    GuestVerificationRequired,
+    SMTHLoginRequired,
+    is_guest_verification,
+    is_login_required,
+)
 
 LOGGER = logging.getLogger(__name__)
 SHARED_PAGE_NAME = "smth-reader-gateway"
@@ -243,7 +248,8 @@ class BrowserManager:
     async def open_target(self, board: str, topic: str, page: int = 1) -> None:
         self._pause_session_restore()
         await self._navigate(
-            f"{self.mobile_base}/article/{board}/{topic}?p={max(1, min(page, 999))}"
+            f"{self.settings.smth_base}/nForum/article/{board}/{topic}"
+            f"?p={max(1, min(page, 999))}"
         )
 
     def _pause_session_restore(self) -> None:
@@ -435,6 +441,12 @@ class BrowserManager:
             raise SMTHUnavailable(f"SMTH article response: HTTP {response.status}")
         if is_rate_limit_page(text) or "ip banned" in text.lower():
             raise SMTHRateLimited("SMTH temporarily blocked this server IP")
+        if is_login_required(text):
+            if await self._has_smth_session_cookie():
+                status = await self.session_status(force=True)
+                if status.get("rate_limited"):
+                    raise SMTHRateLimited("SMTH is rate limiting this session")
+            raise SMTHLoginRequired("SMTH requires login")
         if is_guest_verification(text):
             raise GuestVerificationRequired("SMTH returned the guest read challenge")
         return text

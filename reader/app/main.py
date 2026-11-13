@@ -37,6 +37,7 @@ from .models import ArticlePage
 from .parser import (
     GuestVerificationRequired,
     ArticleParseError,
+    SMTHLoginRequired,
     format_cache_age,
     is_allowed_image_url,
     normalize_line_breaks,
@@ -332,6 +333,11 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             return parsed, 0, False, "", "MISS"
         except SMTHRateLimited:
             raise
+        except SMTHLoginRequired:
+            error = "水木登录会话已失效"
+            if cached_page and cached_age <= app_settings.stale_ttl_seconds:
+                return cached_page, cached_age, True, error, "STALE"
+            raise
         except GuestVerificationRequired:
             error = "水木要求完成一次阅读验证"
             if cached_page and cached_age <= app_settings.stale_ttl_seconds:
@@ -380,6 +386,19 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         try:
             article, cache_age, stale, notice, cache_status = await load_article(
                 request, board, topic, page_number
+            )
+        except SMTHLoginRequired:
+            return render_message(
+                request,
+                status_code=401,
+                eyebrow="LOGIN REQUIRED",
+                title="水木登录会话已失效。",
+                description=(
+                    "阅读网关已保存的登录 Cookie 不再有效。"
+                    "点击下方按钮重新登录，登录成功后会继续使用同一会话。"
+                ),
+                action_url=f"/relogin/{token}?p={page_number}",
+                action_label="重新登录水木",
             )
         except GuestVerificationRequired:
             return render_message(

@@ -11,7 +11,7 @@ from fastapi.testclient import TestClient
 from app.browser import SMTHRateLimited
 from app.config import Settings
 from app.main import _article_cache_key, create_app
-from app.parser import GuestVerificationRequired
+from app.parser import GuestVerificationRequired, SMTHLoginRequired
 from app.signing import admin_login_token, article_token, image_token
 
 
@@ -48,6 +48,11 @@ class GuestBrowser:
 class RateLimitedBrowser:
     async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
         raise SMTHRateLimited("HTTP 403")
+
+
+class LoginRequiredBrowser:
+    async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
+        raise SMTHLoginRequired("login")
 
 
 class TargetBrowser:
@@ -155,6 +160,25 @@ def test_rate_limit_is_not_rendered_as_login_expiry(tmp_path) -> None:
         assert "暂时限制了访问频率" in response.text
         assert "这不是登录失效" in response.text
         assert "/relogin/" not in response.text
+
+
+def test_login_required_uses_relogin_not_read_challenge(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    token = article_token(
+        SECRET,
+        "NewExpress",
+        "47582736",
+        "标题",
+        int(time.time()) + 900,
+    )
+    with TestClient(app) as client:
+        app.state.browser = LoginRequiredBrowser()
+        response = client.get(f"/a/{token}")
+
+    assert response.status_code == 401
+    assert "水木登录会话已失效" in response.text
+    assert "重新登录水木" in response.text
+    assert "/relogin/" in response.text
 
 
 def test_relogin_opens_the_current_article_challenge(tmp_path) -> None:
