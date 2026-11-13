@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Nov 2026 10:51:17 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 13 Nov 2026 19:34:08 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>孩子想吃什么意面或者意面酱好吃啊</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782323</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782323</guid>
+      <author>yangfangnuaa</author>
+      <pubDate>Fri, 13 Nov 2026 13:48:28 +0000</pubDate>
+      <description><![CDATA[孩子想吃什么意面或者意面酱好吃啊]]></description>
+    </item>
+    <item>
+      <title>西安的魏斯理汉堡</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782320</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782320</guid>
+      <author>shininggirl</author>
+      <pubDate>Fri, 13 Nov 2026 12:04:55 +0000</pubDate>
+      <description><![CDATA[每次来西安必吃的汉堡]]></description>
+    </item>
     <item>
       <title>南瓜子仁</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782308</link>
@@ -390,22 +406,6 @@
       <author>wzboy</author>
       <pubDate>Sun, 01 Nov 2026 18:14:54 +0000</pubDate>
       <description><![CDATA[自己抓的，特别香<br/>发自「今日水木 on 24069RA21C」]]></description>
-    </item>
-    <item>
-      <title>老外 喝酒都木有下酒菜 怎么喝得下去？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781257</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781257</guid>
-      <author>ygdmjg</author>
-      <pubDate>Sun, 01 Nov 2026 10:59:58 +0000</pubDate>
-      <description><![CDATA[rt]]></description>
-    </item>
-    <item>
-      <title>煎饼卷大葱确实解腻，可口美味</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781231</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781231</guid>
-      <author>kadoyo</author>
-      <pubDate>Sun, 01 Nov 2026 05:45:07 +0000</pubDate>
-      <description><![CDATA[先吃了五花肉做的大米干饭把子肉，济南风格的，没吃饱接着吃个煎饼，卷了虾皮，忽然想起来有卷大葱，于是就放了一节大葱。一吃就感觉太爽了，真美味可口啊]]></description>
     </item>
   </channel>
 </rss>
