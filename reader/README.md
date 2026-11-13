@@ -58,6 +58,16 @@ VNC_WEBSOCKET_URL=ws://ai-workstation:6080/websockify
 `/admin/vnc/` 代理访问。如果 `BROWSER_CDP_URL` 留空，容器会回退到内置 Xvfb、
 x11vnc 和 websockify。
 
+如果设置 `BROWSER_PROXY_SERVER`，Chromium 会把浏览器请求交给指定 SOCKS 代理。默认
+部署可以复用宿主机上的 NAS 反向隧道：
+
+```text
+BROWSER_PROXY_SERVER=socks5://172.19.0.1:1080
+```
+
+转发桥只在 Docker 网关地址上监听，并把流量送回宿主机的 `127.0.0.1:1080`。需要放行
+Reader 所在 Docker 网段访问 `172.19.0.1:1080`，不要把该端口暴露到公网。
+
 Compose 默认把容器接入 `ai-workstation_default` 外部网络，不向宿主机发布 8010。
 `READER_BIND_HOST` 设为 `0.0.0.0`，Cloudflare Tunnel 使用稳定的 Docker DNS：
 

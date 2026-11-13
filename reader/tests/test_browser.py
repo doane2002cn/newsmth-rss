@@ -215,6 +215,22 @@ class FakeBrowser:
         return context
 
 
+class RecordingPersistentChromium:
+    def __init__(self) -> None:
+        self.calls: list[dict[str, Any]] = []
+
+    async def launch_persistent_context(
+        self, user_data_dir: str, **kwargs: Any
+    ) -> FakeContext:
+        self.calls.append(kwargs)
+        return FakeContext()
+
+
+class RecordingPersistentPlaywright:
+    def __init__(self) -> None:
+        self.chromium = RecordingPersistentChromium()
+
+
 def test_verification_cooldown_recovers_after_page_is_readable(
     tmp_path: Path,
 ) -> None:
@@ -354,6 +370,22 @@ def test_cookie_snapshot_restores_only_when_browser_has_no_smth_cookie(
         "main[UTMPKEY]",
         "main[UTMPNUM]",
     ]
+
+
+def test_local_browser_uses_configured_proxy(tmp_path: Path) -> None:
+    settings = replace(
+        make_settings(tmp_path),
+        browser_proxy_server="socks5://172.19.0.1:1080",
+    )
+    manager = BrowserManager(settings)
+    manager._playwright = RecordingPersistentPlaywright()  # type: ignore[assignment]
+
+    asyncio.run(manager._start_local_browser())
+
+    assert manager._playwright.chromium.calls[0]["proxy"] == {
+        "server": "socks5://172.19.0.1:1080",
+        "bypass": "localhost,127.0.0.1",
+    }
 
 
 def test_page_status_persists_complete_session_without_upstream_request(

@@ -137,6 +137,14 @@ class BrowserManager:
             raise SMTHUnavailable("browser context is not ready")
         return self._context
 
+    def _proxy_settings(self) -> dict[str, str] | None:
+        if not self.settings.browser_proxy_server:
+            return None
+        return {
+            "server": self.settings.browser_proxy_server,
+            "bypass": "localhost,127.0.0.1",
+        }
+
     async def start(self) -> None:
         self._playwright = await async_playwright().start()
         if self._shared_browser:
@@ -153,6 +161,10 @@ class BrowserManager:
     async def _start_local_browser(self) -> None:
         Path(self.settings.profile_dir).parent.mkdir(parents=True, exist_ok=True)
         assert self._playwright is not None
+        proxy = self._proxy_settings()
+        options: dict[str, Any] = {}
+        if proxy:
+            options["proxy"] = proxy
         self._context = await self._playwright.chromium.launch_persistent_context(
             user_data_dir=str(self.settings.profile_dir),
             headless=False,
@@ -161,6 +173,7 @@ class BrowserManager:
             locale="zh-CN",
             timezone_id="Asia/Shanghai",
             accept_downloads=False,
+            **options,
             args=[
                 "--no-sandbox",
                 "--disable-dev-shm-usage",
@@ -184,6 +197,10 @@ class BrowserManager:
 
     async def _start_shared_browser(self) -> None:
         assert self._playwright is not None
+        proxy = self._proxy_settings()
+        options: dict[str, Any] = {}
+        if proxy:
+            options["proxy"] = proxy
         self._browser = await self._playwright.chromium.connect_over_cdp(
             self.settings.browser_cdp_url
         )
@@ -193,6 +210,7 @@ class BrowserManager:
             locale="zh-CN",
             timezone_id="Asia/Shanghai",
             accept_downloads=False,
+            **options,
         )
         self._close_context_on_stop = True
         self._page = await self._find_reader_page()

@@ -39,6 +39,7 @@ class Settings:
     vnc_http_url: str
     vnc_websocket_url: str
     guest_verification_cooldown_seconds: int = 600
+    browser_proxy_server: str = ""
 
     @property
     def cache_dir(self) -> Path:
@@ -88,6 +89,7 @@ class Settings:
             cookie_secure=_env_bool("READER_COOKIE_SECURE", True),
             browser_enabled=_env_bool("READER_BROWSER_ENABLED", True),
             browser_cdp_url=os.getenv("BROWSER_CDP_URL", "").strip(),
+            browser_proxy_server=os.getenv("BROWSER_PROXY_SERVER", "").strip(),
             smth_base=os.getenv("SMTH_BASE_URL", "https://www.newsmth.net").rstrip(
                 "/"
             ),
