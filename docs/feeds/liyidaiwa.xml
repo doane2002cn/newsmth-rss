@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Liyidaiwa</link>
     <description>离异带娃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Nov 2026 19:34:08 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:25:28 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/liyidaiwa.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>芯片教父的陨落</title>
+      <link>https://www.newsmth.net/nForum/article/Liyidaiwa/20236</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Liyidaiwa/20236</guid>
+      <author>springnier</author>
+      <pubDate>Fri, 13 Nov 2026 23:49:20 +0000</pubDate>
+      <description><![CDATA[如图<br/>--发自 水木拾光(iOS)]]></description>
+    </item>
     <item>
       <title>好奇大家怎么走出来的</title>
       <link>https://www.newsmth.net/nForum/article/Liyidaiwa/20213</link>
@@ -399,14 +407,6 @@
       <author>fuyzql</author>
       <pubDate>Wed, 21 Oct 2026 03:03:09 +0000</pubDate>
       <description><![CDATA[天塌不下来<br/>自信一点，动不动关小黑屋<br/>- 来自 水木社区APP v3.5.7]]></description>
-    </item>
-    <item>
-      <title>《D小P时代》、《MzD传》</title>
-      <link>https://www.newsmth.net/nForum/article/Liyidaiwa/19310</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Liyidaiwa/19310</guid>
-      <author>fuyzql</author>
-      <pubDate>Thu, 15 Oct 2026 00:39:03 +0000</pubDate>
-      <description><![CDATA[都看完了<br/>心情是复杂的<br/>接着看《zhou enLai传》<br/>《常凯shen传》<br/>最近看近现代史入迷中<br/>希望儿子能一起看<br/>- 来自 水木社区APP v3.5.7]]></description>
     </item>
   </channel>
 </rss>

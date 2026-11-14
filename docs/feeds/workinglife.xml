@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 13 Nov 2026 19:34:08 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 14 Nov 2026 01:25:28 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>码农遭遇戴维斯双杀</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/351720</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351720</guid>
+      <author>Crusade</author>
+      <pubDate>Sat, 14 Nov 2026 00:29:09 +0000</pubDate>
+      <description><![CDATA[互联网行业下行，沙工资福利<br/>ai替代沙估值<br/>惨遭双沙，已经是赛博土木，钻木取火专业]]></description>
+    </item>
     <item>
       <title>西门子的ceo就认为目前ai无法应用于 工业</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/351698</link>
@@ -391,14 +399,6 @@
       <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351185</guid>
       <author>popcorners</author>
       <pubDate>Wed, 11 Nov 2026 12:06:59 +0000</pubDate>
-    </item>
-    <item>
-      <title>中年人别太拼了</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/351181</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351181</guid>
-      <author>canoeheu</author>
-      <pubDate>Wed, 11 Nov 2026 11:22:21 +0000</pubDate>
-      <description><![CDATA[工作，家人（老人和小孩）都得过且过吧……今天上班听闻其他部门的同事没了，55左右，清闲的岗位，自己未婚。但是家里母亲植物人，父亲90多……这5年一直他照顾，不请人，姐姐都说花钱请人，他不想让妈妈别人照顾……哎……<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
