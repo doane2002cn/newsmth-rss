@@ -1,5 +1,5 @@
 {
- "last_run": "2026-11-15 06:17:11 +0800",
+ "last_run": "2026-11-15 14:13:26 +0800",
  "sources": {
   "age": {
    "items": [
@@ -463,7 +463,7 @@
      "ts": 1791266746
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 14:10:13 GMT"
+   "last_modified": "Sun, 15 Nov 2026 00:38:58 GMT"
   },
   "baking": {
    "items": [
@@ -1135,7 +1135,7 @@
      "ts": 1776665376
     }
    ],
-   "last_modified": "Fri, 13 Nov 2026 23:45:20 GMT"
+   "last_modified": "Sat, 14 Nov 2026 23:34:27 GMT"
   },
   "book": {
    "items": [
@@ -1942,6 +1942,186 @@
   "bull": {
    "items": [
     {
+     "author": "antaplus",
+     "body": "早知道昨天回家今天爬山 现在只能在公园里履平地\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587236",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587236",
+     "pub_date": "Sun, 15 Nov 2026 06:09:38 +0000",
+     "title": "周末爬爬山可真好",
+     "ts": 1794722978
+    },
+    {
+     "author": "antaplus",
+     "body": "大饼摊坏了\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587219",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587219",
+     "pub_date": "Sun, 15 Nov 2026 05:50:48 +0000",
+     "title": "广州真是没啥希望",
+     "ts": 1794721848
+    },
+    {
+     "author": "miku",
+     "body": "网上买了两大卷羊肉\n拿到了才发现买错了\n拿到外面让人家给切一下\n5块钱一斤\n可真是贵呀……\n就这样人家还不乐意了\n告诉我，让我下回下午过来，上午没时间招待我",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587195",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587195",
+     "pub_date": "Sun, 15 Nov 2026 05:37:48 +0000",
+     "title": "切羊肉",
+     "ts": 1794721068
+    },
+    {
+     "author": "TexasPotato",
+     "body": "平时把窗帘放下，防止紫外线UVA对皮肤的老化",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587139",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587139",
+     "pub_date": "Sun, 15 Nov 2026 05:04:08 +0000",
+     "title": "严防UVA",
+     "ts": 1794719048
+    },
+    {
+     "author": "dashudashu",
+     "body": "比人类聪明多了。。你们说说。。福生无量天尊",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587128",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587128",
+     "pub_date": "Sun, 15 Nov 2026 04:59:35 +0000",
+     "title": "机器人已经学会说福生无量天尊了",
+     "ts": 1794718775
+    },
+    {
+     "author": "antaplus",
+     "body": "昨天买的茄子不知道怎么吃\n想做这个吧\n一看豆豉鲮鱼就卖十六块钱了\n舍不得了\n配菜比主菜贵\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587091",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587091",
+     "pub_date": "Sun, 15 Nov 2026 04:07:01 +0000",
+     "title": "做一道豆豉鲮鱼茄子还挺贵的",
+     "ts": 1794715621
+    },
+    {
+     "author": "bigsillyboy",
+     "body": "有专业的点评一下吗\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587041",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587041",
+     "pub_date": "Sun, 15 Nov 2026 03:26:19 +0000",
+     "title": "这个画，算什么水平",
+     "ts": 1794713179
+    },
+    {
+     "author": "dashudashu",
+     "body": "太可怕了。。未来得多少人失业哦。。福生无量天尊",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587033",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587033",
+     "pub_date": "Sun, 15 Nov 2026 03:21:44 +0000",
+     "title": "这个机器人的智商已经达到人类博士水平了",
+     "ts": 1794712904
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n由于 Talker2020 在 Bull 版的 群嘲 投诉 行为，\n被暂时取消在本版的发文权力 3 天。\n版主:huipj\nSun Nov 15 11:08:28 2026",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3587002",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3587002",
+     "pub_date": "Sun, 15 Nov 2026 03:08:27 +0000",
+     "title": "Talker2020被取消在Bull版的发文权限",
+     "ts": 1794712107
+    },
+    {
+     "author": "huipj",
+     "body": "睡觉睡觉\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586844",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586844",
+     "pub_date": "Sun, 15 Nov 2026 02:14:01 +0000",
+     "title": "晴阳冬昼暖，对卧且安眠。",
+     "ts": 1794708841
+    },
+    {
+     "author": "ying2021",
+     "body": "rt",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586812",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586812",
+     "pub_date": "Sun, 15 Nov 2026 01:59:29 +0000",
+     "title": "大雾不出门，画个桃",
+     "ts": 1794707969
+    },
+    {
+     "author": "bigsillyboy",
+     "body": "今年暑假回国时\n约了三个初中同学吃饭\n讲到了q……se交易\n问我有没有遇到过这种情况\n我说从来没有\n一个zf工作的美女同学莞尔一笑\n说：你没有权利\n想来\n我算被迫安分守己？\n- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586798",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586798",
+     "pub_date": "Sun, 15 Nov 2026 01:46:31 +0000",
+     "title": "被迫安分守己",
+     "ts": 1794707191
+    },
+    {
+     "author": "dashudashu",
+     "body": "放大倍数大概是比特币现货的3-4倍，本中打算这一波比特币跌倒40000u左右，一个是买比特币期权做多，一个就是mstr，你说说",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586784",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586784",
+     "pub_date": "Sun, 15 Nov 2026 01:35:31 +0000",
+     "title": "机器人，你感觉mstr这个品种如何，底部建仓安全吗",
+     "ts": 1794706531
+    },
+    {
+     "author": "dashudashu",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586747",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586747",
+     "pub_date": "Sun, 15 Nov 2026 00:57:43 +0000",
+     "title": "机器人，这个磁选浮灯亮了，就是还浮不起来呀",
+     "ts": 1794704263
+    },
+    {
+     "author": "snowboy",
+     "body": "各方面碾压好莱坞垃圾。",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586725",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586725",
+     "pub_date": "Sun, 15 Nov 2026 00:34:15 +0000",
+     "title": "推荐一个AI科幻片，<冰下>。",
+     "ts": 1794702855
+    },
+    {
+     "author": "Talker2020",
+     "body": "这就是文学中的Mystery\n你们担心本青不再纯洁、受到污染、变成坏人、被杀猪盘、被侮辱、被伤害了吗？\n这就是文学中的Suspense\n文学中必须有这两根胡萝卜吊在读者这些蠢驴的眼前，让他们走到最后。当然你的Mystery和Suspense必须给读者兑现，必须精彩，不能搞廉价Mystery和虚假Suspense，欺骗读者，否则读者就会骂死你！\n望周知～\n发自「今日水木 on iPhone 12 Pro Max」",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586710",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586710",
+     "pub_date": "Sun, 15 Nov 2026 00:29:51 +0000",
+     "title": "土狗们，你们想知道本青昨天去哪里、怎么逍遥了吗？",
+     "ts": 1794702591
+    },
+    {
+     "author": "dashudashu",
+     "body": "说明书给我妈当垃圾扔了。。浮不起来的磁悬浮平台，算哪门子磁悬浮平台呀。。你们说说",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586705",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586705",
+     "pub_date": "Sun, 15 Nov 2026 00:21:57 +0000",
+     "title": "本中买的磁悬浮平台，浮不起来呀",
+     "ts": 1794702117
+    },
+    {
+     "author": "shawn2024",
+     "body": "- 来自 水木说",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586687",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586687",
+     "pub_date": "Sat, 14 Nov 2026 23:55:36 +0000",
+     "title": "哈哈",
+     "ts": 1794700536
+    },
+    {
+     "author": "dashudashu",
+     "body": "选好能给暴涨暴跌的品种，高点做空，底部做多，长期持有就行。。你们要是买a股 累死累活的都赚不到一倍，纯粹是浪费时间。。本中只玩一年期比特币期权做多做空与三倍美股半导体基金soxl。。你们说说。。福生无量天尊",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586686",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586686",
+     "pub_date": "Sat, 14 Nov 2026 23:52:30 +0000",
+     "title": "玩投资，一招鲜也就够了",
+     "ts": 1794700350
+    },
+    {
+     "author": "dashudashu",
+     "body": "- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/Bull/3586677",
+     "link": "https://www.newsmth.net/nForum/article/Bull/3586677",
+     "pub_date": "Sat, 14 Nov 2026 23:32:43 +0000",
+     "title": "期权做空还是挺有意思的",
+     "ts": 1794699163
+    },
+    {
      "author": "v1da",
      "body": "看到别人说才知道 R2 银行理财居然也能跌的很惨\n- By DeepSMTH on iPhone Duo",
      "guid": "http://www.newsmth.net/nForum/article/Bull/3586672",
@@ -2300,189 +2480,9 @@
      "pub_date": "Fri, 13 Nov 2026 23:41:26 +0000",
      "title": "昨天起做空了英伟达",
      "ts": 1794613286
-    },
-    {
-     "author": "MyRina",
-     "body": "说白了，有些男人敢一而再再而三，就是吃准了老婆不敢离。出一次离一次，他早成穷光蛋，拿什么出去浪？不敢离，造就了有恃无恐。这话难听，但账就是这么算的。",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585477",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585477",
-     "pub_date": "Fri, 13 Nov 2026 23:26:01 +0000",
-     "title": "别光说男的，难道女的么有责任吗？",
-     "ts": 1794612361
-    },
-    {
-     "author": "shuang99",
-     "body": "昨晚做了包子 做完就吃了俩\n早餐吃包子加咖啡\n少吃不了一点\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585473",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585473",
-     "pub_date": "Fri, 13 Nov 2026 23:24:22 +0000",
-     "title": "吃早餐了",
-     "ts": 1794612262
-    },
-    {
-     "author": "Barbarossa",
-     "body": "究竟害怕啥\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585444",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585444",
-     "pub_date": "Fri, 13 Nov 2026 23:03:51 +0000",
-     "title": "奇葩的中国，什么都是敏感词，和现代文明格格不入",
-     "ts": 1794611031
-    },
-    {
-     "author": "Barbarossa",
-     "body": "路费就要五百打不住\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585430",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585430",
-     "pub_date": "Fri, 13 Nov 2026 22:56:52 +0000",
-     "title": "今天爬丹霞山",
-     "ts": 1794610612
-    },
-    {
-     "author": "Barbarossa",
-     "body": "各位老六",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585427",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585427",
-     "pub_date": "Fri, 13 Nov 2026 22:56:01 +0000",
-     "title": "昨晚吃了油腻的江西菜，做点白菜豆腐对冲一下",
-     "ts": 1794610561
-    },
-    {
-     "author": "antaplus",
-     "body": "真的不行\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585419",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585419",
-     "pub_date": "Fri, 13 Nov 2026 22:53:55 +0000",
-     "title": "年纪大了不喜欢住酒店了",
-     "ts": 1794610435
-    },
-    {
-     "author": "Barbarossa",
-     "body": "各位老六\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585413",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585413",
-     "pub_date": "Fri, 13 Nov 2026 22:52:16 +0000",
-     "title": "下等人悲歌：男世世为奴，女代代为娼",
-     "ts": 1794610336
-    },
-    {
-     "author": "v1da",
-     "body": "大新闻。外星人入侵地球了？\n- By DeepSMTH on iPhone Duo",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585404",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585404",
-     "pub_date": "Fri, 13 Nov 2026 22:44:20 +0000",
-     "title": "美国全国停飞",
-     "ts": 1794609860
-    },
-    {
-     "author": "Barbarossa",
-     "body": "各位老六",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585403",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585403",
-     "pub_date": "Fri, 13 Nov 2026 22:38:05 +0000",
-     "title": "一觉醒来，猪大火居然英勇就义了",
-     "ts": 1794609485
-    },
-    {
-     "author": "antaplus",
-     "body": "我每年都要消费几次\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585401",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585401",
-     "pub_date": "Fri, 13 Nov 2026 22:14:47 +0000",
-     "title": "记得以前商场的体重计收5毛钱测一次",
-     "ts": 1794608087
-    },
-    {
-     "author": "dashudashu",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585380",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585380",
-     "pub_date": "Fri, 13 Nov 2026 16:15:51 +0000",
-     "title": "这暴跌行情，手持10倍做空空单，还是有点爽的呀",
-     "ts": 1794586551
-    },
-    {
-     "author": "dashudashu",
-     "body": "那个安庆已婚妇女恶心人很久了，你不也恶心她吗，广西中专女，广东85女，84直播女，还有个小师妹女，恶心女一箩筐。男的恶心的我也记不住了，liangf，什么天什么的。",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585341",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585341",
-     "pub_date": "Fri, 13 Nov 2026 14:32:01 +0000",
-     "title": "这些人 ，都是谁呀",
-     "ts": 1794580321
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "维达发英文的，我也来个接力\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nVampire, you're feed on the life of a pure heart\nVampire, you suck the life of goodness\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\nFrom now on, I'll call you England\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585333",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585333",
-     "pub_date": "Fri, 13 Nov 2026 14:24:11 +0000",
-     "title": "歌词欣赏09",
-     "ts": 1794579851
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n由于 Vitamine68 在 Bull 版的 言语粗俗 群嘲 行为，\n被暂时取消在本版的发文权力 14 天。\n版主:huipj\nFri Nov 13 21:42:37 2026",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585312",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585312",
-     "pub_date": "Fri, 13 Nov 2026 13:42:37 +0000",
-     "title": "Vitamine68被取消在Bull版的发文权限",
-     "ts": 1794577357
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "女：这几天我的天总是弄得很空\n男：这几天我的天总是弄得很空\n受了伤很累去怎么体会\n这世界太宽去如何粉碎\n我期待有束锐利的光\n女：这几天我的天总是弄得很空\n受了伤很累去怎么体会\n这世界太宽去如何粉碎\n我期待有束锐利的光\n男：所有人都期待有那么一天\n星期天去实现那所有的梦想\n但很怪，从那儿又回到了这儿\n锐利的光却粉碎了所有的梦想\n天在转，到处挤满了害\n空气中，还弥漫着DIE\n要快\n怎么了，你会变得又这样的怪\n女：太阳光的光也没有了光\n星期天组织人们去ZSMF\n男：天在转，到处挤满了害\n空气中，还弥漫着DIE\n要快，一定要快\n全都毁坏，一定很怪\n要快，一定要快\n天在转，到处挤满了害\n要快，别浪费了爱\n空气中，还弥漫着DIE\n怎么了，你会变得又这样的怪\n女：太阳光的光也没有了光\n星期天组织人们去ZSMF\n我要担心的都是些浪费的爱\n天空中一道锐利的光",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585303",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585303",
-     "pub_date": "Fri, 13 Nov 2026 13:35:39 +0000",
-     "title": "歌词欣赏07",
-     "ts": 1794576939
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "一切白的东西和你相遇\n都成了黑墨水暗淡无光\n一切鸟兽因为不能说出你的名字而万分绝望\n一切路口亮起绿灯让你随意通行\n一切指南针为我指出你的方向\n你是不露痕迹的风\n你是轻轻掠过身体的风\n你是不露行踪的风\n你是无时不在无处不在的风\n我的爱人 我的爱人\n我的爱人 我的爱人\n我的爱人 我的爱人\n你是我温暖的手套\n冰冷的啤酒\n带着太阳光气息的衬衫\n日复一日的梦想\n你是纯洁的天真的玻璃一样的\n你是纯洁的天真的水流一样的\n你是纯洁的天真的什么也改变不了\n阳光穿过你\n却改变了自己的方向\n你是纯洁的天真的玻璃一样的\n你是纯洁的天真的水流一样的\n你是纯洁的天真的什么也改变不了\n阳光穿过你\n却改变了自己的方向",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585301",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585301",
-     "pub_date": "Fri, 13 Nov 2026 13:35:18 +0000",
-     "title": "歌词欣赏06",
-     "ts": 1794576918
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "一个朋友他讨厌我\n因为我没有思想\n一个朋友他不理我\n因为我非常无知\nHA HA HA HA HA\n我来了 你看到了吗\n你看到了吗 我在似笑非笑的\nHA HA HA HA HA",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585300",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585300",
-     "pub_date": "Fri, 13 Nov 2026 13:34:45 +0000",
-     "title": "歌词欣赏05",
-     "ts": 1794576885
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "我不废话你也别废话\n我不废话你也别废话\n我不废话你也别废话\n我不废话你也别废话\n我不废话你也别废话",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585298",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585298",
-     "pub_date": "Fri, 13 Nov 2026 13:34:10 +0000",
-     "title": "歌词欣赏04",
-     "ts": 1794576850
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "一晃而过的，不止夏天和热情\n还有他的不甘心，仿佛大梦一场\n过去二十年，他和现实周旋着\n有时候是老练猎手，有时候是猎物\n怎样开始的，怎么此刻才半醒\n为何值得铭记的，只有那么一点\n此刻他坐在，时代广场的后面\n仿佛刚和魔交易，事后抑郁成疾\n他是聪明人，见过故人的赤贫\n见过我们的愚昧，他想成为自己\n他是奋斗者，也是无依的过客\n仿佛卒子过了河，回头已隔沧海\n他的年华啊，他的黄金时代\n选择似乎都正确，怎会头破血流\n此刻他起身，走向霓虹灯深处\n他的思虑就刻在，我的吉他背面\n没人有资格，指责你的虚荣心\n这是对赌的世界，没有人是看客\n继续摇摆吧，我的天真老朋友\n只有滚动的石头，才能不长青苔",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585296",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585296",
-     "pub_date": "Fri, 13 Nov 2026 13:33:42 +0000",
-     "title": "歌词欣赏03",
-     "ts": 1794576822
-    },
-    {
-     "author": "zhaodaliang",
-     "body": "动物比人类聪明\n垃圾比文明干净\n直觉比逻辑合理\n技术比意志彻底\n你们比我们聪明\n你们比我们干净\n你们比我们合理\n你们比我们彻底\n内在美外在美都让我吃惊\n内分泌外分泌都让我着迷\n我歌颂你赞美你给我肃清毒瘤\n我歌颂你赞美你给我取消感情\n你们比我们聪明\n你们比我们干净\n你们比我们合理\n你们比我们彻底\n内在美外在美都让我吃惊\n内分泌外分泌都让我着迷\n我歌颂你赞美你给我肃清毒瘤\n我歌颂你赞美你给我取消感情\n内在美外在美都让我吃惊\n内分泌外分泌都让我着迷\n我歌颂你赞美你给我肃清毒瘤\n我歌颂你赞美你给我取消感情\n我歌颂你歌颂你赞美你赞美你\n给我肃清毒瘤\n我歌颂你歌颂你给我肃清毒瘤\n我歌颂你歌颂你给我取消感情\n我歌颂你歌颂你赞美你赞美你\n给我肃清毒瘤给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情\n我歌颂你歌颂你给我肃清毒瘤\n我赞美你赞美你给我取消感情",
-     "guid": "http://www.newsmth.net/nForum/article/Bull/3585294",
-     "link": "https://www.newsmth.net/nForum/article/Bull/3585294",
-     "pub_date": "Fri, 13 Nov 2026 13:32:59 +0000",
-     "title": "歌词欣赏02",
-     "ts": 1794576779
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 22:05:02 GMT"
+   "last_modified": "Sun, 15 Nov 2026 06:09:38 GMT"
   },
   "children": {
    "items": [
@@ -3519,6 +3519,33 @@
   "fashionshow": {
    "items": [
     {
+     "author": "caimi",
+     "body": "--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562668",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/562668",
+     "pub_date": "Sun, 15 Nov 2026 05:26:11 +0000",
+     "title": "黑带",
+     "ts": 1794720371
+    },
+    {
+     "author": "inikang",
+     "body": "- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562662",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/562662",
+     "pub_date": "Sun, 15 Nov 2026 04:18:31 +0000",
+     "title": "怎么搭讪",
+     "ts": 1794716311
+    },
+    {
+     "author": "beihainan",
+     "body": "【 以下文字转载自 NewExpress 讨论区 】\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562609",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/562609",
+     "pub_date": "Sat, 14 Nov 2026 22:59:08 +0000",
+     "title": "这个妹子什么水平？ (转载)",
+     "ts": 1794697148
+    },
+    {
      "author": "xiaoni1",
      "body": "",
      "guid": "http://www.newsmth.net/nForum/article/FashionShow/562602",
@@ -4030,36 +4057,9 @@
      "pub_date": "Thu, 12 Nov 2026 06:31:05 +0000",
      "title": "小女友挺逗的",
      "ts": 1794465065
-    },
-    {
-     "author": "silimi",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562245",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/562245",
-     "pub_date": "Thu, 12 Nov 2026 06:28:11 +0000",
-     "title": "小女友，猜几岁",
-     "ts": 1794464891
-    },
-    {
-     "author": "rwgcz",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562226",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/562226",
-     "pub_date": "Thu, 12 Nov 2026 05:19:53 +0000",
-     "title": "三双鞋",
-     "ts": 1794460793
-    },
-    {
-     "author": "wlazy",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562212",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/562212",
-     "pub_date": "Thu, 12 Nov 2026 04:08:33 +0000",
-     "title": "学姐",
-     "ts": 1794456513
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 20:59:16 GMT"
+   "last_modified": "Sun, 15 Nov 2026 05:26:11 GMT"
   },
   "food": {
    "items": [
@@ -4960,7 +4960,7 @@
      "ts": 1789563698
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 01:47:04 GMT"
+   "last_modified": "Sat, 14 Nov 2026 22:29:22 GMT"
   },
   "gentle_fashion": {
    "items": [
@@ -5163,7 +5163,7 @@
      "ts": 1759282307
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 01:28:28 GMT"
+   "last_modified": "Sun, 15 Nov 2026 00:26:46 GMT"
   },
   "get_pregnant": {
    "items": [
@@ -5366,7 +5366,7 @@
      "ts": 1767228173
     }
    ],
-   "last_modified": "Fri, 13 Nov 2026 23:13:59 GMT"
+   "last_modified": "Sun, 15 Nov 2026 00:48:48 GMT"
   },
   "girl": {
    "items": [
@@ -5763,7 +5763,7 @@
      "ts": 1717925519
     }
    ],
-   "last_modified": "Fri, 13 Nov 2026 21:50:32 GMT"
+   "last_modified": "Sat, 14 Nov 2026 23:54:18 GMT"
   },
   "healthylife": {
    "items": [
@@ -6137,10 +6137,19 @@
      "ts": 1786339662
     }
    ],
-   "last_modified": "Fri, 13 Nov 2026 23:29:40 GMT"
+   "last_modified": "Sat, 14 Nov 2026 22:31:51 GMT"
   },
   "heart": {
    "items": [
+    {
+     "author": "teetea",
+     "body": "能孩子这学期很糟心，从一开学意料之外的没有重新分班开始。一想到她还要面对上学期末被她残忍斩缘的s2和小可爱就让我一直捏一把汗。\n在暗中观察和诡异的氛围中过了一学期。临近期中某日聊天她说这学期她发现中招的不行，我惊呼上学期你觉得直升的不行，这学期又觉得中招的不行，您那烤成一坨的统练，到底能不能学明白高中内容哦，恐怕你的智商确实未必在我之上。娃：你哪年高考的，说！我：你…你要干嘛？娃：我倒要看看你们高考能考出什么破题。我……\n大结果，娃复习的时候依旧自我感觉良好声称到达了心流状态，出成绩之后，娃：我心里不得劲，这样都没能进前50，我不想努力了……我：真还行！我还以为你要拉完了。内心：真的假的，对自己要求挺高啊！",
+     "guid": "http://www.newsmth.net/nForum/article/Heart/250516",
+     "link": "https://www.newsmth.net/nForum/article/Heart/250516",
+     "pub_date": "Sun, 15 Nov 2026 05:33:40 +0000",
+     "title": "迷之自信",
+     "ts": 1794720820
+    },
     {
      "author": "johnys",
      "body": "一天就这么过去了",
@@ -6671,18 +6680,9 @@
      "pub_date": "Wed, 21 Oct 2026 10:05:00 +0000",
      "title": "这两天给一个朋友编程，赚了800元外快",
      "ts": 1792577100
-    },
-    {
-     "author": "Yxchai",
-     "body": "终于穿两件衣服。",
-     "guid": "http://www.newsmth.net/nForum/article/Heart/250129",
-     "link": "https://www.newsmth.net/nForum/article/Heart/250129",
-     "pub_date": "Wed, 21 Oct 2026 00:21:00 +0000",
-     "title": "今天降温了",
-     "ts": 1792542060
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 12:08:12 GMT"
+   "last_modified": "Sun, 15 Nov 2026 05:33:41 GMT"
   },
   "jade_jewelry": {
    "items": [
@@ -7989,6 +7989,24 @@
   "memory": {
    "items": [
     {
+     "author": "DDOO",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/Memory/192443",
+     "link": "https://www.newsmth.net/nForum/article/Memory/192443",
+     "pub_date": "Sun, 15 Nov 2026 04:00:45 +0000",
+     "title": "身体的敌人",
+     "ts": 1794715245
+    },
+    {
+     "author": "moonriver007",
+     "body": "--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/Memory/192437",
+     "link": "https://www.newsmth.net/nForum/article/Memory/192437",
+     "pub_date": "Sun, 15 Nov 2026 02:18:55 +0000",
+     "title": "循环又一年",
+     "ts": 1794709135
+    },
+    {
      "author": "snailLee",
      "body": "年轻时候总认为老年人跟不上时代，其实我们一样也会这样。\n- 来自 水木社区APP v3.5.7",
      "guid": "http://www.newsmth.net/nForum/article/Memory/192423",
@@ -8509,27 +8527,9 @@
      "pub_date": "Wed, 04 Nov 2026 01:07:06 +0000",
      "title": "苹果~爱跑",
      "ts": 1793754426
-    },
-    {
-     "author": "snailLee",
-     "body": "你们都有吗？攒齐108将，好几万？\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/Memory/191199",
-     "link": "https://www.newsmth.net/nForum/article/Memory/191199",
-     "pub_date": "Tue, 03 Nov 2026 16:05:15 +0000",
-     "title": "突然刷到一种叫水浒卡的东西，99年的据说值钱了",
-     "ts": 1793721915
-    },
-    {
-     "author": "historia",
-     "body": "前不久，在专家和爱好者的格外关心和期待下，国家科学院动物学研究所举办了“朝鲜国犬丰山狗品评会－２０２６”。\n品评会旨在正确地进行对我国国犬丰山狗的登记调查和纯种评价，普及对国犬标准形状和生物学特性的科技知识，从而进一步加快增加纯种数量。各地选拔的数十只优秀丰山狗参加此次品评会，给人们带来喜悦和欢喜。\n国家科学院动物学研究所室长吴城日博士指出，此次品评会参加许多爱好者，科学地严格进行外貌、血统关系、特技等一切审评。\n参观者观看丰山狗的机灵勇敢面貌都说，要饲养一只国犬，一定参加下一次的品评会。\n有了要爱护并弘扬国家象征物的这一爱国心，朝鲜国犬丰山狗更加亲密地融入我们生活。\n劳动新闻\n目次\nCopyright @ 2026 by The Rodong Sinmun.\nAll rights reserved.",
-     "guid": "http://www.newsmth.net/nForum/article/Memory/191198",
-     "link": "https://www.newsmth.net/nForum/article/Memory/191198",
-     "pub_date": "Tue, 03 Nov 2026 15:29:13 +0000",
-     "title": "“朝鲜国犬丰山狗品评会－２０２６”大放异彩",
-     "ts": 1793719753
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 21:31:26 GMT"
+   "last_modified": "Sun, 15 Nov 2026 04:00:45 GMT"
   },
   "motorbike": {
    "items": [
@@ -8804,7 +8804,7 @@
      "ts": 1789092297
     }
    ],
-   "last_modified": "Fri, 13 Nov 2026 23:31:07 GMT"
+   "last_modified": "Sat, 14 Nov 2026 23:38:39 GMT"
   },
   "motss": {
    "items": [
@@ -9007,10 +9007,190 @@
      "ts": 1769908538
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 03:34:21 GMT"
+   "last_modified": "Sun, 15 Nov 2026 06:07:30 GMT"
   },
   "newexpress": {
    "items": [
+    {
+     "author": "Contador",
+     "body": "这个世纪难题已经解决了，现在有一种产品叫做马桶泡泡。我觉得这是世界上最伟大的发明之一。\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783186",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783186",
+     "pub_date": "Sun, 15 Nov 2026 06:09:14 +0000",
+     "title": "有人记得虎扑上大便压水花的问题吗？",
+     "ts": 1794722954
+    },
+    {
+     "author": "netv",
+     "body": "简单说，就是英伟达给新兴云公司担保买自己的卡\n然后这些云公司背负的都是高息贷，收入连利息都还不上\n英伟达还有二层担保，就是这些公司算力租不出去，英伟达承诺买回来自己\n说白了就是自己买自己的东西，然后中间还加了杠杆，现在已经累计几千亿了。\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783182",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783182",
+     "pub_date": "Sun, 15 Nov 2026 06:08:48 +0000",
+     "title": "英伟达的担保",
+     "ts": 1794722928
+    },
+    {
+     "author": "flyingpetals",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783180",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783180",
+     "pub_date": "Sun, 15 Nov 2026 06:08:36 +0000",
+     "title": "手机电池拆出来，单独放在外面能充电吗",
+     "ts": 1794722916
+    },
+    {
+     "author": "ihiker",
+     "body": "威尔·史密斯28岁的儿子贾登·史密斯与82岁的女友米歇尔·拉米。\n地鼱要是如此豁得出去也能傍富婆\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783162",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783162",
+     "pub_date": "Sun, 15 Nov 2026 06:05:33 +0000",
+     "title": "82与28",
+     "ts": 1794722733
+    },
+    {
+     "author": "coce",
+     "body": "介不是标准的脱裤子放屁设计吗\n--来自微微水木3.5.17@槑槑",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783157",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783157",
+     "pub_date": "Sun, 15 Nov 2026 06:04:45 +0000",
+     "title": "宇宙行扫码取号需要扫综合业务机器点击按钮弹出二维码",
+     "ts": 1794722685
+    },
+    {
+     "author": "bluestar",
+     "body": "比如说上药，是指治病\n下药，是指毒死XX\n吃药，是指吃西药\n喝药，是指吃中药\n良药，是指救人\n红药，是指看花\n火药，是指XX\n等等，不胜枚举啊",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783139",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783139",
+     "pub_date": "Sun, 15 Nov 2026 05:58:24 +0000",
+     "title": "一个“药”字就能彰显我中华文化的博大精深",
+     "ts": 1794722304
+    },
+    {
+     "author": "stockjack",
+     "body": "主播",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783101",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783101",
+     "pub_date": "Sun, 15 Nov 2026 05:55:00 +0000",
+     "title": "正在看一个鳌太线短剧好玩",
+     "ts": 1794722100
+    },
+    {
+     "author": "dust25",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783084",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783084",
+     "pub_date": "Sun, 15 Nov 2026 05:52:38 +0000",
+     "title": "可怜的黄凯撒",
+     "ts": 1794721958
+    },
+    {
+     "author": "dust25",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783079",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783079",
+     "pub_date": "Sun, 15 Nov 2026 05:52:05 +0000",
+     "title": "最后的晚餐",
+     "ts": 1794721925
+    },
+    {
+     "author": "siluhuayu",
+     "body": "发自「今日水木 on ADA-AL00」",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783064",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783064",
+     "pub_date": "Sun, 15 Nov 2026 05:49:22 +0000",
+     "title": "新中国工业长子",
+     "ts": 1794721762
+    },
+    {
+     "author": "yyking",
+     "body": "才知道BLG哎，这玩意在虎扑居然比足球还火，现在年轻人都喜欢电竞？老登们都在讨论\n聚聚、张xueliang、这里完全还是30年前的主题，老登老了",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783078",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783078",
+     "pub_date": "Sun, 15 Nov 2026 05:48:33 +0000",
+     "title": "这里就是老登论坛，刚看大家说B站送大会员",
+     "ts": 1794721713
+    },
+    {
+     "author": "fatcat",
+     "body": "今年5月写的",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783052",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783052",
+     "pub_date": "Sun, 15 Nov 2026 05:48:22 +0000",
+     "title": "这新华社记者水平如何？",
+     "ts": 1794721702
+    },
+    {
+     "author": "mahb",
+     "body": "https://v.douyin.com/PzKUpUYRu6k/ :4pm o@d.AT HVY:/ 02/17\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783019",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783019",
+     "pub_date": "Sun, 15 Nov 2026 05:44:28 +0000",
+     "title": "这是真的吗？有这么猛的吗？",
+     "ts": 1794721468
+    },
+    {
+     "author": "jackok",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783011",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783011",
+     "pub_date": "Sun, 15 Nov 2026 05:43:46 +0000",
+     "title": "一起境外网络侵害英烈权益民事公益诉讼案当庭宣判",
+     "ts": 1794721426
+    },
+    {
+     "author": "siluhuayu",
+     "body": "又不是让他掏钱激动啥\n发自「今日水木 on ADA-AL00」",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783005",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783005",
+     "pub_date": "Sun, 15 Nov 2026 05:43:21 +0000",
+     "title": "为啥有人叨叨0元面？",
+     "ts": 1794721401
+    },
+    {
+     "author": "jzgk",
+     "body": "猴耳天坑（大秋千）、坝陵河（蹦极）、荔波酷玩森林、十二背后（洞穴探险）、安龙山地公园（飞拉达）",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783000",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783000",
+     "pub_date": "Sun, 15 Nov 2026 05:42:51 +0000",
+     "title": "看着都害怕，你们有去玩过的吗",
+     "ts": 1794721371
+    },
+    {
+     "author": "kunseng",
+     "body": "想买点洗车工具，但是又不想买太多，之前玩其他的，买了一堆没用的东西。\n或者买回来觉得不好用搁置了，车库都塞满了。\n单位里的洗车机就冲水可以，其他都不行，完全洗不干净。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47783023",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47783023",
+     "pub_date": "Sun, 15 Nov 2026 05:42:28 +0000",
+     "title": "有没有人玩洗车的？",
+     "ts": 1794721348
+    },
+    {
+     "author": "siluhuayu",
+     "body": "店里就几张桌子。看外卖窗口一堆\n发自「今日水木 on ADA-AL00」",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47782986",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47782986",
+     "pub_date": "Sun, 15 Nov 2026 05:40:32 +0000",
+     "title": "袁记云饺是不是主打外卖？",
+     "ts": 1794721232
+    },
+    {
+     "author": "bananana",
+     "body": "人工智能结合大数据",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47782978",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47782978",
+     "pub_date": "Sun, 15 Nov 2026 05:39:28 +0000",
+     "title": "以后用人工智能抓贪官 一抓一个准吧",
+     "ts": 1794721168
+    },
+    {
+     "author": "oldfinwang",
+     "body": "周六早上，7点的高铁票，到广州。以为人会不多，结果到了出发大厅，已经到处都是人了。\n高铁上，很多站票。\n感觉每个人都在奔。",
+     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47782977",
+     "link": "https://www.newsmth.net/nForum/article/NewExpress/47782977",
+     "pub_date": "Sun, 15 Nov 2026 05:39:26 +0000",
+     "title": "深圳确实有活力",
+     "ts": 1794721166
+    },
     {
      "author": "strongcat",
      "body": "",
@@ -9370,189 +9550,9 @@
      "pub_date": "Sat, 14 Nov 2026 09:27:12 +0000",
      "title": "祥子就是自己作的他拉包月隔壁那家的车夫就过的好好的",
      "ts": 1794648432
-    },
-    {
-     "author": "e5200",
-     "body": "打了之后还会再长吗",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47778972",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47778972",
-     "pub_date": "Sat, 14 Nov 2026 09:26:22 +0000",
-     "title": "50了，脸上开始长老年斑，皮秒有用吗",
-     "ts": 1794648382
-    },
-    {
-     "author": "windychen",
-     "body": "rt  赞美AI  感谢开发者  阿弥陀佛",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47778962",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47778962",
-     "pub_date": "Sat, 14 Nov 2026 09:24:02 +0000",
-     "title": "丝毫不打折扣的说：AI挽救了水木",
-     "ts": 1794648242
-    },
-    {
-     "author": "Beyond0921",
-     "body": "祖上给他们积攒了几百年的家业，国防靠美帝，俄罗斯提供廉价能源，天朝提供廉价劳动力，他们享受无忧无虑的生活。\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47778946",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47778946",
-     "pub_date": "Sat, 14 Nov 2026 09:21:12 +0000",
-     "title": "人类有史以来最爽的一代人应该就是六七十年代出生的欧洲人吧？",
-     "ts": 1794648072
-    },
-    {
-     "author": "Ceraphim",
-     "body": "相当于董女士不再兼任格力集团的董事长而是主正格力电器那样的操作\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47778942",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47778942",
-     "pub_date": "Sat, 14 Nov 2026 09:20:00 +0000",
-     "title": "其实可以把游戏显卡业务切出去，让简森去这个公司当CEO",
-     "ts": 1794648000
-    },
-    {
-     "author": "liangxianfan",
-     "body": "懂的说说",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776234",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776234",
-     "pub_date": "Sat, 14 Nov 2026 01:22:46 +0000",
-     "title": "黄老板走了  Deep seek的AGI开发会变慢吗",
-     "ts": 1794619366
-    },
-    {
-     "author": "insomniaypf",
-     "body": "有的是人会给投钱，设备人才不缺。马上就能支棱起来。几年内都能并了英伟达",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776202",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776202",
-     "pub_date": "Sat, 14 Nov 2026 01:14:58 +0000",
-     "title": "说真的皮夹克再开个公司不就完了？叫美伟大",
-     "ts": 1794618898
-    },
-    {
-     "author": "wissenschaft",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776192",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776192",
-     "pub_date": "Sat, 14 Nov 2026 01:12:32 +0000",
-     "title": "养狗的，人品不会差，有爱心",
-     "ts": 1794618752
-    },
-    {
-     "author": "Chevrolet",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776184",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776184",
-     "pub_date": "Sat, 14 Nov 2026 01:11:24 +0000",
-     "title": "迪庆辞职，会有同事联名挽留吗",
-     "ts": 1794618684
-    },
-    {
-     "author": "Hudson57",
-     "body": "都怪小黄人不够忠诚，自己不检点？",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776162",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776162",
-     "pub_date": "Sat, 14 Nov 2026 01:07:06 +0000",
-     "title": "膏滑们如何看待黄被干掉这件事？",
-     "ts": 1794618426
-    },
-    {
-     "author": "dalishen",
-     "body": "离岸信托收税一大把\n可惜的是商k产业链没有了",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776158",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776158",
-     "pub_date": "Sat, 14 Nov 2026 01:05:27 +0000",
-     "title": "查佛道，查私产，这是有高人吧",
-     "ts": 1794618327
-    },
-    {
-     "author": "trabalhar",
-     "body": "--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776130",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776130",
-     "pub_date": "Sat, 14 Nov 2026 00:58:10 +0000",
-     "title": "你们地婆接受你们跳交谊舞吗",
-     "ts": 1794617890
-    },
-    {
-     "author": "mollyc",
-     "body": "隔壁常年停着一辆\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776124",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776124",
-     "pub_date": "Sat, 14 Nov 2026 00:57:30 +0000",
-     "title": "蓝牌特斯拉也是身份的象征吧",
-     "ts": 1794617850
-    },
-    {
-     "author": "WorldRoamer",
-     "body": "传染性怎么样",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776105",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776105",
-     "pub_date": "Sat, 14 Nov 2026 00:54:37 +0000",
-     "title": "埃博拉疯了",
-     "ts": 1794617677
-    },
-    {
-     "author": "siluhuayu",
-     "body": "发自「今日水木 on ADA-AL00」",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776090",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776090",
-     "pub_date": "Sat, 14 Nov 2026 00:52:29 +0000",
-     "title": "河南财经政法大马院原院长被双开",
-     "ts": 1794617549
-    },
-    {
-     "author": "yeguo",
-     "body": "见多识广大测试\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776077",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776077",
-     "pub_date": "Sat, 14 Nov 2026 00:50:24 +0000",
-     "title": "不许问 ai，牢牢们认识这是啥水果吗？",
-     "ts": 1794617424
-    },
-    {
-     "author": "ardenguo",
-     "body": "就想当条狗，可惜非的选肉狗场厂长那安家，怪谁呢？你表现出来的忠诚不是不是你的理由，吃你就一个原因，人家饿，你肥。\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776076",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776076",
-     "pub_date": "Sat, 14 Nov 2026 00:50:20 +0000",
-     "title": "奈何总被端上桌？",
-     "ts": 1794617420
-    },
-    {
-     "author": "fatcat",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776060",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776060",
-     "pub_date": "Sat, 14 Nov 2026 00:45:45 +0000",
-     "title": "美媒：中国或成最大输家！",
-     "ts": 1794617145
-    },
-    {
-     "author": "anylinkin",
-     "body": "全国3.35万座寺院、9000座道观同步启动财务大检查，审计围绕 制度合规性、账目规范性、财产完整性、公开实效性、关键环节专项核查展开。",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776068",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776068",
-     "pub_date": "Sat, 14 Nov 2026 00:45:25 +0000",
-     "title": "财新网：全国寺院道观启动财务审计",
-     "ts": 1794617125
-    },
-    {
-     "author": "cxjcxj",
-     "body": "马斯克也签了",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776053",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776053",
-     "pub_date": "Sat, 14 Nov 2026 00:43:24 +0000",
-     "title": "细小，有人发起请愿让黄回英伟达",
-     "ts": 1794617004
-    },
-    {
-     "author": "outerman",
-     "body": "通过这次的事才知道，以前装电脑的时候总看到这个英文",
-     "guid": "http://www.newsmth.net/nForum/article/NewExpress/47776041",
-     "link": "https://www.newsmth.net/nForum/article/NewExpress/47776041",
-     "pub_date": "Sat, 14 Nov 2026 00:41:12 +0000",
-     "title": "原来英伟达就是NVIDIA",
-     "ts": 1794616872
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 21:22:51 GMT"
+   "last_modified": "Sun, 15 Nov 2026 06:09:14 GMT"
   },
   "older": {
    "items": [
@@ -10017,6 +10017,46 @@
   "pictures": {
    "items": [
     {
+     "author": "青年教师",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/QingJiao_1037644.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/QingJiao/1037644",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/QingJiao_1037644.jpg?v=\" alt=\"\" /><br/>河南财经政法大马院原院长被双开 (转载)",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037644",
+     "pub_date": "Sat, 14 Nov 2026 17:57:03 +0000",
+     "title": "[青年教师] 河南财经政法大马院原院长被双开 (转载)",
+     "ts": 1794679023
+    },
+    {
+     "author": "辣妈羊毛党",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/CouponsLife_4562716.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/CouponsLife/4562716",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/CouponsLife_4562716.jpg?v=\" alt=\"\" /><br/>吐槽一个饭店大家避坑",
+     "link": "https://www.newsmth.net/nForum/article/CouponsLife/4562716",
+     "pub_date": "Sun, 15 Nov 2026 06:13:26 +0000",
+     "title": "[辣妈羊毛党] 吐槽一个饭店大家避坑",
+     "ts": 1794723206
+    },
+    {
+     "author": "股市",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/Stock_11635227.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/Stock/11635227",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Stock_11635227.jpg?v=\" alt=\"\" /><br/>看了大摩首席经济学家邢自强的言论",
+     "link": "https://www.newsmth.net/nForum/article/Stock/11635227",
+     "pub_date": "Sun, 15 Nov 2026 06:13:26 +0000",
+     "title": "[股市] 看了大摩首席经济学家邢自强的言论",
+     "ts": 1794723206
+    },
+    {
+     "author": "健美舞台",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/FitnessWorld_399905.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/FitnessWorld/399905",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/FitnessWorld_399905.jpg?v=\" alt=\"\" /><br/>健身去",
+     "link": "https://www.newsmth.net/nForum/article/FitnessWorld/399905",
+     "pub_date": "Sun, 15 Nov 2026 06:13:26 +0000",
+     "title": "[健美舞台] 健身去",
+     "ts": 1794723206
+    },
+    {
      "author": "航空航天",
      "body": "https://static.mysmth.net/nForum/img/hotpic/Aero_565326.jpg?v=",
      "guid": "https://www.newsmth.net/nForum/article/Aero/565326",
@@ -10025,26 +10065,6 @@
      "pub_date": "Sat, 14 Nov 2026 22:17:11 +0000",
      "title": "[航空航天] 美国FAA突然下令所有航班暂停起飞",
      "ts": 1794694631
-    },
-    {
-     "author": "家庭生活",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767778514.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/FamilyLife/1767778514",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/FamilyLife_1767778514.jpg?v=\" alt=\"\" /><br/>最近迷上了给主播刷礼物",
-     "link": "https://www.newsmth.net/nForum/article/FamilyLife/1767778514",
-     "pub_date": "Sat, 14 Nov 2026 22:17:11 +0000",
-     "title": "[家庭生活] 最近迷上了给主播刷礼物",
-     "ts": 1794694631
-    },
-    {
-     "author": "离异带娃",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/Liyidaiwa_20201.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/Liyidaiwa/20201",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Liyidaiwa_20201.jpg?v=\" alt=\"\" /><br/>新大陆为什么不是中国人先发现？",
-     "link": "https://www.newsmth.net/nForum/article/Liyidaiwa/20201",
-     "pub_date": "Sat, 14 Nov 2026 17:57:03 +0000",
-     "title": "[离异带娃] 新大陆为什么不是中国人先发现？",
-     "ts": 1794679023
     },
     {
      "author": "地理",
@@ -10057,47 +10077,27 @@
      "ts": 1794679023
     },
     {
-     "author": "人工智能",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/AI_97356.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/AI/97356",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AI_97356.jpg?v=\" alt=\"\" /><br/>如果即将到来的AGI真的引发恩格斯停顿",
-     "link": "https://www.newsmth.net/nForum/article/AI/97356",
-     "pub_date": "Sat, 14 Nov 2026 22:17:11 +0000",
-     "title": "[人工智能] 如果即将到来的AGI真的引发恩格斯停顿",
-     "ts": 1794694631
+     "author": "鹊桥·征男友女友",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/PieLove_2957077.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/PieLove/2957077",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/PieLove_2957077.jpg?v=\" alt=\"\" /><br/>代76未婚未育学长征婚-男征女（请：毒舌勿关注）",
+     "link": "https://www.newsmth.net/nForum/article/PieLove/2957077",
+     "pub_date": "Sun, 15 Nov 2026 06:13:26 +0000",
+     "title": "[鹊桥·征男友女友] 代76未婚未育学长征婚-男征女（请：毒舌勿关注）",
+     "ts": 1794723206
     },
     {
-     "author": "青年教师",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/QingJiao_1037644.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/QingJiao/1037644",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/QingJiao_1037644.jpg?v=\" alt=\"\" /><br/>河南财经政法大马院原院长被双开 (转载)",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037644",
-     "pub_date": "Sat, 14 Nov 2026 17:57:03 +0000",
-     "title": "[青年教师] 河南财经政法大马院原院长被双开 (转载)",
-     "ts": 1794679023
-    },
-    {
-     "author": "烘焙坊",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/Baking_120990.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/Baking/120990",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/Baking_120990.jpg?v=\" alt=\"\" /><br/>烤红薯",
-     "link": "https://www.newsmth.net/nForum/article/Baking/120990",
-     "pub_date": "Sat, 14 Nov 2026 17:57:03 +0000",
-     "title": "[烘焙坊] 烤红薯",
-     "ts": 1794679023
-    },
-    {
-     "author": "幽默全方位",
-     "body": "https://static.mysmth.net/nForum/img/hotpic/MMJoke_1634856627.jpg?v=",
-     "guid": "https://www.newsmth.net/nForum/article/MMJoke/1634856627",
-     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/MMJoke_1634856627.jpg?v=\" alt=\"\" /><br/>还得是三哥 (转载)",
-     "link": "https://www.newsmth.net/nForum/article/MMJoke/1634856627",
-     "pub_date": "Sat, 14 Nov 2026 22:17:11 +0000",
-     "title": "[幽默全方位] 还得是三哥 (转载)",
-     "ts": 1794694631
+     "author": "汽车世界",
+     "body": "https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945344531.jpg?v=",
+     "guid": "https://www.newsmth.net/nForum/article/AutoWorld/1945344531",
+     "html": "<img src=\"https://static.mysmth.net/nForum/img/hotpic/AutoWorld_1945344531.jpg?v=\" alt=\"\" /><br/>比亚迪的小蓝灯怎么比刹车灯都亮？",
+     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945344531",
+     "pub_date": "Sun, 15 Nov 2026 06:13:26 +0000",
+     "title": "[汽车世界] 比亚迪的小蓝灯怎么比刹车灯都亮？",
+     "ts": 1794723206
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 22:22:10 GMT"
+   "last_modified": "Sun, 15 Nov 2026 06:18:24 GMT"
   },
   "pondoflotus": {
    "items": [
@@ -10557,10 +10557,82 @@
      "ts": 1780316493
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 10:19:43 GMT"
+   "last_modified": "Sun, 15 Nov 2026 03:19:18 GMT"
   },
   "qingjiao": {
    "items": [
+    {
+     "author": "kbswkj",
+     "body": "--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037791",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037791",
+     "pub_date": "Sun, 15 Nov 2026 02:48:35 +0000",
+     "title": "AI 时代对元士太不友好了，做个ppt让人嘲笑了",
+     "ts": 1794710915
+    },
+    {
+     "author": "popcorners",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037775",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037775",
+     "pub_date": "Sun, 15 Nov 2026 01:40:52 +0000",
+     "title": "青椒这几天都放秋假了？",
+     "ts": 1794706852
+    },
+    {
+     "author": "firedog",
+     "body": "和具体的院系是什么关系呢？",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037767",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037767",
+     "pub_date": "Sun, 15 Nov 2026 01:25:41 +0000",
+     "title": "大学里那种创新院科创院之类的是做什么的？",
+     "ts": 1794705941
+    },
+    {
+     "author": "dataee",
+     "body": "计算机软件方向\n算法数据处理啥的\n能捣鼓demo",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037765",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037765",
+     "pub_date": "Sun, 15 Nov 2026 01:17:24 +0000",
+     "title": "有没有企业需要展开合作的呀",
+     "ts": 1794705444
+    },
+    {
+     "author": "dataee",
+     "body": "不读研的话\n随便一个专业是不是都可以啊\n总之都找不到工作\n找到了岗位也不匹配",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037755",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037755",
+     "pub_date": "Sun, 15 Nov 2026 01:13:51 +0000",
+     "title": "普通本科专科专业只要是工科是不是都一样啊？",
+     "ts": 1794705231
+    },
+    {
+     "author": "babu2015",
+     "body": "",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037754",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037754",
+     "pub_date": "Sun, 15 Nov 2026 01:13:04 +0000",
+     "title": "民营企业家马斯克又搞了从零到一的颠覆性回收技术?",
+     "ts": 1794705184
+    },
+    {
+     "author": "siluhuayu",
+     "body": "【 以下文字转载自 NewExpress 讨论区 】\n发自「今日水木 on ADA-AL00」",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037752",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037752",
+     "pub_date": "Sun, 15 Nov 2026 01:11:27 +0000",
+     "title": "耿同学最新揭示湘雅医学院赵某三篇AI论文，花费近15000美元发表",
+     "ts": 1794705087
+    },
+    {
+     "author": "wowohinwoher",
+     "body": "岗位规模萎缩，企业的要求也变高了，就说的那个无机非金属材料工程专业，网上都看到说一些水泥厂都不要这个专业，直接招机械电气的。产线这块大多还是机械电气的活\n很多专业事实上是纯科研专业，大部分高校没必要开设\n--来自微微水木3.5.14",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037746",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037746",
+     "pub_date": "Sun, 15 Nov 2026 01:01:17 +0000",
+     "title": "高校专业撤并看来得加速",
+     "ts": 1794704477
+    },
     {
      "author": "popcorners",
      "body": "",
@@ -11028,84 +11100,57 @@
      "pub_date": "Mon, 09 Nov 2026 05:54:51 +0000",
      "title": "没什么没听到教育部发声",
      "ts": 1794203691
-    },
-    {
-     "author": "babu2015",
-     "body": "中关村管委会主任许强介绍，规划明确，到2025年，北京国际科技创新中心基本形成，建设成为世界科学中心和创新高地",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037005",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037005",
-     "pub_date": "Mon, 09 Nov 2026 03:35:53 +0000",
-     "title": "2021年11月，北京日报，2025年北京将建成世界科学中心和创新高",
-     "ts": 1794195353
-    },
-    {
-     "author": "treeflowerer",
-     "body": "哪里能学会？\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036979",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036979",
-     "pub_date": "Mon, 09 Nov 2026 01:09:28 +0000",
-     "title": "请教横向如何运作？",
-     "ts": 1794186568
-    },
-    {
-     "author": "popcorners",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036906",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036906",
-     "pub_date": "Sun, 08 Nov 2026 14:09:16 +0000",
-     "title": "网上传这么一句古话：伐冰之家，不畜牛羊。懂的青椒说说。",
-     "ts": 1794146956
-    },
-    {
-     "author": "whk",
-     "body": "触目惊心",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036893",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036893",
-     "pub_date": "Sun, 08 Nov 2026 13:23:13 +0000",
-     "title": "怪不得我一直申请不上",
-     "ts": 1794144193
-    },
-    {
-     "author": "shuiyouli",
-     "body": "还真都挺冷门的",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036890",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036890",
-     "pub_date": "Sun, 08 Nov 2026 12:57:55 +0000",
-     "title": "“绝学”学科扶持计划",
-     "ts": 1794142675
-    },
-    {
-     "author": "luoxiaogui",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036886",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036886",
-     "pub_date": "Sun, 08 Nov 2026 12:15:53 +0000",
-     "title": "想到一篇语文课文《小公务员之死》，",
-     "ts": 1794140153
-    },
-    {
-     "author": "kadoyo",
-     "body": "请扪心自问一下，这学历那学历，哪一样教会了真才实学？",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036878",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036878",
-     "pub_date": "Sun, 08 Nov 2026 11:44:23 +0000",
-     "title": "爱迪生啥学历都没有，耽误成才了吗？",
-     "ts": 1794138263
-    },
-    {
-     "author": "letitbe321",
-     "body": "搞教学的就安心备课，好好钻研讲课，安心把课讲好。搞科研的就到处喝酒拉项目搞关系，好好拉课题。就行。不要狗揽八泡尿。每天到处跑项目，都没时间备课，靠帽子学校就把最美教师等名头给这些人，纯粹搞笑。",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1036865",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1036865",
-     "pub_date": "Sun, 08 Nov 2026 11:16:23 +0000",
-     "title": "其实高校就分开，搞教学的老师，搞科研的老师",
-     "ts": 1794136583
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 15:20:45 GMT"
+   "last_modified": "Sun, 15 Nov 2026 02:48:36 GMT"
   },
   "shida": {
    "items": [
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n也不知道他哪来的野路子，说国常会上有大佬表态不会再频繁救市了，比如出强刺激政策之类，而是要求市场增强内部自身的稳定性，看好自己的一亩三分地，别老指望别人给兜底，提供无限弹药。自己的问题自己找原因，不要指望别人，也别老拿股市问题上会讨论。\n这倒是能跟托而不举对得上号。\n我就想知道吴清还能撑得住吗？\n长牛慢牛还搞得下去？\n#发自zSMTH@OXF-AN10",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189486",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189486",
+     "pub_date": "Sun, 15 Nov 2026 05:41:02 +0000",
+     "title": "[Stock] 水皮说，国常会上有人表态不会再频繁救市了",
+     "ts": 1794721262
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n真是应了锤子说西贝的那句话又贵又难吃，一碟花生米，屈指可数48元，啤酒没喝完结账的时候不给退，当我们问他的时候，说他们下班了，封账了，退不了。再也不去了，谁去谁上当\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189485",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189485",
+     "pub_date": "Sun, 15 Nov 2026 01:41:00 +0000",
+     "title": "[FamilyLife] 吐槽一家饭店大家避坑",
+     "ts": 1794706860
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189484",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189484",
+     "pub_date": "Sun, 15 Nov 2026 00:41:01 +0000",
+     "title": "[METech] 你们乐于看到华为标准成为行业标准吗",
+     "ts": 1794703261
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n内心想法：这么多韭菜，根本割不完\n-来自水木说",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189483",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189483",
+     "pub_date": "Sat, 14 Nov 2026 23:41:01 +0000",
+     "title": "[Stock] 吴清：A股有2亿多股票投资者、8亿多基金持有人，这一国",
+     "ts": 1794699661
+    },
+    {
+     "author": "deliver",
+     "body": "【此篇文章是由自动发信系统所张贴】\n筷子夹住了Starship 42",
+     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189482",
+     "link": "https://www.newsmth.net/nForum/article/ShiDa/189482",
+     "pub_date": "Sat, 14 Nov 2026 22:41:01 +0000",
+     "title": "[Aero] 又让马斯克装到了",
+     "ts": 1794696061
+    },
     {
      "author": "deliver",
      "body": "【此篇文章是由自动发信系统所张贴】\n规划的前提是存在稳定的整体框架，没有整体框架时，先要及时生成所需要的整体框架，然后才能进行规划。\n不在于体系复杂，不在于规模庞大，不在于投资巨大，也不在于创新链、产业链、供应链漫长。。\n垫付性技术的锚点，或者说垫付的对象，不是某一具体技术，而是当前的整体框架。。",
@@ -11600,54 +11645,9 @@
      "pub_date": "Fri, 13 Nov 2026 16:41:00 +0000",
      "title": "[ADAgent_TG] 11月14日-11月19日卓马口腔矫正，儿科，种植，修",
      "ts": 1794588060
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n先把房子过户给子女？存款用子女的名义存？\n信托不可靠，每年收的管理费估计积攒下来比遗产税还要高。",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189417",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189417",
-     "pub_date": "Fri, 13 Nov 2026 16:41:00 +0000",
-     "title": "[FamilyLife] 如果开征遗产税和赠与税，中产们怎么避税？",
-     "ts": 1794588060
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n现在趋势就是中学英语越来越简单，语文越来越难，海淀初一今年期中考试，六小强全年级语文最高分90，语文现在是最拉分的，而且初中的数学题最后几道都和阅读查不多，叫新定义考题，给一段很长的数学新定义，然后让学生用新定义解题，\n英语考试则基本小学水平，基本都90多分，英语学的再好也就这成绩，英语没准以后都改成水平考试\n发自「今日水木 on iOS」",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189416",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189416",
-     "pub_date": "Fri, 13 Nov 2026 16:41:00 +0000",
-     "title": "[ChildEducation] 小学生家长们还是多花些精力在语文上吧",
-     "ts": 1794588060
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n咱走到第几步了？",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189415",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189415",
-     "pub_date": "Fri, 13 Nov 2026 16:41:00 +0000",
-     "title": "[OurEstate] 这是日本当年的房价四部曲",
-     "ts": 1794588060
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n本科，朝九晚五，白净娴雅，知书达理。42岁了，身高169cm,体重60kg，离异未育，和平分开，有生育意愿，可商量；经济独立，家庭无负担。\n心性温暖纯粹，守得住本心。热爱生活，对美好事物保有好奇。感情坚定长情专一，偏被动，不接受快餐式感情。\n日常爱研究美食、养生育儿、养花种菜，爱好广泛，尤爱历史地理文科大综合、理工类的建筑科技等也非常喜欢，喜欢逻辑、喜欢数学。择友择伴都很在乎三观，看重契合，知心好友不多，放入心里的会格外珍惜。\n期待你：品性端正善良有涵养，温暖守信；\n身体健康，相貌周正，形象干净舒展，眉眼正气，不嗜烟酒，谈吐得体。\n地域不限，不排斥离异带娃，若有孩子，我会视如己出、用心相待。\n彼此关怀，精神同频，以爱和心疼为基础走入婚姻，互为依靠，相伴到老。\n联系邮箱：3143928962@qq.com\n信如其人，轻浮无诚意的来信恕不回复。愿在快节奏里，静待有缘人，慢慢相知相守。",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189404",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189404",
-     "pub_date": "Fri, 13 Nov 2026 07:41:03 +0000",
-     "title": "[PieLove] 42离异女征男",
-     "ts": 1794555663
-    },
-    {
-     "author": "deliver",
-     "body": "【此篇文章是由自动发信系统所张贴】\n貌似我身边不少持有多套房。\n高中同学，4 套\n一起考研的 3 套\n小舅子 城市县城老家自建 3 套\n高中班花 一套，顶别人 2套，还在强撑着\n邻居 自己反馈 3 套\n对面的邻居反馈 3 套，在不同城市\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/ShiDa/189403",
-     "link": "https://www.newsmth.net/nForum/article/ShiDa/189403",
-     "pub_date": "Fri, 13 Nov 2026 02:41:02 +0000",
-     "title": "[OurEstate] 现在手上还有持有多套房的人多吗，身边很多多套的",
-     "ts": 1794537662
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 21:12:29 GMT"
+   "last_modified": "Sun, 15 Nov 2026 05:41:03 GMT"
   },
   "shuibuzhao": {
    "items": [
@@ -12760,7 +12760,7 @@
      "ts": 1791954564
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 06:04:35 GMT"
+   "last_modified": "Sat, 14 Nov 2026 22:18:09 GMT"
   },
   "topten": {
    "items": [
@@ -12774,49 +12774,49 @@
      "ts": 1794676758
     },
     {
-     "author": "archer",
-     "body": "煮了吃多好吃，开水泡都是没条件才泡吧\n她坚决不同意，说方便面就是跑着好吃\n煮了一点方便面味道也没有了，\n要不怎么叫泡面呢。\n我感觉她太幼稚了，所有东西，能煮肯定煮了好吃啊\n她跑了6分钟，简直跟屎一样\n泡一分钟足够了吧\n煮的多劲道\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/FamilyLife/1767778466",
-     "link": "https://www.newsmth.net/nForum/article/FamilyLife/1767778466",
-     "pub_date": "Sat, 14 Nov 2026 00:36:54 +0000",
-     "title": "今天又吵的不可开交了，方便面能煮非要开水泡",
-     "ts": 1794616614
+     "author": "gemini",
+     "body": "筷子夹住了Starship 42",
+     "guid": "http://www.newsmth.net/nForum/article/Aero/565379",
+     "link": "https://www.newsmth.net/nForum/article/Aero/565379",
+     "pub_date": "Sun, 15 Nov 2026 05:35:59 +0000",
+     "title": "又让马斯克装到了",
+     "ts": 1794720959
     },
     {
-     "author": "inikang",
-     "body": "- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562511",
-     "link": "https://www.newsmth.net/nForum/article/FashionShow/562511",
-     "pub_date": "Sat, 14 Nov 2026 17:35:22 +0000",
-     "title": "邻居忘带钥匙",
-     "ts": 1794677722
+     "author": "wowohinwoher",
+     "body": "目前该专业其中一个班签了两个，另一个专业为零\n--来自微微水木3.5.14",
+     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037581",
+     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037581",
+     "pub_date": "Sun, 15 Nov 2026 05:24:16 +0000",
+     "title": "学院一个专业就业太惨了",
+     "ts": 1794720256
     },
     {
-     "author": "MasonBJ",
-     "body": "不用办进京证了\n[upload=1][/upload]",
-     "guid": "http://www.newsmth.net/nForum/article/AutoWorld/1945344653",
-     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945344653",
-     "pub_date": "Sat, 14 Nov 2026 16:46:20 +0000",
-     "title": "10年了,终于拿到京牌",
-     "ts": 1794674780
+     "author": "phoenixhills",
+     "body": "不能把产业命运和国家命运押注在一个公司上面。企业是市场汪洋海里的一艘船。大风大浪里，汪洋中的任何船都可能沉。关键核心技术的生成能力，必须锚定在永远不可能沉没的地方，可以为所有船提供远航补给。",
+     "guid": "http://www.newsmth.net/nForum/article/METech/509438",
+     "link": "https://www.newsmth.net/nForum/article/METech/509438",
+     "pub_date": "Sun, 15 Nov 2026 05:40:53 +0000",
+     "title": "你们乐于看到华为标准成为行业标准吗",
+     "ts": 1794721253
     },
     {
-     "author": "larryxin",
-     "body": "新华社洛杉矶11月13日电 美国太空探索技术公司重型运载火箭“星舰”于美国中部时间13日下午实施第15次试飞，原计划首次尝试助推器和飞船均返回发射场，由发射塔机械臂实施“捕获”回收，但助推器未能按计划返回发射场。\n美国中部时间13日16时48分许（北京时间14日6时48分许），“星舰”从位于得克萨斯州南部的发射基地升空。此后，火箭一二级分离。“超级重型”助推器未按原计划返回发射场，在墨西哥湾海域受控溅落。\n据任务团队介绍，“星舰”飞船将继续执行飞行任务，计划进入距地球表面约275公里的轨道飞行，并将部署26颗新一代“星链”V3卫星。\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Aero/565329",
-     "link": "https://www.newsmth.net/nForum/article/Aero/565329",
-     "pub_date": "Sat, 14 Nov 2026 18:14:11 +0000",
-     "title": "美“星舰”第15次试飞　助推器未能按计划返回发射场",
-     "ts": 1794680051
+     "author": "Maxiu",
+     "body": "也不知道他哪来的野路子，说国常会上有大佬表态不会再频繁救市了，比如出强刺激政策之类，而是要求市场增强内部自身的稳定性，看好自己的一亩三分地，别老指望别人给兜底，提供无限弹药。自己的问题自己找原因，不要指望别人，也别老拿股市问题上会讨论。\n这倒是能跟托而不举对得上号。\n我就想知道吴清还能撑得住吗？\n长牛慢牛还搞得下去？\n#发自zSMTH@OXF-AN10",
+     "guid": "http://www.newsmth.net/nForum/article/Stock/11635387",
+     "link": "https://www.newsmth.net/nForum/article/Stock/11635387",
+     "pub_date": "Sun, 15 Nov 2026 05:40:34 +0000",
+     "title": "水皮说，国常会上有人表态不会再频繁救市了",
+     "ts": 1794721234
     },
     {
-     "author": "coolsailor",
-     "body": "中年后之前各种兴趣都淡了。\n曾经喜欢踢足球，找不到人，就自己拉了两个野球群，当球霸。\n野球群早散了，现在也就踢踢养生球，输赢无所谓，队友传不传球无所谓，队友废话多喜欢埋怨我也不怼了，爱谁谁。队友不跑更无所谓，我也不跑啊。\n曾经喜欢徒步爬山。每周都爬。尼泊尔就去了两次。现在完全深恶痛绝这项运动了，浪费时间，浪费膝盖，审美疲劳。\n曾经是健身房举铁爱好者。练了三年，还配合搏击，空手道，瑜伽，普拉提，动感单车训练。家里也攒了一套哑铃，杠铃。落灰几年了，也都举不动了，打算卖铁。\n曾经有两年全国到处去跑马拉松，那时候马拉松还不这么热，报名贼容易。夏天几乎每天都去奥森训练。现在，一公里也跑不下来。买的无数双跑鞋全扔垃圾桶了。\n刷剧，短剧都不想刷。十分钟的影视解说看着都累。\n读书，那是读不下去了。水木上帖子稍长一点都读不下去。\n买了个xbox，发现唯一玩的下去的游戏是Fifa，这玩意每年升级就改几个参数，还要再买一次。一个游戏机就玩一个游戏，太不值，就卖掉了。\n编程。几年前还真在车库弄了个workshop，幻想周末就着啤酒写出惊世骇俗的东西。结果现在AI，写的那点玩意，一行prompt就能搞定。\n又有一阵子，唯一的乐趣变成了，送老婆孩子去社区中心参加兴趣班。到了停车场，我自己独自留在车里刷X，家庭生活，儿童教育上的破事。\n最近终于有了转机。\n把几年前写的小说稿翻出来，重写。买了几个不同AI的会员，让他们读，点评。\n有的AI各种彩虹屁，说一刷就很有趣，二刷又读到伏笔，真是精妙。有的却说写作功底不行啊，作者视角解释过多，节奏太慢，爽点没兑现，情绪也没顶上来。\n我把他们点评发给对方，又马上变脸。我没想到这一点，你说的对，这里确实有解释过度的问题；或者你说的对，这是有效冗余，还是伏笔。\n真有意思啊。",
-     "guid": "http://www.newsmth.net/nForum/article/Memory/192276",
-     "link": "https://www.newsmth.net/nForum/article/Memory/192276",
-     "pub_date": "Sat, 14 Nov 2026 00:36:57 +0000",
-     "title": "中年之后的乐趣",
-     "ts": 1794616617
+     "author": "iambigcat",
+     "body": "真是应了锤子说西贝的那句话又贵又难吃，一碟花生米，屈指可数48元，啤酒没喝完结账的时候不给退，当我们问他的时候，说他们下班了，封账了，退不了。再也不去了，谁去谁上当\n--发自 ismth(丝滑版)",
+     "guid": "http://www.newsmth.net/nForum/article/FamilyLife/1767779199",
+     "link": "https://www.newsmth.net/nForum/article/FamilyLife/1767779199",
+     "pub_date": "Sun, 15 Nov 2026 04:49:56 +0000",
+     "title": "吐槽一家饭店大家避坑",
+     "ts": 1794718196
     },
     {
      "author": "atlantiss",
@@ -12828,34 +12828,34 @@
      "ts": 1794676566
     },
     {
-     "author": "dragonfly112",
-     "body": "规划的前提是存在稳定的整体框架，没有整体框架时，先要及时生成所需要的整体框架，然后才能进行规划。\n不在于体系复杂，不在于规模庞大，不在于投资巨大，也不在于创新链、产业链、供应链漫长。。\n垫付性技术的锚点，或者说垫付的对象，不是某一具体技术，而是当前的整体框架。。",
-     "guid": "http://www.newsmth.net/nForum/article/METech/509898",
-     "link": "https://www.newsmth.net/nForum/article/METech/509898",
-     "pub_date": "Sat, 14 Nov 2026 20:40:06 +0000",
-     "title": "集成电路和其他产业不同之处在于，没有相对稳定的整体框架",
-     "ts": 1794688806
+     "author": "MasonBJ",
+     "body": "不用办进京证了\n[upload=1][/upload]",
+     "guid": "http://www.newsmth.net/nForum/article/AutoWorld/1945344653",
+     "link": "https://www.newsmth.net/nForum/article/AutoWorld/1945344653",
+     "pub_date": "Sat, 14 Nov 2026 16:46:20 +0000",
+     "title": "10年了,终于拿到京牌",
+     "ts": 1794674780
     },
     {
-     "author": "meirenai",
-     "body": "等于说这近一年半买进来的基本都亏\n--发自 ismth(丝滑版)",
-     "guid": "http://www.newsmth.net/nForum/article/Stock/11634776",
-     "link": "https://www.newsmth.net/nForum/article/Stock/11634776",
-     "pub_date": "Sat, 14 Nov 2026 19:41:34 +0000",
-     "title": "Nvidia已经回到去年七月初的价了",
-     "ts": 1794685294
+     "author": "inikang",
+     "body": "- 来自 水木社区APP v3.5.7",
+     "guid": "http://www.newsmth.net/nForum/article/FashionShow/562511",
+     "link": "https://www.newsmth.net/nForum/article/FashionShow/562511",
+     "pub_date": "Sat, 14 Nov 2026 17:35:22 +0000",
+     "title": "邻居忘带钥匙",
+     "ts": 1794677722
     },
     {
-     "author": "babu2015",
-     "body": "“不过，偶尔，也有解决直接批评的情况。\n例如，去年批评的这个大项目的企图，今年好像寿终正寝了。”",
-     "guid": "http://www.newsmth.net/nForum/article/QingJiao/1037676",
-     "link": "https://www.newsmth.net/nForum/article/QingJiao/1037676",
-     "pub_date": "Sat, 14 Nov 2026 16:19:17 +0000",
-     "title": "老公给老婆搞几十亿的大项目，被饶毅阻击了",
-     "ts": 1794673157
+     "author": "springnier",
+     "body": "（如图）\n--发自 水木拾光(iOS)",
+     "guid": "http://www.newsmth.net/nForum/article/Liyidaiwa/20201",
+     "link": "https://www.newsmth.net/nForum/article/Liyidaiwa/20201",
+     "pub_date": "Sun, 15 Nov 2026 04:08:17 +0000",
+     "title": "新大陆为什么不是中国人先发现？",
+     "ts": 1794715697
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 21:41:02 GMT"
+   "last_modified": "Sun, 15 Nov 2026 05:41:02 GMT"
   },
   "wedding": {
    "items": [
@@ -13049,7 +13049,7 @@
      "ts": 1743511607
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 04:41:09 GMT"
+   "last_modified": "Sun, 15 Nov 2026 02:10:30 GMT"
   },
   "wine": {
    "items": [
@@ -13261,7 +13261,7 @@
      "ts": 1774094917
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 04:08:10 GMT"
+   "last_modified": "Sun, 15 Nov 2026 04:09:41 GMT"
   },
   "woodenart": {
    "items": [
@@ -13468,6 +13468,51 @@
   },
   "workinglife": {
    "items": [
+    {
+     "author": "chery",
+     "body": "刚披露，腾讯最近裁员的6大真相",
+     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351904",
+     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351904",
+     "pub_date": "Sun, 15 Nov 2026 05:22:27 +0000",
+     "title": "刚披露，腾讯最近裁员的6大真相",
+     "ts": 1794720147
+    },
+    {
+     "author": "shunderen",
+     "body": "听说的，一个年轻的女员工，体制内，对工作没有兴趣\n用ai来完成日常的工作，非常轻松，\n但是被其他人非议，说她不遵守流程，好吃懒做。。。。。\n但是实际上这个姑娘工作完成的很好\n其实，除了物理世界的工作，精神世界的工作\n纯粹的逻辑世界的工作，最近几年被代替的概率太高了\n你如果一天到晚都不跟人打交道，不做体力劳动，那就得小心了",
+     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351874",
+     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351874",
+     "pub_date": "Sun, 15 Nov 2026 02:52:15 +0000",
+     "title": "有些工作已经没有意义了",
+     "ts": 1794711135
+    },
+    {
+     "author": "iloveanfield",
+     "body": "～～～当年明月说的：没有只升不降的海浪。望周知。",
+     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351854",
+     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351854",
+     "pub_date": "Sun, 15 Nov 2026 00:04:56 +0000",
+     "title": "美国50年代到上世纪末比较繁荣文明。现在也撕裂倒退混乱不堪。",
+     "ts": 1794701096
+    },
+    {
+     "author": "iloveanfield",
+     "body": "～～～混乱了。麻木了。",
+     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351853",
+     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351853",
+     "pub_date": "Sat, 14 Nov 2026 23:59:34 +0000",
+     "title": "二十多年，我们的物质生活极大丰富了。中老登的思想滞涨滑坡了",
+     "ts": 1794700774
+    },
+    {
+     "author": "iloveanfield",
+     "body": "～～～",
+     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351850",
+     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351850",
+     "pub_date": "Sat, 14 Nov 2026 23:52:10 +0000",
+     "title": "年轻时，有一段时间特喜欢上班。现在还有喜欢上班的吗？",
+     "ts": 1794700330
+    },
     {
      "author": "oceanly",
      "body": "等45岁的时候社保也满20年了",
@@ -13962,54 +14007,9 @@
      "pub_date": "Thu, 12 Nov 2026 03:31:57 +0000",
      "title": "单位通知十二月份和一月份的工资要明年再发",
      "ts": 1794454317
-    },
-    {
-     "author": "masking",
-     "body": "据说管不住裤裆里的事被董事会罢免\n- 来自 水木社区APP v3.5.7",
-     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351268",
-     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351268",
-     "pub_date": "Thu, 12 Nov 2026 03:31:49 +0000",
-     "title": "英伟达芯片部门负责人要离职，在走流程",
-     "ts": 1794454309
-    },
-    {
-     "author": "baibj",
-     "body": "今年42，同学里死了3个了，同事50之内死的也有几个了。\n也见过死人家里清理物品的，生前特别在意的东西后人直接就扔掉了。\n做人，得过且过就行了，放过自己",
-     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351266",
-     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351266",
-     "pub_date": "Thu, 12 Nov 2026 03:30:15 +0000",
-     "title": "人不是老了才会死，是随时会死",
-     "ts": 1794454215
-    },
-    {
-     "author": "CHAOSH",
-     "body": "腾讯真的要裁员一半吗，那深圳房价扛得住不",
-     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351243",
-     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351243",
-     "pub_date": "Thu, 12 Nov 2026 02:13:24 +0000",
-     "title": "腾讯真的要裁员一半吗，那深圳房价扛得住不",
-     "ts": 1794449604
-    },
-    {
-     "author": "bianju",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351235",
-     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351235",
-     "pub_date": "Thu, 12 Nov 2026 01:50:58 +0000",
-     "title": "鹅厂万人大裁？",
-     "ts": 1794448258
-    },
-    {
-     "author": "tematare",
-     "body": "",
-     "guid": "http://www.newsmth.net/nForum/article/WorkingLife/351229",
-     "link": "https://www.newsmth.net/nForum/article/WorkingLife/351229",
-     "pub_date": "Thu, 12 Nov 2026 01:45:53 +0000",
-     "title": "只交15年社保退休金也就2000多吧",
-     "ts": 1794447953
     }
    ],
-   "last_modified": "Sat, 14 Nov 2026 21:04:08 GMT"
+   "last_modified": "Sun, 15 Nov 2026 05:22:28 GMT"
   }
  }
 }
