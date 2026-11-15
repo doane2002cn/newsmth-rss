@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Nov 2026 06:13:26 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2026 16:18:07 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>坐飞机不一定会变老</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250518</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250518</guid>
+      <author>wuduan2</author>
+      <pubDate>Sun, 15 Nov 2026 15:26:16 +0000</pubDate>
+      <description><![CDATA[之前我发过贴说坐飞机可能会变年轻，因为动钟变慢，<br/>后来考虑引力效应后，我又发帖说会变老，<br/>经过严谨的思考，<br/>我现在终于搞清楚了：<br/>这个坐飞机是变老还是变年轻，是不一定的，<br/>跟你怎么坐有关，<br/>在什么纬度坐飞机，<br/>往哪个方向飞，都有关系。<br/>例如在赤道向东飞就会变年轻<br/>而如果在国内南北方向飞，就会变老]]></description>
+    </item>
+    <item>
+      <title>明天早上继续去撸铁！</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250517</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250517</guid>
+      <author>newluna81</author>
+      <pubDate>Sun, 15 Nov 2026 09:22:14 +0000</pubDate>
+      <description><![CDATA[哈哈，撸铁是一种快乐]]></description>
+    </item>
     <item>
       <title>迷之自信</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250516</link>
@@ -391,22 +407,6 @@
       <author>wuduan2</author>
       <pubDate>Mon, 26 Oct 2026 00:00:45 +0000</pubDate>
       <description><![CDATA[把暖气烧好是件很困难的事？<br/>10月20日正式供暖<br/>不奢求提前，<br/>但也不能推后这么多吧<br/>室温17度，对于办公室久坐而言是不是低了点<br/>暖气冰凉]]></description>
-    </item>
-    <item>
-      <title>撸铁归来，神清气爽</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250229</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250229</guid>
-      <author>newluna81</author>
-      <pubDate>Sun, 25 Oct 2026 23:46:53 +0000</pubDate>
-      <description><![CDATA[哈哈，大家都撸铁吧！]]></description>
-    </item>
-    <item>
-      <title>今天我很开心！</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250225</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250225</guid>
-      <author>newluna81</author>
-      <pubDate>Sun, 25 Oct 2026 10:34:36 +0000</pubDate>
-      <description><![CDATA[哈哈，非常的开心]]></description>
     </item>
   </channel>
 </rss>
