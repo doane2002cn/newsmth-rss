@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Nov 2026 22:45:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:11:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>下午三点喝咖啡机双倍，管到后半夜两点，你们也这样？</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782415</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782415</guid>
+      <author>miao77777</author>
+      <pubDate>Mon, 16 Nov 2026 01:50:59 +0000</pubDate>
+      <description><![CDATA[你们也这样吗？<br/>是不是咖啡只能早晨喝？<br/>今早调整成一倍浓度，泡麦片。后续再来汇报]]></description>
+    </item>
     <item>
       <title>习惯的差异--有人吃汤面条 不喝汤</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782351</link>
@@ -398,14 +406,6 @@
       <author>natsel</author>
       <pubDate>Mon, 02 Nov 2026 06:37:28 +0000</pubDate>
       <description><![CDATA[广西北海的小鱼干，配金鲳鱼淡盐咸鱼块。只放油就行。<br/>用水泡洗几次，放碟子蒸。建议用压力锅，小鱼干的骨头蒸软再吃。]]></description>
-    </item>
-    <item>
-      <title>酸菜汆白肉</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781301</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781301</guid>
-      <author>RaZRo</author>
-      <pubDate>Mon, 02 Nov 2026 02:54:43 +0000</pubDate>
-      <description><![CDATA[发现这道菜不错。对润肠通便居然很有好处。酸白菜纤维含量高，腌过后其实是变紧实了。无形中吃的菜量是增加的。]]></description>
     </item>
   </channel>
 </rss>

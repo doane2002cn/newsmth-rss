@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 15 Nov 2026 22:45:21 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Nov 2026 06:11:02 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>ai是把双刃剑</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/352031</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/352031</guid>
+      <author>jasminoides</author>
+      <pubDate>Mon, 16 Nov 2026 02:39:03 +0000</pubDate>
+      <description><![CDATA[帮助老板降本增效的同时也刺向了自己，看谁能挺得久挺到最后吧]]></description>
+    </item>
+    <item>
+      <title>还是AI厉害，一句话说透社保本质。</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/352010</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/352010</guid>
+      <author>sundaeyu</author>
+      <pubDate>Mon, 16 Nov 2026 01:12:17 +0000</pubDate>
+      <description><![CDATA[国家信用兜底的代际互助。]]></description>
+    </item>
     <item>
       <title>一起补社保</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/351960</link>
@@ -385,21 +401,6 @@
       <author>bingfengtmc</author>
       <pubDate>Thu, 12 Nov 2026 10:36:33 +0000</pubDate>
       <description><![CDATA[AI的目的就是消灭大部分人]]></description>
-    </item>
-    <item>
-      <title>最近2年裁员很多吗？</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/351400</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351400</guid>
-      <author>bingfengtmc</author>
-      <pubDate>Thu, 12 Nov 2026 10:33:57 +0000</pubDate>
-      <description><![CDATA[被AI替代裁员，因为AI导致找不到工作的。]]></description>
-    </item>
-    <item>
-      <title>Tencent：裁撤50%！</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/351399</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/351399</guid>
-      <author>HFHC</author>
-      <pubDate>Thu, 12 Nov 2026 10:32:53 +0000</pubDate>
     </item>
   </channel>
 </rss>
