@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Boy</link>
     <description>老男孩（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 16 Nov 2026 21:03:39 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 17 Nov 2026 03:42:49 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/boy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>hi</title>
+      <link>https://www.newsmth.net/nForum/article/Boy/1310696</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310696</guid>
+      <author>C0987</author>
+      <pubDate>Tue, 17 Nov 2026 03:35:55 +0000</pubDate>
+      <description><![CDATA[好久不来了<br/>贵版还每月奖励积分吗<br/>- 来自 水木社区APP v3.5.7]]></description>
+    </item>
+    <item>
+      <title>活得不痛快</title>
+      <link>https://www.newsmth.net/nForum/article/Boy/1310695</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310695</guid>
+      <author>shuhanmoon</author>
+      <pubDate>Mon, 16 Nov 2026 12:32:50 +0000</pubDate>
+      <description><![CDATA[心里苦<br/>不舒服]]></description>
+    </item>
     <item>
       <title>赘婿</title>
       <link>https://www.newsmth.net/nForum/article/Boy/1310674</link>
@@ -390,22 +406,6 @@
       <author>shuhanmoon</author>
       <pubDate>Thu, 22 Oct 2026 12:03:22 +0000</pubDate>
       <description><![CDATA[我也开始畅想我的退休生活]]></description>
-    </item>
-    <item>
-      <title>开会困死我了</title>
-      <link>https://www.newsmth.net/nForum/article/Boy/1310186</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310186</guid>
-      <author>shuhanmoon</author>
-      <pubDate>Thu, 22 Oct 2026 07:04:43 +0000</pubDate>
-      <description><![CDATA[没用的会<br/>咿咿呀呀讲不完]]></description>
-    </item>
-    <item>
-      <title>工作就是用时间换钱</title>
-      <link>https://www.newsmth.net/nForum/article/Boy/1310170</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310170</guid>
-      <author>bluezxz</author>
-      <pubDate>Wed, 21 Oct 2026 03:50:48 +0000</pubDate>
-      <description><![CDATA[工作就是用时间换钱，不要过多的投入情绪。<br/>昨天看到这句话感觉通透了一点。<br/>今天的心情如今天的天气，好太多了。]]></description>
     </item>
   </channel>
 </rss>
