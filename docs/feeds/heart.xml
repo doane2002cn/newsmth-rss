@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 18 Nov 2026 00:55:29 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Nov 2026 11:32:09 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我的内心是否太阴暗？</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250543</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250543</guid>
+      <author>wuduan2</author>
+      <pubDate>Wed, 18 Nov 2026 03:21:00 +0000</pubDate>
+      <description><![CDATA[在食堂吃饭<br/>发现同一样东西有时候好吃，有时候不好吃，<br/>例如，葱香发面饼，有时候放的盐多一点，有时候就少，<br/>我喜欢放盐多一点，有点咸味的，<br/>当然，放盐少也只是我不喜欢而已，可能很多人喜欢盐少的。<br/>原来我一直在想，这师傅做东西的口味为什么不能保持一致呢？<br/>今天我忽然想明白了，<br/>不是他无法保持一致，<br/>而是他（可能）故意有的饼多放点盐，有的少放一点。<br/>这样的话，不同的饼可能适配不同人的口味。<br/>当然，吃之前，你是看不出来饼的咸淡的。<br/>所以可能产生这样的后果：<br/>例如我，某次拿到了咸一点的饼，很喜欢吃，<br/>下次拿到淡一点的，不喜欢，<br/>等下次再看到这个饼的时候，就会抱着试试看的态度再拿一次，<br/>如果连续多次都拿到淡味的，我可能以后就不会再吃这个饼了。<br/>但是有时候拿到咸的有时候拿到淡的，<br/>就使得我每次想吃这个饼的时候都可能去拿来尝一下。<br/>这样，他的销量会上升，<br/>而不会出现做成某种固定口味导致只有一部分喜欢吃的结果。]]></description>
+    </item>
     <item>
       <title>今天4点多就起床了</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250538</link>
@@ -399,14 +407,6 @@
       <author>newluna81</author>
       <pubDate>Wed, 28 Oct 2026 08:18:37 +0000</pubDate>
       <description><![CDATA[因为据说隔天撸铁更好，进步更快<br/>所以以后隔天撸铁]]></description>
-    </item>
-    <item>
-      <title>明天打算摊红薯丝饼做早餐</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250293</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250293</guid>
-      <author>newluna81</author>
-      <pubDate>Wed, 28 Oct 2026 07:26:55 +0000</pubDate>
-      <description><![CDATA[哈哈]]></description>
     </item>
   </channel>
 </rss>
