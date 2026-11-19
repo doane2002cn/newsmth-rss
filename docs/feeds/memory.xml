@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Memory</link>
     <description>似水流年（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 19 Nov 2026 11:30:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2026 20:28:54 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/memory.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>人生无常</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/192976</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/192976</guid>
+      <author>MyRina</author>
+      <pubDate>Thu, 19 Nov 2026 19:59:12 +0000</pubDate>
+      <description><![CDATA[以前总以为人生是可以规划的。可是到了后来才发现，人生有太多事情不由自己决定。<br/>有时候就在短短几个月里，把原本平静的生活搅得天翻地覆。<br/>总以为自己在掌控生活，其实很多时候，只是在不确定中尽力维持一种秩序。<br/>人生最大的确定性，也许就是它的不确定性。<br/>不过，我觉得人生也正因为如此，才让人慢慢学会珍惜那些看似平常的日子。<br/>这些曾经觉得理所当然的事情，后来才知道，其实已经是很大的幸福。<br/>很多时候，我并不奢望生活有多精彩，只希望平平安安，岁月寻常。]]></description>
+    </item>
     <item>
       <title>今天把很讨厌的两件事办了</title>
       <link>https://www.newsmth.net/nForum/article/Memory/192906</link>
@@ -390,13 +398,6 @@
       <author>kidsfan</author>
       <pubDate>Wed, 11 Nov 2026 01:23:29 +0000</pubDate>
       <description><![CDATA[We may be evolved,<br/>but deep down we are still animals.]]></description>
-    </item>
-    <item>
-      <title>凡人大半生之“初识老家”</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/192141</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/192141</guid>
-      <author>yougoto</author>
-      <pubDate>Tue, 10 Nov 2026 11:00:43 +0000</pubDate>
     </item>
   </channel>
 </rss>

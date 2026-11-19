@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-19 19:30:00 +0800",
+  "generated": "2026-11-20 04:28:54 +0800",
   "banned": false,
   "sources": [
     {
@@ -72,7 +72,7 @@
       "key": "coffee",
       "name": "咖啡时光",
       "count": 36,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "diy",
@@ -95,7 +95,7 @@
     {
       "key": "funnytime",
       "name": "杂谈趣闻",
-      "count": 42,
+      "count": 43,
       "status": "更新 +20"
     },
     {
@@ -108,7 +108,7 @@
       "key": "get_pregnant",
       "name": "备孕",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "girl",
@@ -120,7 +120,7 @@
       "key": "healtheworld",
       "name": "拯救地球",
       "count": 20,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "healthylife",
@@ -132,7 +132,7 @@
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "jade_jewelry",
@@ -150,7 +150,7 @@
       "key": "love",
       "name": "谈情说爱",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "memory",
@@ -168,7 +168,7 @@
       "key": "motss",
       "name": "自由左岸",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "older",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 2,
+      "status": "更新 +2"
     }
   ]
 }
