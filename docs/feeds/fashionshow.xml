@@ -5,9 +5,32 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Nov 2026 11:21:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 20:00:34 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>究竟是泡面味大还是脚丫味大？</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/563731</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563731</guid>
+      <author>whh726</author>
+      <pubDate>Fri, 20 Nov 2026 16:59:47 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>吸烟有害健康</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/563730</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563730</guid>
+      <author>Feisike</author>
+      <pubDate>Fri, 20 Nov 2026 16:43:12 +0000</pubDate>
+    </item>
+    <item>
+      <title>谁还不是小姑娘</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/563723</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563723</guid>
+      <author>whh726</author>
+      <pubDate>Fri, 20 Nov 2026 11:52:15 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>火狐</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/563720</link>
@@ -359,28 +382,6 @@
       <author>wlazy</author>
       <pubDate>Wed, 18 Nov 2026 12:21:52 +0000</pubDate>
       <description><![CDATA[--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>厚黑</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/563282</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563282</guid>
-      <author>zxk5308</author>
-      <pubDate>Wed, 18 Nov 2026 09:16:52 +0000</pubDate>
-    </item>
-    <item>
-      <title>这么近，那么美</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/563266</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563266</guid>
-      <author>gxfu</author>
-      <pubDate>Wed, 18 Nov 2026 07:40:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>我是阳光女孩！【美美哒！】</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/563253</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563253</guid>
-      <author>lele20260212</author>
-      <pubDate>Wed, 18 Nov 2026 05:17:04 +0000</pubDate>
-      <description><![CDATA[（见图）]]></description>
     </item>
   </channel>
 </rss>

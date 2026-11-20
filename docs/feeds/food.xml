@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 20 Nov 2026 11:21:37 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 20 Nov 2026 20:00:34 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>今日吃GeneralTsoChicken竟吃出锅包肉的感觉</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782763</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782763</guid>
+      <author>coolsailor</author>
+      <pubDate>Fri, 20 Nov 2026 19:45:01 +0000</pubDate>
+      <description><![CDATA[而且比锅包肉好吃多了啊<br/>- 来自 水木社区APP v3.5.7]]></description>
+    </item>
     <item>
       <title>炖肉到底焯水不焯水</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782730</link>
@@ -399,14 +407,6 @@
       <author>comeon6752</author>
       <pubDate>Sun, 08 Nov 2026 14:58:30 +0000</pubDate>
       <description><![CDATA[四道口旺市和记还行，有学生优惠]]></description>
-    </item>
-    <item>
-      <title>今天给孩子们做了炒鸡</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1781944</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1781944</guid>
-      <author>huaiqing</author>
-      <pubDate>Sun, 08 Nov 2026 12:48:23 +0000</pubDate>
-      <description><![CDATA[12元一斤的，竟然很好吃<br/>我的手艺得到了一致好评<br/>--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>
