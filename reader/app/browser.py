@@ -438,27 +438,29 @@ class BrowserManager:
         if not self._session_restore_is_paused():
             await self._restore_cookie_snapshot()
         await self._throttle()
-        url = f"{self.settings.smth_base}/nForum/article/{board}/{topic}?ajax&p={page}"
+        # A read challenge is not just a cookie check.  SMTH binds the
+        # challenge result to the real browser navigation (and may require
+        # page JavaScript/interaction), so an independent context.request
+        # AJAX call can remain challenged even after the VNC page is clear.
+        # Fetch the article from the same task-owned page that the user
+        # verifies.  This keeps challenge, cookies, navigation state, and
+        # the subsequent parse in one security context.
+        url = f"{self.settings.smth_base}/nForum/article/{board}/{topic}?p={page}"
         try:
-            response = await self.context.request.get(
+            response = await self.page.goto(
                 url,
-                headers={
-                    "X-Requested-With": "XMLHttpRequest",
-                    "Referer": f"{self.settings.smth_base}/nForum/board/{board}",
-                    "Accept": "text/html,application/xhtml+xml",
-                },
-                fail_on_status_code=False,
-                timeout=30_000,
+                wait_until="domcontentloaded",
             )
+            await self.page.bring_to_front()
+            text = await self.page.content()
         except PlaywrightError as exc:
             raise SMTHUnavailable(f"article request failed: {exc}") from exc
 
-        body = await response.body()
-        text = body.decode("gb18030", errors="replace")
-        if response.status in {403, 429}:
-            raise SMTHRateLimited(f"SMTH rate limit response: HTTP {response.status}")
-        if response.status >= 400:
-            raise SMTHUnavailable(f"SMTH article response: HTTP {response.status}")
+        status = response.status if response is not None else 200
+        if status in {403, 429}:
+            raise SMTHRateLimited(f"SMTH article response: HTTP {status}")
+        if status >= 400:
+            raise SMTHUnavailable(f"SMTH article response: HTTP {status}")
         if is_rate_limit_page(text) or "ip banned" in text.lower():
             raise SMTHRateLimited("SMTH temporarily blocked this server IP")
         if is_article_not_found(text):

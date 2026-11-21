@@ -170,6 +170,8 @@ class FakePage:
         }
         self.goto_error = goto_error
         self.goto_calls: list[str] = []
+        self.content_value = self.state["html"]
+        self.response_status = 200
 
     async def evaluate(self, script: str, *args):
         if script.startswith("(name)"):
@@ -181,6 +183,13 @@ class FakePage:
         self.url = url
         if self.goto_error:
             raise self.goto_error
+        return FakeResponse(
+            status=self.response_status,
+            body=self.content_value.encode("utf-8"),
+        )
+
+    async def content(self):
+        return self.content_value
 
     async def bring_to_front(self):
         return None
@@ -236,24 +245,21 @@ def test_verification_cooldown_recovers_after_page_is_readable(
 ) -> None:
     settings = make_settings(tmp_path)
     manager = BrowserManager(settings)
-    manager._context = FakeContext(  # type: ignore[assignment]
-        [
-            FakeResponse(body=b"Read verification"),
-            FakeResponse(body=b"<table class='article'>article</table>"),
-        ],
-        cookies=SESSION_COOKIES,
-    )
-    manager._page = FakePage()  # type: ignore[assignment]
+    manager._context = FakeContext(cookies=SESSION_COOKIES)  # type: ignore[assignment]
+    page = FakePage()
+    page.content_value = "Read verification"
+    manager._page = page  # type: ignore[assignment]
 
     with pytest.raises(GuestVerificationRequired):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
 
+    page.content_value = "<table class='article'>article</table>"
     html = asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
 
     assert "table" in html
-    assert manager._context.request.calls == [
-        "https://www.newsmth.net/nForum/article/NewExpress/1?ajax&p=1",
-        "https://www.newsmth.net/nForum/article/NewExpress/1?ajax&p=1",
+    assert page.goto_calls == [
+        "https://www.newsmth.net/nForum/article/NewExpress/1?p=1",
+        "https://www.newsmth.net/nForum/article/NewExpress/1?p=1",
     ]
     snapshot = settings.cookie_snapshot_path
     assert snapshot.is_file()
@@ -292,9 +298,11 @@ def test_err_aborted_is_accepted_when_navigation_reached_target(
 
 def test_http_403_is_rate_limit_not_login_expiry(tmp_path: Path) -> None:
     manager = BrowserManager(make_settings(tmp_path))
-    manager._context = FakeContext(  # type: ignore[assignment]
-        [FakeResponse(status=403, body=b"forbidden")]
-    )
+    manager._context = FakeContext()  # type: ignore[assignment]
+    page = FakePage()
+    page.response_status = 403
+    page.content_value = "forbidden"
+    manager._page = page  # type: ignore[assignment]
 
     with pytest.raises(SMTHRateLimited):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
@@ -304,9 +312,10 @@ def test_rate_limit_page_is_classified_without_clearing_cookie(
     tmp_path: Path,
 ) -> None:
     manager = BrowserManager(make_settings(tmp_path))
-    manager._context = FakeContext(  # type: ignore[assignment]
-        [FakeResponse(body="因为访问过于频繁，已被系统封禁".encode("gb18030"))]
-    )
+    manager._context = FakeContext()  # type: ignore[assignment]
+    page = FakePage()
+    page.content_value = "因为访问过于频繁，已被系统封禁"
+    manager._page = page  # type: ignore[assignment]
 
     with pytest.raises(SMTHRateLimited):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
@@ -315,12 +324,12 @@ def test_rate_limit_page_is_classified_without_clearing_cookie(
 
 def test_login_required_with_cookies_is_rate_limit(tmp_path: Path) -> None:
     manager = BrowserManager(make_settings(tmp_path))
-    manager._context = FakeContext(  # type: ignore[assignment]
-        [
-            FakeResponse(body="您未登录,请登录后继续操作".encode("gb18030")),
-            FakeResponse(status=403, body=b"forbidden"),
-        ],
-        cookies=SESSION_COOKIES,
+    manager._context = FakeContext(cookies=SESSION_COOKIES)  # type: ignore[assignment]
+    page = FakePage()
+    page.content_value = "您未登录,请登录后继续操作"
+    manager._page = page  # type: ignore[assignment]
+    manager._context.request.responses.append(
+        FakeResponse(status=403, body=b"forbidden")
     )
 
     with pytest.raises(SMTHRateLimited):
@@ -331,10 +340,10 @@ def test_login_required_without_cookies_is_not_challenge(
     tmp_path: Path,
 ) -> None:
     manager = BrowserManager(make_settings(tmp_path))
-    manager._context = FakeContext(  # type: ignore[assignment]
-        [FakeResponse(body="您未登录,请登录后继续操作".encode("gb18030"))],
-        cookies=[],
-    )
+    manager._context = FakeContext(cookies=[])  # type: ignore[assignment]
+    page = FakePage()
+    page.content_value = "您未登录,请登录后继续操作"
+    manager._page = page  # type: ignore[assignment]
 
     with pytest.raises(SMTHLoginRequired):
         asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
@@ -606,10 +615,12 @@ def test_article_request_restores_snapshot_before_upstream_call(
     )
     manager = BrowserManager(settings)
     context = FakeContext(
-        [FakeResponse(body=b"<table class='article'>article</table>")],
         cookies=GUEST_SESSION_COOKIES,
     )
     manager._context = context  # type: ignore[assignment]
+    page = FakePage()
+    page.content_value = "<table class='article'>article</table>"
+    manager._page = page  # type: ignore[assignment]
 
     html = asyncio.run(manager.fetch_article_html("NewExpress", "1", 1))
 
@@ -618,6 +629,9 @@ def test_article_request_restores_snapshot_before_upstream_call(
         cookie["name"]: cookie["value"] for cookie in context.added_cookies
     }
     assert restored["main[UTMPUSERID]"] == "alice"
+    assert page.goto_calls == [
+        "https://www.newsmth.net/nForum/article/NewExpress/1?p=1"
+    ]
 
 
 def test_session_watcher_does_not_interrupt_active_login(
