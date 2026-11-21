@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Memory</link>
     <description>似水流年（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Nov 2026 10:55:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 19:05:54 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/memory.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>娃难得的在放梁祝</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/193210</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/193210</guid>
+      <author>ptlicuzn</author>
+      <pubDate>Sat, 21 Nov 2026 14:32:04 +0000</pubDate>
+      <description><![CDATA[用天猫精灵，一边洗澡]]></description>
+    </item>
+    <item>
+      <title>终于弄好了</title>
+      <link>https://www.newsmth.net/nForum/article/Memory/193207</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/193207</guid>
+      <author>yulin2</author>
+      <pubDate>Sat, 21 Nov 2026 14:17:39 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>三峡之巅</title>
       <link>https://www.newsmth.net/nForum/article/Memory/193194</link>
@@ -385,21 +401,6 @@
       <author>springnier</author>
       <pubDate>Sun, 15 Nov 2026 06:39:46 +0000</pubDate>
       <description><![CDATA[10km～<br/>--发自 水木拾光(iOS)]]></description>
-    </item>
-    <item>
-      <title>身体的敌人</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/192443</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/192443</guid>
-      <author>DDOO</author>
-      <pubDate>Sun, 15 Nov 2026 04:00:45 +0000</pubDate>
-    </item>
-    <item>
-      <title>循环又一年</title>
-      <link>https://www.newsmth.net/nForum/article/Memory/192437</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Memory/192437</guid>
-      <author>moonriver007</author>
-      <pubDate>Sun, 15 Nov 2026 02:18:55 +0000</pubDate>
-      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
     </item>
   </channel>
 </rss>

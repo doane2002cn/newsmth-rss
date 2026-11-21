@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/FashionShow</link>
     <description>服饰搭配（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 21 Nov 2026 10:55:35 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 21 Nov 2026 19:05:54 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/fashionshow.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>test，听说不能发图片了</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/563795</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563795</guid>
+      <author>T0P2</author>
+      <pubDate>Sat, 21 Nov 2026 12:53:24 +0000</pubDate>
+      <description><![CDATA[--发自 ismth(丝滑版)]]></description>
+    </item>
+    <item>
+      <title>为啥发帖总是不成功了</title>
+      <link>https://www.newsmth.net/nForum/article/FashionShow/563792</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563792</guid>
+      <author>whh726</author>
+      <pubDate>Sat, 21 Nov 2026 11:45:56 +0000</pubDate>
+      <description><![CDATA[re<br/>--发自 ismth(丝滑版)]]></description>
+    </item>
     <item>
       <title>女神姐姐！庆祝又能发帖了【美美哒！】</title>
       <link>https://www.newsmth.net/nForum/article/FashionShow/563786</link>
@@ -368,22 +384,6 @@
       <author>lele20260212</author>
       <pubDate>Thu, 19 Nov 2026 04:56:06 +0000</pubDate>
       <description><![CDATA[（见图）]]></description>
-    </item>
-    <item>
-      <title>邻家女孩</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/563417</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563417</guid>
-      <author>woaiwoer</author>
-      <pubDate>Thu, 19 Nov 2026 04:44:47 +0000</pubDate>
-      <description><![CDATA[像我年轻的时候<br/>--发自 水木拾光(android)]]></description>
-    </item>
-    <item>
-      <title>保密发货 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/FashionShow/563387</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/FashionShow/563387</guid>
-      <author>AaYaYa</author>
-      <pubDate>Thu, 19 Nov 2026 03:00:15 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 SimulateFlight 讨论区 】<br/>用Gemini+SimplePlanes做的]]></description>
     </item>
   </channel>
 </rss>
