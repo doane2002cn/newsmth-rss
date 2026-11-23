@@ -5,9 +5,25 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Nov 2026 01:34:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 12:14:59 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>我的铁锅</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782860</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782860</guid>
+      <author>bigvip</author>
+      <pubDate>Mon, 23 Nov 2026 06:43:40 +0000</pubDate>
+      <description><![CDATA[被我用了五年，但每年炒菜就是二十回吧，现在瓦亮瓦亮的，出师了]]></description>
+    </item>
+    <item>
+      <title>赣南脐橙水木社区朋友</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782840</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782840</guid>
+      <author>welch</author>
+      <pubDate>Mon, 23 Nov 2026 01:37:17 +0000</pubDate>
+      <description><![CDATA[来吃赣南脐橙了。<br/>在微信小程序搜索 泰挑好物-&gt;我的-&gt;我的券包-&gt;兑换优惠券   输入SMXG<br/>可领取满50减20的水木社区群友优惠券，10斤装赣南脐橙在40元左右的样子，欢迎大家选购。<br/>果园的脐橙，抽检做完了重金属和农残检测，检测均合格。<br/>脐橙质量，选果，发货（德邦送货上门），售后全程都可控。]]></description>
+    </item>
     <item>
       <title>谁喝过肥猪肉泡出来的白酒玉冰烧</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782811</link>
@@ -390,22 +406,6 @@
       <author>mjamesbonda</author>
       <pubDate>Tue, 10 Nov 2026 06:35:06 +0000</pubDate>
       <description><![CDATA[烤鸭<br/>京酱肉丝<br/>炙子烤肉<br/>铜锅涮肉<br/>应该还有很多吧]]></description>
-    </item>
-    <item>
-      <title>costa用的牛奶是有啥讲究么？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1782187</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782187</guid>
-      <author>Yonoyan</author>
-      <pubDate>Tue, 10 Nov 2026 06:10:57 +0000</pubDate>
-      <description><![CDATA[近期喝了几次，每次都有乳糖不耐受的症状。肠鸣，腹胀……<br/>平时牛奶正常喝。其他品牌的拿铁，也没啥问题。costa用的啥牛奶，太奇怪了。]]></description>
-    </item>
-    <item>
-      <title>什么汤最好喝？</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1782183</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782183</guid>
-      <author>coolsailor</author>
-      <pubDate>Tue, 10 Nov 2026 05:40:06 +0000</pubDate>
-      <description><![CDATA[我觉得是疙瘩汤，有西红柿和香菜那种。<br/>还有很多湖北人特自豪的藕炖排骨汤也不错。<br/>此外江西的花生炖排骨汤也很好。<br/>佛跳墙我多年前在福州喝过一次，就那么一小碗，真没品出啥味道。<br/>还有tim hortons猫耳朵鸡肉汤也很好喝，推荐。]]></description>
     </item>
   </channel>
 </rss>

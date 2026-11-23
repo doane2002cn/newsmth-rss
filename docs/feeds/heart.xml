@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 23 Nov 2026 01:34:16 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 12:14:59 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>压力很大</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250625</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250625</guid>
+      <author>newluna81</author>
+      <pubDate>Mon, 23 Nov 2026 08:43:18 +0000</pubDate>
+      <description><![CDATA[脚后跟疼痛已经扩散到前脚掌了<br/>今天去了董兴堂筋骨贴去做治疗，每个疗程5天480元<br/>心理压力还是挺大的，希望能治好吧]]></description>
+    </item>
     <item>
       <title>碳钢柜子真不错</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250624</link>
@@ -399,14 +407,6 @@
       <author>Yonoyan</author>
       <pubDate>Fri, 30 Oct 2026 01:58:38 +0000</pubDate>
       <description><![CDATA[东北名菜（名小吃），蛋白打发至硬性发泡之后加淀粉定型，裹红豆沙，团成丸子，低温油炸，炸至雪白，出锅后洒上一点白糖。颜色洁白，口感绵软。光听描述就馋了，周末找个东北餐馆尝尝去。<br/>虽然是小吃，但是做法很费事。后厨忙的时候，如果同时点了锅包肉和雪绵豆沙，会被厨师骂的。哈哈哈哈]]></description>
-    </item>
-    <item>
-      <title>今天把自行车前面装了个篓子</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250312</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250312</guid>
-      <author>newluna81</author>
-      <pubDate>Thu, 29 Oct 2026 02:19:54 +0000</pubDate>
-      <description><![CDATA[嗯，方便多了]]></description>
     </item>
   </channel>
 </rss>
