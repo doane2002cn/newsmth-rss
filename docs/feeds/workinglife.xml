@@ -5,9 +5,16 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 22 Nov 2026 19:28:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 23 Nov 2026 01:34:16 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>大家预测今年年终奖是多少？</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/353052</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/353052</guid>
+      <author>tematare</author>
+      <pubDate>Mon, 23 Nov 2026 01:27:28 +0000</pubDate>
+    </item>
     <item>
       <title>出大，Ai替代gwy</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/353033</link>
@@ -394,14 +401,6 @@
       <author>bingfengtmc</author>
       <pubDate>Tue, 17 Nov 2026 09:50:49 +0000</pubDate>
       <description><![CDATA[快递站的快递没有像以前那样堆很多。]]></description>
-    </item>
-    <item>
-      <title>攫取型社会和包容性社会</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/352186</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/352186</guid>
-      <author>Nanancsu</author>
-      <pubDate>Tue, 17 Nov 2026 06:13:59 +0000</pubDate>
-      <description><![CDATA[攫取型社会的特点是通过权力收走生产者的大量财富，进行二次分配。分配的时候难免有点偏向自己人。就造成了创造财富的生产者动力不足。经济增长后劲不足。]]></description>
     </item>
   </channel>
 </rss>
