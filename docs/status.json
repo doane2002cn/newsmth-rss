@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-24 21:33:46 +0800",
+  "generated": "2026-11-25 07:52:25 +0800",
   "banned": false,
   "sources": [
     {
@@ -30,7 +30,7 @@
       "key": "baking",
       "name": "烘焙坊",
       "count": 25,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "beauty",
@@ -42,13 +42,13 @@
       "key": "beipiao",
       "name": "北漂生活",
       "count": 26,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "book",
       "name": "书籍",
       "count": 28,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "boy",
@@ -66,19 +66,19 @@
       "key": "children",
       "name": "孩子",
       "count": 45,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "coffee",
       "name": "咖啡时光",
       "count": 36,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "diy",
       "name": "独具匠心",
       "count": 42,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "fashionshow",
@@ -102,7 +102,7 @@
       "key": "gentle_fashion",
       "name": "绅士·时尚",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "get_pregnant",
@@ -120,7 +120,7 @@
       "key": "healtheworld",
       "name": "拯救地球",
       "count": 20,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "healthylife",
@@ -132,13 +132,13 @@
       "key": "heart",
       "name": "你今天快乐吗",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "jade_jewelry",
       "name": "珠光宝气",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "liyidaiwa",
@@ -162,7 +162,7 @@
       "key": "motorbike",
       "name": "摩托天地",
       "count": 34,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "motss",
@@ -210,13 +210,13 @@
       "key": "single",
       "name": "光协",
       "count": 25,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "tooooold",
       "name": "五十知天命",
       "count": 60,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "wedding",
@@ -228,7 +228,7 @@
       "key": "wine",
       "name": "葡萄酒",
       "count": 23,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "woodenart",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 8,
-      "status": "更新 +8"
+      "count": 7,
+      "status": "更新 +7"
     }
   ]
 }

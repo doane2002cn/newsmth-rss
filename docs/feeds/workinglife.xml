@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/WorkingLife</link>
     <description>职业生活（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 13:33:46 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 23:52:25 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/workinglife.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>有些人交2个国家的社保</title>
+      <link>https://www.newsmth.net/nForum/article/WorkingLife/353396</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/353396</guid>
+      <author>dropstar</author>
+      <pubDate>Tue, 24 Nov 2026 23:51:59 +0000</pubDate>
+      <description><![CDATA[领2个国家的<br/>发自「今日水木 on iPhone 14 Plus」]]></description>
+    </item>
     <item>
       <title>bmw这次</title>
       <link>https://www.newsmth.net/nForum/article/WorkingLife/353376</link>
@@ -393,14 +401,6 @@
       <author>nose</author>
       <pubDate>Thu, 19 Nov 2026 04:38:41 +0000</pubDate>
       <description><![CDATA[10%这个数据是不是被低估了？ 即便有猫易赞，供应链转移， 哪怕10%全转走，我们还有90%，最多10%的人失业，或者工资9折， 但是当前体感寒气逼人，体感衰退和失业率远大于10%， 疑问是是不是外资贡献被低估了？]]></description>
-    </item>
-    <item>
-      <title>我发现好多人从欧美牛公司跳出来回国，然后都越混越差了</title>
-      <link>https://www.newsmth.net/nForum/article/WorkingLife/352537</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/WorkingLife/352537</guid>
-      <author>Xjt</author>
-      <pubDate>Thu, 19 Nov 2026 02:45:12 +0000</pubDate>
-      <description><![CDATA[最近在招人，收到的简历都是 985 的，复旦、交大、同济、浙大等等<br/>有两个都是从欧美回中国的，一个是在加州谷歌干了 3 年，然后回国，后面跳槽越来越差...一个是在 ASML 德国干了 5 年，然后居然回国去了 IBM，后面也一路下降...<br/>真是难以理解啊。。。。]]></description>
     </item>
   </channel>
 </rss>
