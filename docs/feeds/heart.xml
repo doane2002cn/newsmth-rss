@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 02:09:01 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 24 Nov 2026 13:33:46 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>人教版</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250630</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250630</guid>
+      <author>teetea</author>
+      <pubDate>Tue, 24 Nov 2026 12:31:18 +0000</pubDate>
+      <description><![CDATA[洗完澡坐在二毛中间剪指甲，边剪边跟二毛念叨剪指甲又干净又漂亮根本不疼。<br/>娃闻讯前来看热闹，留下一句“还有人教版”翩然离去……]]></description>
+    </item>
     <item>
       <title>压力很大</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250625</link>
@@ -399,14 +407,6 @@
       <author>newluna81</author>
       <pubDate>Fri, 30 Oct 2026 06:05:20 +0000</pubDate>
       <description><![CDATA[真惬意]]></description>
-    </item>
-    <item>
-      <title>早上被单位小朋友推荐“雪绵豆沙”。高低得去尝尝啊</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250326</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250326</guid>
-      <author>Yonoyan</author>
-      <pubDate>Fri, 30 Oct 2026 01:58:38 +0000</pubDate>
-      <description><![CDATA[东北名菜（名小吃），蛋白打发至硬性发泡之后加淀粉定型，裹红豆沙，团成丸子，低温油炸，炸至雪白，出锅后洒上一点白糖。颜色洁白，口感绵软。光听描述就馋了，周末找个东北餐馆尝尝去。<br/>虽然是小吃，但是做法很费事。后厨忙的时候，如果同时点了锅包肉和雪绵豆沙，会被厨师骂的。哈哈哈哈]]></description>
     </item>
   </channel>
 </rss>
