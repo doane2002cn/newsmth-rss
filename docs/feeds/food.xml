@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 24 Nov 2026 23:52:25 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 08:17:21 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>微波炉叮十分钟贝贝南瓜</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1782926</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782926</guid>
+      <author>Iamaluckypig</author>
+      <pubDate>Wed, 25 Nov 2026 01:20:45 +0000</pubDate>
+      <description><![CDATA[就熟了，早上主食有了，好方便。]]></description>
+    </item>
     <item>
       <title>烩麻食</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782915</link>
@@ -398,14 +406,6 @@
       <author>mjamesbonda</author>
       <pubDate>Tue, 10 Nov 2026 14:04:24 +0000</pubDate>
       <description><![CDATA[rt]]></description>
-    </item>
-    <item>
-      <title>老婆做的包子越来越像包子了</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1782208</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782208</guid>
-      <author>narpk</author>
-      <pubDate>Tue, 10 Nov 2026 11:28:30 +0000</pubDate>
-      <description><![CDATA[经过几次修改，老婆做的包子越来越像包子了]]></description>
     </item>
   </channel>
 </rss>
