@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Love</link>
     <description>谈情说爱（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Wed, 25 Nov 2026 08:17:21 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 25 Nov 2026 19:09:22 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/love.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>为何突然发情“风”</title>
+      <link>https://www.newsmth.net/nForum/article/Love/6342017</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Love/6342017</guid>
+      <author>Ielephant</author>
+      <pubDate>Wed, 25 Nov 2026 14:00:35 +0000</pubDate>
+      <description><![CDATA[这比当年的人之初差远了]]></description>
+    </item>
     <item>
       <title>字母人群的感情</title>
       <link>https://www.newsmth.net/nForum/article/Love/6341818</link>
@@ -396,14 +404,6 @@
       <author>qingshang147</author>
       <pubDate>Wed, 28 Oct 2026 04:49:35 +0000</pubDate>
       <description><![CDATA[就是模仿不来]]></description>
-    </item>
-    <item>
-      <title>哪对最幸福 (转载)</title>
-      <link>https://www.newsmth.net/nForum/article/Love/6340819</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Love/6340819</guid>
-      <author>beihainan</author>
-      <pubDate>Wed, 28 Oct 2026 03:45:47 +0000</pubDate>
-      <description><![CDATA[【 以下文字转载自 Universal 讨论区 】]]></description>
     </item>
   </channel>
 </rss>
