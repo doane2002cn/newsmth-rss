@@ -2,13 +2,16 @@ from __future__ import annotations
 
 import asyncio
 import hashlib
+import html
+import json
 import logging
 import re
 import time
 from contextlib import asynccontextmanager
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
-from urllib.parse import urlencode
+from urllib.parse import urlencode, urlparse
 
 import httpx
 from bs4 import BeautifulSoup
@@ -33,24 +36,22 @@ except ImportError:  # pragma: no cover - compatibility with older websockets
 from .browser import BrowserManager, SMTHRateLimited, SMTHUnavailable
 from .cache import BinaryFileCache, FileCache
 from .config import Settings
-from .models import ArticlePage
+from .models import ArticlePage, Post
 from .parser import (
-    GuestVerificationRequired,
-    ArticleParseError,
-    SMTHArticleNotFound,
-    SMTHLoginRequired,
     format_cache_age,
     is_allowed_image_url,
     normalize_line_breaks,
-    parse_article,
 )
+from .refresher import SnapshotRefresher
 from .signing import (
     InvalidToken,
     admin_session_token,
     article_token,
     image_token,
     loads_typed,
+    verify_request_signature,
 )
+from .snapshots import SnapshotStore
 
 LOGGER = logging.getLogger(__name__)
 APP_DIR = Path(__file__).resolve().parent
@@ -76,6 +77,11 @@ VNC_REQUEST_HEADERS = HOP_BY_HOP_HEADERS | {
 VNC_RESPONSE_HEADERS = HOP_BY_HOP_HEADERS | {
     "set-cookie",
 }
+CST = timezone(timedelta(hours=8))
+
+
+class SnapshotNotReady(RuntimeError):
+    pass
 
 
 def _safe_next(value: str | None) -> str:
@@ -87,6 +93,42 @@ def _safe_next(value: str | None) -> str:
 def _article_cache_key(board: str, topic: str, page: int) -> str:
     raw = f"{board}\0{topic}\0{page}".encode("utf-8")
     return hashlib.sha256(raw).hexdigest()
+
+
+def _snapshot_article(snapshot: dict[str, Any]) -> ArticlePage:
+    summary = str(snapshot.get("summary") or "").strip()
+    if summary:
+        lines = [line.strip() for line in summary.splitlines() if line.strip()]
+        body_html = "<p>" + "<br>".join(html.escape(line) for line in lines) + "</p>"
+    else:
+        body_html = (
+            "<p>这条帖子暂未提供正文摘要，阅读器已经保存了标题和来源信息。</p>"
+        )
+    published_at = int(snapshot.get("published_at") or 0)
+    published_label = ""
+    if published_at:
+        published_label = datetime.fromtimestamp(published_at, CST).strftime(
+            "%Y-%m-%d %H:%M"
+        )
+    return ArticlePage(
+        board=str(snapshot["board"]),
+        topic=str(snapshot["topic"]),
+        title=str(snapshot.get("title") or "")[:160],
+        page=1,
+        total_posts=1,
+        total_pages=1,
+        posts=[
+            Post(
+                author=str(snapshot.get("author") or "水木 RSS")[:80],
+                position="RSS 摘要快照",
+                body_html=body_html,
+                post_id="",
+                date=published_label,
+                likes=[],
+            )
+        ],
+        fetched_at=int(snapshot.get("created_at") or time.time()),
+    )
 
 
 def _format_session_ttl(seconds: int) -> str:
@@ -189,11 +231,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     app_settings = settings or Settings.from_env()
     article_cache = FileCache(app_settings.cache_dir)
     image_cache = BinaryFileCache(app_settings.image_cache_dir)
+    snapshot_store = SnapshotStore(app_settings.snapshot_dir)
     app_settings.login_nonce_dir.mkdir(parents=True, exist_ok=True)
 
     @asynccontextmanager
     async def lifespan(application: FastAPI):
         manager: BrowserManager | None = None
+        refresher: SnapshotRefresher | None = None
         application.state.browser_error = ""
         if app_settings.browser_enabled:
             manager = BrowserManager(app_settings)
@@ -205,9 +249,19 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 await manager.stop()
                 manager = None
         application.state.browser = manager
+        if manager:
+            refresher = SnapshotRefresher(
+                app_settings,
+                manager,
+                article_cache,
+            )
+            refresher.start()
+        application.state.refresher = refresher
         try:
             yield
         finally:
+            if refresher:
+                await refresher.stop()
             if manager:
                 await manager.stop()
 
@@ -221,7 +275,9 @@ def create_app(settings: Settings | None = None) -> FastAPI:
     application.state.settings = app_settings
     application.state.article_cache = article_cache
     application.state.image_cache = image_cache
+    application.state.snapshot_store = snapshot_store
     application.state.browser = None
+    application.state.refresher = None
     application.state.browser_error = ""
     application.mount(
         "/static",
@@ -245,7 +301,13 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 "browser_mode": manager.mode if manager else "",
                 "browser_error": request.app.state.browser_error,
                 "article_cache_entries": article_cache.count(),
+                "snapshot_entries": snapshot_store.count(),
                 "image_cache_entries": image_cache.count(),
+                "refresh_queue_size": (
+                    request.app.state.refresher.queue_size
+                    if request.app.state.refresher
+                    else 0
+                ),
                 "time": int(time.time()),
             }
         )
@@ -290,6 +352,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         board: str,
         topic: str,
         page: int,
+        snapshot_id: str = "",
     ) -> tuple[ArticlePage, int, bool, str, str]:
         key = _article_cache_key(board, topic, page)
         cached = article_cache.read(key)
@@ -303,54 +366,29 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 cached_age = cached[1]
             except (KeyError, TypeError, ValueError):
                 cached_page = None
-        if cached_page and cached_age <= app_settings.article_ttl_seconds:
-            return cached_page, cached_age, False, "", "HIT"
+        if cached_page:
+            return cached_page, cached_age, False, "", "FULLTEXT"
 
-        manager: BrowserManager | None = request.app.state.browser
-        if not manager:
-            error = "浏览器会话尚未就绪"
-            if cached_page and cached_age <= app_settings.stale_ttl_seconds:
-                return cached_page, cached_age, True, error, "STALE"
-            raise SMTHUnavailable(error)
+        if page == 1:
+            snapshot = snapshot_store.get(board, topic, snapshot_id)
+            if snapshot:
+                article = _snapshot_article(snapshot)
+                snapshot_age = max(
+                    0,
+                    int(time.time()) - int(snapshot.get("created_at") or time.time()),
+                )
+                refresher: SnapshotRefresher | None = request.app.state.refresher
+                if refresher:
+                    refresher.enqueue(board, topic, 1)
+                return (
+                    article,
+                    snapshot_age,
+                    True,
+                    "当前展示推送时保存的 RSS 内容快照",
+                    "SNAPSHOT",
+                )
 
-        try:
-            html = await manager.fetch_article_html(board, topic, page)
-            parsed = parse_article(
-                html,
-                board=board,
-                topic=topic,
-                page=page,
-                fallback_title="",
-                base_url=f"{app_settings.smth_base}/nForum/article/{board}/{topic}",
-                image_url_factory=lambda source: "/i/"
-                + image_token(
-                    app_settings.secret,
-                    source,
-                    int(time.time()) + app_settings.image_token_ttl_seconds,
-                ),
-                fetched_at=int(time.time()),
-            )
-            article_cache.write(key, parsed.to_dict())
-            return parsed, 0, False, "", "MISS"
-        except SMTHRateLimited:
-            raise
-        except SMTHArticleNotFound:
-            raise
-        except SMTHLoginRequired:
-            error = "水木登录会话已失效"
-            if cached_page and cached_age <= app_settings.stale_ttl_seconds:
-                return cached_page, cached_age, True, error, "STALE"
-            raise
-        except GuestVerificationRequired:
-            error = "水木要求完成一次阅读验证"
-            if cached_page and cached_age <= app_settings.stale_ttl_seconds:
-                return cached_page, cached_age, True, error, "STALE"
-            raise
-        except (SMTHUnavailable, ArticleParseError):
-            error = "水木暂时无法提供这篇文章"
-            if cached_page and cached_age <= app_settings.stale_ttl_seconds:
-                return cached_page, cached_age, True, error, "STALE"
-            raise
+        raise SnapshotNotReady("no readable snapshot")
 
     @application.get("/a/{token}", response_class=HTMLResponse)
     async def article_view(
@@ -368,7 +406,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 title="这个阅读链接已失效",
                 description=(
                     "链接带有有效期。请在飞书里重新获取最新卡片，"
-                    "新的入口会自动使用当前阅读会话。"
+                    "新卡片会绑定新的只读内容快照。"
                 ),
             )
 
@@ -386,85 +424,34 @@ def create_app(settings: Settings | None = None) -> FastAPI:
             )
 
         page_number = max(1, min(p, 999))
+        snapshot_id = str(payload.get("snapshot") or "")
         try:
             article, cache_age, stale, notice, cache_status = await load_article(
-                request, board, topic, page_number
+                request,
+                board,
+                topic,
+                page_number,
+                snapshot_id,
             )
-        except SMTHLoginRequired:
+        except SnapshotNotReady:
             return render_message(
                 request,
-                status_code=401,
-                eyebrow="LOGIN REQUIRED",
-                title="水木登录会话已失效。",
+                status_code=202,
+                eyebrow="SNAPSHOT PREPARING",
+                title="这条推荐还没有生成阅读副本",
                 description=(
-                    "阅读网关已保存的登录 Cookie 不再有效。"
-                    "点击下方按钮重新登录，登录成功后会继续使用同一会话。"
+                    "阅读器现在只读取本地快照，不会把水木验证码带到手机上。"
+                    "请从最新推荐卡片进入；新卡片会在发送前保存内容快照。"
                 ),
-                action_url=f"/relogin/{token}?p={page_number}",
-                action_label="重新登录水木",
-            )
-        except GuestVerificationRequired:
-            return render_message(
-                request,
-                status_code=401,
-                eyebrow="READ CHALLENGE",
-                title="水木需要再完成一次阅读验证。",
-                description=(
-                    "水木会对部分文章单独弹出验证码。点击下方按钮后，"
-                    "远程浏览器会直接打开当前文章，完成验证即自动返回正文。"
-                ),
-                action_url=f"/relogin/{token}?{urlencode({'challenge': 1, 'p': page_number})}",
-                action_label="完成阅读验证",
-            )
-        except SMTHRateLimited:
-            LOGGER.warning("article request is rate limited by SMTH")
-            return render_message(
-                request,
-                status_code=502,
-                eyebrow="UPSTREAM RATE LIMIT",
-                title="水木暂时限制了访问频率。",
-                description=(
-                    "这不是登录失效，通常与短时间内连续预热或打开文章过多有关。"
-                    "请稍后重试，现有缓存和登录会话不受影响。"
-                ),
-                action_url=f"/a/{token}?p={page_number}",
-                action_label="稍后重试",
-            )
-        except SMTHArticleNotFound:
-            return render_message(
-                request,
-                status_code=404,
-                eyebrow="ARTICLE NOT FOUND",
-                title="指定的文章不存在或链接错误。",
-                description=(
-                    "水木返回这篇文章当前不可读。可能已被删除、转版，"
-                    "或链接已失效。请回到飞书卡片查看其他内容。"
-                ),
-            )
-        except (SMTHUnavailable, ArticleParseError) as exc:
-            LOGGER.warning("article unavailable: %s", type(exc).__name__)
-            return render_message(
-                request,
-                status_code=502,
-                eyebrow="FETCH INTERRUPTED",
-                title="这次没有取到正文",
-                description=(
-                    "阅读网关触发了站点保护或上游暂时不可用。"
-                    "稍后重试不会影响已经缓存的文章。"
-                ),
-                action_url=f"/a/{token}?p={page_number}",
-                action_label="重新尝试",
             )
 
         if not article.posts:
             return render_message(
                 request,
-                status_code=502,
+                status_code=503,
                 eyebrow="EMPTY ARTICLE",
-                title="文章页没有可显示的正文",
-                description="上游返回的页面结构可能发生了变化，请稍后重试。",
-                action_url=f"/a/{token}?p={page_number}",
-                action_label="重新尝试",
+                title="阅读副本暂时没有正文",
+                description="请稍后重新打开这个链接。阅读器不会跳转到水木验证码。",
             )
 
         current_page = max(1, min(article.page, article.total_pages))
@@ -512,6 +499,85 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         response.headers["Cache-Control"] = "private, max-age=0, must-revalidate"
         response.headers["X-Reader-Cache"] = cache_status
         return response
+
+    @application.post("/api/snapshots")
+    async def ingest_snapshots(request: Request) -> JSONResponse:
+        timestamp = request.headers.get("X-Reader-Timestamp", "")
+        signature = request.headers.get("X-Reader-Signature", "")
+        body = await request.body()
+        if len(body) > 1_000_000:
+            raise HTTPException(status_code=413, detail="snapshot payload is too large")
+        if not verify_request_signature(
+            app_settings.secret,
+            timestamp,
+            signature,
+            body,
+        ):
+            raise HTTPException(status_code=401, detail="invalid ingest signature")
+        try:
+            payload = json.loads(body.decode("utf-8"))
+        except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+            raise HTTPException(status_code=400, detail="invalid JSON") from exc
+        items = payload.get("items") if isinstance(payload, dict) else None
+        if not isinstance(items, list) or not items or len(items) > 200:
+            raise HTTPException(status_code=400, detail="items must contain 1..200 rows")
+
+        stored: list[dict[str, str]] = []
+        for item in items:
+            if not isinstance(item, dict):
+                raise HTTPException(status_code=400, detail="invalid snapshot item")
+            board = str(item.get("board") or "")
+            topic = str(item.get("topic") or "")
+            title = str(item.get("title") or "").strip()
+            source_url = str(item.get("source_url") or "").strip()
+            if (
+                not re.fullmatch(r"[A-Za-z0-9_]{1,64}", board)
+                or not re.fullmatch(r"\d{1,32}", topic)
+                or not title
+            ):
+                raise HTTPException(status_code=400, detail="invalid article identity")
+            if source_url:
+                parsed = urlparse(source_url)
+                if (
+                    parsed.scheme not in {"http", "https"}
+                    or not parsed.hostname
+                    or not (
+                        parsed.hostname == "newsmth.net"
+                        or parsed.hostname.endswith(".newsmth.net")
+                        or parsed.hostname == "mysmth.net"
+                        or parsed.hostname.endswith(".mysmth.net")
+                    )
+                ):
+                    raise HTTPException(status_code=400, detail="invalid source URL")
+            try:
+                published_at = int(item.get("published_at") or 0)
+            except (TypeError, ValueError) as exc:
+                raise HTTPException(
+                    status_code=400, detail="invalid publication time"
+                ) from exc
+            snapshot_id = snapshot_store.put(
+                board=board,
+                topic=topic,
+                title=title,
+                summary=str(item.get("summary") or ""),
+                author=str(item.get("author") or ""),
+                published_at=published_at,
+                source_url=source_url,
+            )
+            stored.append(
+                {
+                    "board": board,
+                    "topic": topic,
+                    "snapshot_id": snapshot_id,
+                }
+            )
+        return JSONResponse(
+            {
+                "ok": True,
+                "stored": len(stored),
+                "snapshots": stored,
+            }
+        )
 
     @application.get("/i/{token}")
     async def image_proxy(token: str) -> Response:
@@ -578,7 +644,7 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 status_code=409,
                 eyebrow="LOGIN LINK USED",
                 title="这个登录入口已经使用过",
-                description="请从原来的文章链接重新进入，或让管理员生成新的登录入口。",
+                description="请让管理员生成新的一次性运维入口。",
             )
         response = RedirectResponse("/admin?open=1", status_code=303)
         _set_session_cookie(response, app_settings)
@@ -591,35 +657,17 @@ def create_app(settings: Settings | None = None) -> FastAPI:
         challenge: int = 0,
         p: int = 1,
     ) -> Response:
-        try:
-            payload = loads_typed(token, app_settings.secret, "article")
-        except InvalidToken:
-            return render_message(
-                request,
-                status_code=410,
-                eyebrow="LINK EXPIRED",
-                title="阅读链接已失效，无法建立登录会话",
-                description="请在飞书里重新获取最新推荐卡片。",
-            )
-        board = str(payload.get("board") or "")
-        topic = str(payload.get("topic") or "")
-        page_number = max(1, min(p, 999))
-        next_url = _safe_next(f"/a/{token}?{urlencode({'p': page_number})}")
-        params = {
-            "open": 1,
-            "next": next_url,
-            "board": board,
-            "topic": topic,
-            "page": page_number,
-        }
-        if challenge:
-            params["challenge"] = 1
-        response = RedirectResponse(
-            "/admin?" + urlencode(params),
-            status_code=303,
+        return render_message(
+            request,
+            status_code=403,
+            eyebrow="READER BOUNDARY",
+            title="普通阅读链接不能进入管理会话",
+            description=(
+                "阅读器只展示已经保存的内容快照。"
+                "水木登录和验证码维护已与普通阅读权限分离，"
+                "请联系管理员从独立的运维入口处理。"
+            ),
         )
-        _set_session_cookie(response, app_settings)
-        return response
 
     @application.get(
         "/admin",
@@ -642,8 +690,8 @@ def create_app(settings: Settings | None = None) -> FastAPI:
                 eyebrow="ADMIN SESSION",
                 title="需要一次性登录入口",
                 description=(
-                    "远程浏览器只对持有有效阅读链接或一次性登录入口的人开放。"
-                    "请从水木阅读页的“重新登录”按钮进入。"
+                    "远程浏览器只对持有一次性运维入口的人开放。"
+                    "普通阅读链接不能创建管理会话，请联系管理员生成入口。"
                 ),
             )
         safe_next = _safe_next(next)

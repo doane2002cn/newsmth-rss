@@ -1,15 +1,30 @@
 # 水木私人阅读网关
 
-把水木正文和回复转换成适合飞书内浏览的只读页面。登录 Cookie 保存在服务端持久化的
-Chromium profile 中，飞书卡片只携带 HMAC 签名链接，不包含账号、Cookie 或水木验证码。
+把水木正文和回复转换成适合飞书内浏览的只读页面。飞书卡片只携带绑定不可变内容快照的
+HMAC 签名链接，不包含账号、Cookie 或水木验证码。
 
 ## 工作方式
 
-1. 用户通过一次性登录链接进入受保护的远程 Chromium，完成水木登录和 Geetest。
-2. 阅读网关在常驻 Chromium 中建立独立浏览器上下文，请求文章接口并清洗正文、回复和图片。
-3. 推送卡片前，Hermes 按卡片顺序串行预热整张卡片，提前保存文章正文；图片在首次展示时缓存。
-4. 文章缓存 30 分钟，上游不可用时最多回退到 7 天内的快照。
-5. 普通阅读页只做 HTML 抓取、解析和缓存，不调用大模型，不消耗 token。
+```text
+RSS ingestion
+    -> immutable snapshot
+    -> signed article link
+    -> read-only snapshot page
+
+snapshot page -> bounded background queue -> best-effort full text
+```
+
+1. Hermes 从 RSS 取得候选帖，按 `(board, topic)` 去重后，用 HMAC 请求签名批量写入
+   `POST /api/snapshots`。
+2. Reader 把标题、摘要、发布时间和来源地址保存为内容寻址、不可变的快照对象；签名文章
+   链接固定指向本轮写入的 `snapshot_id`。
+3. 普通阅读只读本地全文缓存或 RSS 快照，不访问水木。即使水木登录失效、弹出验证码或
+   限流，阅读页仍然可用。
+4. 打开摘要快照后，Reader 会把全文补全任务放入有界后台队列。补全成功只增强后续阅读；
+   失败只记录日志，不会反馈到用户阅读链路。
+5. 水木登录、验证码和 noVNC 仅保留在独立的管理入口，文章链接不能创建管理会话，也不会
+   跳转到验证码页。
+6. 普通阅读页不调用大模型，不消耗 token。图片仍由受签名的图片代理按需缓存。
 
 管理页会从浏览器中读取水木会话 Cookie。只有 `main[UTMPUSERID]`、
 `main[UTMPKEY]`、`main[UTMPNUM]` 三枚 Cookie 齐全且用户不是 `guest` 时才写入
@@ -18,9 +33,10 @@ Chromium profile 中，飞书卡片只携带 HMAC 签名链接，不包含账号
 旧 Cookie 或已被水木回写成 `guest` 时，会在下一次抓取前自动用完整快照补齐。用户正在
 noVNC 中登录或完成验证码时，自动恢复会暂停 15 分钟，避免旧会话覆盖刚输入的新会话。
 
-推送端的 `READER_PREWARM_LIMIT` 默认是 40，足以覆盖一张完整卡片；
-`READER_PREWARM_INTERVAL_SECONDS` 默认是 2 秒。预热按顺序执行，遇到 401、403、429
-会立即熔断，避免继续触发水木风控。
+推送端不再通过访问 `/a/` 预热文章，因为阅读页不会触发水木采集。旧手工诊断函数
+`prewarm_reader_links()` 仍保留，但 `READER_PREWARM_LIMIT` 默认是 `0`，正常任务不会
+访问任何文章链接。全文采集由 Reader 后台队列独立完成，
+`SNAPSHOT_REFRESH_COOLDOWN_SECONDS` 默认是 900 秒，防止同一篇文章频繁触发水木风控。
 
 ## 本地检查
 
@@ -40,7 +56,8 @@ docker compose up -d --build
 docker compose exec smth-reader python -m app.cli login-url
 ```
 
-登录入口默认 15 分钟有效且只能使用一次。`data/` 保存正文缓存和图片缓存，必须持久化。
+登录入口默认 15 分钟有效且只能使用一次。`data/` 保存不可变 RSS 快照、全文缓存、
+图片缓存和 Chromium 会话，必须持久化。
 
 如果部署时设置 `BROWSER_CDP_URL`，阅读网关会复用 Oracle 常驻 `ai-workstation`
 的 Chromium 与 noVNC：

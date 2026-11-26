@@ -139,12 +139,41 @@ def is_login_required(html: str) -> bool:
 
 
 def is_guest_verification(html: str) -> bool:
+    """Detect the guest read challenge without rejecting ordinary article text.
+
+    SMTH challenge pages contain an explicit challenge marker or captcha form
+    and no article markup.  A normal post may legitimately discuss
+    "阅读验证" or "请完成验证", so text alone must not classify it.
+    """
     lowered = html.lower()
-    return (
+    soup = BeautifulSoup(html, "html.parser")
+    has_article = bool(
+        soup.select_one(
+            "table.article, td.a-content, .a-content, .article-content, "
+            ".post-content, [data-article]"
+        )
+    )
+    if has_article:
+        return False
+    has_strong_marker = (
         "guest-read-challenge" in lowered
         or "read verification" in lowered
-        or "请完成验证" in html
+        or "read challenge" in lowered
     )
+    if has_strong_marker:
+        return True
+    has_weak_marker = any(
+        marker in html
+        for marker in ("请完成验证", "完成阅读验证", "阅读验证")
+    )
+    has_challenge_form = bool(
+        soup.select_one(
+            "form [name*=captcha i], form input[type=text], "
+            "form input[type=image], .captcha, .challenge, "
+            "[class*=captcha i], [id*=captcha i]"
+        )
+    )
+    return has_weak_marker and has_challenge_form
 
 
 def _clean_text(value: str) -> str:

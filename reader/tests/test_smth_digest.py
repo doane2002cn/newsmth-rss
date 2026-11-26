@@ -70,7 +70,7 @@ def test_prewarm_is_sequential_and_limits_candidates(monkeypatch) -> None:
     ]
 
 
-def test_prewarm_default_covers_a_full_card(monkeypatch) -> None:
+def test_prewarm_is_disabled_by_default(monkeypatch) -> None:
     calls = []
 
     def succeed(request, timeout):
@@ -84,5 +84,5 @@ def test_prewarm_default_covers_a_full_card(monkeypatch) -> None:
 
     ready, total = smth_digest.prewarm_reader_links(links)
 
-    assert (ready, total) == (34, 34)
-    assert calls == links
+    assert (ready, total) == (0, 0)
+    assert calls == []

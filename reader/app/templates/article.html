@@ -21,7 +21,7 @@
     <div class="topbar-right">
       <button class="session-pill" id="sessionButton" type="button" aria-label="查看阅读会话状态">
         <span class="session-dot"></span>
-        <span>{{ '缓存模式' if stale else '会话正常' }}</span>
+        <span>{{ '内容快照' if stale else '全文快照' }}</span>
       </button>
       <button class="icon-button" id="menuButton" type="button" aria-label="更多操作" aria-expanded="false">
         <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#more-horizontal"></use></svg>
@@ -31,7 +31,6 @@
 
   <nav class="menu" id="menu" aria-label="更多操作">
     <button type="button" data-copy-link>复制当前链接</button>
-    <a href="/admin">检查远程登录会话</a>
   </nav>
 
   <main class="shell">
@@ -40,14 +39,14 @@
       <p class="rail-value">{{ article.board }}</p>
       <p class="rail-note">第 {{ current_page }} / {{ article.total_pages }} 页<br>读取于 {{ cache_age_label }}</p>
       <div class="rail-rule"></div>
-      <div class="rail-status">{{ '显示上次缓存' if stale else '私人会话在线' }}</div>
+      <div class="rail-status">{{ 'RSS 内容快照' if stale else '已保存全文' }}</div>
     </aside>
 
     <article class="article">
       {% if stale %}
       <div class="stale-banner" role="status">
         <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#clock"></use></svg>
-        <span>{{ notice }}。当前展示 {{ cache_age_label }} 的正文快照。<a href="/relogin/{{ token }}">重新登录水木</a></span>
+        <span>{{ notice }}。创建于 {{ cache_age_label }}，阅读过程不会访问水木。</span>
       </div>
       {% endif %}
 
@@ -83,7 +82,7 @@
 
         <div class="source-note">
           <svg class="icon" aria-hidden="true"><use href="/static/icons.svg#book-open"></use></svg>
-          <span>正文由私人阅读会话抓取并清洗。页面打开时会优先读取本机缓存，不经过水木的游客验证码页面。</span>
+          <span>正文来自阅读器保存的固定快照。页面不会实时访问水木，也不会出现游客验证码。</span>
         </div>
         {% endif %}
 

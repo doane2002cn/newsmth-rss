@@ -40,6 +40,7 @@ class Settings:
     vnc_websocket_url: str
     guest_verification_cooldown_seconds: int = 600
     browser_proxy_server: str = ""
+    snapshot_refresh_cooldown_seconds: int = 900
 
     @property
     def cache_dir(self) -> Path:
@@ -48,6 +49,10 @@ class Settings:
     @property
     def image_cache_dir(self) -> Path:
         return self.data_dir / "cache" / "images"
+
+    @property
+    def snapshot_dir(self) -> Path:
+        return self.data_dir / "snapshots"
 
     @property
     def login_nonce_dir(self) -> Path:
@@ -101,5 +106,8 @@ class Settings:
             ),
             guest_verification_cooldown_seconds=_env_int(
                 "GUEST_VERIFICATION_COOLDOWN_SECONDS", 600
+            ),
+            snapshot_refresh_cooldown_seconds=_env_int(
+                "SNAPSHOT_REFRESH_COOLDOWN_SECONDS", 900
             ),
         )

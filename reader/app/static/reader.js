@@ -58,7 +58,11 @@
   if (sessionButton) {
     sessionButton.addEventListener("click", () => {
       const stale = body.dataset.stale === "true";
-      showToast(stale ? "正在使用上次缓存，请从阅读页重新登录" : "私人会话正常，正文只在本机缓存");
+      showToast(
+        stale
+          ? "正在读取推送时保存的 RSS 内容快照，不会访问水木"
+          : "正在读取阅读器保存的全文快照，不会访问水木"
+      );
     });
   }
 

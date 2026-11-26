@@ -52,6 +52,8 @@ CARD_FILE_PREFIX = "smth_card_"
 CHAT = "oc_b8559c55f250b54d396a8d8105bb1355"
 CST = timezone(timedelta(hours=8))
 READER_TOKEN_TTL = 90 * 24 * 3600
+SNAPSHOT_BATCH_SIZE = 200
+SNAPSHOT_SUMMARY_LIMIT = 1200
 
 MAX_PER_SECTION = 8        # 特快 / 知性感性 每节最多几条
 MAX_PICTURES = 5
@@ -157,7 +159,7 @@ def parse_feed(raw):
             "guid": (it.findtext("guid") or link).strip(),
             "board": urllib.parse.unquote(m.group(1)) if m else "",
             "pub": pub, "ts": dt.timestamp() if dt else 0,
-            "desc": body[:300],
+            "desc": body[:SNAPSHOT_SUMMARY_LIMIT],
         })
     items.sort(key=lambda x: x["ts"], reverse=True)
     return items, last_build
@@ -262,23 +264,111 @@ def _b64url(value):
     return base64.urlsafe_b64encode(value).rstrip(b"=").decode("ascii")
 
 
-def reader_link(it):
-    """把水木原链换成私人阅读网关的签名链接；配置异常时拒绝发卡。"""
-    original = it["link"]
+def _reader_config():
     secret = os.environ.get("READER_SIGNING_SECRET", "").strip()
     public_base = os.environ.get(
         "READER_PUBLIC_BASE", "https://smth-reader.12879737.xyz"
     ).rstrip("/")
-    match = re.search(r"/article/([^/?#]+)/(\d+)", original)
     if len(secret) < 32:
         raise RuntimeError("READER_SIGNING_SECRET 缺失或长度不足")
+    return secret, public_base
+
+
+def article_identity(it):
+    """返回水木文章身份，不从标题或 guid 猜测板块和主题号。"""
+    match = re.search(r"/article/([^/?#]+)/(\d+)", it.get("link") or "")
     if not match:
-        raise RuntimeError(f"无法识别水木文章链接: {original}")
+        raise RuntimeError(f"无法识别水木文章链接: {it.get('link') or ''}")
+    return urllib.parse.unquote(match.group(1)), match.group(2)
+
+
+def ingest_reader_snapshots(items):
+    """把本轮推送候选写入 Reader；返回 {(board, topic): snapshot_id}。"""
+    secret, public_base = _reader_config()
+    rows = []
+    seen = set()
+    for it in items:
+        board, topic = article_identity(it)
+        key = (board, topic)
+        if key in seen:
+            continue
+        seen.add(key)
+        rows.append({
+            "board": board,
+            "topic": topic,
+            "title": strip_board_prefix(it["title"])[:160],
+            "summary": (it.get("desc") or "")[:SNAPSHOT_SUMMARY_LIMIT],
+            "author": (it.get("author") or "水木 RSS")[:80],
+            "published_at": int(it.get("ts") or 0),
+            "source_url": it["link"],
+        })
+    if not rows:
+        raise RuntimeError("本轮没有可写入阅读快照的文章")
+
+    snapshot_ids = {}
+    endpoint = f"{public_base}/api/snapshots"
+    for offset in range(0, len(rows), SNAPSHOT_BATCH_SIZE):
+        batch = rows[offset:offset + SNAPSHOT_BATCH_SIZE]
+        body = json.dumps(
+            {"items": batch},
+            ensure_ascii=False,
+            separators=(",", ":"),
+        ).encode("utf-8")
+        timestamp = str(int(time.time()))
+        message = timestamp.encode("ascii") + b"\n" + body
+        signature = hmac.new(
+            secret.encode("utf-8"),
+            message,
+            hashlib.sha256,
+        ).hexdigest()
+        request = urllib.request.Request(
+            endpoint,
+            data=body,
+            method="POST",
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": "smth-digest/2.0",
+                "X-Reader-Timestamp": timestamp,
+                "X-Reader-Signature": signature,
+            },
+        )
+        try:
+            with urllib.request.urlopen(request, timeout=30) as response:
+                if response.status != 200:
+                    raise RuntimeError(f"HTTP {response.status}")
+                result = json.loads(response.read().decode("utf-8"))
+        except urllib.error.HTTPError as exc:
+            raise RuntimeError(f"快照接口返回 HTTP {exc.code}") from exc
+        except (OSError, ValueError) as exc:
+            raise RuntimeError(f"快照接口调用失败: {type(exc).__name__}") from exc
+
+        for stored in result.get("snapshots") or []:
+            board = str(stored.get("board") or "")
+            topic = str(stored.get("topic") or "")
+            snapshot_id = str(stored.get("snapshot_id") or "")
+            if board and topic and snapshot_id:
+                snapshot_ids[(board, topic)] = snapshot_id
+
+    if len(snapshot_ids) != len(rows):
+        raise RuntimeError(
+            f"快照接口只确认 {len(snapshot_ids)}/{len(rows)} 篇文章"
+        )
+    return snapshot_ids
+
+
+def reader_link(it, snapshot_ids):
+    """把水木原链换成绑定不可变阅读快照的签名链接。"""
+    secret, public_base = _reader_config()
+    board, topic = article_identity(it)
+    snapshot_id = str(snapshot_ids.get((board, topic)) or "")
+    if not re.fullmatch(r"[0-9a-f]{64}", snapshot_id):
+        raise RuntimeError(f"文章缺少有效快照: {board}/{topic}")
     payload = {
         "v": 1,
         "typ": "article",
-        "board": urllib.parse.unquote(match.group(1)),
-        "topic": match.group(2),
+        "board": board,
+        "topic": topic,
+        "snapshot": snapshot_id,
         "title": strip_board_prefix(it["title"])[:160],
         "exp": int(time.time()) + READER_TOKEN_TTL,
     }
@@ -424,7 +514,17 @@ def fallback_reads(pool):
 
 
 # ── 卡片 ────────────────────────────────────────────────────────────────────
-def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, sections):
+def render_card(
+    sec,
+    reads,
+    summary,
+    last_build,
+    ai_broken,
+    pool,
+    delayed,
+    sections,
+    snapshot_ids,
+):
     by_n = {i + 1: it for i, it in enumerate(pool)}
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
     md = []
@@ -438,7 +538,10 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
         it = by_n.get(int(r["n"]))
         if not it:
             continue
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
+        md.append(
+            f"{i}. [{strip_board_prefix(it['title'])}]"
+            f"({reader_link(it, snapshot_ids)})"
+        )
         why = (r.get("why") or "").strip()
         if why:
             md.append(f"{SUB}推荐理由：{clip(why, 46)}")
@@ -450,7 +553,10 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     top = sec["topten"]
     md.append(f"**🔥 今日十大**（{len(top)} 条）")
     for i, it in enumerate(top, 1):
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
+        md.append(
+            f"{i}. [{strip_board_prefix(it['title'])}]"
+            f"({reader_link(it, snapshot_ids)})"
+        )
         line = sub_line(it, sections, limit=44)
         if line:
             md.append(line)
@@ -463,7 +569,10 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
         items = sec[key][:MAX_PER_SECTION]
         md.append(f"**{emoji} {title}**（{len(items)} 条）")
         for i, it in enumerate(items, 1):
-            md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
+            md.append(
+                f"{i}. [{strip_board_prefix(it['title'])}]"
+                f"({reader_link(it, snapshot_ids)})"
+            )
             line = sub_line(it, sections, with_board=(key == "sensibility"))
             if line:
                 md.append(line)
@@ -474,7 +583,10 @@ def render_card(sec, reads, summary, last_build, ai_broken, pool, delayed, secti
     pics = sec["pictures"][:MAX_PICTURES]
     md.append(f"**🖼 精彩贴图**（{len(pics)} 张）")
     for i, it in enumerate(pics, 1):
-        md.append(f"{i}. [{strip_board_prefix(it['title'])}]({reader_link(it)})")
+        md.append(
+            f"{i}. [{strip_board_prefix(it['title'])}]"
+            f"({reader_link(it, snapshot_ids)})"
+        )
         # 贴图重在图片本身；desc 里是图片地址，不能当摘要，只在有中文板块名时标来源
         if sections.get(it["board"], ("", ""))[1]:
             md.append(SUB + board_label(sections, it["board"]))
@@ -562,14 +674,14 @@ def validate_card(card):
 
 
 def prewarm_reader_links(links):
-    """串行预热整张卡片；触发登录或风控后立即停止。"""
+    """兼容旧手工诊断；新架构默认关闭，不靠访问文章页触发采集。"""
     unique_links = list(dict.fromkeys(links))
     if not unique_links:
         return 0, 0
     try:
-        limit = max(0, min(60, int(os.environ.get("READER_PREWARM_LIMIT", "40"))))
+        limit = max(0, min(60, int(os.environ.get("READER_PREWARM_LIMIT", "0"))))
     except ValueError:
-        limit = 40
+        limit = 0
     try:
         timeout = max(5, min(120, int(os.environ.get("READER_PREWARM_TIMEOUT", "60"))))
     except ValueError:
@@ -685,6 +797,24 @@ def main():
         + sec["newexpress"][:6]
         + diversify(sec["sensibility"], per_board=1)[:5]
     )[:POOL_LIMIT]
+
+    snapshot_items = (
+        sec["topten"]
+        + sec["newexpress"]
+        + sec["sensibility"]
+        + sec["pictures"]
+        + pool
+    )
+    try:
+        snapshot_ids = ingest_reader_snapshots(snapshot_items)
+    except RuntimeError as exc:
+        print(f"⚠️ 水木社区每日推荐未发送：阅读快照写入失败：{exc}")
+        return 0
+    print(
+        f"[info] 已保存 {len(snapshot_ids)} 篇阅读快照",
+        file=sys.stderr,
+    )
+
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
     data = call_llm(build_prompt(pool, stamp, sections)) if pool else None
     ai_broken = data is None
@@ -692,8 +822,17 @@ def main():
     summary = "" if ai_broken else (data.get("summary") or "")
 
     try:
-        card = render_card(sec, reads, summary, last_build, ai_broken, pool,
-                           delayed, sections)
+        card = render_card(
+            sec,
+            reads,
+            summary,
+            last_build,
+            ai_broken,
+            pool,
+            delayed,
+            sections,
+            snapshot_ids,
+        )
         links = validate_card(card)
     except RuntimeError as e:
         print(f"⚠️ 水木社区每日推荐卡片生成或链接校验失败：{e}")
@@ -703,15 +842,7 @@ def main():
         print(card["elements"][0]["content"])
         print("─" * 70)
         print(f"[dry-run] 未发送；已校验 {len(links)} 个 Reader 链接")
-        ready, total = prewarm_reader_links(links)
-        print(f"[dry-run] Reader 缓存预热 {ready}/{total}")
         return 0
-    ready, total = prewarm_reader_links(links)
-    if ready < total:
-        print(
-            f"[warn] Reader 仍有 {total - ready} 篇未进入缓存，卡片将保留重试与登录入口",
-            file=sys.stderr,
-        )
     if not send_card(card):
         print("⚠️ 水木社区每日推荐：卡片发送失败（详见日志）")
     return 0

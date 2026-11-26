@@ -107,6 +107,42 @@ def test_guest_challenge_is_detected() -> None:
         )
 
 
+def test_normal_article_text_about_verification_is_not_a_challenge() -> None:
+    article = parse_article(
+        """
+        <span class="a-title">如何完成阅读验证</span>
+        <table class="article">
+          <td class="a-content">本文讨论水木出现“请完成验证”时的处理办法。</td>
+        </table>
+        """,
+        board="Test",
+        topic="123",
+        page=1,
+        fallback_title="",
+        base_url="https://www.newsmth.net",
+        image_url_factory=image_factory,
+        fetched_at=int(time.time()),
+    )
+    assert "请完成验证" in article.posts[0].body_html
+
+
+def test_verification_form_without_article_is_detected() -> None:
+    with pytest.raises(GuestVerificationRequired):
+        parse_article(
+            (
+                "<h1>水木需要再完成一次阅读验证</h1>"
+                "<form><input type='text' name='captcha'></form>"
+            ),
+            board="Test",
+            topic="123",
+            page=1,
+            fallback_title="",
+            base_url="https://www.newsmth.net",
+            image_url_factory=image_factory,
+            fetched_at=int(time.time()),
+        )
+
+
 def test_sanitize_html_removes_leading_and_excess_line_breaks() -> None:
     body = sanitize_html(
         "<p><br><br><br> <br>第一行<br>第二行<br><br><br>第三行</p>",

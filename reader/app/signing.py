@@ -67,18 +67,44 @@ def article_token(
     topic: str,
     title: str,
     expires_at: int,
+    snapshot_id: str = "",
 ) -> str:
-    return dumps(
-        {
-            "v": 1,
-            "typ": "article",
-            "board": board,
-            "topic": topic,
-            "title": title[:160],
-            "exp": expires_at,
-        },
-        secret,
-    )
+    payload = {
+        "v": 1,
+        "typ": "article",
+        "board": board,
+        "topic": topic,
+        "title": title[:160],
+        "exp": expires_at,
+    }
+    if snapshot_id:
+        payload["snapshot"] = snapshot_id
+    return dumps(payload, secret)
+
+
+def request_signature(secret: str, timestamp: str, body: bytes) -> str:
+    message = timestamp.encode("ascii") + b"\n" + body
+    return hmac.new(secret.encode("utf-8"), message, hashlib.sha256).hexdigest()
+
+
+def verify_request_signature(
+    secret: str,
+    timestamp: str,
+    signature: str,
+    body: bytes,
+    *,
+    now: int | None = None,
+    max_age_seconds: int = 300,
+) -> bool:
+    try:
+        signed_at = int(timestamp)
+    except (TypeError, ValueError):
+        return False
+    current = int(time.time()) if now is None else now
+    if abs(current - signed_at) > max_age_seconds:
+        return False
+    expected = request_signature(secret, timestamp, body)
+    return hmac.compare_digest(expected, signature)
 
 
 def loads_typed(

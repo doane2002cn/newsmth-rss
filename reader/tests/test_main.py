@@ -1,18 +1,20 @@
 from __future__ import annotations
 
-import os
+import json
 import time
 from dataclasses import replace
 from pathlib import Path
-from urllib.parse import parse_qs, urlparse
 
 from fastapi.testclient import TestClient
 
-from app.browser import SMTHRateLimited
 from app.config import Settings
 from app.main import _article_cache_key, create_app
-from app.parser import GuestVerificationRequired, SMTHLoginRequired
-from app.signing import admin_login_token, article_token, image_token
+from app.signing import (
+    admin_login_token,
+    article_token,
+    image_token,
+    request_signature,
+)
 
 
 SECRET = "main-test-secret-" + "y" * 40
@@ -38,21 +40,6 @@ def make_settings(tmp_path: Path) -> Settings:
         vnc_http_url="http://127.0.0.1:6081",
         vnc_websocket_url="ws://127.0.0.1:6081/websockify",
     )
-
-
-class GuestBrowser:
-    async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
-        raise GuestVerificationRequired("challenge")
-
-
-class RateLimitedBrowser:
-    async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
-        raise SMTHRateLimited("HTTP 403")
-
-
-class LoginRequiredBrowser:
-    async def fetch_article_html(self, board: str, topic: str, page: int) -> str:
-        raise SMTHLoginRequired("login")
 
 
 class TargetBrowser:
@@ -82,12 +69,27 @@ class TargetBrowser:
         }
 
 
+def signed_ingest_headers(
+    body: bytes,
+    *,
+    timestamp: str | None = None,
+    secret: str = SECRET,
+) -> dict[str, str]:
+    stamp = timestamp or str(int(time.time()))
+    return {
+        "Content-Type": "application/json",
+        "X-Reader-Timestamp": stamp,
+        "X-Reader-Signature": request_signature(secret, stamp, body),
+    }
+
+
 def test_health_and_admin_protection(tmp_path) -> None:
     app = create_app(make_settings(tmp_path))
     with TestClient(app) as client:
         health = client.get("/healthz")
         assert health.status_code == 200
         assert health.json()["browser_ready"] is False
+        assert health.json()["snapshot_entries"] == 0
         favicon = client.get("/favicon.ico")
         assert favicon.status_code == 204
         admin = client.get("/admin")
@@ -126,7 +128,7 @@ def test_login_session_defaults_to_thirty_days(tmp_path) -> None:
         assert "30 天" in admin.text
 
 
-def test_article_without_login_does_not_leak_challenge(tmp_path) -> None:
+def test_article_without_snapshot_never_shows_challenge(tmp_path) -> None:
     app = create_app(make_settings(tmp_path))
     token = article_token(
         SECRET,
@@ -136,52 +138,145 @@ def test_article_without_login_does_not_leak_challenge(tmp_path) -> None:
         int(time.time()) + 900,
     )
     with TestClient(app) as client:
-        app.state.browser = GuestBrowser()
         response = client.get(f"/a/{token}")
+
+    assert response.status_code == 202
+    assert "还没有生成阅读副本" in response.text
+    assert "READ CHALLENGE" not in response.text
+    assert "完成阅读验证" not in response.text
+    assert "guest-read-challenge" not in response.text
+    assert "/relogin/" not in response.text
+    assert "/admin" not in response.text
+
+
+def test_signed_snapshot_ingest_and_read(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    payload = {
+        "items": [
+            {
+                "board": "NewExpress",
+                "topic": "47582736",
+                "title": "朝阳 惠新西街 61平 5层 成交227万",
+                "summary": "房东挂牌 260 万，最终成交 227 万。",
+                "author": "alice",
+                "published_at": int(time.time()) - 60,
+                "source_url": (
+                    "https://www.newsmth.net/nForum/article/"
+                    "NewExpress/47582736"
+                ),
+            }
+        ]
+    }
+    body = json.dumps(
+        payload,
+        ensure_ascii=False,
+        separators=(",", ":"),
+    ).encode("utf-8")
+
+    with TestClient(app) as client:
+        response = client.post(
+            "/api/snapshots",
+            content=body,
+            headers=signed_ingest_headers(body),
+        )
+        assert response.status_code == 200
+        stored = response.json()["snapshots"][0]
+        snapshot_id = stored["snapshot_id"]
+        assert len(snapshot_id) == 64
+        assert client.get("/healthz").json()["snapshot_entries"] == 1
+
+        token = article_token(
+            SECRET,
+            "NewExpress",
+            "47582736",
+            "标题",
+            int(time.time()) + 900,
+            snapshot_id=snapshot_id,
+        )
+        article = client.get(f"/a/{token}")
+
+    assert article.status_code == 200
+    assert article.headers["X-Reader-Cache"] == "SNAPSHOT"
+    assert "房东挂牌 260 万" in article.text
+    assert "RSS 内容快照" in article.text
+    assert "READ CHALLENGE" not in article.text
+    assert "完成阅读验证" not in article.text
+    assert "/relogin/" not in article.text
+    assert "/nForum/article/" not in article.text
+
+
+def test_snapshot_ingest_rejects_bad_signature(tmp_path) -> None:
+    app = create_app(make_settings(tmp_path))
+    body = b'{"items":[{"board":"Test","topic":"1","title":"x"}]}'
+    headers = signed_ingest_headers(body, secret="wrong-secret-" + "z" * 40)
+    with TestClient(app) as client:
+        response = client.post("/api/snapshots", content=body, headers=headers)
         assert response.status_code == 401
-        assert "完成阅读验证" in response.text
-        assert "guest-read-challenge" not in response.text
-        assert "请完成验证" not in response.text
+        assert client.get("/healthz").json()["snapshot_entries"] == 0
 
 
-def test_rate_limit_is_not_rendered_as_login_expiry(tmp_path) -> None:
-    app = create_app(make_settings(tmp_path))
+def test_fulltext_cache_is_preferred_over_snapshot(tmp_path) -> None:
+    settings = make_settings(tmp_path)
+    app = create_app(settings)
+    snapshot_id = app.state.snapshot_store.put(
+        board="NewExpress",
+        topic="47582736",
+        title="快照标题",
+        summary="快照摘要",
+    )
     token = article_token(
         SECRET,
         "NewExpress",
         "47582736",
-        "标题",
+        "快照标题",
         int(time.time()) + 900,
+        snapshot_id=snapshot_id,
     )
-    with TestClient(app) as client:
-        app.state.browser = RateLimitedBrowser()
-        response = client.get(f"/a/{token}")
-        assert response.status_code == 502
-        assert "暂时限制了访问频率" in response.text
-        assert "这不是登录失效" in response.text
-        assert "/relogin/" not in response.text
-
-
-def test_login_required_uses_relogin_not_read_challenge(tmp_path) -> None:
-    app = create_app(make_settings(tmp_path))
-    token = article_token(
-        SECRET,
-        "NewExpress",
-        "47582736",
-        "标题",
-        int(time.time()) + 900,
+    cached = {
+        "board": "NewExpress",
+        "topic": "47582736",
+        "title": "全文标题",
+        "page": 1,
+        "total_posts": 2,
+        "total_pages": 1,
+        "posts": [
+            {
+                "author": "alice",
+                "position": "楼主",
+                "body_html": "<p><br><br><br>全文正文<br><br>第二行</p>",
+                "post_id": "1",
+                "date": "2026-10-25 10:00",
+                "likes": [],
+            },
+            {
+                "author": "bob",
+                "position": "第2楼",
+                "body_html": "<p>缓存回复</p>",
+                "post_id": "2",
+                "date": "2026-10-25 10:01",
+                "likes": [],
+            },
+        ],
+        "fetched_at": int(time.time()) - 4000,
+    }
+    app.state.article_cache.write(
+        _article_cache_key("NewExpress", "47582736", 1),
+        cached,
     )
+
     with TestClient(app) as client:
-        app.state.browser = LoginRequiredBrowser()
         response = client.get(f"/a/{token}")
 
-    assert response.status_code == 401
-    assert "水木登录会话已失效" in response.text
-    assert "重新登录水木" in response.text
-    assert "/relogin/" in response.text
+    assert response.status_code == 200
+    assert response.headers["X-Reader-Cache"] == "FULLTEXT"
+    assert "全文正文" in response.text
+    assert "<p>全文正文<br/><br/>第二行</p>" in response.text
+    assert "已保存全文" in response.text
+    assert "打开水木原帖" not in response.text
+    assert "/nForum/article/" not in response.text
 
 
-def test_relogin_opens_the_current_article_challenge(tmp_path) -> None:
+def test_relogin_is_not_reachable_from_article_links(tmp_path) -> None:
     app = create_app(make_settings(tmp_path))
     token = article_token(
         SECRET,
@@ -196,17 +291,9 @@ def test_relogin_opens_the_current_article_challenge(tmp_path) -> None:
             follow_redirects=False,
         )
 
-    assert response.status_code == 303
-    location = urlparse(response.headers["location"])
-    params = parse_qs(location.query)
-    assert location.path == "/admin"
-    assert params["open"] == ["1"]
-    assert params["challenge"] == ["1"]
-    assert params["board"] == ["NewExpress"]
-    assert params["topic"] == ["47582736"]
-    assert params["page"] == ["2"]
-    assert params["next"] == [f"/a/{token}?p=2"]
-    assert "smth_reader_admin=" in response.headers["set-cookie"]
+    assert response.status_code == 403
+    assert "普通阅读链接不能进入管理会话" in response.text
+    assert "set-cookie" not in response.headers
 
 
 def test_admin_open_uses_target_article_for_challenge(tmp_path) -> None:
@@ -255,69 +342,6 @@ def test_admin_page_status_is_available_for_auto_return(tmp_path) -> None:
 
     assert response.status_code == 200
     assert response.json()["article_ready"] is True
-
-
-def test_stale_cache_is_used_when_login_expires(tmp_path) -> None:
-    settings = make_settings(tmp_path)
-    app = create_app(settings)
-    token = article_token(
-        SECRET,
-        "NewExpress",
-        "47582736",
-        "缓存标题",
-        int(time.time()) + 900,
-    )
-    cached = {
-        "board": "NewExpress",
-        "topic": "47582736",
-        "title": "缓存标题",
-        "page": 1,
-        "total_posts": 2,
-        "total_pages": 1,
-        "posts": [
-            {
-                "author": "alice",
-                "position": "楼主",
-                "body_html": (
-                    "<p><br><br><br>缓存正文"
-                    "<br><br>第二行</p>"
-                ),
-                "post_id": "1",
-                "date": "2026-10-25 10:00",
-                "likes": [],
-            },
-            {
-                "author": "bob",
-                "position": "第2楼",
-                "body_html": "<p>缓存回复</p>",
-                "post_id": "2",
-                "date": "2026-10-25 10:01",
-                "likes": [],
-            },
-        ],
-        "fetched_at": int(time.time()) - 4000,
-    }
-    cache_path = (
-        settings.cache_dir
-        / f"{_article_cache_key('NewExpress', '47582736', 1)}.json"
-    )
-    app.state.article_cache.write(
-        _article_cache_key("NewExpress", "47582736", 1),
-        cached,
-    )
-    old = time.time() - 4000
-    os.utime(cache_path, (old, old))
-
-    with TestClient(app) as client:
-        app.state.browser = GuestBrowser()
-        response = client.get(f"/a/{token}")
-        assert response.status_code == 200
-        assert response.headers["X-Reader-Cache"] == "STALE"
-        assert "缓存正文" in response.text
-        assert "<p>缓存正文<br/><br/>第二行</p>" in response.text
-        assert "显示上次缓存" in response.text
-        assert "打开水木原帖" not in response.text
-        assert "/nForum/article/" not in response.text
 
 
 def test_image_proxy_rejects_untrusted_hosts(tmp_path) -> None:
