@@ -1,0 +1,7 @@
+name = "smth-go"
+main = "src/index.js"
+compatibility_date = "2026-11-26"
+
+routes = [
+  { pattern = "smth-go.12879737.xyz", custom_domain = true },
+]

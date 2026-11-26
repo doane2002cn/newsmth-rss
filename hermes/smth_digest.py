@@ -20,11 +20,12 @@
 """
 import json
 import html
-import base64
 import hashlib
-import hmac
 import os
 import re
+import secrets
+import socket
+import struct
 import subprocess
 import sys
 import tempfile
@@ -35,6 +36,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
+from html.parser import HTMLParser
 
 BASE = "https://doane2002cn.github.io/newsmth-rss"
 FEED_ALL = f"{BASE}/all.xml"
@@ -51,9 +53,30 @@ CARD_TMP_DIR = "/tmp"
 CARD_FILE_PREFIX = "smth_card_"
 CHAT = "oc_b8559c55f250b54d396a8d8105bb1355"
 CST = timezone(timedelta(hours=8))
-READER_TOKEN_TTL = 90 * 24 * 3600
-SNAPSHOT_BATCH_SIZE = 200
 SNAPSHOT_SUMMARY_LIMIT = 1200
+DEFAULT_GATEWAY_BASE = "https://smth-go.12879737.xyz"
+FEISHU_TOKEN_URL = (
+    "https://open.feishu.cn/open-apis/auth/v3/tenant_access_token/internal"
+)
+FEISHU_IMAGE_URL = "https://open.feishu.cn/open-apis/im/v1/images"
+FEISHU_JUMP_QUERY = (
+    "lk_jump_to_browser=true&lk_mobile_jump_to_browser=true"
+)
+IMAGE_CACHE_TTL = 7 * 24 * 3600
+IMAGE_DOWNLOAD_TIMEOUT = 5
+IMAGE_UPLOAD_TIMEOUT = 12
+IMAGE_TOTAL_BUDGET = 20
+IMAGE_MIN_REQUEST_TIMEOUT = 0.25
+IMAGE_MAX_BYTES = 10 * 1024 * 1024
+IMAGE_MAX_DIMENSION = 12000
+IMAGE_GIF_MAX_DIMENSION = 2000
+IMAGE_LIMIT = 8
+IMAGE_HOSTS = {
+    "static.mysmth.net",
+    "www.newsmth.net",
+    "m.newsmth.net",
+    "att.newsmth.net",
+}
 
 MAX_PER_SECTION = 8        # 特快 / 知性感性 每节最多几条
 MAX_PICTURES = 5
@@ -93,6 +116,42 @@ SYSTEM = (f"你是水木社区的资讯编辑，服务一位读者：{READER}"
           "只输出 JSON，不要解释、不要代码块围栏。")
 
 
+class _ImageParser(HTMLParser):
+    def __init__(self) -> None:
+        super().__init__(convert_charrefs=True)
+        self.sources = []
+
+    def handle_starttag(self, tag, attrs):
+        if tag.lower() != "img":
+            return
+        src = dict(attrs).get("src")
+        if src:
+            self.sources.append(src)
+
+
+def _allowed_image_url(url):
+    """只返回水木图片白名单内的干净 HTTP(S) URL。"""
+    try:
+        parsed = urllib.parse.urlparse(url or "")
+        port = parsed.port
+    except ValueError:
+        return ""
+    host = (parsed.hostname or "").lower()
+    if (
+        parsed.scheme not in ("http", "https")
+        or host not in IMAGE_HOSTS
+        or parsed.username is not None
+        or parsed.password is not None
+    ):
+        return ""
+    default_port = 443 if parsed.scheme == "https" else 80
+    if port not in (None, default_port):
+        return ""
+    return urllib.parse.urlunsplit(
+        (parsed.scheme, parsed.netloc, parsed.path, parsed.query, "")
+    )
+
+
 # ── 基础设施 ────────────────────────────────────────────────────────────────
 def load_env():
     try:
@@ -114,8 +173,31 @@ def fetch(url, timeout=30):
         return r.read()
 
 
+def extract_image_urls(raw_html, article_url):
+    """从 RSS 原始描述提取可用首图，必须在清洗 HTML 之前调用。"""
+    parser = _ImageParser()
+    try:
+        parser.feed(raw_html or "")
+    except Exception:                                          # noqa: BLE001
+        return []
+
+    urls = []
+    for src in parser.sources:
+        absolute = urllib.parse.urljoin(article_url, html.unescape(src).strip())
+        clean = _allowed_image_url(absolute)
+        if not clean:
+            continue
+        parsed = urllib.parse.urlparse(clean)
+        path = parsed.path.lower()
+        if "/img/face/" in path or "/emotion/" in path or "/smiley/" in path:
+            continue
+        if clean not in urls:
+            urls.append(clean)
+    return urls
+
+
 def parse_feed(raw):
-    """返回 (items, last_build)。item: title/link/guid/board/pub/desc/ts"""
+    """返回 (items, last_build)。item 保留正文图片 URL 和 RSS 摘要。"""
     root = ET.fromstring(raw)
     chan = root.find("channel") if root.find("channel") is not None else root
     last_build = None
@@ -136,7 +218,9 @@ def parse_feed(raw):
             dt = parsedate_to_datetime(pub).astimezone(CST)
         except Exception:                                      # noqa: BLE001
             dt = None
-        body = re.sub(r"(?i)<br\s*/?>", "\n", it.findtext("description") or "")
+        raw_desc = it.findtext("description") or ""
+        image_urls = extract_image_urls(raw_desc, link)
+        body = re.sub(r"(?i)<br\s*/?>", "\n", raw_desc)
         body = re.sub(r"<[^>]+>", " ", body)
         body = html.unescape(body).replace("\xa0", " ")
         kept = []
@@ -159,7 +243,9 @@ def parse_feed(raw):
             "guid": (it.findtext("guid") or link).strip(),
             "board": urllib.parse.unquote(m.group(1)) if m else "",
             "pub": pub, "ts": dt.timestamp() if dt else 0,
+            "author": (it.findtext("author") or "").strip(),
             "desc": body[:SNAPSHOT_SUMMARY_LIMIT],
+            "image_urls": image_urls,
         })
     items.sort(key=lambda x: x["ts"], reverse=True)
     return items, last_build
@@ -260,20 +346,6 @@ def strip_board_prefix(title):
     return re.sub(r"^\s*\[[^\]]{1,12}\]\s*", "", title or "").strip()
 
 
-def _b64url(value):
-    return base64.urlsafe_b64encode(value).rstrip(b"=").decode("ascii")
-
-
-def _reader_config():
-    secret = os.environ.get("READER_SIGNING_SECRET", "").strip()
-    public_base = os.environ.get(
-        "READER_PUBLIC_BASE", "https://smth-reader.12879737.xyz"
-    ).rstrip("/")
-    if len(secret) < 32:
-        raise RuntimeError("READER_SIGNING_SECRET 缺失或长度不足")
-    return secret, public_base
-
-
 def article_identity(it):
     """返回水木文章身份，不从标题或 guid 猜测板块和主题号。"""
     match = re.search(r"/article/([^/?#]+)/(\d+)", it.get("link") or "")
@@ -282,102 +354,19 @@ def article_identity(it):
     return urllib.parse.unquote(match.group(1)), match.group(2)
 
 
-def ingest_reader_snapshots(items):
-    """把本轮推送候选写入 Reader；返回 {(board, topic): snapshot_id}。"""
-    secret, public_base = _reader_config()
-    rows = []
-    seen = set()
-    for it in items:
-        board, topic = article_identity(it)
-        key = (board, topic)
-        if key in seen:
-            continue
-        seen.add(key)
-        rows.append({
-            "board": board,
-            "topic": topic,
-            "title": strip_board_prefix(it["title"])[:160],
-            "summary": (it.get("desc") or "")[:SNAPSHOT_SUMMARY_LIMIT],
-            "author": (it.get("author") or "水木 RSS")[:80],
-            "published_at": int(it.get("ts") or 0),
-            "source_url": it["link"],
-        })
-    if not rows:
-        raise RuntimeError("本轮没有可写入阅读快照的文章")
-
-    snapshot_ids = {}
-    endpoint = f"{public_base}/api/snapshots"
-    for offset in range(0, len(rows), SNAPSHOT_BATCH_SIZE):
-        batch = rows[offset:offset + SNAPSHOT_BATCH_SIZE]
-        body = json.dumps(
-            {"items": batch},
-            ensure_ascii=False,
-            separators=(",", ":"),
-        ).encode("utf-8")
-        timestamp = str(int(time.time()))
-        message = timestamp.encode("ascii") + b"\n" + body
-        signature = hmac.new(
-            secret.encode("utf-8"),
-            message,
-            hashlib.sha256,
-        ).hexdigest()
-        request = urllib.request.Request(
-            endpoint,
-            data=body,
-            method="POST",
-            headers={
-                "Content-Type": "application/json",
-                "User-Agent": "smth-digest/2.0",
-                "X-Reader-Timestamp": timestamp,
-                "X-Reader-Signature": signature,
-            },
-        )
-        try:
-            with urllib.request.urlopen(request, timeout=30) as response:
-                if response.status != 200:
-                    raise RuntimeError(f"HTTP {response.status}")
-                result = json.loads(response.read().decode("utf-8"))
-        except urllib.error.HTTPError as exc:
-            raise RuntimeError(f"快照接口返回 HTTP {exc.code}") from exc
-        except (OSError, ValueError) as exc:
-            raise RuntimeError(f"快照接口调用失败: {type(exc).__name__}") from exc
-
-        for stored in result.get("snapshots") or []:
-            board = str(stored.get("board") or "")
-            topic = str(stored.get("topic") or "")
-            snapshot_id = str(stored.get("snapshot_id") or "")
-            if board and topic and snapshot_id:
-                snapshot_ids[(board, topic)] = snapshot_id
-
-    if len(snapshot_ids) != len(rows):
-        raise RuntimeError(
-            f"快照接口只确认 {len(snapshot_ids)}/{len(rows)} 篇文章"
-        )
-    return snapshot_ids
-
-
-def reader_link(it, snapshot_ids):
-    """把水木原链换成绑定不可变阅读快照的签名链接。"""
-    secret, public_base = _reader_config()
+def gateway_link(it):
+    """生成稳定、可在未来无痛升级 App Link 的私有跳转链接。"""
     board, topic = article_identity(it)
-    snapshot_id = str(snapshot_ids.get((board, topic)) or "")
-    if not re.fullmatch(r"[0-9a-f]{64}", snapshot_id):
-        raise RuntimeError(f"文章缺少有效快照: {board}/{topic}")
-    payload = {
-        "v": 1,
-        "typ": "article",
-        "board": board,
-        "topic": topic,
-        "snapshot": snapshot_id,
-        "title": strip_board_prefix(it["title"])[:160],
-        "exp": int(time.time()) + READER_TOKEN_TTL,
-    }
-    body = json.dumps(
-        payload, ensure_ascii=False, sort_keys=True, separators=(",", ":")
-    ).encode("utf-8")
-    signature = hmac.new(secret.encode("utf-8"), body, hashlib.sha256).digest()
-    token = f"{_b64url(body)}.{_b64url(signature)}"
-    return f"{public_base}/a/{token}"
+    if not re.fullmatch(r"[A-Za-z0-9_]{1,64}", board):
+        raise RuntimeError(f"非法板块代码: {board!r}")
+    public_base = os.environ.get(
+        "SMTH_GATEWAY_BASE", DEFAULT_GATEWAY_BASE
+    ).strip().rstrip("/")
+    parsed = urllib.parse.urlparse(public_base)
+    if parsed.scheme != "https" or not parsed.netloc:
+        raise RuntimeError("SMTH_GATEWAY_BASE 必须是 HTTPS 绝对地址")
+    quoted_board = urllib.parse.quote(board, safe="")
+    return f"{public_base}/r/{quoted_board}/{topic}?{FEISHU_JUMP_QUERY}"
 
 
 # 飞书会把行首的普通空格吃掉，缩进只能靠可见字符表达；
@@ -513,7 +502,458 @@ def fallback_reads(pool):
             for i, it in enumerate(pool[:MAX_READS])]
 
 
+# ── 飞书首图 ────────────────────────────────────────────────────────────────
+_feishu_token_state = {"value": "", "expires": 0.0}
+
+
+def _image_cache_file():
+    return os.environ.get(
+        "SMTH_IMAGE_CACHE_FILE",
+        "/opt/data/scripts/state/smth_image_cache.json",
+    )
+
+
+def load_image_cache():
+    path = _image_cache_file()
+    try:
+        with open(path, encoding="utf-8") as f:
+            payload = json.load(f)
+    except (FileNotFoundError, OSError, ValueError, TypeError):
+        return {}
+    now = time.time()
+    return {
+        str(key): value
+        for key, value in payload.items()
+        if isinstance(value, dict)
+        and value.get("image_key")
+        and float(value.get("expires", 0)) > now
+    }
+
+
+def save_image_cache(cache):
+    path = _image_cache_file()
+    directory = os.path.dirname(path)
+    try:
+        os.makedirs(directory, mode=0o700, exist_ok=True)
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            prefix=".smth-image-cache-",
+            dir=directory,
+            delete=False,
+        ) as f:
+            temp_path = f.name
+            json.dump(cache, f, ensure_ascii=False, separators=(",", ":"))
+        os.chmod(temp_path, 0o600)
+        os.replace(temp_path, path)
+    except Exception as exc:                                   # noqa: BLE001
+        print(f"[warn] 飞书图片缓存写入失败: {type(exc).__name__}", file=sys.stderr)
+
+
+def safe_image_url(url):
+    return _allowed_image_url(url)
+
+
+def image_kind(payload, content_type=""):
+    """只接受飞书接口允许的真实图片格式，不信任扩展名或响应头。"""
+    if payload.startswith(b"\xff\xd8\xff"):
+        return ".jpg", "image/jpeg"
+    if payload.startswith(b"\x89PNG\r\n\x1a\n"):
+        return ".png", "image/png"
+    if payload.startswith((b"GIF87a", b"GIF89a")):
+        return ".gif", "image/gif"
+    if payload.startswith(b"RIFF") and payload[8:12] == b"WEBP":
+        return ".webp", "image/webp"
+    if payload.startswith((b"II*\x00", b"MM\x00*")):
+        return ".tiff", "image/tiff"
+    if payload.startswith(b"BM"):
+        return ".bmp", "image/bmp"
+    if payload.startswith(b"\x00\x00\x01\x00"):
+        return ".ico", "image/x-icon"
+    raise ValueError(f"不支持的图片格式: {content_type or 'unknown'}")
+
+
+def _jpeg_dimensions(payload):
+    """读取 JPEG SOF 头；只解析结构，不解码像素。"""
+    sof_markers = {
+        0xC0, 0xC1, 0xC2, 0xC3, 0xC5, 0xC6, 0xC7,
+        0xC9, 0xCA, 0xCB, 0xCD, 0xCE, 0xCF,
+    }
+    offset = 2
+    while offset + 1 < len(payload):
+        if payload[offset] != 0xFF:
+            offset += 1
+            continue
+        while offset < len(payload) and payload[offset] == 0xFF:
+            offset += 1
+        if offset >= len(payload):
+            break
+        marker = payload[offset]
+        offset += 1
+        if marker in (0xD8, 0xD9) or 0xD0 <= marker <= 0xD7 or marker == 0x01:
+            continue
+        if offset + 2 > len(payload):
+            break
+        segment_length = int.from_bytes(payload[offset:offset + 2], "big")
+        if segment_length < 2 or offset + segment_length > len(payload):
+            break
+        if marker in sof_markers and segment_length >= 7:
+            height = int.from_bytes(payload[offset + 3:offset + 5], "big")
+            width = int.from_bytes(payload[offset + 5:offset + 7], "big")
+            return width, height
+        offset += segment_length
+    raise ValueError("JPEG 缺少有效尺寸")
+
+
+def _webp_dimensions(payload):
+    offset = 12
+    while offset + 8 <= len(payload):
+        chunk = payload[offset:offset + 4]
+        size = int.from_bytes(payload[offset + 4:offset + 8], "little")
+        data_start = offset + 8
+        data_end = min(len(payload), data_start + size)
+        data = payload[data_start:data_end]
+        if chunk == b"VP8X" and len(data) >= 10:
+            width = int.from_bytes(data[4:7], "little") + 1
+            height = int.from_bytes(data[7:10], "little") + 1
+            return width, height
+        if chunk == b"VP8 ":
+            marker = data.find(b"\x9d\x01\x2a")
+            if marker >= 0 and marker + 7 <= len(data):
+                width = int.from_bytes(data[marker + 3:marker + 5], "little")
+                height = int.from_bytes(data[marker + 5:marker + 7], "little")
+                return width & 0x3FFF, height & 0x3FFF
+        if chunk == b"VP8L" and len(data) >= 5 and data[0] == 0x2F:
+            bits = int.from_bytes(data[1:5], "little")
+            return (bits & 0x3FFF) + 1, ((bits >> 14) & 0x3FFF) + 1
+        offset = data_start + size + (size & 1)
+    raise ValueError("WebP 缺少有效尺寸")
+
+
+def _tiff_dimensions(payload):
+    endian = "<" if payload[:2] == b"II" else ">"
+    if len(payload) < 8:
+        raise ValueError("TIFF 头不完整")
+    ifd_offset = struct.unpack_from(f"{endian}I", payload, 4)[0]
+    if ifd_offset + 2 > len(payload):
+        raise ValueError("TIFF IFD 越界")
+    count = struct.unpack_from(f"{endian}H", payload, ifd_offset)[0]
+    values = {}
+    for index in range(count):
+        entry = ifd_offset + 2 + index * 12
+        if entry + 12 > len(payload):
+            break
+        tag, value_type = struct.unpack_from(f"{endian}HH", payload, entry)
+        if tag not in (0x0100, 0x0101):
+            continue
+        if value_type == 3:
+            values[tag] = struct.unpack_from(f"{endian}H", payload, entry + 8)[0]
+        elif value_type == 4:
+            values[tag] = struct.unpack_from(f"{endian}I", payload, entry + 8)[0]
+    if 0x0100 in values and 0x0101 in values:
+        return values[0x0100], values[0x0101]
+    raise ValueError("TIFF 缺少有效尺寸")
+
+
+def image_dimensions(payload, extension):
+    """从文件魔数对应结构读取宽高，不信任扩展名或响应头。"""
+    if extension == ".png":
+        if len(payload) < 24 or payload[12:16] != b"IHDR":
+            raise ValueError("PNG 头不完整")
+        return struct.unpack_from(">II", payload, 16)
+    if extension == ".gif":
+        if len(payload) < 10:
+            raise ValueError("GIF 头不完整")
+        return struct.unpack_from("<HH", payload, 6)
+    if extension == ".jpg":
+        return _jpeg_dimensions(payload)
+    if extension == ".webp":
+        return _webp_dimensions(payload)
+    if extension == ".bmp":
+        if len(payload) < 26:
+            raise ValueError("BMP 头不完整")
+        dib_size = struct.unpack_from("<I", payload, 14)[0]
+        if dib_size == 12:
+            return struct.unpack_from("<HH", payload, 18)
+        if dib_size >= 40:
+            width, height = struct.unpack_from("<ii", payload, 18)
+            return abs(width), abs(height)
+        raise ValueError("不支持的 BMP 头")
+    if extension == ".tiff":
+        return _tiff_dimensions(payload)
+    if extension == ".ico":
+        if len(payload) < 8 or payload[4:6] == b"\x00\x00":
+            raise ValueError("ICO 头不完整")
+        count = struct.unpack_from("<H", payload, 4)[0]
+        dimensions = []
+        for index in range(count):
+            entry = 6 + index * 16
+            if entry + 2 > len(payload):
+                break
+            dimensions.append((payload[entry] or 256, payload[entry + 1] or 256))
+        if dimensions:
+            return max(dimensions, key=lambda size: size[0] * size[1])
+        raise ValueError("ICO 缺少图像目录")
+    raise ValueError(f"不支持的图片扩展名: {extension}")
+
+
+def validate_image_dimensions(payload, extension):
+    width, height = image_dimensions(payload, extension)
+    if width <= 0 or height <= 0:
+        raise ValueError("图片尺寸无效")
+    limit = (
+        IMAGE_GIF_MAX_DIMENSION
+        if extension == ".gif"
+        else IMAGE_MAX_DIMENSION
+    )
+    if width > limit or height > limit:
+        raise ValueError(f"图片尺寸 {width}x{height} 超过 {limit}px")
+    return width, height
+
+
+class _SafeImageRedirectHandler(urllib.request.HTTPRedirectHandler):
+    """允许水木图床内部重定向，但拒绝跳到白名单之外。"""
+
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        absolute = urllib.parse.urljoin(req.full_url, newurl)
+        safe = safe_image_url(absolute)
+        if not safe:
+            raise urllib.error.URLError("图片跨域重定向不在白名单")
+        return super().redirect_request(req, fp, code, msg, headers, safe)
+
+
+def _remaining_timeout(deadline, maximum):
+    remaining = deadline - time.monotonic()
+    if remaining < IMAGE_MIN_REQUEST_TIMEOUT:
+        raise TimeoutError("图片处理总时长预算已耗尽")
+    return min(float(maximum), remaining)
+
+
+def download_image(url, timeout=IMAGE_DOWNLOAD_TIMEOUT):
+    request = urllib.request.Request(
+        url,
+        headers={
+            "User-Agent": "smth-digest-image/1.0",
+            "Accept": "image/*",
+            "Referer": "https://www.newsmth.net/",
+        },
+    )
+    opener = urllib.request.build_opener(_SafeImageRedirectHandler())
+    with opener.open(request, timeout=timeout) as response:
+        content_length = int(response.headers.get("Content-Length") or 0)
+        if content_length > IMAGE_MAX_BYTES:
+            raise ValueError("图片超过 10MB")
+        payload = response.read(IMAGE_MAX_BYTES + 1)
+        if not payload or len(payload) > IMAGE_MAX_BYTES:
+            raise ValueError("图片为空或超过 10MB")
+        extension, content_type = image_kind(
+            payload, response.headers.get("Content-Type", "")
+        )
+        validate_image_dimensions(payload, extension)
+        return payload, extension, content_type
+
+
+def feishu_tenant_token(timeout=15):
+    now = time.monotonic()
+    if _feishu_token_state["value"] and _feishu_token_state["expires"] > now:
+        return _feishu_token_state["value"]
+    app_id = os.environ.get("FEISHU_APP_ID", "").strip()
+    app_secret = os.environ.get("FEISHU_APP_SECRET", "").strip()
+    if not app_id or not app_secret:
+        raise RuntimeError("FEISHU_APP_ID/FEISHU_APP_SECRET 未配置")
+    body = json.dumps({"app_id": app_id, "app_secret": app_secret}).encode()
+    request = urllib.request.Request(
+        FEISHU_TOKEN_URL,
+        data=body,
+        headers={"Content-Type": "application/json"},
+    )
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    if result.get("code") != 0 or not result.get("tenant_access_token"):
+        raise RuntimeError(f"飞书 token 获取失败: code={result.get('code')}")
+    expire = max(60, int(result.get("expire") or 7200))
+    _feishu_token_state["value"] = result["tenant_access_token"]
+    _feishu_token_state["expires"] = now + expire - 120
+    return _feishu_token_state["value"]
+
+
+def upload_feishu_image(payload, extension, content_type, deadline=None):
+    deadline = deadline or (time.monotonic() + IMAGE_TOTAL_BUDGET)
+    token = feishu_tenant_token(timeout=_remaining_timeout(deadline, 15))
+    boundary = f"----smth-{secrets.token_hex(16)}"
+    filename = f"smth-image{extension}"
+    chunks = [
+        f"--{boundary}\r\n".encode(),
+        b'Content-Disposition: form-data; name="image_type"\r\n\r\n',
+        b"message\r\n",
+        f"--{boundary}\r\n".encode(),
+        (
+            'Content-Disposition: form-data; name="image"; '
+            f'filename="{filename}"\r\n'
+        ).encode(),
+        f"Content-Type: {content_type}\r\n\r\n".encode(),
+        payload,
+        f"\r\n--{boundary}--\r\n".encode(),
+    ]
+    request = urllib.request.Request(
+        FEISHU_IMAGE_URL,
+        data=b"".join(chunks),
+        method="POST",
+        headers={
+            "Authorization": f"Bearer {token}",
+            "Content-Type": f"multipart/form-data; boundary={boundary}",
+        },
+    )
+    timeout = _remaining_timeout(deadline, IMAGE_UPLOAD_TIMEOUT)
+    with urllib.request.urlopen(request, timeout=timeout) as response:
+        result = json.loads(response.read().decode("utf-8"))
+    image_key = (result.get("data") or {}).get("image_key")
+    if result.get("code") != 0 or not image_key:
+        raise RuntimeError(f"飞书图片上传失败: code={result.get('code')}")
+    return image_key
+
+
+def prepare_card_images(items):
+    """串行准备少量首图；任何失败都静默降级为无图卡片。"""
+    if not items:
+        return {}
+    if not (
+        os.environ.get("FEISHU_APP_ID", "").strip()
+        and os.environ.get("FEISHU_APP_SECRET", "").strip()
+    ):
+        print("[info] 飞书应用凭证缺失，卡片使用纯文本降级", file=sys.stderr)
+        return {}
+    try:
+        limit = max(0, min(12, int(os.environ.get("SMTH_CARD_IMAGE_LIMIT", "8"))))
+    except ValueError:
+        limit = IMAGE_LIMIT
+
+    cache = load_image_cache()
+    image_keys = {}
+    seen_topics = set()
+    started = time.monotonic()
+    deadline = started + IMAGE_TOTAL_BUDGET
+    failures = 0
+    budget_exhausted = False
+    for it in items:
+        if len(image_keys) >= limit:
+            break
+        board, topic = article_identity(it)
+        identity = f"{board}/{topic}"
+        if identity in seen_topics or not it.get("image_urls"):
+            continue
+        seen_topics.add(identity)
+        url = safe_image_url(it["image_urls"][0])
+        if not url:
+            continue
+        cache_key = hashlib.sha256(url.encode("utf-8")).hexdigest()
+        cached = cache.get(cache_key)
+        if cached:
+            image_keys[identity] = cached["image_key"]
+            continue
+        try:
+            download_timeout = _remaining_timeout(deadline, IMAGE_DOWNLOAD_TIMEOUT)
+            payload, extension, content_type = download_image(
+                url, timeout=download_timeout
+            )
+        except TimeoutError as exc:
+            if "预算" in str(exc):
+                budget_exhausted = True
+                break
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: download_timeout",
+                file=sys.stderr,
+            )
+            continue
+        except (socket.timeout, urllib.error.URLError) as exc:
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: download_error "
+                f"{type(exc).__name__}",
+                file=sys.stderr,
+            )
+            continue
+        except ValueError as exc:
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: invalid_image_or_dim {exc}",
+                file=sys.stderr,
+            )
+            continue
+        except Exception as exc:                               # noqa: BLE001
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: download_error "
+                f"{type(exc).__name__}",
+                file=sys.stderr,
+            )
+            continue
+
+        try:
+            image_key = upload_feishu_image(
+                payload, extension, content_type, deadline=deadline
+            )
+        except TimeoutError as exc:
+            if "预算" in str(exc):
+                budget_exhausted = True
+                break
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: feishu_upload_timeout",
+                file=sys.stderr,
+            )
+            continue
+        except Exception as exc:                               # noqa: BLE001
+            failures += 1
+            print(
+                f"[warn] 卡片配图跳过 {identity}: feishu_upload_error "
+                f"{type(exc).__name__}",
+                file=sys.stderr,
+            )
+            continue
+
+        image_keys[identity] = image_key
+        cache[cache_key] = {
+            "image_key": image_key,
+            "expires": int(time.time()) + IMAGE_CACHE_TTL,
+        }
+    if budget_exhausted:
+        print(
+            "[info] 卡片配图达到总时长预算，余下条目改用纯文本",
+            file=sys.stderr,
+        )
+    save_image_cache(cache)
+    print(
+        f"[info] 飞书卡片首图 {len(image_keys)} 张"
+        f"（失败 {failures}，耗时 {time.monotonic() - started:.1f}s）",
+        file=sys.stderr,
+    )
+    return image_keys
+
+
 # ── 卡片 ────────────────────────────────────────────────────────────────────
+def article_markdown(it):
+    return (
+        f"[{strip_board_prefix(it['title'])}]"
+        f"({gateway_link(it)})"
+    )
+
+
+def article_image(it, image_keys):
+    board, topic = article_identity(it)
+    image_key = image_keys.get(f"{board}/{topic}")
+    if not image_key:
+        return None
+    return {
+        "tag": "img",
+        "img_key": image_key,
+        "alt": {"tag": "plain_text", "content": "帖子配图预览"},
+        "mode": "fit_horizontal",
+        "preview": True,
+    }
+
+
 def render_card(
     sec,
     reads,
@@ -523,40 +963,42 @@ def render_card(
     pool,
     delayed,
     sections,
-    snapshot_ids,
+    image_keys=None,
 ):
     by_n = {i + 1: it for i, it in enumerate(pool)}
+    image_keys = image_keys or {}
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
-    md = []
+    elements = []
 
     if ai_broken:
-        md += ["⚠️ **AI 分析暂不可用，以下为原始摘要**", ""]
+        elements.append({
+            "tag": "markdown",
+            "content": "⚠️ **AI 分析暂不可用，以下为原始摘要**",
+        })
 
     # 今日必读：条目间留空行，避免摘要和下一条标题糊在一起
-    md += ["**📌 今日必读**", ""]
+    elements.append({"tag": "markdown", "content": "**📌 今日必读**"})
     for i, r in enumerate(reads, 1):
         it = by_n.get(int(r["n"]))
         if not it:
             continue
-        md.append(
-            f"{i}. [{strip_board_prefix(it['title'])}]"
-            f"({reader_link(it, snapshot_ids)})"
-        )
+        lines = [f"{i}. {article_markdown(it)}"]
         why = (r.get("why") or "").strip()
         if why:
-            md.append(f"{SUB}推荐理由：{clip(why, 46)}")
-        md.append("")
+            lines.append(f"{SUB}推荐理由：{clip(why, 46)}")
+        elements.append({"tag": "markdown", "content": "\n".join(lines)})
+        image = article_image(it, image_keys)
+        if image:
+            elements.append(image)
     if not reads:
-        md += ["（今日无）", ""]
+        elements.append({"tag": "markdown", "content": "（今日无）"})
 
+    md = []
     # 今日十大：标注来源板块 + 正文摘要
     top = sec["topten"]
     md.append(f"**🔥 今日十大**（{len(top)} 条）")
     for i, it in enumerate(top, 1):
-        md.append(
-            f"{i}. [{strip_board_prefix(it['title'])}]"
-            f"({reader_link(it, snapshot_ids)})"
-        )
+        md.append(f"{i}. {article_markdown(it)}")
         line = sub_line(it, sections, limit=44)
         if line:
             md.append(line)
@@ -569,45 +1011,48 @@ def render_card(
         items = sec[key][:MAX_PER_SECTION]
         md.append(f"**{emoji} {title}**（{len(items)} 条）")
         for i, it in enumerate(items, 1):
-            md.append(
-                f"{i}. [{strip_board_prefix(it['title'])}]"
-                f"({reader_link(it, snapshot_ids)})"
-            )
+            md.append(f"{i}. {article_markdown(it)}")
             line = sub_line(it, sections, with_board=(key == "sensibility"))
             if line:
                 md.append(line)
         if not items:
             md.append("（今日无）")
         md.append("")
+    elements.append({"tag": "markdown", "content": "\n".join(md).rstrip()})
 
     pics = sec["pictures"][:MAX_PICTURES]
-    md.append(f"**🖼 精彩贴图**（{len(pics)} 张）")
+    elements.append({
+        "tag": "markdown",
+        "content": f"**🖼 精彩贴图**（{len(pics)} 张）",
+    })
     for i, it in enumerate(pics, 1):
-        md.append(
-            f"{i}. [{strip_board_prefix(it['title'])}]"
-            f"({reader_link(it, snapshot_ids)})"
-        )
+        lines = [f"{i}. {article_markdown(it)}"]
         # 贴图重在图片本身；desc 里是图片地址，不能当摘要，只在有中文板块名时标来源
         if sections.get(it["board"], ("", ""))[1]:
-            md.append(SUB + board_label(sections, it["board"]))
+            lines.append(SUB + board_label(sections, it["board"]))
+        elements.append({"tag": "markdown", "content": "\n".join(lines)})
+        image = article_image(it, image_keys)
+        if image:
+            elements.append(image)
     if not pics:
-        md.append("（今日无）")
-    md.append("")
+        elements.append({"tag": "markdown", "content": "（今日无）"})
 
+    footer = []
     if summary:
-        md += ["**🧭 今日总结**", summary, ""]
+        footer += ["**🧭 今日总结**", summary, ""]
 
     ts = last_build.strftime("%Y-%m-%d %H:%M") if last_build else "未知"
-    md.append(f"**🕐 数据更新时间**：{ts}（北京时间）")
+    footer.append(f"**🕐 数据更新时间**：{ts}（北京时间）")
     if delayed:
-        md.append("⚠️ 数据可能延迟：上游 RSS 尚未重建到当前小时")
+        footer.append("⚠️ 数据可能延迟：上游 RSS 尚未重建到当前小时")
+    elements.append({"tag": "markdown", "content": "\n".join(footer)})
 
     return {
         "config": {"wide_screen_mode": True},
         "header": {"title": {"tag": "plain_text",
                              "content": f"水木社区每日推荐｜{stamp}"},
                    "template": "turquoise"},
-        "elements": [{"tag": "markdown", "content": "\n".join(md)}],
+        "elements": elements,
     }
 
 
@@ -645,108 +1090,42 @@ def send_card(card):
 
 
 def validate_card(card):
-    """确保卡片只包含 Reader 签名链接，绝不把原链或 SMZDM 链接发出去。"""
+    """确保卡片只包含自有 HTTPS 跳转链接，绝不把原链发出去。"""
     serialized = json.dumps(card, ensure_ascii=False)
     lowered = serialized.lower()
     if "smzdm.com" in lowered:
         raise RuntimeError("卡片中混入了 SMZDM 域名")
     if "newsmth.net" in lowered:
-        raise RuntimeError("卡片中仍有未转换的水木原始链接")
+        raise RuntimeError("卡片中仍有未转换的水木域名")
 
-    links = re.findall(r"\]\((https?://[^)\s]+)\)", serialized)
+    links = re.findall(r"https?://[^\"\\\s)]+", serialized)
     if not links:
         raise RuntimeError("卡片中没有找到文章链接")
 
     public_base = os.environ.get(
-        "READER_PUBLIC_BASE", "https://smth-reader.12879737.xyz"
-    ).rstrip("/")
+        "SMTH_GATEWAY_BASE", DEFAULT_GATEWAY_BASE
+    ).strip().rstrip("/")
     base = urllib.parse.urlparse(public_base)
-    prefix = f"{base.path.rstrip('/')}/a/"
     for link in links:
         parsed = urllib.parse.urlparse(link)
+        query = urllib.parse.parse_qs(parsed.query)
         if (
             parsed.scheme != "https"
             or parsed.netloc != base.netloc
-            or not parsed.path.startswith(prefix)
+            or not re.fullmatch(
+                r"/r/[A-Za-z0-9_]{1,64}/\d{1,12}/?", parsed.path
+            )
+            or query.get("lk_jump_to_browser") != ["true"]
+            or query.get("lk_mobile_jump_to_browser") != ["true"]
         ):
-            raise RuntimeError(f"非 Reader 文章链接: {link}")
+            raise RuntimeError(f"非自有水木跳转链接: {link}")
     return links
 
 
-def prewarm_reader_links(links):
-    """兼容旧手工诊断；新架构默认关闭，不靠访问文章页触发采集。"""
-    unique_links = list(dict.fromkeys(links))
-    if not unique_links:
-        return 0, 0
-    try:
-        limit = max(0, min(60, int(os.environ.get("READER_PREWARM_LIMIT", "0"))))
-    except ValueError:
-        limit = 0
-    try:
-        timeout = max(5, min(120, int(os.environ.get("READER_PREWARM_TIMEOUT", "60"))))
-    except ValueError:
-        timeout = 60
-    try:
-        interval = max(
-            0.0,
-            min(
-                15.0,
-                float(os.environ.get("READER_PREWARM_INTERVAL_SECONDS", "2")),
-            ),
-        )
-    except ValueError:
-        interval = 2.0
-
-    candidates = unique_links[:limit]
-    if not candidates:
-        print("[info] Reader 预热已关闭", file=sys.stderr)
-        return 0, 0
-
-    def warm(link):
-        req = urllib.request.Request(
-            link,
-            headers={"User-Agent": "smth-digest-prewarm/1.0"},
-        )
-        with urllib.request.urlopen(req, timeout=timeout) as response:
-            return response.status == 200
-
-    ready = 0
-    started = time.monotonic()
-    stopped = False
-    for index, link in enumerate(candidates):
-        if index and interval:
-            time.sleep(interval)
-        try:
-            if warm(link):
-                ready += 1
-            else:
-                stopped = True
-                break
-        except urllib.error.HTTPError as exc:
-            print(
-                f"[warn] Reader 预热在第 {ready + 1} 篇停止：HTTP {exc.code}",
-                file=sys.stderr,
-            )
-            stopped = True
-            break
-        except Exception as exc:                               # noqa: BLE001
-            print(
-                f"[warn] Reader 预热在第 {ready + 1} 篇停止：{type(exc).__name__}",
-                file=sys.stderr,
-            )
-            stopped = True
-            break
-    total = len(candidates)
-    print(
-        f"[info] Reader 串行预热 {ready}/{total}"
-        f"（候选 {len(unique_links)}，{'已熔断' if stopped else '完成'}），"
-        f"耗时 {time.monotonic() - started:.1f}s",
-        file=sys.stderr,
-    )
-    return ready, total
-
-
 def main():
+    for stream in (sys.stdout, sys.stderr):
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     dry = "--dry-run" in sys.argv
     load_env()
 
@@ -782,7 +1161,7 @@ def main():
     # 最后按标题去重，避免同一帖在两条流里各出现一次。
     sec = {
         "topten": dedupe(top_items),
-        "newexpress": dedupe(new_items),
+        "newexpress": dedupe(new_items)[:MAX_PER_SECTION],
         "sensibility": dedupe(diversify(feeling, per_board=2) + shi_items)[:MAX_PER_SECTION],
         "pictures": dedupe(pic_items),
     }
@@ -798,28 +1177,22 @@ def main():
         + diversify(sec["sensibility"], per_board=1)[:5]
     )[:POOL_LIMIT]
 
-    snapshot_items = (
-        sec["topten"]
-        + sec["newexpress"]
-        + sec["sensibility"]
-        + sec["pictures"]
-        + pool
-    )
-    try:
-        snapshot_ids = ingest_reader_snapshots(snapshot_items)
-    except RuntimeError as exc:
-        print(f"⚠️ 水木社区每日推荐未发送：阅读快照写入失败：{exc}")
-        return 0
-    print(
-        f"[info] 已保存 {len(snapshot_ids)} 篇阅读快照",
-        file=sys.stderr,
-    )
-
     stamp = datetime.now(CST).strftime("%Y-%m-%d")
     data = call_llm(build_prompt(pool, stamp, sections)) if pool else None
     ai_broken = data is None
     reads = fallback_reads(pool) if ai_broken else (data.get("must_read") or fallback_reads(pool))
     summary = "" if ai_broken else (data.get("summary") or "")
+
+    image_items = []
+    for read in reads:
+        try:
+            number = int(read["n"])
+        except (KeyError, TypeError, ValueError):
+            continue
+        if 1 <= number <= len(pool):
+            image_items.append(pool[number - 1])
+    image_items += sec["pictures"][:MAX_PICTURES]
+    image_keys = {} if dry else prepare_card_images(image_items)
 
     try:
         card = render_card(
@@ -831,7 +1204,7 @@ def main():
             pool,
             delayed,
             sections,
-            snapshot_ids,
+            image_keys,
         )
         links = validate_card(card)
     except RuntimeError as e:
@@ -839,9 +1212,15 @@ def main():
         return 0
     if dry:
         print("─" * 28 + " CARD PREVIEW (dry-run) " + "─" * 28)
-        print(card["elements"][0]["content"])
+        print(json.dumps(card, ensure_ascii=False, indent=2))
         print("─" * 70)
-        print(f"[dry-run] 未发送；已校验 {len(links)} 个 Reader 链接")
+        planned_images = sum(
+            bool(it.get("image_urls")) for it in image_items[:IMAGE_LIMIT]
+        )
+        print(
+            f"[dry-run] 未发送；已校验 {len(links)} 个跳转链接，"
+            f"计划首图 {planned_images} 张"
+        )
         return 0
     if not send_card(card):
         print("⚠️ 水木社区每日推荐：卡片发送失败（详见日志）")
