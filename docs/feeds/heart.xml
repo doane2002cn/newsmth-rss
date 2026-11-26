@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Heart</link>
     <description>你今天快乐吗（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Nov 2026 03:30:53 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 26 Nov 2026 16:47:07 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/heart.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>多种手段防止丢失发帖内容</title>
+      <link>https://www.newsmth.net/nForum/article/Heart/250632</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250632</guid>
+      <author>wuduan2</author>
+      <pubDate>Thu, 26 Nov 2026 06:11:44 +0000</pubDate>
+      <description><![CDATA[一般在电脑端我用CTerm，自带历史屏幕，没发出去的帖子能找回<br/>手机端的rterm叫我改了，发帖前先复制屏幕文字<br/>刚才在电脑端用了浏览器发，结果弹出提示框说不行，<br/>我赶紧不关闭提示框，直接文字识别，挽救回了文字]]></description>
+    </item>
     <item>
       <title>人教版</title>
       <link>https://www.newsmth.net/nForum/article/Heart/250630</link>
@@ -399,14 +407,6 @@
       <author>newluna81</author>
       <pubDate>Sat, 31 Oct 2026 10:22:30 +0000</pubDate>
       <description><![CDATA[很快乐]]></description>
-    </item>
-    <item>
-      <title>我又来河边晒太阳了</title>
-      <link>https://www.newsmth.net/nForum/article/Heart/250330</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Heart/250330</guid>
-      <author>newluna81</author>
-      <pubDate>Fri, 30 Oct 2026 06:05:20 +0000</pubDate>
-      <description><![CDATA[真惬意]]></description>
     </item>
   </channel>
 </rss>
