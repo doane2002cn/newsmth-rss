@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 01:42:04 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 12:02:35 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>当时那个铁蛋刀削面很好吃。</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1783036</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1783036</guid>
+      <author>sleepless2</author>
+      <pubDate>Fri, 27 Nov 2026 07:44:58 +0000</pubDate>
+      <description><![CDATA[我在西交读研时候吃到的。后来我回到老家西安石油。发现那里开了一家分店。大家说呢。]]></description>
+    </item>
     <item>
       <title>山姆买的花生油</title>
       <link>https://www.newsmth.net/nForum/article/Food/1783011</link>
@@ -398,14 +406,6 @@
       <author>shininggirl</author>
       <pubDate>Fri, 13 Nov 2026 12:04:55 +0000</pubDate>
       <description><![CDATA[每次来西安必吃的汉堡]]></description>
-    </item>
-    <item>
-      <title>南瓜子仁</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1782308</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782308</guid>
-      <author>chunzai</author>
-      <pubDate>Fri, 13 Nov 2026 04:27:52 +0000</pubDate>
-      <description><![CDATA[小时侯每年春节前后总有南瓜子吃，开始是抓十几颗一直放进嘴里嚼，后来感觉味道不错，才有耐心练习一颗颗地吃。最近看到所谓新疆南瓜子仁广告，价格也不贵，不觉动了心，想试试。但不行，没有南瓜子味，不知为什么]]></description>
     </item>
   </channel>
 </rss>
