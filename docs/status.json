@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-27 00:47:07 +0800",
+  "generated": "2026-11-27 09:42:04 +0800",
   "banned": false,
   "sources": [
     {
@@ -30,25 +30,25 @@
       "key": "baking",
       "name": "烘焙坊",
       "count": 25,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "beauty",
       "name": "美丽的秘密",
       "count": 24,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "beipiao",
       "name": "北漂生活",
       "count": 26,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "book",
       "name": "书籍",
       "count": 28,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "boy",
@@ -78,7 +78,7 @@
       "key": "diy",
       "name": "独具匠心",
       "count": 42,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "fashionshow",
@@ -102,19 +102,19 @@
       "key": "gentle_fashion",
       "name": "绅士·时尚",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "get_pregnant",
       "name": "备孕",
       "count": 22,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "girl",
       "name": "女孩子",
       "count": 25,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "healtheworld",
@@ -126,7 +126,7 @@
       "key": "healthylife",
       "name": "健康生活",
       "count": 43,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "heart",
@@ -138,7 +138,7 @@
       "key": "jade_jewelry",
       "name": "珠光宝气",
       "count": 23,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "liyidaiwa",
@@ -204,7 +204,7 @@
       "key": "shuibuzhao",
       "name": "失眠",
       "count": 45,
-      "status": "更新 +20"
+      "status": "304 未变化"
     },
     {
       "key": "single",
@@ -222,7 +222,7 @@
       "key": "wedding",
       "name": "花嫁",
       "count": 21,
-      "status": "304 未变化"
+      "status": "更新 +20"
     },
     {
       "key": "wine",
@@ -245,8 +245,8 @@
     {
       "key": "pictures",
       "name": "精彩贴图",
-      "count": 3,
-      "status": "更新 +3"
+      "count": 8,
+      "status": "更新 +8"
     }
   ]
 }

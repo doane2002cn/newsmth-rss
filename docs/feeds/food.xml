@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Food</link>
     <description>我爱吃，我想吃（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Nov 2026 16:47:07 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 27 Nov 2026 01:42:04 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/food.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>山姆买的花生油</title>
+      <link>https://www.newsmth.net/nForum/article/Food/1783011</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1783011</guid>
+      <author>TexasPotato</author>
+      <pubDate>Thu, 26 Nov 2026 23:24:36 +0000</pubDate>
+      <description><![CDATA[山姆的花生油下有且只有一个评论，“一点香味都没有，但确实便宜”。昨天我也买了一桶，确实一点香味都没有，豆包说不应该，如果没有香味的话，是因为频繁地接触空气，但我买的是新的呀，不知道别的花生油有没有香味]]></description>
+    </item>
     <item>
       <title>普丁：这次吃中国菜真特么吃爽了啊</title>
       <link>https://www.newsmth.net/nForum/article/Food/1782997</link>
@@ -398,14 +406,6 @@
       <author>chunzai</author>
       <pubDate>Fri, 13 Nov 2026 04:27:52 +0000</pubDate>
       <description><![CDATA[小时侯每年春节前后总有南瓜子吃，开始是抓十几颗一直放进嘴里嚼，后来感觉味道不错，才有耐心练习一颗颗地吃。最近看到所谓新疆南瓜子仁广告，价格也不贵，不觉动了心，想试试。但不行，没有南瓜子味，不知为什么]]></description>
-    </item>
-    <item>
-      <title>皮皮虾，皮是英语pee 来的，口蘑是张家口的口</title>
-      <link>https://www.newsmth.net/nForum/article/Food/1782296</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Food/1782296</guid>
-      <author>babu2015</author>
-      <pubDate>Fri, 13 Nov 2026 01:06:17 +0000</pubDate>
-      <description><![CDATA[重庆鸡公煲不是重庆的，创世人叫王重庆]]></description>
     </item>
   </channel>
 </rss>
