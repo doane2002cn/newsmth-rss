@@ -5,9 +5,17 @@
     <link>https://www.newsmth.net/nForum/board/Boy</link>
     <description>老男孩（水木社区 newsmth.net）</description>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 27 Nov 2026 21:05:33 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 28 Nov 2026 03:16:26 +0000</lastBuildDate>
     <generator>newsmth-rss</generator>
     <atom:link href="https://doane2002cn.github.io/newsmth-rss/feeds/boy.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>早晨跑了五公里</title>
+      <link>https://www.newsmth.net/nForum/article/Boy/1310967</link>
+      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310967</guid>
+      <author>shuhanmoon</author>
+      <pubDate>Sat, 28 Nov 2026 01:43:48 +0000</pubDate>
+      <description><![CDATA[配速六分22秒<br/>今天天气真好<br/>空气质量14]]></description>
+    </item>
     <item>
       <title>挖坑~ 看哭了</title>
       <link>https://www.newsmth.net/nForum/article/Boy/1310950</link>
@@ -397,14 +405,6 @@
       <author>xiaokafei</author>
       <pubDate>Thu, 29 Oct 2026 14:37:30 +0000</pubDate>
       <description><![CDATA[在这里避避风头<br/>--发自 ismth(丝滑版)]]></description>
-    </item>
-    <item>
-      <title>这是抑郁了吗？</title>
-      <link>https://www.newsmth.net/nForum/article/Boy/1310388</link>
-      <guid isPermaLink="true">http://www.newsmth.net/nForum/article/Boy/1310388</guid>
-      <author>bluezxz</author>
-      <pubDate>Thu, 29 Oct 2026 14:20:50 +0000</pubDate>
-      <description><![CDATA[骑自行车上班<br/>最近路上总想些工作上事情<br/>今天突然想到：如果我骑着骑着车，慢慢地从这个世界上消失，该多好啊！<br/>这样就不用面焦心的工作，以及不省心的娃<br/>以前的我，害怕离开，会担心爸妈难过，不放心孩子，舍不得老公，现在觉得这些都无所谓了<br/>这是抑郁了吗？]]></description>
     </item>
   </channel>
 </rss>
